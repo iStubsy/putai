@@ -1,0 +1,90 @@
+body {
+	padding-top: 56px;
+}
+
+.header {
+	max-width: 1200px;
+}
+
+h1 {
+	padding: 20px 0px 15px 0;
+}
+
+#content {
+	text-align: center;
+	background-color: #e0e0e0;
+}
+
+.mealOuter {
+	padding: 0 20px;
+}
+
+.meal {
+	background-color: white;
+	border: solid 1px #c6c6c6;
+
+	display: flex;
+	flex-direction: column;
+	margin: 0 5px 35px 5px;
+	box-shadow: 0 8px 6px -6px #868686;
+}
+
+h4 {
+	margin: 0px;
+	font-size: 1.8rem;
+}
+
+.mealHead {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.mealHead-numberField {
+	position: relative;
+}
+
+.mealHead-number {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	border-radius: 2px;
+	font-family: arial;
+	font-size: 1.5rem;
+	position: absolute;
+	left: -10px;
+	top: -10px;
+	height: 100%;
+
+	width: 45px;
+	height: 45px;
+}
+
+.mealHead-name {
+	width: 70%;
+}
+
+.mealBody {
+	padding: 0 1rem;
+}
+
+.mealFooter {
+	padding: .5rem;
+}
+
+.navbar {
+	box-shadow: 0 8px 6px -6px #989898;
+}
+
+.nav-item {
+	margin-left: 20px;
+}
+
+.nav-link {
+	text-align: center;
+}
+
+.col-lg-3 {
+	flex-direction: column;
+}
