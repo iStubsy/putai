@@ -41,8 +41,7 @@ h2 {
 h4 {
 	font-family: arial;
 	margin: 10px 0;
-	font-size: 1.4rem;
-	font-weight: bold;
+	font-size: 1.6rem;
 }
 
 .mealHead {
@@ -86,9 +85,9 @@ h4 {
 }
 
 .price {
-	font-weight: bold;
 	background-color: #f4f4f4;
 	padding: 3px 0;
+	font-family: arial;
 }
 
 .navbar {
