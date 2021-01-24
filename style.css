@@ -26,18 +26,47 @@ h2 {
 }
 
 .mealOuter {
-	//padding: 0 20px;
 	max-width: 1200px;
+}
+
+.menuHead {
+	width: 100%;
+	font-family: arial;
+	font-size: 1.5rem;
+	border-radius: 0;
+
+	border: none;
+	background-color: #272727;
+	text-align: left;
+}
+
+.menu {
+	background-color: #dddddd;
+	margin-bottom: 4%;
 }
 
 .hpress {
 	width: 100%;
-	font-family: arial;
+	border-radius: 0px;
+	border: none;
+	background-color: #272727;
+	padding: 1%;
+}
+
+.hpress:hover {
+	background-color: #272727;
+}
+
+.hpress:focus {
+	border: none;
+	background-color: #272727;
+	border: 0px;
+	box-shadow: none;
 }
 
 .mealBox {
 	position: relative;
-	padding: 10px;
+	padding: 1%;
 }
 
 .meal {
@@ -56,7 +85,7 @@ h2 {
 }
 
 .row {
-	--bs-gutter-x: 1rem;
+	--bs-gutter-x: 0;
 	justify-content: center;
 }
 
