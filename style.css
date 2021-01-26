@@ -11,7 +11,7 @@ body {
 h1 {
 	font-family: arial;
 	font-family: 'Poiret One', cursive;
-	font-size: 5rem;
+	font-size: 4rem;
 	color: white;
 }
 
@@ -20,7 +20,7 @@ h2 {
 	font-size: 1.5rem;
 	letter-spacing: 4px;
 	margin: 0;
-	color: white;
+	color: #888787;
 }
 
 .bg {
@@ -38,18 +38,19 @@ h2 {
 	//background-color: #333333;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	color: white;
-	padding: 120px 0 60px 0;
+	padding: 140px 0 80px 0;
 }
 
 .test {
-	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-	background-color: #121212;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	//background-color: #121212;
 	//z-index: 100;
 	border-bottom: dashed 1px #626262;
 	//box-shadow: 0px 3px 3px #1a1a1a;
 	//padding: 10px 0;
 	font-family: arial;
 	font-size: 1.2rem;
+	background-color: rgb(31, 31, 31);
 }
 
 .mealOuter {
