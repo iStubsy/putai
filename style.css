@@ -57,13 +57,12 @@ h2 {
 }
 
 .testi {
-	width: 100%;
-	max-width: 250px;
 	background-color: white;
 	border: solid 1px black;
 	border-radius: 6px;
 	padding: 4px;
 	margin: 20px;
+	max-width: 320px;
 }
 
 .oneTwo {
@@ -92,14 +91,14 @@ h2 {
 }
 
 .mealOuter {
-	max-width: 1200px;
+	max-width: 1300px;
 	padding: 0;
 	margin: 0px auto;
 	z-index: 1;
 	background-color: #efefef;
 	position: relative;
 	top: -70px;
-	//border: solid 1px #dddddd;
+	box-shadow: 0 2px 5px #e3e3e3;
 }
 
 .menu {
@@ -127,7 +126,8 @@ h2 {
 
 .mealBox {
 	position: relative;
-	padding: 14px;
+	padding: 10px;
+	min-width: 250px;
 }
 
 .meal {
@@ -143,7 +143,7 @@ h2 {
 	height: 100%;
 	transition: 0.5s;
 
-	max-width: 360px;
+	max-width: 340px;
 	margin: 0px auto;
 
 }
