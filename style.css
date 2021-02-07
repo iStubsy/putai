@@ -61,8 +61,10 @@ h2 {
 	border: solid 1px black;
 	border-radius: 6px;
 	padding: 4px;
-	margin: 20px;
-	max-width: 320px;
+	margin: 10px;
+	//width: 310px;
+	width: 100%;
+	max-width: 300px;
 }
 
 .oneTwo {
