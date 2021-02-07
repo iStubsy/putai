@@ -1,17 +1,17 @@
 body {
 	font-family: serif;
-	//background-color: #e3e3e3;
 	text-align: center;
 }
 
 .header {
 	max-width: 1200px;
+	font-size: 1rem;
 }
 
 h1 {
 	font-family: arial;
 	font-family: 'Poiret One', cursive;
-	font-size: 4rem;
+	font-size: 4.5rem;
 	color: white;
 }
 
@@ -32,7 +32,9 @@ h2 {
 	z-index: -100;
 }
 
-#content {}
+#content {
+	margin: 0px auto;
+}
 
 .row {}
 
@@ -40,11 +42,33 @@ h2 {
 	background-color: #333333;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	color: white;
-	padding: 120px 0 120px 0;
+	padding: 100px 0 120px 0;
+	width: 100%;
 }
 
-.contentHeaderSub {
-	max-width: 600px;
+.contentHeaderHeadline {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	min-width: 360px;
+	margin: 20px;
+	padding: 10px;
+}
+
+.testi {
+	width: 100%;
+	max-width: 250px;
+	background-color: white;
+	border: solid 1px black;
+	border-radius: 6px;
+	padding: 4px;
+	margin: 20px;
+}
+
+.oneTwo {
+	justify-content: center;
+	max-width: 1000px;
 	margin: 0px auto;
 }
 
@@ -52,6 +76,7 @@ h2 {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	//width: 500px;
 }
 
 .test {
@@ -71,41 +96,33 @@ h2 {
 	padding: 0;
 	margin: 0px auto;
 	z-index: 1;
-	background-color: #eaeaea;
+	background-color: #efefef;
 	position: relative;
-	top: -60px;
+	top: -70px;
+	//border: solid 1px #dddddd;
 }
 
 .menu {
 	margin-bottom: 0px;
-	padding: 5px 5px 0 5px;
+	padding: 3px 3px 3px 3px;
 	z-index: 1;
 }
 
 .hpress {
-	/* width: 100%;
-	border-radius: 0px;
-	border: none;
-	background-color: #272727;
-	padding: 5px;
-	font-size: 1.3rem; */
 	width: 100%;
 	font-family: arial;
-	font-size: 1.5rem;
-	padding: 4px 0;
+	font-size: 1.2rem;
+	padding: 6px;
 	border-radius: 0;
-	box-shadow: inset 0px 2px 2px #484848;
-	border: none;
-	border-radius: 2px;
+	border-bottom: solid 1px blacK;
 }
 
 .hpress:hover {
 	background-color: #212121;
-	box-shadow: inset 0px 2px 2px #676767;
 }
 
 .hpress:focus {
-	box-shadow: inset 0px 2px 2px #484848;
+	box-shadow: none;
 }
 
 .mealBox {
@@ -125,11 +142,16 @@ h2 {
 	box-shadow: 0 8px 6px -6px #bebebe;
 	height: 100%;
 	transition: 0.5s;
+
+	max-width: 360px;
+	margin: 0px auto;
+
 }
 
 .row {
 	--bs-gutter-x: 0;
-	margin-top: 0px;
+	//margin-top: 0px;
+	justify-content: center;
 }
 
 h4 {
@@ -196,12 +218,29 @@ h4 {
 	text-align: center;
 }
 
+/********** FOOTER **********/
+
 #footer {
-	height: 300px;
 	width: 100%;
+	background-color: #333333;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+}
+
+.footerHeadline {
+	font-size: 1.2rem;
 }
 
 .footerBody {
-	height: 300px;
-	width: 100%;
+	width: 80%;
+	color: white;
+
+	font-size: 1.1rem;
+	font-family: sans-serif;
+	text-align: left;
+	margin: 0px auto;
+}
+
+.footerColumn {
+	padding: 30px;
+	border: solid 1px red;
 }
