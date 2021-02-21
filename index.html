@@ -6,19 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
 	<title>Putai</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="10" fixed-top>
 	<section id="title">
 		<!-- Nav Bar -->
-		<nav class="test fixed-top navbar navbar-expand-md navbar-dark">
+		<nav class="test navbar navbar-expand-md navbar-dark">
 			<div class="container-fluid header">
 				<a class="navbar-brand" href="https://www.youtube.com">Putai Rockenhausen</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +27,13 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">
+						<li class="nav-item headerItem">
 							<a class="nav-link" href="about:blank">Willkommen</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item headerItem">
 							<a class="nav-link active" href="about:blank">Speisekarte</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item headerItem">
 							<a class="nav-link" href="about:blank">Kontakt</a>
 						</li>
 					</ul>
@@ -56,12 +57,28 @@
 			</div>
 		</div>
 		<div class="container-fluid mealOuter">
-			<!--<div class="col-12 col-sm-6 col-lg-3">-->
+			<nav id="navbar-example2" class="navbar">
+				<!--navbar-dark bg-dark-->
+				<!-- remove px-3-->
+				<ul class="nav nav-pills scrollByWrapper">
+					<li class="nav-item scrollByItem">
+						<a class="nav-link scrollByLink" href="#vorspeisen">Vorspeisen</a>
+					</li>
+					<li class="nav-item scrollByItem">
+						<a class="nav-link scrollByLink" href="#hauptspeisen">Hauptspeisen</a>
+					</li>
+					<li class="nav-item scrollByItem">
+						<a class="nav-link scrollByLink" href="#extras">Extras</a>
+					</li>
+				</ul>
+			</nav>
+			<!--<div class=" col-12 col-sm-6 col-md-4 col-xl-3">-->
 			<div class="menu">
+				<div id="vorspeisen"></div>
 				<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseVorspeisen" role="button" aria-expanded="false" aria-controls="collapseVorspeisen">Kleine Vorspeisen</a>
 				<div id="collapseVorspeisen" class="collapse show">
 					<div class="row">
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -79,7 +96,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -90,7 +107,7 @@
 									</div>
 								</div>
 								<div class="mealBody">
-									Reispapierrollen gefüllt mit Reisnudeln, Mungobohnensprossen, Salat & frischem Koriander. Dazu remige Hoisin-Erdnuss Soße.
+									Reispapierrollen gefüllt mit Reisnudeln, Mungobohnensprossen, Salat & frischem Koriander. Dazu cremige Hoisin-Erdnuss Soße.
 								</div>
 								<div class="mealFooter">
 									Wahlweise mit:<br>
@@ -100,7 +117,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -118,7 +135,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -136,7 +153,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -154,7 +171,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -172,7 +189,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -190,7 +207,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -210,7 +227,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -232,10 +249,11 @@
 				</div>
 			</div>
 			<div class="menu">
+				<div id="hauptspeisen"></div>
 				<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseHauptspeisen" role="button" aria-expanded="false" aria-controls="collapseHauptspeisen">Große Hauptspeisen</a>
 				<div id="collapseHauptspeisen" class="collapse show">
 					<div class="row">
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -253,7 +271,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -271,7 +289,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -289,7 +307,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -307,7 +325,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -325,7 +343,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -343,7 +361,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -361,7 +379,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -379,7 +397,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -397,7 +415,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -415,7 +433,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -433,7 +451,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -451,7 +469,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -469,7 +487,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -491,10 +509,11 @@
 				</div>
 			</div>
 			<div class="menu">
+				<div id="extras"></div>
 				<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseSonstige" role="button" aria-expanded="false" aria-controls="collapseSonstige">Sonstige</a>
 				<div id="collapseSonstige" class="collapse show">
 					<div class="row">
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -512,7 +531,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -530,7 +549,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -551,7 +570,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox col-12 col-sm-6 col-lg-3">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -597,6 +616,12 @@
 			</div>
 		</div>
 	</section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 body {
-	font-family: serif;
 	text-align: center;
+	background-color: black;
 }
 
 .header {
@@ -8,8 +8,12 @@ body {
 	font-size: 1rem;
 }
 
+.headerItem {
+	margin-left: 40px;
+}
+
 h1 {
-	font-family: arial;
+	//font-family: arial;
 	font-family: 'Poiret One', cursive;
 	font-size: 4.5rem;
 	color: white;
@@ -34,16 +38,17 @@ h2 {
 
 #content {
 	margin: 0px auto;
+	padding-bottom: 60px;
+	background-color: #dddddd;
 }
-
-.row {}
 
 .contentHeader {
 	background-color: #333333;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	color: white;
-	padding: 100px 0 120px 0;
+	padding: 50px 0 120px 0;
 	width: 100%;
+	//margin-bottom: 30px;
 }
 
 .contentHeaderHeadline {
@@ -64,7 +69,7 @@ h2 {
 	margin: 10px;
 	//width: 310px;
 	width: 100%;
-	max-width: 300px;
+	max-width: 250px;
 }
 
 .oneTwo {
@@ -87,39 +92,44 @@ h2 {
 	border-bottom: dashed 1px #626262;
 	//box-shadow: 0px 3px 3px #1a1a1a;
 	//padding: 10px 0;
-	font-family: arial;
 	font-size: 1.2rem;
 	background-color: rgb(31, 31, 31);
 }
 
 .mealOuter {
-	max-width: 1300px;
-	padding: 0;
-	margin: 0px auto;
+	max-width: 1200px;
 	z-index: 1;
-	background-color: #efefef;
+	background-color: #f4f4f4;
+	//background-color: #efefef;
 	position: relative;
+	//box-shadow: 0px 4px 15px #cecece;
 	top: -70px;
-	box-shadow: 0 2px 5px #e3e3e3;
+	border-radius: 3px;
+	padding: 0;
+	border: solid 1px #d3d3d3;
 }
 
 .menu {
-	margin-bottom: 0px;
-	padding: 3px 3px 3px 3px;
+	margin: 0px auto;
 	z-index: 1;
+	position: relative;
 }
 
 .hpress {
 	width: 100%;
-	font-family: arial;
 	font-size: 1.2rem;
 	padding: 6px;
 	border-radius: 0;
-	border-bottom: solid 1px blacK;
+	margin: 0;
+	border: none;
+	color: white;
+	background-color: #dedede;
+	border: none;
+	color: black;
 }
 
 .hpress:hover {
-	background-color: #212121;
+	box-shadow: none;
 }
 
 .hpress:focus {
@@ -128,14 +138,13 @@ h2 {
 
 .mealBox {
 	position: relative;
-	padding: 10px;
-	min-width: 250px;
+	padding: 15px;
 }
 
 .meal {
 	//background-color: #f0f0f0;
 	background-color: white;
-	border: solid 1px #d4d4d4;
+	border: solid 1px #e0e0e0;
 
 	display: flex;
 	flex-direction: column;
@@ -152,7 +161,6 @@ h2 {
 
 .row {
 	--bs-gutter-x: 0;
-	//margin-top: 0px;
 	justify-content: center;
 }
 
@@ -175,7 +183,6 @@ h4 {
 	justify-content: center;
 	color: white;
 	border-radius: 2px;
-	font-family: arial;
 	font-size: 1.6rem;
 	position: absolute;
 	padding: 5px;
@@ -198,8 +205,10 @@ h4 {
 }
 
 .mealBody {
-	padding: 0 .9rem;
+	padding: 0 10px;
 	line-height: 1.2rem;
+	color: #626262;
+	font-size: 1rem;
 }
 
 .mealFooter {
@@ -209,15 +218,6 @@ h4 {
 .price {
 	background-color: #f4f4f4;
 	padding: 3px 0;
-	font-family: arial;
-}
-
-.nav-item {
-	margin-left: 20px;
-}
-
-.nav-link {
-	text-align: center;
 }
 
 /********** FOOTER **********/
@@ -237,7 +237,6 @@ h4 {
 	color: white;
 
 	font-size: 1.1rem;
-	font-family: sans-serif;
 	text-align: left;
 	margin: 0px auto;
 }
@@ -245,4 +244,51 @@ h4 {
 .footerColumn {
 	padding: 30px;
 	border: solid 1px red;
+}
+
+#navbar-example2 {
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+	width: 100%;
+	padding: 6px;
+	//margin-bottom: 15px;
+	background-color: #212121;
+	background-color: rgba(244, 244, 244, 0.74);
+}
+
+.scrollByWrapper {
+	background-color: #262626;
+	margin: 0px auto;
+	width: 100%;
+	font-size: 1rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	padding: 13px 0px;
+	border-radius: 0;
+	background-color: #000000;
+	font-size: 1.1rem;
+}
+
+.nav-pills .nav-link {
+	padding: 13px 0px;
+	border-radius: 0;
+	//color: grey;
+	color: #696969;
+}
+
+.scrollByItem {
+	width: 33.3%;
+	margin: 0px auto;
+}
+
+#hauptspeisen,
+#vorspeisen,
+#extras {
+	width: 100%;
+	position: absolute;
+	//top: -60px;
+	top: -22px;
 }
