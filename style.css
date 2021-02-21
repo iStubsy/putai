@@ -110,7 +110,7 @@ h2 {
 }
 
 .menu {
-	margin: 0px auto;
+	margin: 0px auto 20px auto;
 	z-index: 1;
 	position: relative;
 }
@@ -120,10 +120,10 @@ h2 {
 	font-size: 1.2rem;
 	padding: 6px;
 	border-radius: 0;
-	margin: 0;
+	margin: 0px;
 	border: none;
 	color: white;
-	background-color: #dedede;
+	background-color: #e8e8e8;
 	border: none;
 	color: black;
 }
@@ -269,7 +269,6 @@ h4 {
 	padding: 13px 0px;
 	border-radius: 0;
 	background-color: #000000;
-	font-size: 1.1rem;
 }
 
 .nav-pills .nav-link {
@@ -290,5 +289,5 @@ h4 {
 	width: 100%;
 	position: absolute;
 	//top: -60px;
-	top: -22px;
+	top: -62px;
 }
