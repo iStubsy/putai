@@ -120,15 +120,10 @@ h2 {
 	box-shadow: 0px 0px 3px black;
 }
 
-.menuVorspeise {
-	position: sticky;
-	top: 60px;
-}
+.menuVorspeise {}
 
 .menuHauptspeise {
 	background-color: #ebebeb;
-	position: sticky;
-	top: 66px;
 }
 
 .hpress {
