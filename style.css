@@ -132,13 +132,11 @@ h2 {
 	color: black;
 	font-family: 'Merriweather', 'italic';
 
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	border-bottom: solid 2px black;
 	box-shadow: 0 8px 6px -6px #d9d9d9;
-	background-color: black;
-	color: white;
-	padding: 3px;
-	width: 30%;
+	padding: 0px;
+	width: 300px;
 }
 
 .hpress:hover {
@@ -274,37 +272,36 @@ h4 {
 	//margin-bottom: 15px;
 	//background-color: #212121;
 	//background-color: rgba(244, 244, 244, 0.74);
-	//background-color: #242424;
+	background-color: #242424;
 	font-family: 'Merriweather', 'italic', 'serif';
 	border: solid 4px white;
 }
 
 .scrollByWrapper {
 	//background-color: #262626;
-	//margin: 0px auto 0px auto;
-	//width: 100%;
-	//font-size: 1rem;
-	//max-width: 800px;
+	margin: 0px auto 0px auto;
+	width: 100%;
+	font-size: 1rem;
+	max-width: 800px;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-	//padding: 12px 0px;
-	//border-radius: 0;
-	//background-color: #000000;
-	//text-decoration: underline;
+	padding: 12px 0px;
+	border-radius: 0;
+	background-color: #000000;
+	text-decoration: underline;
 }
 
 .nav-pills .nav-link {
-	//padding: 12px 0px;
-	//border-radius: 0;
-	//color: grey;
-	//color: #696969;
+	padding: 12px 0px;
+	border-radius: 0;
+	color: #696969;
 }
 
 .scrollByItem {
-	//width: 33.3%;
-	//margin: 0px auto;
+	width: 33.3%;
+	margin: 0px auto;
 }
 
 #hauptspeisen,
