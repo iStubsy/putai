@@ -86,6 +86,7 @@ h2 {
 }
 
 #title {
+	position: relative;
 	z-index: 100;
 }
 
