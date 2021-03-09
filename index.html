@@ -25,7 +25,7 @@
 			// jQuery code
 
 			//////////////////////// Menu scroll to section
-			$('.scrollByItem').click(function(event) {
+			$('.scrollByLink').click(function(event) {
 				var $anchor = $(this);
 				$('html, body').stop().animate({
 					scrollTop: $($anchor.attr('href')).offset().top - 0
