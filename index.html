@@ -4,17 +4,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<!-- BOOTSTRAP 5.0
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+	-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poiret+One&display=swap" rel="stylesheet">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
+	<!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 	<title>Putai</title>
 	<link rel="stylesheet" href="style.css">
 
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		/// some script
 
@@ -55,7 +59,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ms-auto">
+					<ul class="navbar-nav ml-auto">
 						<li class="nav-item headerItem">
 							<a class="nav-link" href="about:blank">Willkommen</a>
 						</li>
@@ -86,7 +90,7 @@
 			</div>
 		</div>
 		<div class="container-fluid mealOuter">
-			<nav id="navbar-example2" class="navbar navbar-dark bg-dark">
+			<nav id="navbar-example2" class="navbar">
 				<!--navbar-dark bg-dark-->
 				<!-- remove px-3-->
 				<ul class="nav nav-pills scrollByWrapper">
@@ -101,520 +105,518 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="menus">
-				<!--<div class=" col-12 col-sm-6 col-md-4 col-xl-3">-->
-				<div class="menu menuVorspeise">
-					<div id="vorspeisen"></div>
-					<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseVorspeisen" role="button" aria-expanded="false" aria-controls="collapseVorspeisen">Kleine Vorspeisen</a>
-					<div id="collapseVorspeisen" class="collapse show">
-						<div class="row">
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											01
-										</div>
-										<div class="mealHead-name">
-											<h4>Mini Rolls</h4>
-										</div>
+			<!--<div class=" col-12 col-sm-6 col-md-4 col-xl-3">-->
+			<div class="menu menuVorspeise">
+				<div id="vorspeisen"></div>
+				<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseVorspeisen" role="button" aria-expanded="false" aria-controls="collapseVorspeisen">Kleine Vorspeisen</a>
+				<div id="collapseVorspeisen" class="collapse show">
+					<div class="row">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										01
 									</div>
-									<div class="mealBody">
-										6 gebackene Rollen mit Gemüsefüllung & hausgemachter Sweet-Chilli Soße
+									<div class="mealHead-name">
+										<h4>Mini Rolls</h4>
 									</div>
-									<div class="mealFooter">
-										<div class="price">2,50€</div>
+								</div>
+								<div class="mealBody">
+									6 gebackene Rollen mit Gemüsefüllung & hausgemachter Sweet-Chilli Soße
+								</div>
+								<div class="mealFooter">
+									<div class="price">2,50€</div>
+								</div>
+							</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										02
+									</div>
+									<div class="mealHead-name">
+										<h4>Summer Rolls</h4>
+									</div>
+								</div>
+								<div class="mealBody">
+									Reispapierrollen gefüllt mit Reisnudeln, Mungobohnensprossen, Salat & frischem Koriander. Dazu cremige Hoisin-Erdnuss Soße.
+								</div>
+								<div class="mealFooter">
+									<div class="price">
+										Wahlweise mit:<br>
+										a) gebackenem Tofu 4,00€<br>
+										b) gegrilltem Lachs 4,50€<br>
+										c) Garnelen & Hühnchen 4,50€<br>
 									</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											02
-										</div>
-										<div class="mealHead-name">
-											<h4>Summer Rolls</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										03
 									</div>
-									<div class="mealBody">
-										Reispapierrollen gefüllt mit Reisnudeln, Mungobohnensprossen, Salat & frischem Koriander. Dazu cremige Hoisin-Erdnuss Soße.
-									</div>
-									<div class="mealFooter">
-										<div class="price">
-											Wahlweise mit:<br>
-											a) gebackenem Tofu 4,00€<br>
-											b) gegrilltem Lachs 4,50€<br>
-											c) Garnelen & Hühnchen 4,50€<br>
-										</div>
+									<div class="mealHead-name">
+										<h4>Hanoi Rolls</h4>
 									</div>
 								</div>
-							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											03
-										</div>
-										<div class="mealHead-name">
-											<h4>Hanoi Rolls</h4>
-										</div>
-									</div>
-									<div class="mealBody">
-										Knusprige Reispapierrollen gefüllt mit Hackfleisch, Morcheln, Glasnudeln & Ei. Serviert mit Sweet-Chilli Soße
-									</div>
-									<div class="mealFooter">
-										<div class="price">4,00€</div>
-									</div>
+								<div class="mealBody">
+									Knusprige Reispapierrollen gefüllt mit Hackfleisch, Morcheln, Glasnudeln & Ei. Serviert mit Sweet-Chilli Soße
+								</div>
+								<div class="mealFooter">
+									<div class="price">4,00€</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											04
-										</div>
-										<div class="mealHead-name">
-											<h4>Cus Favs</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										04
 									</div>
-									<div class="mealBody">
-										5 goldene Teigblatter gefüllt mit Garnelen & Hühnerfleisch. Serviert mit hausgemachte Sweet-Chilli Soße
-									</div>
-									<div class="mealFooter">
-										<div class="price">3,00€</div>
+									<div class="mealHead-name">
+										<h4>Cus Favs</h4>
 									</div>
 								</div>
-							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											06
-										</div>
-										<div class="mealHead-name">
-											<h4>Ebi Tempura</h4>
-										</div>
-									</div>
-									<div class="mealBody">
-										4 gold gebackene Garnelen in einer Kokos-Panade. Serviert mit hausgemachter Sweet-Chilli Soße.
-									</div>
-									<div class="mealFooter">
-										<div class="price">3,50€</div>
-									</div>
+								<div class="mealBody">
+									5 goldene Teigblatter gefüllt mit Garnelen & Hühnerfleisch. Serviert mit hausgemachte Sweet-Chilli Soße
+								</div>
+								<div class="mealFooter">
+									<div class="price">3,00€</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											07
-										</div>
-										<div class="mealHead-name">
-											<h4>Sweet'n Crispy</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										06
 									</div>
-									<div class="mealBody">
-										Goldene Süßkartoffelpommes mit hausgemachte Chilli Mayonaise.
-									</div>
-									<div class="mealFooter">
-										<div class="price">3,50€</div>
+									<div class="mealHead-name">
+										<h4>Ebi Tempura</h4>
 									</div>
 								</div>
-							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											08
-										</div>
-										<div class="mealHead-name">
-											<h4>Coco River</h4>
-										</div>
-									</div>
-									<div class="mealBody">
-										Cremige Kokos-Chilli Suppe mit Hühnerbruststreifen & Garnelen. Dazu Zucchini, Champignons & Brokkoli und vietnamesischem Basilikum
-									</div>
-									<div class="mealFooter">
-										<div class="price">4,00€</div>
-									</div>
+								<div class="mealBody">
+									4 gold gebackene Garnelen in einer Kokos-Panade. Serviert mit hausgemachter Sweet-Chilli Soße.
+								</div>
+								<div class="mealFooter">
+									<div class="price">3,50€</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											09
-										</div>
-										<div class="mealHead-name">
-											<h4>Glass Pot</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										07
 									</div>
-									<div class="mealBody">
-										Herzhafte Kräutersuppe mit Glasnudeln und verschiedenem Saisongemüse. Verfeinert mit reinem Sesamöl & Frühlingszwiebeln.
-									</div>
-									<div class="mealFooter">
-										Wahlweise mit:
-										a) Tofuwürfeln 3,50€
-										b) Rindfleisch 4,00€
+									<div class="mealHead-name">
+										<h4>Sweet'n Crispy</h4>
 									</div>
 								</div>
+								<div class="mealBody">
+									Goldene Süßkartoffelpommes mit hausgemachte Chilli Mayonaise.
+								</div>
+								<div class="mealFooter">
+									<div class="price">3,50€</div>
+								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											10
-										</div>
-										<div class="mealHead-name">
-											<h4>Putai's kleiner Garten</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										08
 									</div>
-									<div class="mealBody">
-										Kleiner gemischter Salat mit Möhren, Gurke & Tomate. Abgeschmeckt mit hausgemachtem Dressing.
+									<div class="mealHead-name">
+										<h4>Coco River</h4>
 									</div>
-									<div class="mealFooter">
-										<div class="price">4,00€</div>
+								</div>
+								<div class="mealBody">
+									Cremige Kokos-Chilli Suppe mit Hühnerbruststreifen & Garnelen. Dazu Zucchini, Champignons & Brokkoli und vietnamesischem Basilikum
+								</div>
+								<div class="mealFooter">
+									<div class="price">4,00€</div>
+								</div>
+							</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										09
 									</div>
+									<div class="mealHead-name">
+										<h4>Glass Pot</h4>
+									</div>
+								</div>
+								<div class="mealBody">
+									Herzhafte Kräutersuppe mit Glasnudeln und verschiedenem Saisongemüse. Verfeinert mit reinem Sesamöl & Frühlingszwiebeln.
+								</div>
+								<div class="mealFooter">
+									Wahlweise mit:
+									a) Tofuwürfeln 3,50€
+									b) Rindfleisch 4,00€
+								</div>
+							</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										10
+									</div>
+									<div class="mealHead-name">
+										<h4>Putai's kleiner Garten</h4>
+									</div>
+								</div>
+								<div class="mealBody">
+									Kleiner gemischter Salat mit Möhren, Gurke & Tomate. Abgeschmeckt mit hausgemachtem Dressing.
+								</div>
+								<div class="mealFooter">
+									<div class="price">4,00€</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="menu menuHauptspeise">
-					<div id="hauptspeisen"></div>
-					<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseHauptspeisen" role="button" aria-expanded="false" aria-controls="collapseHauptspeisen">Große Hauptspeisen</a>
-					<div id="collapseHauptspeisen" class="collapse show">
-						<div class="row">
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											21
-										</div>
-										<div class="mealHead-name">
-											<h4>Dao's Garten</h4>
-										</div>
+			</div>
+			<div class="menu menuHauptspeise">
+				<div id="hauptspeisen"></div>
+				<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseHauptspeisen" role="button" aria-expanded="false" aria-controls="collapseHauptspeisen">Große Hauptspeisen</a>
+				<div id="collapseHauptspeisen" class="collapse show">
+					<div class="row">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										21
 									</div>
-									<div class="mealBody">
-										Großer gemischter Salat mit Möhren, Paprika, Gurke, Mais, Tomaten & Sprossen. Dazu hausgemachtes Salatdressing.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
+									<div class="mealHead-name">
+										<h4>Dao's Garten</h4>
 									</div>
 								</div>
-							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											22
-										</div>
-										<div class="mealHead-name">
-											<h4>Com Xao</h4>
-										</div>
-									</div>
-									<div class="mealBody">
-										Gebratener Reis mit Wok-sautierten Zwiebeln, Möhren, Mungobohnen-Sprossen, Erbsen & Ei.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
-									</div>
+								<div class="mealBody">
+									Großer gemischter Salat mit Möhren, Paprika, Gurke, Mais, Tomaten & Sprossen. Dazu hausgemachtes Salatdressing.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											23
-										</div>
-										<div class="mealHead-name">
-											<h4>Mi Xao</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										22
 									</div>
-									<div class="mealBody">
-										Gebratene Nudeln mit Wok-sautierten Zwiebeln, Möhren, Mungobohnen-Sprossen & Ei.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
+									<div class="mealHead-name">
+										<h4>Com Xao</h4>
 									</div>
 								</div>
-							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											24
-										</div>
-										<div class="mealHead-name">
-											<h4>Putai In Bowl</h4>
-										</div>
-									</div>
-									<div class="mealBody">
-										Im Wok geschwenkte Mungobohnen-Sprossen mit Gemüse. Serviert mit Jasminreis & Soße ihrer Wahl.
-									</div>
-									<div class="mealFooter">
-										<div class="price">4,00€</div>
-									</div>
+								<div class="mealBody">
+									Gebratener Reis mit Wok-sautierten Zwiebeln, Möhren, Mungobohnen-Sprossen, Erbsen & Ei.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											25
-										</div>
-										<div class="mealHead-name">
-											<h4>Saigon Sunrise</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										23
 									</div>
-									<div class="mealBody">
-										Eingekochte Kartoffeln, Süßkartoffeln & Möhren in goldener Kokos-Curry Creme. Serviert mit Jasminreis & Salat.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
+									<div class="mealHead-name">
+										<h4>Mi Xao</h4>
 									</div>
 								</div>
-							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											26
-										</div>
-										<div class="mealHead-name">
-											<h4>Qicis Perlenkette</h4>
-										</div>
-									</div>
-									<div class="mealBody">
-										Wok-sautiertes Saisongemüse mit Kartoffeln in Erdnuss-Kokosreme. Dazu Jasminreis & geröstete Erdnüssen.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
-									</div>
+								<div class="mealBody">
+									Gebratene Nudeln mit Wok-sautierten Zwiebeln, Möhren, Mungobohnen-Sprossen & Ei.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											27
-										</div>
-										<div class="mealHead-name">
-											<h4>Roter Shirasawas</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										24
 									</div>
-									<div class="mealBody">
-										Geschwenktes Gemüse in Chilli-Soße. Verfeinert mit ThaiBasilikum, Zitronengras & Ingwer. Dazu Jasminreis.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
+									<div class="mealHead-name">
+										<h4>Putai In Bowl</h4>
 									</div>
 								</div>
-							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											28
-										</div>
-										<div class="mealHead-name">
-											<h4>Mango Tango</h4>
-										</div>
-									</div>
-									<div class="mealBody">
-										Wok-sautiertes Saisongemüse in süß-herzhafter Mango-Kokos Soße. Dazu Jasminreis und Salat.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
-									</div>
+								<div class="mealBody">
+									Im Wok geschwenkte Mungobohnen-Sprossen mit Gemüse. Serviert mit Jasminreis & Soße ihrer Wahl.
+								</div>
+								<div class="mealFooter">
+									<div class="price">4,00€</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											29
-										</div>
-										<div class="mealHead-name">
-											<h4>Cac Thit</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										25
 									</div>
-									<div class="mealBody">
-										Gold gebackenes Hühner- & Enten-Filet mit wok-sautiertem Rindfleisch-, Hühnerbruststreifen & Gemüse in süß-scharfer Hoisin Soße. Dazu Jasminreis
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
+									<div class="mealHead-name">
+										<h4>Saigon Sunrise</h4>
 									</div>
 								</div>
-							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											30
-										</div>
-										<div class="mealHead-name">
-											<h4>Shen Tes BBQ</h4>
-										</div>
-									</div>
-									<div class="mealBody">
-										Feine wok-sautierte Hühner- & Rinderstreifen mit Sellerie, Paprika, Zwiebeln & Bambus-Sprossen in pikanter BBQ-Soja Reduktion. Serviert mit Jasminreis.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
-									</div>
+								<div class="mealBody">
+									Eingekochte Kartoffeln, Süßkartoffeln & Möhren in goldener Kokos-Curry Creme. Serviert mit Jasminreis & Salat.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											31
-										</div>
-										<div class="mealHead-name">
-											<h4>Beef In Bowl</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										26
 									</div>
-									<div class="mealBody">
-										Wok-geschwenktes Rindfleisch mit Zwiebeln, Paprika, Möhren & Bambus in pikanter Soja Soße mit Jasminreis
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
+									<div class="mealHead-name">
+										<h4>Qicis Perlenkette</h4>
 									</div>
 								</div>
-							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											32
-										</div>
-										<div class="mealHead-name">
-											<h4>Li's Lunch</h4>
-										</div>
-									</div>
-									<div class="mealBody">
-										Feine wok-sautierte Hühnerbruststreifen mit Gemüse in einer herzhaften hellen Soja Soße.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
-									</div>
+								<div class="mealBody">
+									Wok-sautiertes Saisongemüse mit Kartoffeln in Erdnuss-Kokosreme. Dazu Jasminreis & geröstete Erdnüssen.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											33
-										</div>
-										<div class="mealHead-name">
-											<h4>Mekong Mates</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										27
 									</div>
-									<div class="mealBody">
-										In Butter geschwenkte Calamari & Garnelen mit Gemüse in einer Sate Soße.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
+									<div class="mealHead-name">
+										<h4>Roter Shirasawas</h4>
 									</div>
 								</div>
+								<div class="mealBody">
+									Geschwenktes Gemüse in Chilli-Soße. Verfeinert mit ThaiBasilikum, Zitronengras & Ingwer. Dazu Jasminreis.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
+								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											34
-										</div>
-										<div class="mealHead-name">
-											<h4>Drachenfeuer</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										28
 									</div>
-									<div class="mealBody">
-										Gebratene Hühner-, Rinderstreifen & Garnelen mit Gemüse in Chilli-Tomaten Reduktion. Jasminreis als Beilage
+									<div class="mealHead-name">
+										<h4>Mango Tango</h4>
 									</div>
-									<div class="mealFooter">
-										<div class="price">11,40€</div>
+								</div>
+								<div class="mealBody">
+									Wok-sautiertes Saisongemüse in süß-herzhafter Mango-Kokos Soße. Dazu Jasminreis und Salat.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
+								</div>
+							</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										29
 									</div>
+									<div class="mealHead-name">
+										<h4>Cac Thit</h4>
+									</div>
+								</div>
+								<div class="mealBody">
+									Gold gebackenes Hühner- & Enten-Filet mit wok-sautiertem Rindfleisch-, Hühnerbruststreifen & Gemüse in süß-scharfer Hoisin Soße. Dazu Jasminreis
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
+								</div>
+							</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										30
+									</div>
+									<div class="mealHead-name">
+										<h4>Shen Tes BBQ</h4>
+									</div>
+								</div>
+								<div class="mealBody">
+									Feine wok-sautierte Hühner- & Rinderstreifen mit Sellerie, Paprika, Zwiebeln & Bambus-Sprossen in pikanter BBQ-Soja Reduktion. Serviert mit Jasminreis.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
+								</div>
+							</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										31
+									</div>
+									<div class="mealHead-name">
+										<h4>Beef In Bowl</h4>
+									</div>
+								</div>
+								<div class="mealBody">
+									Wok-geschwenktes Rindfleisch mit Zwiebeln, Paprika, Möhren & Bambus in pikanter Soja Soße mit Jasminreis
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
+								</div>
+							</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										32
+									</div>
+									<div class="mealHead-name">
+										<h4>Li's Lunch</h4>
+									</div>
+								</div>
+								<div class="mealBody">
+									Feine wok-sautierte Hühnerbruststreifen mit Gemüse in einer herzhaften hellen Soja Soße.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
+								</div>
+							</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										33
+									</div>
+									<div class="mealHead-name">
+										<h4>Mekong Mates</h4>
+									</div>
+								</div>
+								<div class="mealBody">
+									In Butter geschwenkte Calamari & Garnelen mit Gemüse in einer Sate Soße.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
+								</div>
+							</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										34
+									</div>
+									<div class="mealHead-name">
+										<h4>Drachenfeuer</h4>
+									</div>
+								</div>
+								<div class="mealBody">
+									Gebratene Hühner-, Rinderstreifen & Garnelen mit Gemüse in Chilli-Tomaten Reduktion. Jasminreis als Beilage
+								</div>
+								<div class="mealFooter">
+									<div class="price">11,40€</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="menu menuSonstige">
-					<div id="extras"></div>
-					<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseSonstige" role="button" aria-expanded="false" aria-controls="collapseSonstige">Sonstige</a>
-					<div id="collapseSonstige" class="collapse show">
-						<div class="row">
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											50
-										</div>
-										<div class="mealHead-name">
-											<h4>Banana In Pyjama</h4>
-										</div>
+			</div>
+			<div class="menu menuSonstige">
+				<div id="extras"></div>
+				<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseSonstige" role="button" aria-expanded="false" aria-controls="collapseSonstige">Sonstige</a>
+				<div id="collapseSonstige" class="collapse show">
+					<div class="row">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										50
 									</div>
-									<div class="mealBody">
-										Gebackene Banane mit Honig und Kokosraspeln.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
+									<div class="mealHead-name">
+										<h4>Banana In Pyjama</h4>
 									</div>
 								</div>
-							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-number">
-											51
-										</div>
-										<div class="mealHead-name">
-											<h4>Pineapple Prince</h4>
-										</div>
-									</div>
-									<div class="mealBody">
-										Gebackene Ananasringe mit Honig und Kokosraspeln.
-									</div>
-									<div class="mealFooter">
-										<div class="price">5 Euro</div>
-									</div>
+								<div class="mealBody">
+									Gebackene Banane mit Honig und Kokosraspeln.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
 								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-name">
-											<h4>Beilagen</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-number">
+										51
 									</div>
-									<div class="mealBody">
-										Gekochter Reis 2,50€<br>
-										Gebratener Reis 3,50€<br>
-										Gebratene Nudeln 3,50€<br>
-										Gegrillter Lachs 5,50€<br>
-										Riesengarnelenspieß 4,00€<br>
-										Knuspriges Enten-Filet 6,00€<br>
-										Knuspriges Hühner-Filet 5,50€
+									<div class="mealHead-name">
+										<h4>Pineapple Prince</h4>
 									</div>
 								</div>
+								<div class="mealBody">
+									Gebackene Ananasringe mit Honig und Kokosraspeln.
+								</div>
+								<div class="mealFooter">
+									<div class="price">5 Euro</div>
+								</div>
 							</div>
-							<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
-								<div class="meal">
-									<div class="mealHead">
-										<div class="mealHead-name">
-											<h4>Soßen nach Wahl</h4>
-										</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-name">
+										<h4>Beilagen</h4>
 									</div>
-									<div class="mealBody">
-										Erdnuss<br>
-										Curry<br>
-										Mango
+								</div>
+								<div class="mealBody">
+									Gekochter Reis 2,50€<br>
+									Gebratener Reis 3,50€<br>
+									Gebratene Nudeln 3,50€<br>
+									Gegrillter Lachs 5,50€<br>
+									Riesengarnelenspieß 4,00€<br>
+									Knuspriges Enten-Filet 6,00€<br>
+									Knuspriges Hühner-Filet 5,50€
+								</div>
+							</div>
+						</div>
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
+							<div class="meal">
+								<div class="mealHead">
+									<div class="mealHead-name">
+										<h4>Soßen nach Wahl</h4>
 									</div>
-									<div class="mealFooter">
-										<div class="price">
-											1,50€
-										</div>
+								</div>
+								<div class="mealBody">
+									Erdnuss<br>
+									Curry<br>
+									Mango
+								</div>
+								<div class="mealFooter">
+									<div class="price">
+										1,50€
 									</div>
 								</div>
 							</div>
@@ -647,11 +649,9 @@
 			</div>
 		</div>
 	</section>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>-->
 </body>
 
 </html>
