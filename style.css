@@ -85,20 +85,19 @@ h2 {
 	//width: 500px;
 }
 
-#title {
-	position: relative;
-	z-index: 100;
-}
+#title {}
 
 .test {
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	//background-color: #121212;
-	//z-index: 100;
 	border-bottom: dashed 1px #626262;
 	//box-shadow: 0px 3px 3px #1a1a1a;
 	//padding: 10px 0;
 	font-size: 1.2rem;
 	background-color: rgb(31, 31, 31);
+
+	position: relative;
+	z-index: 5000;
 }
 
 .mealOuter {
@@ -116,12 +115,15 @@ h2 {
 
 .menu {
 	margin: 0px auto 0px auto;
-	z-index: 1;
 	position: relative;
 	padding: 1%;
 	z-index: -1;
 	background-color: #f4f4f4;
 	box-shadow: inset 0px 0px 2px red;
+}
+
+.menus {
+	position: relative;
 }
 
 .menuVorspeise {}
@@ -281,8 +283,9 @@ h4 {
 #navbar-example2 {
 	position: sticky;
 	top: 0px;
-	//z-index: 100;
+	z-index: 100;
 	width: 100%;
+
 	//padding: 5px;
 	padding: 0;
 	//margin-bottom: 15px;
