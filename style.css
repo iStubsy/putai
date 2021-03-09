@@ -36,8 +36,6 @@ h2 {
 	z-index: -100;
 }
 
-#title {}
-
 #content {
 	margin: 0px auto;
 	background-color: #dddddd;
@@ -70,7 +68,8 @@ h2 {
 	margin: 10px;
 	//width: 310px;
 	width: 100%;
-	max-width: 200px;
+	max-width: 250px;
+	display: none;
 }
 
 .oneTwo {
@@ -157,16 +156,6 @@ h2 {
 	color: black;
 }
 
-.mealBoxRow {
-	//display: flex;
-	//flex-direction: column;
-	//height: 1600px;
-	//flex-wrap: wrap;
-	//background-color: blue;
-	//flex-wrap: wrap;
-	//align-content: flex-start;
-}
-
 .mealBox {
 	position: relative;
 	padding: 12px;
@@ -222,9 +211,9 @@ h4 {
 	left: 5px;
 	top: 5px;
 	//height: 100%;
-	height: 38px;
+	height: 40px;
 	border-radius: 3px;
-	width: 38px;
+	width: 40px;
 	background-color: #222222;
 	color: white;
 	font-family: arial;
@@ -241,7 +230,7 @@ h4 {
 	padding: 5px 10px;
 	line-height: 1.2rem;
 	font-size: .95rem;
-
+	text-align: left;
 }
 
 .mealFooter {
@@ -265,10 +254,9 @@ h4 {
 }
 
 .footerHeadline {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-family: 'Poiret One', cursive;
 	font-family: 'Merriweather', 'italic', 'serif';
-	color: white;
 }
 
 .footerBody {
@@ -278,15 +266,10 @@ h4 {
 	font-size: 1rem;
 	text-align: left;
 	margin: 0px auto;
-	color: #aaaaaa;
 }
 
 .footerColumn {
 	padding: 30px;
-}
-
-.footerLink {
-	color: #aaaaaa;
 }
 
 #navbar-example2 {

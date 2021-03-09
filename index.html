@@ -13,35 +13,66 @@
 
 	<title>Putai</title>
 	<link rel="stylesheet" href="style.css">
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		/// some script
+
+		// jquery ready start
+		$(document).ready(function() {
+			// jQuery code
+
+			//////////////////////// Menu scroll to section
+			$('.scrollByLink').click(function(event) {
+				var $anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 0
+				}, 500);
+				event.preventDefault();
+			});
+
+			///////////////// for small screen
+			if ($(window).width() < 992) {
+
+				/////////////////////// Closes the Responsive Menu on Menu Item Click
+				$('.navbar-collapse a.scrollto').click(function() {
+					$('.navbar-toggler:visible').click();
+				});
+			}
+
+		}); // jquery end
+
+	</script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example2" data-bs-offset="0">
-
-	<!-- Nav Bar -->
-	<nav class="test navbar navbar-expand-md navbar-dark">
-		<div class="container-fluid header">
-			<a class="navbar-brand" href="putai.de">Putai Rockenhausen</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item headerItem">
-						<a class="nav-link" href="about:blank">Willkommen</a>
-					</li>
-					<li class="nav-item headerItem">
-						<a class="nav-link active" href="about:blank">Speisekarte</a>
-					</li>
-					<li class="nav-item headerItem">
-						<a class="nav-link" href="about:blank">Kontakt</a>
-					</li>
-				</ul>
+	<section id="title">
+		<!-- Nav Bar -->
+		<nav class="test navbar navbar-expand-md navbar-dark">
+			<div class="container-fluid header">
+				<a class="navbar-brand" href="putai.de">Putai Rockenhausen</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item headerItem">
+							<a class="nav-link" href="about:blank">Willkommen</a>
+						</li>
+						<li class="nav-item headerItem">
+							<a class="nav-link active" href="about:blank">Speisekarte</a>
+						</li>
+						<li class="nav-item headerItem">
+							<a class="nav-link" href="about:blank">Kontakt</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
-	<!--<div class="bg">
+		</nav>
+		<!--<div class="bg">
 
 		</div>-->
+	</section>
 	<section id="content">
 		<div class="contentHeader">
 			<div class="oneTwo row">
@@ -182,7 +213,7 @@
 									</div>
 								</div>
 								<div class="mealBody">
-									Goldene Süßkartoffelpommes mit hausgemachter Chilli Mayonaise.
+									Goldene Süßkartoffelpommes mit hausgemachte Chilli Mayonaise.
 								</div>
 								<div class="mealFooter">
 									<div class="price">3,50€</div>
@@ -221,11 +252,9 @@
 									Herzhafte Kräutersuppe mit Glasnudeln und verschiedenem Saisongemüse. Verfeinert mit reinem Sesamöl & Frühlingszwiebeln.
 								</div>
 								<div class="mealFooter">
-									<div class="price">
-										Wahlweise mit:<br>
-										a) Tofuwürfeln 3,50€<br>
-										b) Rindfleisch 4,00€<br>
-									</div>
+									Wahlweise mit:
+									a) Tofuwürfeln 3,50€
+									b) Rindfleisch 4,00€
 								</div>
 							</div>
 						</div>
@@ -605,13 +634,13 @@
 				06361 9299144
 			</div>
 			<div class="footerColumn col-12 col-sm-6 col-md-3">
-				<div class="footerHeadline">Öffnungszeiten</div>
+				<div class="footerheadline">Öffnungszeiten</div>
 			</div>
 			<div class="footerColumn col-12 col-sm-6 col-md-3">
 				<div class="footerHeadline">Links</div>
-				<div class="footerInformation"><a class="footerLink" href="">Willkommen</a></div>
-				<div class="footerInformation"><a class="footerLink" href="">Speisekarte</a></div>
-				<div class="footerInformation"><a class="footerLink" href="">Kontakt</a></div>
+				<div class="footerInformation"><a href="">Willkommen</a></div>
+				<div class="footerInformation"><a href="">Speisekarte</a></div>
+				<div class="footerInformation"><a href="">Kontakt</a></div>
 				<div class="footerInformation"></div>
 			</div>
 		</div>
