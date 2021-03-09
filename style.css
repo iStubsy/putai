@@ -36,9 +36,10 @@ h2 {
 	z-index: -100;
 }
 
+#title {}
+
 #content {
 	margin: 0px auto;
-	padding-bottom: 60px;
 	background-color: #dddddd;
 }
 
@@ -69,8 +70,7 @@ h2 {
 	margin: 10px;
 	//width: 310px;
 	width: 100%;
-	max-width: 250px;
-	display: none;
+	max-width: 200px;
 }
 
 .oneTwo {
@@ -106,17 +106,17 @@ h2 {
 	box-shadow: 0px 3px 4px 0px rgba(118, 118, 118, 0.17);
 	top: -70px;
 	//top: 20px;
-	border-radius: 3px;
 	padding: 0;
 	//border: solid 1px #d3d3d3;
 }
 
 .menu {
-	//margin: 0px auto 20px auto;
+	margin: 0px auto 0px auto;
 	z-index: 1;
 	position: relative;
 	padding: 1%;
 	z-index: -1;
+	background-color: #f4f4f4;
 }
 
 .menuVorspeise {}
@@ -138,6 +138,7 @@ h2 {
 	border-bottom: solid 2px black;
 	box-shadow: 0 8px 6px -6px #d9d9d9;
 	padding: 0px 20px;
+	margin: 7px 0px 10px 0px;
 }
 
 .hpress:hover {
@@ -154,6 +155,16 @@ h2 {
 
 .collapse {
 	color: black;
+}
+
+.mealBoxRow {
+	//display: flex;
+	//flex-direction: column;
+	//height: 1600px;
+	//flex-wrap: wrap;
+	//background-color: blue;
+	//flex-wrap: wrap;
+	//align-content: flex-start;
 }
 
 .mealBox {
@@ -211,10 +222,10 @@ h4 {
 	left: 5px;
 	top: 5px;
 	//height: 100%;
-	height: 40px;
+	height: 38px;
 	border-radius: 3px;
-	width: 40px;
-	background-color: #434343;
+	width: 38px;
+	background-color: #222222;
 	color: white;
 	font-family: arial;
 }
@@ -230,7 +241,7 @@ h4 {
 	padding: 5px 10px;
 	line-height: 1.2rem;
 	font-size: .95rem;
-	text-align: left;
+
 }
 
 .mealFooter {
@@ -254,20 +265,28 @@ h4 {
 }
 
 .footerHeadline {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+	font-family: 'Poiret One', cursive;
+	font-family: 'Merriweather', 'italic', 'serif';
+	color: white;
 }
 
 .footerBody {
 	width: 80%;
 	color: white;
 
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-align: left;
 	margin: 0px auto;
+	color: #aaaaaa;
 }
 
 .footerColumn {
 	padding: 30px;
+}
+
+.footerLink {
+	color: #aaaaaa;
 }
 
 #navbar-example2 {

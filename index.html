@@ -15,34 +15,33 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example2" data-bs-offset="90">
-	<section id="title">
-		<!-- Nav Bar -->
-		<nav class="test navbar navbar-expand-md navbar-dark">
-			<div class="container-fluid header">
-				<a class="navbar-brand" href="putai.de">Putai Rockenhausen</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item headerItem">
-							<a class="nav-link" href="about:blank">Willkommen</a>
-						</li>
-						<li class="nav-item headerItem">
-							<a class="nav-link active" href="about:blank">Speisekarte</a>
-						</li>
-						<li class="nav-item headerItem">
-							<a class="nav-link" href="about:blank">Kontakt</a>
-						</li>
-					</ul>
-				</div>
+<body data-spy="scroll" data-target="#navbar-example2" data-bs-offset="0">
+
+	<!-- Nav Bar -->
+	<nav class="test navbar navbar-expand-md navbar-dark">
+		<div class="container-fluid header">
+			<a class="navbar-brand" href="putai.de">Putai Rockenhausen</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item headerItem">
+						<a class="nav-link" href="about:blank">Willkommen</a>
+					</li>
+					<li class="nav-item headerItem">
+						<a class="nav-link active" href="about:blank">Speisekarte</a>
+					</li>
+					<li class="nav-item headerItem">
+						<a class="nav-link" href="about:blank">Kontakt</a>
+					</li>
+				</ul>
 			</div>
-		</nav>
-		<!--<div class="bg">
+		</div>
+	</nav>
+	<!--<div class="bg">
 
 		</div>-->
-	</section>
 	<section id="content">
 		<div class="contentHeader">
 			<div class="oneTwo row">
@@ -183,7 +182,7 @@
 									</div>
 								</div>
 								<div class="mealBody">
-									Goldene Süßkartoffelpommes mit hausgemachte Chilli Mayonaise.
+									Goldene Süßkartoffelpommes mit hausgemachter Chilli Mayonaise.
 								</div>
 								<div class="mealFooter">
 									<div class="price">3,50€</div>
@@ -222,9 +221,11 @@
 									Herzhafte Kräutersuppe mit Glasnudeln und verschiedenem Saisongemüse. Verfeinert mit reinem Sesamöl & Frühlingszwiebeln.
 								</div>
 								<div class="mealFooter">
-									Wahlweise mit:
-									a) Tofuwürfeln 3,50€
-									b) Rindfleisch 4,00€
+									<div class="price">
+										Wahlweise mit:<br>
+										a) Tofuwürfeln 3,50€<br>
+										b) Rindfleisch 4,00€<br>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -335,7 +336,8 @@
 									<div class="mealHead-name">
 										<h4>Saigon Sunrise</h4>
 									</div>
-								</div><div class="mealBody">
+								</div>
+								<div class="mealBody">
 									Eingekochte Kartoffeln, Süßkartoffeln & Möhren in goldener Kokos-Curry Creme. Serviert mit Jasminreis & Salat.
 								</div>
 								<div class="mealFooter">
@@ -552,9 +554,6 @@
 						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
-									<div class="mealHead-number">
-
-									</div>
 									<div class="mealHead-name">
 										<h4>Beilagen</h4>
 									</div>
@@ -573,9 +572,6 @@
 						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
-									<div class="mealHead-number">
-
-									</div>
 									<div class="mealHead-name">
 										<h4>Soßen nach Wahl</h4>
 									</div>
@@ -598,20 +594,24 @@
 		</div>
 	</section>
 	<section id="footer">
-		<div class="row footerBody bg-dark">
-			<div class="footerColumn col-12 col-sm-6 col-md-3">Pu-Tai Rockenhausen</div>
+		<div class="row footerBody">
+			<div class="footerColumn col-12 col-sm-6 col-md-3">
+				<div class="footerHeadline">Pu-Tai Rockenhausen</div>
+				Rognac-Allee 6<br>
+				67806 Rockenhausen
+			</div>
 			<div class="footerColumn col-12 col-sm-6 col-md-3">
 				<div class="footerHeadline">Telefon</div>
 				06361 9299144
 			</div>
 			<div class="footerColumn col-12 col-sm-6 col-md-3">
-				<div class="footerheadline">Öffnungszeiten</div>
+				<div class="footerHeadline">Öffnungszeiten</div>
 			</div>
 			<div class="footerColumn col-12 col-sm-6 col-md-3">
 				<div class="footerHeadline">Links</div>
-				<div class="footerInformation"><a href="">Willkommen</a></div>
-				<div class="footerInformation"><a href="">Speisekarte</a></div>
-				<div class="footerInformation"><a href="">Kontakt</a></div>
+				<div class="footerInformation"><a class="footerLink" href="">Willkommen</a></div>
+				<div class="footerInformation"><a class="footerLink" href="">Speisekarte</a></div>
+				<div class="footerInformation"><a class="footerLink" href="">Kontakt</a></div>
 				<div class="footerInformation"></div>
 			</div>
 		</div>
