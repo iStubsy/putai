@@ -33,8 +33,8 @@
 			$('.scrollto').click(function(event) {
 				var $anchor = $(this);
 				$('html, body').stop().animate({
-					scrollTop: $($anchor.attr('href')).offset().top - 40
-				}, 1500);
+					scrollTop: $($anchor.attr('href')).offset().top - 55
+				}, 300);
 				event.preventDefault();
 			});
 
@@ -102,7 +102,8 @@
 					<li class="nav-item"><a href="#section_3" class="scrollto nav-link"> Section 3 </a></li>
 				</ul>
 			</nav>
-			<article id="section_1">
+			<article id="section_1" class="menu">
+				Vorspeise
 				<div class="menu row">
 					<div class="mealBox col-12 col-sm-6 col-md-4 col-lg-3">
 						<div class="meal">
@@ -276,8 +277,9 @@
 				</div>
 			</article>
 			<hr>
-			<article id="section_2">
-				<div class="menu row">
+			<article class="menuHauptspeise" id="section_2">
+				Hauptspeise
+				<div class="row">
 					<div class="mealBox col-12 col-sm-6 col-md-4 col-lg-3">
 						<div class="meal">
 							<div class="mealHead">
@@ -533,8 +535,9 @@
 				</div>
 			</article>
 			<hr>
-			<article id="section_3">
-				<div class="menu row">
+			<article id="section_3" class="menu">
+				Extras
+				<div class="row">
 					<div class="mealBox col-12 col-sm-6 col-md-4 col-lg-3">
 						<div class="meal">
 							<div class="mealHead">
@@ -615,19 +618,19 @@
 	</section>
 	<section id="footer">
 		<div class="row footerBody">
-			<div class="footerColumn ">
+			<div class="footerColumn col-12 col-sm-6 col-lg-3">
 				<div class="footerHeadline">Pu-Tai Rockenhausen</div>
 				Rognac-Allee 6<br>
 				67806 Rockenhausen
 			</div>
-			<div class="footerColumn ">
+			<div class="footerColumn col-12 col-sm-6 col-lg-3">
 				<div class="footerHeadline">Telefon</div>
 				06361 9299144
 			</div>
-			<div class="footerColumn ">
+			<div class="footerColumn col-12 col-sm-6 col-lg-3">
 				<div class="footerheadline">Öffnungszeiten</div>
 			</div>
-			<div class="footerColumn ">
+			<div class="footerColumn col-12 col-sm-6 col-lg-3">
 				<div class="footerHeadline">Links</div>
 				<div class="footerInformation"><a href="">Willkommen</a></div>
 				<div class="footerInformation"><a href="">Speisekarte</a></div>
