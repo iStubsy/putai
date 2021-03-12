@@ -1,13 +1,14 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="keywords" content="htmlcss bootstrap scrollspy menu, navbar" />
-	<meta name="description" content="Bootstrap scrollspy examples for any type of project, Bootstrap 4" />
-
-	<title>Demo - bootstrap scrollspy with data attribute example </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+	<!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poiret+One&display=swap" rel="stylesheet">
+	<title>Putai</title> -->
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -17,7 +18,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
 	<link rel="stylesheet" href="style.css">
-
 	<script type="text/javascript">
 		/// some script
 
@@ -27,13 +27,13 @@
 
 			////////////////////////  Highlight the top nav as scrolling occurs. /bootstrap/
 			$('body').scrollspy({
-				target: '#navbar_1',
+				target: '#navbar-example2',
 				offset: 80
 			});
 
 
 			//////////////////////// Menu scroll to section
-			$('.scrollto').click(function(event) {
+			$('.scrollByLink').click(function(event) {
 				var $anchor = $(this);
 				$('html, body').stop().animate({
 					scrollTop: $($anchor.attr('href')).offset().top - 40
@@ -54,26 +54,11 @@
 		}); // jquery end
 
 	</script>
-
-	<style type="text/css">
-		body {
-			position: relative;
-		}
-
-		.navbar .nav-link.active {
-			border-bottom: 2px solid orange
-		}
-
-		.navbar {
-			position: sticky;
-			top: 0;
-		}
-
-	</style>
 </head>
 
-<body data-spy="scroll" data-offset="90" data-target="#navbar_1">
+<body data-spy="scroll" data-target="#navbar-example2" data-bs-offset="0">
 	<section id="title">
+		<!-- Nav Bar -->
 		<nav class="test navbar navbar-expand-md navbar-dark">
 			<div class="container-fluid header">
 				<a class="navbar-brand" href="putai.de">Putai Rockenhausen</a>
@@ -95,10 +80,13 @@
 				</div>
 			</div>
 		</nav>
+		<!--<div class="bg">
+
+		</div>-->
 	</section>
 	<section id="content">
 		<div class="contentHeader">
-			<div class="oneTwo rowi">
+			<div class="oneTwo row">
 				<div class="testi col-12 col-sm-6">
 					<img src="puTaiLogo.jpg" width="100%">
 				</div>
@@ -108,22 +96,29 @@
 				</div>
 			</div>
 		</div>
-		<nav id="navbar_1" class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">Brand</a>
-			<ul class="nav ml-auto">
-				<li class="nav-item"><a href="#section_1" class="scrollto nav-link">Vorspeise</a></li>
-				<li class="nav-item"><a href="#section_2" class="scrollto nav-link">Hauptspeisen</a></li>
-				<li class="nav-item"><a href="#section_3" class="scrollto nav-link">Extras</a></li>
-			</ul>
-		</nav>
-		<!--<div class=" col-12 col-sm-6 col-md-4 col-xl-3">-->
-		<div class="container">
-			<section class="section-content py-5">
-				<article id="section_1">
-					<!--<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseVorspeisen" role="button" aria-expanded="false" aria-controls="collapseVorspeisen">Kleine Vorspeisen</a>
-			<div id="collapseVorspeisen" class="collapse show">-->
-					<div class="rowi">
-						<div class="mealBox">
+		<div class="container-fluid mealOuter">
+			<nav id="navbar-example2" class="navbar">
+				<!--navbar-dark bg-dark-->
+				<!-- remove px-3-->
+				<ul class="nav nav-pills scrollByWrapper">
+					<li class="nav-item scrollByItem">
+						<a class="nav-link scrollByLink" href="#vorspeisen">Vorspeisen</a>
+					</li>
+					<li class="nav-item scrollByItem">
+						<a class="nav-link scrollByLink" href="#hauptspeisen">Hauptspeisen</a>
+					</li>
+					<li class="nav-item scrollByItem">
+						<a class="nav-link scrollByLink" href="#extras">Extras</a>
+					</li>
+				</ul>
+			</nav>
+			<!--<div class=" col-12 col-sm-6 col-md-4 col-xl-3">-->
+			<div class="menu menuVorspeise">
+				<div id="vorspeisen"></div>
+				<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseVorspeisen" role="button" aria-expanded="false" aria-controls="collapseVorspeisen">Kleine Vorspeisen</a>
+				<div id="collapseVorspeisen" class="collapse show">
+					<div class="row">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -141,7 +136,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -164,7 +159,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -182,7 +177,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -200,7 +195,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -218,7 +213,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -236,7 +231,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -254,7 +249,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -274,7 +269,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -293,13 +288,14 @@
 							</div>
 						</div>
 					</div>
-				</article>
-				<hr>
-				<article id="section_2">
-					<!--<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseHauptspeisen" role="button" aria-expanded="false" aria-controls="collapseHauptspeisen">Große Hauptspeisen</a>-->
-					<!--<div id="collapseHauptspeisen" class="collapse show">-->
-					<div class="rowi">
-						<div class="mealBox">
+				</div>
+			</div>
+			<div class="menu menuHauptspeise">
+				<div id="hauptspeisen"></div>
+				<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseHauptspeisen" role="button" aria-expanded="false" aria-controls="collapseHauptspeisen">Große Hauptspeisen</a>
+				<div id="collapseHauptspeisen" class="collapse show">
+					<div class="row">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -317,7 +313,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -335,7 +331,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -353,7 +349,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -371,7 +367,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -389,7 +385,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -407,7 +403,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -425,7 +421,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -443,7 +439,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -461,7 +457,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -479,7 +475,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -497,7 +493,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -515,7 +511,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -533,7 +529,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -552,13 +548,14 @@
 							</div>
 						</div>
 					</div>
-				</article>
-				<hr>
-				<article id="section_3">
-					<!--<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseSonstige" role="button" aria-expanded="false" aria-controls="collapseSonstige">Sonstige</a>-->
-					<!--<div id="collapseSonstige" class="collapse show">-->
-					<div class="rowi">
-						<div class="mealBox">
+				</div>
+			</div>
+			<div class="menu menuSonstige">
+				<div id="extras"></div>
+				<a class="hpress btn btn-dark" data-bs-toggle="collapse" href="#collapseSonstige" role="button" aria-expanded="false" aria-controls="collapseSonstige">Sonstige</a>
+				<div id="collapseSonstige" class="collapse show">
+					<div class="row">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -576,7 +573,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-number">
@@ -594,7 +591,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-name">
@@ -612,7 +609,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mealBox">
+						<div class="mealBox col-12 col-sm-6 col-md-4 col-xl-3">
 							<div class="meal">
 								<div class="mealHead">
 									<div class="mealHead-name">
@@ -632,38 +629,36 @@
 							</div>
 						</div>
 					</div>
-				</article>
-				<hr>
-			</section>
-		</div>
-		<!--</div>-->
-
-		<!--</div>-->
-		<!--</section>-->
-		<section id="footer">
-			<div class="rowi footerBody">
-				<div class="footerColumn ">
-					<div class="footerHeadline">Pu-Tai Rockenhausen</div>
-					Rognac-Allee 6<br>
-					67806 Rockenhausen
-				</div>
-				<div class="footerColumn ">
-					<div class="footerHeadline">Telefon</div>
-					06361 9299144
-				</div>
-				<div class="footerColumn ">
-					<div class="footerheadline">Öffnungszeiten</div>
-				</div>
-				<div class="footerColumn ">
-					<div class="footerHeadline">Links</div>
-					<div class="footerInformation"><a href="">Willkommen</a></div>
-					<div class="footerInformation"><a href="">Speisekarte</a></div>
-					<div class="footerInformation"><a href="">Kontakt</a></div>
-					<div class="footerInformation"></div>
 				</div>
 			</div>
-		</section>
-
+		</div>
+	</section>
+	<section id="footer">
+		<div class="row footerBody">
+			<div class="footerColumn col-12 col-sm-6 col-md-3">
+				<div class="footerHeadline">Pu-Tai Rockenhausen</div>
+				Rognac-Allee 6<br>
+				67806 Rockenhausen
+			</div>
+			<div class="footerColumn col-12 col-sm-6 col-md-3">
+				<div class="footerHeadline">Telefon</div>
+				06361 9299144
+			</div>
+			<div class="footerColumn col-12 col-sm-6 col-md-3">
+				<div class="footerheadline">Öffnungszeiten</div>
+			</div>
+			<div class="footerColumn col-12 col-sm-6 col-md-3">
+				<div class="footerHeadline">Links</div>
+				<div class="footerInformation"><a href="">Willkommen</a></div>
+				<div class="footerInformation"><a href="">Speisekarte</a></div>
+				<div class="footerInformation"><a href="">Kontakt</a></div>
+				<div class="footerInformation"></div>
+			</div>
+		</div>
+	</section>
+	<!--
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>-->
 </body>
 
 </html>
