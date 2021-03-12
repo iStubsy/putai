@@ -101,13 +101,14 @@ h2 {
 	//top: 20px;
 	//border: solid 1px #d3d3d3;
 	padding: 0px;
+	margin: 0px auto;
 }
 
 .menu {
 	margin: 0px auto 0px auto;
 	position: relative;
 	background-color: #f4f4f4;
-	padding: 10px;
+	//padding: 10px;
 }
 
 .menuVorspeise {}
@@ -171,9 +172,7 @@ h2 {
 	margin: 0px auto;
 }
 
-.row {
-	margin: 0;
-}
+.row {}
 
 h4 {
 	//font-family: arial;
