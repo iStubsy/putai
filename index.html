@@ -45,6 +45,23 @@
 		}); // jquery end
 
 	</script>
+	<style type="text/css">
+		body {
+			position: relative;
+		}
+
+		.navbar .nav-link.active {
+			border-bottom: 2px solid orange
+		}
+
+		.navbar {
+			position: sticky;
+			top: 0;
+			background-color: black;
+			z-index: 1;
+		}
+
+	</style>
 </head>
 
 <body data-spy="scroll" data-offset="90" data-target="#navbar_1" style="padding-top:40px">
@@ -88,7 +105,7 @@
 			</div>
 		</div>-->
 	<div class="container-fluid mealOuter">
-		<nav id="navbar-example2" class="navbar">
+		<nav id="navbar_1" class="navbar">
 			<!--navbar-dark bg-dark-->
 			<!-- remove px-3-->
 			<ul class="nav nav-pills scrollByWrapper">
