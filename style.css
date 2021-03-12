@@ -270,12 +270,13 @@ h4 {
 	padding: 30px;
 }
 
-#navbar_1 {
+#navbar-example2 {
 
 	position: sticky;
 	top: 0px;
 	z-index: 100;
 	width: 100%;
+
 	//padding: 5px;
 	padding: 0;
 	//margin-bottom: 15px;
@@ -285,6 +286,8 @@ h4 {
 	font-family: 'Merriweather', 'italic', 'serif';
 	border: solid 4px white;
 	border-radius: 6px;
+
+	background-color: red;
 }
 
 .scrollByWrapper {
