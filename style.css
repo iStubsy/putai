@@ -91,6 +91,10 @@ h2 {
 	position: relative;
 }
 
+.container {
+	padding: 0;
+}
+
 .mealOuter {
 	position: relative;
 	max-width: 1200px;
@@ -105,10 +109,10 @@ h2 {
 }
 
 .menu {
-	margin: 0px auto 0px auto;
+	margin: 0;
 	position: relative;
 	background-color: #f4f4f4;
-	//padding: 10px;
+	padding: 0;
 }
 
 .menuVorspeise {}
@@ -172,7 +176,10 @@ h2 {
 	margin: 0px auto;
 }
 
-.row {}
+.row {
+	padding: 0;
+	margin: 0;
+}
 
 h4 {
 	//font-family: arial;
