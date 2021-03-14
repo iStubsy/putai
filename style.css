@@ -122,6 +122,12 @@ hr {
 	margin: 0;
 }
 
+.menuVorspeise {}
+
+.menuHauptspeise {
+	background-color: #ebebeb;
+}
+
 .hpress {
 	display: inline-block;
 	font-size: 1.6rem;
