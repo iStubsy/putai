@@ -27,17 +27,6 @@ h2 {
 	color: #888787;
 }
 
-h3 {
-	font-family: arial;
-	font-size: 1.5rem;
-}
-
-#section_1,
-#section_2,
-#section_3 {
-	padding: 6px 5px 0;
-}
-
 #content {
 	width: 100%;
 	margin: 0px auto;
@@ -48,7 +37,7 @@ h3 {
 	background-color: #333333;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	color: white;
-	padding: 20px 0 100px 0;
+	padding: 40px 0 120px 0;
 	width: 100%;
 	//margin-bottom: 30px;
 }
@@ -115,6 +104,13 @@ h3 {
 	//border: solid 1px #d3d3d3;
 	padding: 0px;
 	margin: 0px auto;
+}
+
+.menu {
+	margin: 0;
+	position: relative;
+	background-color: #f4f4f4;
+	padding: 0;
 }
 
 hr {
