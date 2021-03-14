@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-	max-width: 1200px;
+	max-width: 1150px;
 	font-size: 1rem;
 }
 
@@ -29,18 +29,20 @@ h2 {
 
 h3 {
 	display: inline-block;
-	font-size: 1.6rem;
+	font-size: 2.2rem;
 	border-radius: 0;
 	background-color: transparent;
 	border: none;
 	color: black;
-	font-family: 'Merriweather', 'italic';
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
 
 	margin-bottom: 10px;
-	border-bottom: solid 1.5px #333333;
-	box-shadow: 0 8px 6px -6px #d9d9d9;
-	padding: 0px 20px;
-	margin: 7px 0px 10px 0px;
+	text-decoration: underline;
+	//border-bottom: solid 2px #505050;
+	box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06) padding: 0px 20px;
+	margin: 2% 0px 2% 0px;
+	padding: 0 20px;
 }
 
 #section_1,
@@ -63,9 +65,14 @@ h3 {
 	background-color: #333333;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	color: white;
-	padding: 40px 0 120px 0;
+	padding: 30px 0 100px;
 	width: 100%;
+	max-width: 1400px;
+	margin: 0px auto;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 	//margin-bottom: 30px;
+	box-shadow: 0px 0px 8px #9d9d9d;
 }
 
 .contentHeaderHeadline {
@@ -86,14 +93,19 @@ h3 {
 	margin: 10px;
 	//width: 310px;
 	width: 100%;
-	max-width: 250px;
-	display: none;
+	max-width: 220px;
 }
 
+.row {
+	padding: 0;
+	margin: 0;
+}
+
+
 .oneTwo {
-	justify-content: center;
-	//max-width: 1000px;
 	margin: 0px auto;
+	justify-content: center;
+	max-width: 900px;
 }
 
 .testo {
@@ -121,7 +133,7 @@ h3 {
 
 .mealOuter {
 	position: relative;
-	max-width: 1200px;
+	max-width: 1150px;
 	background-color: #f4f4f4;
 	//background-color: #efefef;
 	box-shadow: 0px 3px 4px 0px rgba(118, 118, 118, 0.17);
@@ -205,11 +217,6 @@ hr {
 	margin: 0px auto;
 }
 
-.row {
-	padding: 0;
-	margin: 0;
-}
-
 h4 {
 	//font-family: arial;
 	margin: 10px 0;
@@ -256,7 +263,6 @@ h4 {
 	padding: 5px 10px;
 	line-height: 1.2rem;
 	font-size: .95rem;
-	text-align: left;
 }
 
 .mealFooter {
@@ -286,7 +292,7 @@ h4 {
 }
 
 .footerBody {
-	width: 80%;
+	max-width: 1150px;
 	color: white;
 
 	font-size: 1rem;
@@ -296,6 +302,7 @@ h4 {
 
 .footerColumn {
 	padding: 30px;
+	border: solid 1px red;
 }
 
 #navbar_1 {
@@ -340,6 +347,8 @@ h4 {
 	//width: 33.3%;
 	width: 100%;
 	background-color: black;
+	font-size: 1rem;
+	transition: 0.5s;
 }
 
 .nav-pills .nav-link {
@@ -366,4 +375,18 @@ h4 {
 	position: absolute;
 	//top: -60px;
 	top: -55px;
+}
+
+@media (max-width: 767px) {
+	.testi {
+		display: none;
+	}
+
+	h1 {
+		font-size: 3.4rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
 }
