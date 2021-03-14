@@ -27,6 +27,32 @@ h2 {
 	color: #888787;
 }
 
+h3 {
+	display: inline-block;
+	font-size: 1.6rem;
+	border-radius: 0;
+	background-color: transparent;
+	border: none;
+	color: black;
+	font-family: 'Merriweather', 'italic';
+
+	margin-bottom: 10px;
+	border-bottom: solid 1.5px #333333;
+	box-shadow: 0 8px 6px -6px #d9d9d9;
+	padding: 0px 20px;
+	margin: 7px 0px 10px 0px;
+}
+
+#section_1,
+#section_2,
+#section_3 {
+	padding: 8px 5px 5px 5px;
+}
+
+#section_2 {
+	background-color: #ebebeb;
+}
+
 #content {
 	width: 100%;
 	margin: 0px auto;
@@ -109,7 +135,7 @@ h2 {
 .menu {
 	margin: 0;
 	position: relative;
-	background-color: #f4f4f4;
+	//background-color: #f4f4f4;
 	padding: 0;
 }
 
@@ -277,7 +303,7 @@ h4 {
 	position: sticky;
 	top: 0px;
 	z-index: 100;
-	width: 100%;
+	margin: 0px auto;
 	//padding: 5px;
 	padding: 0;
 	//margin-bottom: 15px;
@@ -287,6 +313,11 @@ h4 {
 	font-family: 'Merriweather', 'italic', 'serif';
 	border: solid 4px white;
 	border-radius: 6px;
+}
+
+.nav {
+	max-width: 600px;
+	margin: 0px auto;
 }
 
 .scrollByWrapper {
