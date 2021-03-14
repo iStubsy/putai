@@ -65,7 +65,7 @@ h3 {
 	background-color: #333333;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	color: white;
-	padding: 30px 0 100px;
+	padding: 30px 0 110px;
 	width: 100%;
 	max-width: 1400px;
 	margin: 0px auto;
@@ -81,8 +81,8 @@ h3 {
 	flex-direction: column;
 
 	min-width: 360px;
-	margin: 20px;
-	padding: 10px;
+	//margin: 20px;
+	//padding: 10px;
 }
 
 .testi {
@@ -388,5 +388,9 @@ h4 {
 
 	h2 {
 		font-size: 1.2rem;
+	}
+
+	h3 {
+		font-size: 1.8rem;
 	}
 }
