@@ -31,17 +31,6 @@
 				offset: 80
 			});
 
-
-			//////////////////////// Menu scroll to section
-			$('.scrollto').click(function(event) {
-				var $anchor = $(this);
-				$('html, body').stop().animate({
-					scrollTop: $($anchor.attr('href')).offset().top - 55
-				}, 1000);
-				event.preventDefault();
-			});
-
-
 			///////////////// for small screen
 			if ($(window).width() < 992) {
 
@@ -49,8 +38,24 @@
 				$('.navbar-collapse a.scrollto').click(function() {
 					$('.navbar-toggler:visible').click();
 				});
-			}
+				$('.scrollto').click(function(event) {
+					var $anchor = $(this);
+					$('html, body').stop().animate({
+						scrollTop: $($anchor.attr('href')).offset().top - 55
+					}, 1000);
+					event.preventDefault();
+				});
+			} else {
 
+				//////////////////////// Menu scroll to section
+				$('.scrollto').click(function(event) {
+					var $anchor = $(this);
+					$('html, body').stop().animate({
+						scrollTop: $($anchor.attr('href')).offset().top - 55
+					}, 300);
+					event.preventDefault();
+				});
+			}
 		}); // jquery end
 
 	</script>

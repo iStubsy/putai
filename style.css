@@ -65,7 +65,7 @@ h3 {
 	background-color: #333333;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	color: white;
-	padding: 30px 0 110px;
+	padding: 50px 0 130px;
 	width: 100%;
 	max-width: 1400px;
 	margin: 0px auto;
@@ -93,7 +93,7 @@ h3 {
 	margin: 10px;
 	//width: 310px;
 	width: 100%;
-	max-width: 220px;
+	max-width: 200px;
 }
 
 .row {
@@ -133,7 +133,7 @@ h3 {
 
 .mealOuter {
 	position: relative;
-	max-width: 1150px;
+	max-width: 1200px;
 	background-color: #f4f4f4;
 	//background-color: #efefef;
 	box-shadow: 0px 3px 4px 0px rgba(118, 118, 118, 0.17);
@@ -196,7 +196,7 @@ hr {
 
 .mealBox {
 	position: relative;
-	padding: 5px;
+	padding: 10px;
 	font-family: serif;
 }
 
