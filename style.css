@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	background-color: black;
+	background-color: black
 }
 
 .header {
@@ -41,7 +41,7 @@ h3 {
 	text-decoration: underline;
 	//border-bottom: solid 2px #505050;
 	box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06) padding: 0px 20px;
-	margin: 2% 0px 2% 0px;
+	margin: 1% 0px 1% 0px;
 	padding: 0 20px;
 }
 
@@ -62,17 +62,15 @@ h3 {
 }
 
 .contentHeader {
-	background-color: #333333;
+	background-color: #2f2f2f;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	color: white;
-	padding: 50px 0 130px;
+	padding: 100px 0 130px;
 	width: 100%;
-	max-width: 1400px;
+	//max-width: 1350px;
 	margin: 0px auto;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
 	//margin-bottom: 30px;
-	box-shadow: 0px 0px 8px #9d9d9d;
+	//box-shadow: 0px 0px 8px #9d9d9d;
 }
 
 .contentHeaderHeadline {
@@ -116,15 +114,17 @@ h3 {
 }
 
 .test {
-	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	//background-color: #121212;
-	border-bottom: dashed 1px #626262;
+	//border-bottom: dashed 1px #626262;
 	//box-shadow: 0px 3px 3px #1a1a1a;
 	//padding: 10px 0;
 	font-size: 1.2rem;
-	background-color: rgb(31, 31, 31);
-
-	position: relative;
+	//background-color: rgb(31, 31, 31);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.31);
 }
 
 .container {
@@ -319,7 +319,6 @@ h4 {
 	background-color: #242424;
 	font-family: 'Merriweather', 'italic', 'serif';
 	border: solid 4px white;
-	border-radius: 6px;
 }
 
 .nav {
@@ -383,7 +382,7 @@ h4 {
 	}
 
 	h1 {
-		font-size: 3.4rem;
+		font-size: 3.8rem;
 	}
 
 	h2 {
