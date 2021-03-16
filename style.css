@@ -65,7 +65,7 @@ h3 {
 	background-color: #2f2f2f;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	color: white;
-	padding: 100px 0 130px;
+	padding: 130px 0 160px;
 	width: 100%;
 	//max-width: 1350px;
 	margin: 0px auto;
@@ -92,6 +92,7 @@ h3 {
 	//width: 310px;
 	width: 100%;
 	max-width: 200px;
+	display: none;
 }
 
 .row {
@@ -316,7 +317,7 @@ h4 {
 	//margin-bottom: 15px;
 	//background-color: #212121;
 	//background-color: rgba(244, 244, 244, 0.74);
-	background-color: #242424;
+	background-color: #1d1d1d;
 	font-family: 'Merriweather', 'italic', 'serif';
 	border: solid 4px white;
 }
@@ -382,7 +383,7 @@ h4 {
 	}
 
 	h1 {
-		font-size: 3.8rem;
+		font-size: 4.2rem;
 	}
 
 	h2 {
