@@ -77,13 +77,7 @@ h4 {
 	top: 0;
 	width: 100%;
 	z-index: 1;
-	background-color: rgba(0, 0, 0, 0.28);
-}
-
-.show {
-	background-color: #151515;
-	transition: .4s;
-	margin: 10px 0;
+	background-color: rgba(0, 0, 0, 0.84);
 }
 
 /********************** CONTENT ***************************/
@@ -387,5 +381,9 @@ h4 {
 
 	h3 {
 		font-size: 1.8rem;
+	}
+
+	.contentHeader {
+		padding: 110px 0 140px 0;
 	}
 }
