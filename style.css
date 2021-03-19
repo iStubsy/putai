@@ -1,7 +1,60 @@
+/******************* HTML *********************/
+
 body {
 	text-align: center;
 	background-color: black
 }
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	font-size: 6rem;
+	color: white;
+}
+
+h2 {
+	font-size: 1.5rem;
+	letter-spacing: 4px;
+	margin: 0;
+	color: #888787;
+}
+
+h3 {
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+
+
+	display: inline-block;
+	font-size: 2.5rem;
+	border-radius: 0;
+	background-color: transparent;
+	border: none;
+	color: black;
+
+	margin-bottom: 10px;
+	//text-decoration: underline;
+	box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.2) padding: 0px 20px;
+	margin: 1% 0;
+	padding: 0 20px;
+}
+
+h4 {
+	margin: 10px 0;
+	font-size: 1.4rem;
+}
+
+/*********************** BOOTSTRAP *************************/
+
+.row {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	padding: 0;
+}
+
+
+/*********************** TITLE ****************************/
 
 .header {
 	max-width: 1150px;
@@ -10,108 +63,6 @@ body {
 
 .headerItem {
 	margin: 0 15px;
-}
-
-h1 {
-	//font-family: arial;
-	font-family: 'Poiret One', cursive;
-	font-size: 4.5rem;
-	color: white;
-}
-
-h2 {
-	//font-family: arial;
-	font-size: 1.5rem;
-	letter-spacing: 4px;
-	margin: 0;
-	color: #888787;
-}
-
-h3 {
-	display: inline-block;
-	font-size: 2.2rem;
-	border-radius: 0;
-	background-color: transparent;
-	border: none;
-	color: black;
-	font-family: 'Poiret One', cursive;
-	font-weight: bold;
-
-	margin-bottom: 10px;
-	text-decoration: underline;
-	//border-bottom: solid 2px #505050;
-	box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06) padding: 0px 20px;
-	margin: 1% 0px 1% 0px;
-	padding: 0 20px;
-}
-
-#section_1,
-#section_2,
-#section_3 {
-	padding: 8px 5px 5px 5px;
-}
-
-#section_2 {
-	background-color: #ebebeb;
-}
-
-#content {
-	width: 100%;
-	margin: 0px auto;
-	background-color: #dddddd;
-}
-
-.contentHeader {
-	background-color: #2f2f2f;
-	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-	color: white;
-	padding: 130px 0 160px;
-	width: 100%;
-	//max-width: 1350px;
-	margin: 0px auto;
-	//margin-bottom: 30px;
-	//box-shadow: 0px 0px 8px #9d9d9d;
-}
-
-.contentHeaderHeadline {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-
-	min-width: 360px;
-	//margin: 20px;
-	//padding: 10px;
-}
-
-.testi {
-	background-color: white;
-	border: solid 1px black;
-	border-radius: 6px;
-	padding: 4px;
-	margin: 10px;
-	//width: 310px;
-	width: 100%;
-	max-width: 200px;
-	display: none;
-}
-
-.row {
-	padding: 0;
-	margin: 0;
-}
-
-
-.oneTwo {
-	margin: 0px auto;
-	justify-content: center;
-	max-width: 900px;
-}
-
-.testo {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	//width: 500px;
 }
 
 .test {
@@ -125,11 +76,62 @@ h3 {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.31);
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.28);
 }
 
-.container {
-	padding: 0;
+.show {
+	background-color: #151515;
+	transition: .4s;
+	margin: 10px 0;
+}
+
+/********************** CONTENT ***************************/
+
+#content {
+	width: 100%;
+	margin: 0px auto;
+	background-color: #dddddd;
+}
+
+.contentHeader {
+	position: relative;
+	background-color: #292929;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	color: white;
+	padding: 70px 0 100px 0;
+	width: 100%;
+	//max-width: 1350px;
+	margin: 0px auto;
+	//margin-bottom: 30px;
+	//box-shadow: 0px 0px 8px #9d9d9d;
+}
+
+.contentHeaderHeadline {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	//margin: 20px;
+	//padding: 10px;
+}
+
+.logo {
+	background-color: white;
+	border: solid 1px black;
+	border-radius: 6px;
+	padding: 4px;
+	margin: 20px;
+	//width: 310px;
+	width: 100%;
+	max-width: 250px;
+	display: none;
+}
+
+.oneTwoThree {
+	margin: 0px auto;
+	justify-content: center;
+	//max-width: 900px;
+	padding: 5% 0;
 }
 
 .mealOuter {
@@ -145,19 +147,22 @@ h3 {
 	margin: 0px auto;
 }
 
+#section_1,
+#section_2,
+#section_3 {
+	padding: 8px 5px 5px 5px;
+}
+
+#section_2 {
+	background-color: #efefef;
+}
+
 .menu {
 	margin: 0;
 	position: relative;
 	//background-color: #f4f4f4;
 	padding: 0;
 }
-
-hr {
-	padding: 0;
-	margin: 0;
-}
-
-.menuVorspeise {}
 
 .menuHauptspeise {
 	background-color: #ebebeb;
@@ -191,10 +196,6 @@ hr {
 	color: black;
 }
 
-.collapse {
-	color: black;
-}
-
 .mealBox {
 	position: relative;
 	padding: 10px;
@@ -216,12 +217,6 @@ hr {
 
 	//max-width: 340px;
 	margin: 0px auto;
-}
-
-h4 {
-	//font-family: arial;
-	margin: 10px 0;
-	font-size: 1.4rem;
 }
 
 .mealHead {
@@ -335,7 +330,7 @@ h4 {
 	max-width: 800px;
 }
 
-.nav-item {
+.scrollToSelection {
 	width: 33.3%;
 }
 
@@ -378,7 +373,7 @@ h4 {
 }
 
 @media (max-width: 767px) {
-	.testi {
+	.logo {
 		display: none;
 	}
 
