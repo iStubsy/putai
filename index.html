@@ -15,6 +15,12 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poiret+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+
 	<title>Putai</title>
 
 	<link rel="stylesheet" href="style.css">
@@ -42,7 +48,7 @@
 					var $anchor = $(this);
 					$('html, body').stop().animate({
 						scrollTop: $($anchor.attr('href')).offset().top - 55
-					}, 1000);
+					}, 2000);
 					event.preventDefault();
 				});
 			} else {
@@ -62,6 +68,7 @@
 </head>
 
 <body>
+	<div class="scrollBottom">Hello</div>
 	<section id="title">
 		<nav class="test navbar navbar-expand-md navbar-dark">
 			<div class="container-fluid header">
@@ -100,14 +107,16 @@
 		</div>
 		<div class="mealOuter">
 			<nav id="navbar_1" class="navbar">
-				<ul class="nav nav-pills">
-					<li class="nav-item scrollToSelection"><a href="#section_1" class="scrollto nav-link"> Vorspeise </a></li>
-					<li class="nav-item scrollToSelection"><a href="#section_2" class="scrollto nav-link"> Hauptspeise </a></li>
-					<li class="nav-item scrollToSelection"><a href="#section_3" class="scrollto nav-link"> Extras </a></li>
-				</ul>
+				<div class="navWrapper">
+					<ul class="nav nav-pills">
+						<li class="nav-item scrollToSelection"><a href="#section_1" class="scrollto nav-link"> Vorspeisen </a></li>
+						<li class="nav-item scrollToSelection"><a href="#section_2" class="scrollto nav-link"> Hauptspeisen </a></li>
+						<li class="nav-item scrollToSelection"><a href="#section_3" class="scrollto nav-link"> Extras </a></li>
+					</ul>
+				</div>
 			</nav>
 			<article id="section_1">
-				<h3>Vorspeise</h3>
+				<h3>Vorspeisen</h3>
 				<div class="menu row">
 					<div class="mealBox col-12 col-sm-6 col-md-4 col-lg-3">
 						<div class="meal">
@@ -254,9 +263,11 @@
 								Herzhafte Kräutersuppe mit Glasnudeln und verschiedenem Saisongemüse. Verfeinert mit reinem Sesamöl & Frühlingszwiebeln.
 							</div>
 							<div class="mealFooter">
-								Wahlweise mit:
-								a) Tofuwürfeln 3,50€
-								b) Rindfleisch 4,00€
+								<div class="price">
+									Wahlweise mit:<br>
+									a) Tofuwürfeln 3,50€<br>
+									b) Rindfleisch 4,00€<br>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -281,7 +292,7 @@
 				</div>
 			</article>
 			<article id="section_2">
-				<h3>Hauptspeise</h3>
+				<h3>Hauptspeisen</h3>
 				<div class="menu row">
 					<div class="mealBox col-12 col-sm-6 col-md-4 col-lg-3">
 						<div class="meal">
@@ -583,7 +594,7 @@
 									<h4>Beilagen</h4>
 								</div>
 							</div>
-							<div class="mealBody">
+							<div class="mealBody beilagen">
 								Gekochter Reis 2,50€<br>
 								Gebratener Reis 3,50€<br>
 								Gebratene Nudeln 3,50€<br>
@@ -620,23 +631,32 @@
 	<section id="footer">
 		<div class="row footerBody">
 			<div class="footerColumn col-12 col-sm-6 col-lg-3">
-				<div class="footerHeadline">Pu-Tai Rockenhausen</div>
-				Rognac-Allee 6<br>
-				67806 Rockenhausen
-			</div>
-			<div class="footerColumn col-6 col-sm-6 col-lg-3">
-				<div class="footerHeadline">Telefon</div>
-				06361 9299144
-			</div>
-			<div class="footerColumn col-6 col-sm-6 col-lg-3">
-				<div class="footerHeadline">Öffnungszeiten</div>
+				<div class="footerContent">
+					<div class="footerHeadline">Pu-Tai Rockenhausen</div>
+					Rognac-Allee 6<br>
+					67806 Rockenhausen
+				</div>
 			</div>
 			<div class="footerColumn col-12 col-sm-6 col-lg-3">
+				<div class="footerContent">
+					<div class="footerHeadline">Öffnungszeiten</div>
+					hi
+				</div>
+			</div>
+			<div class="footerColumn col-6 col-sm-6 col-lg-3">
+				<div class="footerContent">
+					<div class="footerHeadline">Telefon</div>
+					06361 9299144
+				</div>
+			</div>
+			<div class="footerColumn col-6 col-sm-6 col-lg-3">
 				<div class="footerHeadline">Links</div>
-				<div class="footerInformation"><a href="">Willkommen</a></div>
-				<div class="footerInformation"><a href="">Speisekarte</a></div>
-				<div class="footerInformation"><a href="">Kontakt</a></div>
-				<div class="footerInformation"></div>
+				<div class="footerContent">
+					<div class="footerInformation"><a href="">Willkommen</a></div>
+					<div class="footerInformation"><a href="">Speisekarte</a></div>
+					<div class="footerInformation"><a href="">Kontakt</a></div>
+					<div class="footerInformation"></div>
+				</div>
 			</div>
 		</div>
 	</section>
