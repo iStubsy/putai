@@ -34,7 +34,7 @@
 			////////////////////////  Highlight the top nav as scrolling occurs. /bootstrap/
 			$('body').scrollspy({
 				target: '#navbar_1',
-				offset: 80
+				offset: 90
 			});
 
 			///////////////// for small screen
@@ -47,8 +47,8 @@
 				$('.scrollto').click(function(event) {
 					var $anchor = $(this);
 					$('html, body').stop().animate({
-						scrollTop: $($anchor.attr('href')).offset().top - 55
-					}, 2000);
+						scrollTop: $($anchor.attr('href')).offset().top - 50
+					}, 1500);
 					event.preventDefault();
 				});
 			} else {
@@ -57,7 +57,7 @@
 				$('.scrollto').click(function(event) {
 					var $anchor = $(this);
 					$('html, body').stop().animate({
-						scrollTop: $($anchor.attr('href')).offset().top - 55
+						scrollTop: $($anchor.attr('href')).offset().top - 50
 					}, 300);
 					event.preventDefault();
 				});
