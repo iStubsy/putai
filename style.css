@@ -304,8 +304,8 @@ h5 {}
 #footer {
 	position: relative;
 	width: 100%;
-    
-    background-color: #292929;
+
+	background-color: #292929;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	z-index: 2;
 }
@@ -328,16 +328,47 @@ h5 {}
 	text-align: left;
 	margin: 0px auto;
 	color: #e2e2e2;
+	padding: 1% 0 0.5% 0;
 }
 
 .footerColumn {
 	text-align: center;
-	padding: 30px;
 }
 
 .footerContent {
+	position: relative;
+	width: 100%;
+
+}
+
+.footerBottom {
+	color: grey;
+	padding: 1% 0;
+}
+
+.open {
+	margin: 0px auto;
+	max-width: 280px;
+}
+
+.openContainer {
+	display: flex;
+	width: 100%;
+}
+
+.start {
+	width: 45%;
 	text-align: left;
-	display: inline-block;
+}
+
+.to {
+	width: 10%;
+	text-align: center;
+}
+
+.end {
+	width: 45%;
+	text-align: right;
 }
 
 #navbar_1 {
@@ -350,8 +381,8 @@ h5 {}
 	//margin-bottom: 15px;
 	//background-color: #212121;
 	//background-color: rgba(244, 244, 244, 0.74);
-    font-family: 'Oswald';
-    letter-spacing: 1px;
+	font-family: 'Oswald';
+	letter-spacing: 1px;
 	padding: 3px;
 	background-color: rgba(255, 255, 255, 0.7);
 }
@@ -434,8 +465,8 @@ h5 {}
 	h3 {
 		font-size: 1.8rem;
 	}
-    
-    .contentHeader {
-        padding: 110px 0 140px 0;
-    }
+
+	.contentHeader {
+		padding: 110px 0 140px 0;
+	}
 }

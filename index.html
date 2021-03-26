@@ -48,7 +48,7 @@
 					var $anchor = $(this);
 					$('html, body').stop().animate({
 						scrollTop: $($anchor.attr('href')).offset().top - 50
-					}, 2000);
+					}, 1600);
 					event.preventDefault();
 				});
 			} else {
@@ -68,7 +68,6 @@
 </head>
 
 <body>
-	<div class="scrollBottom">Hello</div>
 	<section id="title">
 		<nav class="test navbar navbar-expand-md navbar-dark">
 			<div class="container-fluid header">
@@ -630,26 +629,40 @@
 	</section>
 	<section id="footer">
 		<div class="row footerBody">
-			<div class="footerColumn col-12 col-sm-6 col-lg-3">
+			<div class="footerColumn col-12 col-sm-6 col-lg-4">
 				<div class="footerContent">
 					<div class="footerHeadline">Pu-Tai Rockenhausen</div>
 					Rognac-Allee 6<br>
-					67806 Rockenhausen
+					67806 Rockenhausen<br>
+					Telefon
 				</div>
 			</div>
-			<div class="footerColumn col-12 col-sm-6 col-lg-3">
+			<div class="footerColumn col-12 col-sm-6 col-lg-4">
 				<div class="footerContent">
 					<div class="footerHeadline">Öffnungszeiten</div>
-					hi
+					<div class="open">
+						<div class="openContainer">
+							Montags Ruhetag
+						</div>
+						<div class="openContainer">
+							<div class="start">Dienstag</div>
+							<div class="to">-</div>
+							<div class="end">Sonntag</div>
+						</div>
+						<div class="openContainer">
+							<div class="start">11:30 Uhr</div>
+							<div class="to">-</div>
+							<div class="end">14:30 Uhr</div>
+						</div>
+						<div class="openContainer">
+							<div class="start">17:00 Uhr</div>
+							<div class="to">-</div>
+							<div class="end">22:30 Uhr</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="footerColumn col-6 col-sm-6 col-lg-3">
-				<div class="footerContent">
-					<div class="footerHeadline">Telefon</div>
-					06361 9299144
-				</div>
-			</div>
-			<div class="footerColumn col-6 col-sm-6 col-lg-3">
+			<div class="footerColumn col-12 col-sm-12 col-lg-4">
 				<div class="footerHeadline">Links</div>
 				<div class="footerContent">
 					<div class="footerInformation"><a href="">Willkommen</a></div>
@@ -658,6 +671,9 @@
 					<div class="footerInformation"></div>
 				</div>
 			</div>
+		</div>
+		<div class="footerBottom">
+			Test
 		</div>
 	</section>
 </body>
