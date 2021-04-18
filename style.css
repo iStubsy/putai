@@ -24,18 +24,16 @@ h3 {
 	font-weight: bold;
 
 
-	display: inline-block;
+	//display: inline-block;
 	font-size: 2.4rem;
-	line-height: 2.5rem;
+	//line-height: 2.5rem;
 	border-radius: 0;
 	background-color: transparent;
 	border: none;
 	color: black;
-	border-bottom: solid 1.5px black;
-	padding: 0px 10px;
-	margin-bottom: 15px;
-
-	box-shadow: 0 8px 6px -6px #d9d9d9;
+	//border-bottom: solid 1.5px black;
+	padding: 10px 10px;
+	//box-shadow: 0 8px 6px -6px #d9d9d9;
 	//text-decoration: underline;
 }
 
@@ -107,7 +105,8 @@ h5 {}
 	//background-color: rgb(15, 15, 15);
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	//box-shadow: 0px 3px 5px #1d1d1d;
-
+	background-color: #191919;
+	border-bottom: dashed 1px #484848;
 }
 
 /********************** CONTENT ***************************/
@@ -124,7 +123,7 @@ h5 {}
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	color: white;
 	//padding: 70px 0 100px 0;
-	padding: 7rem 0 9rem 0;
+	padding: 9rem 0 11rem 0;
 	width: 100%;
 	//max-width: 1350px;
 	margin: 0px auto;
@@ -166,7 +165,8 @@ h5 {}
 	margin: 0px auto;
 	top: -70px;
 	box-shadow: 0px 3px 4px 0px rgba(118, 118, 118, 0.17);
-	background-color: #f4f4f4;
+	//background-color: #f4f4f4;
+	background-color: #ffffff;
 }
 
 .mealOuter {
@@ -183,12 +183,12 @@ h5 {}
 }
 
 #section_2 {
-	background-color: #efefef;
+	background-color: #f7f7f7;
 }
 
 #section_flex {
 	display: flex;
-
+	flex-wrap: wrap;
 }
 
 .column {
@@ -207,15 +207,14 @@ h5 {}
 
 .mealBox {
 	position: relative;
-	padding: 10px;
+	padding: 15px 15px;
 	//font-family: serif;
 }
 
 .meal {
-	//background-color: #f0f0f0;
-	background-color: #ffffff;
-	border: solid 1px #d8d8d8;
-	border: solid 1px #ebebeb;
+	//background-color: #f7f7f7;
+	//background-color: #ffffff;
+	//border: solid 1px #ebebeb;
 
 	display: flex;
 	flex-direction: column;
@@ -226,12 +225,18 @@ h5 {}
 	transition: 0.5s;
 	//max-width: 340px;
 	margin: 0px auto;
+	text-align: center;
 }
 
 .mealHead {
-	position: relative;
+	//position: relative;
 	display: flex;
-	justify-content: center;
+	//justify-content: center;
+	//background-color: #4d4d4d;
+	border-radius: 3px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	padding: 5px;
 }
 
 .mealHead-number {
@@ -240,65 +245,73 @@ h5 {}
 	justify-content: center;
 	//color: white;
 	//border-radius: 2px;
-	font-size: 1.3rem;
-	position: absolute;
-	padding: 0px 6px 0 0;
+	font-size: 2rem;
+	//position: absolute;
+	//padding: 0px 6px 0 0;
 	//margin: 5px;
 	//top: -5px;
 	//left: -5px;
-	left: 4px;
-	top: 4px;
+	//left: 4px;
+	//top: 4px;
 	//height: 100%;
 	//top: -1px;
 	//left: -1px;
-	height: 40px;
+	//height: 40px;
 	border-radius: 3px;
-	width: 40px;
+	//width: 40px;
 	//box-shadow: 1px 1px 3px #797979;
-	background-color: #222222;
-	color: white;
+	//background-color: #222222;
+	//color: white;
 	font-family: arial;
 	font-family: 'Fira Code', monospace;
 	font-weight: bold;
 	//background-color: #efefef;
 	//letter-spacing: -5px;
 
-	border-right: solid 1px #ebebeb;
-	border-bottom: solid 1px #ebebeb;
+	//border-right: solid 1px #ebebeb;
+	//border-bottom: solid 1px #ebebeb;
 	line-height: 1;
-	padding: 4px;
-
+	//padding: 4px;
+	width: 15%;
 }
 
 #collapseVorspeisen,
 #collapseHauptspeisen {}
 
 .mealHead-name {
-	width: 60%;
-	padding: 10px 0;
+	//width: 60%;
+	padding: 0 10px;
+	width: 65%;
 }
 
 .mealBody {
-	padding: 1rem;
-	line-height: 1.2rem;
+	padding: .5rem;
+	//line-height: 1.2rem;
 	font-size: 1rem;
 	text-align: left;
+	//border: solid 1px black;
 }
 
-.beilagen {
-	text-align: left;
-}
+.beilagen {}
 
-.mealFooter {
-	padding: .5rem;
+.mealFooter {}
+
+.priceTag {
+	width: 20%;
+	font-family: arial;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .price {
-	background-color: #f4f4f4;
 	font-family: serif;
 	font-size: 1rem;
-	padding: 3px 0;
-	border-radius: 3px;
+	//padding: 3px 0;
+	//border-radius: 3px;
+	text-align: left;
+	margin: 0px auto;
+	padding: 1rem;
 }
 
 /********** FOOTER **********/
@@ -453,8 +466,13 @@ h5 {}
 }
 
 @media (min-width: 900px) {
-	#navbar_1 {
-		display: none;
+	#navbar_1 {}
+}
+
+@media (max-width: 1000px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
 	}
 }
 
@@ -474,6 +492,12 @@ h5 {}
 
 	h3 {
 		font-size: 2.2rem;
+		padding: 10px;
+	}
+
+	.column {
+		flex: 100%;
+		max-width: 100%;
 	}
 
 
