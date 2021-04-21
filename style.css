@@ -45,7 +45,7 @@ h3 {
 }
 
 h4 {
-	font-size: 1.6rem;
+	//font-size: 1.6rem;
 	margin: 0;
 }
 
@@ -113,7 +113,7 @@ h5 {}
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	//box-shadow: 0px 3px 5px #1d1d1d;
 	background-color: #191919;
-	border-bottom: solid 1px #484848;
+	border-bottom: solid 1px #2a2a2a;
 }
 
 /********************** CONTENT ***************************/
@@ -168,7 +168,7 @@ h5 {}
 
 .mealOuterWrapper {
 	position: relative;
-	max-width: 1200px;
+	max-width: 1250px;
 	margin: 0px auto;
 	top: -70px;
 	box-shadow: 0px 3px 4px 0px rgba(118, 118, 118, 0.17);
@@ -203,8 +203,6 @@ h5 {}
 	max-width: 25%;
 }
 
-
-
 .menu {
 	margin: 0;
 	position: relative;
@@ -235,6 +233,10 @@ h5 {}
 	text-align: center;
 }
 
+.mealLeft {}
+
+.mealrest {}
+
 .mealHead {
 	position: relative;
 	display: flex;
@@ -249,7 +251,7 @@ h5 {}
 .mealHead-number {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	//color: white;
 	//border-radius: 2px;
 	font-size: 1.6rem;
@@ -268,7 +270,6 @@ h5 {}
 	//width: 40px;
 	//box-shadow: 1px 1px 3px #797979;
 	//background-color: #222222;
-	//color: white;
 	font-family: arial;
 	font-family: 'Fira Code', monospace;
 	font-weight: bold;
@@ -277,7 +278,6 @@ h5 {}
 
 	//border-right: solid 1px #ebebeb;
 	//border-bottom: solid 1px #ebebeb;
-	line-height: 1;
 	//padding: 4px;
 	width: 15%;
 }
@@ -287,8 +287,11 @@ h5 {}
 
 .mealHead-name {
 	//width: 60%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	padding: 0 10px;
-	width: 65%;
+	width: 80%;
 }
 
 .mealBody {
@@ -296,6 +299,7 @@ h5 {}
 	//line-height: 1.2rem;
 	font-size: 1rem;
 	text-align: left;
+	color: #535353;
 }
 
 .beilagen {}
@@ -303,11 +307,11 @@ h5 {}
 .mealFooter {}
 
 .priceTag {
-	width: 20%;
 	font-family: arial;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	background-color: #f2f2f2;
 }
 
 .price {
@@ -498,7 +502,7 @@ h5 {}
 
 	h3 {
 		font-size: 2.2rem;
-		padding: 10px;
+        width: 100%;
 	}
 
 	.column {
