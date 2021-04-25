@@ -26,7 +26,7 @@ h3 {
 	font-weight: bold;
 
 
-	font-size: 2rem;
+	font-size: 2.5rem;
 	//line-height: 2.5rem;
 	border-radius: 0;
 	background-color: transparent;
@@ -36,12 +36,12 @@ h3 {
 	padding: 8px;
 	//box-shadow: 0 8px 6px -6px #d9d9d9;
 	//text-decoration: underline;
-	background-color: #222222;
+	//background-color: #222222;
 	display: inline-block;
-	margin: 15px 0;
-	color: white;
-	width: 30%;
-	min-width: 300px;
+	margin: 5px 0px;
+	//color: white;
+	width: 10%;
+	min-width: 250px;
 }
 
 h4 {
@@ -79,6 +79,9 @@ h5 {}
 	padding: 0;
 }
 
+.hr {
+	margin: 20px;
+}
 
 /*********************** TITLE ****************************/
 
@@ -144,6 +147,8 @@ h5 {}
 	flex-direction: column;
 	//margin: 20px;
 	//padding: 10px;
+	border: solid 3px white;
+	padding: 50px 120px;
 }
 
 .logo {
@@ -173,7 +178,7 @@ h5 {}
 	top: -70px;
 	box-shadow: 0px 3px 4px 0px rgba(118, 118, 118, 0.17);
 	//background-color: #f4f4f4;
-	background-color: #ffffff;
+	background-color: #f8f8f8;
 }
 
 .mealOuter {
@@ -185,12 +190,13 @@ h5 {}
 #section_1,
 #section_2,
 #section_3 {
-	padding: 20px 5px 5px 5px;
+	//padding: 0px 5px 5px 5px;
 	//padding: 20px;
+	padding: 3px;
 }
 
 #section_2 {
-	background-color: #f7f7f7;
+	background-color: #f8f8f8;
 }
 
 #section_flex {
@@ -212,7 +218,7 @@ h5 {}
 
 .mealBox {
 	position: relative;
-	padding: 15px;
+	padding: 15px 15px;
 	//font-family: serif;
 }
 
@@ -231,6 +237,8 @@ h5 {}
 	//max-width: 340px;
 	margin: 0px auto;
 	text-align: center;
+	//border: solid 1px #d3d3d3;
+	border-radius: 3px;
 }
 
 .mealLeft {}
@@ -248,10 +256,14 @@ h5 {}
 	padding: 5px;
 }
 
-.mealHead-number {
+.mealHead-numberWrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
+	width: 15%;
+}
+
+.mealHead-number {
 	//color: white;
 	//border-radius: 2px;
 	font-size: 1.6rem;
@@ -265,21 +277,25 @@ h5 {}
 	//height: 100%;
 	//top: -1px;
 	//left: -1px;
-	//height: 40px;
+	height: 40px;
 	border-radius: 3px;
-	//width: 40px;
+	width: 40px;
 	//box-shadow: 1px 1px 3px #797979;
-	//background-color: #222222;
+	background-color: #222222;
 	font-family: arial;
 	font-family: 'Fira Code', monospace;
 	font-weight: bold;
 	//background-color: #efefef;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 	//letter-spacing: -5px;
 
 	//border-right: solid 1px #ebebeb;
 	//border-bottom: solid 1px #ebebeb;
-	//padding: 4px;
-	width: 15%;
+	padding: 4px;
 }
 
 #collapseVorspeisen,
@@ -311,7 +327,11 @@ h5 {}
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #f2f2f2;
+	padding: 0px 5px;
+	border-radius: 3px;
+	//width: 100px;
+	margin: 0px auto;
+	font-size: 0.8rem;
 }
 
 .price {
@@ -481,13 +501,18 @@ h5 {}
 
 @media (max-width: 1000px) {
 	.column {
-		flex: 50%;
-		max-width: 50%;
+		flex: 33.3%;
+		max-width: 33.3%;
 	}
 }
 
 /* @media (max-width: 767px) { */
 @media (max-width: 500px) {
+	.contentHeaderHeadline {
+		border: none;
+		padding: 0;
+	}
+
 	.logo {
 		display: none;
 	}
@@ -502,7 +527,7 @@ h5 {}
 
 	h3 {
 		font-size: 2.2rem;
-        width: 100%;
+		width: 100%;
 	}
 
 	.column {
