@@ -538,9 +538,7 @@ h5 {}
 		padding: 20px 30px;
 	}
 
-	.contentHeader {
-		padding: 120px 0 140px 0;
-	}
+	.contentHeader {}
 
 	.logo {
 		display: none;
