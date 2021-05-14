@@ -55,7 +55,7 @@
 					var $anchor = $(this);
 					$('html, body').stop().animate({
 						scrollTop: $($anchor.attr('href')).offset().top - 46
-					}, 2500);
+					}, 0);
 					event.preventDefault();
 				});
 			} else {
@@ -65,7 +65,7 @@
 					var $anchor = $(this);
 					$('html, body').stop().animate({
 						scrollTop: $($anchor.attr('href')).offset().top - 46
-					}, 300);
+					}, 0);
 					event.preventDefault();
 				});
 			}
