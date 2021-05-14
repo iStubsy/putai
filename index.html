@@ -54,8 +54,8 @@
 				$('.scrollto').click(function(event) {
 					var $anchor = $(this);
 					$('html, body').stop().animate({
-						scrollTop: $($anchor.attr('href')).offset().top - 50
-					}, 300);
+						scrollTop: $($anchor.attr('href')).offset().top - 46
+					}, 2500);
 					event.preventDefault();
 				});
 			} else {
@@ -64,7 +64,7 @@
 				$('.scrollto').click(function(event) {
 					var $anchor = $(this);
 					$('html, body').stop().animate({
-						scrollTop: $($anchor.attr('href')).offset().top - 50
+						scrollTop: $($anchor.attr('href')).offset().top - 46
 					}, 300);
 					event.preventDefault();
 				});
