@@ -237,7 +237,7 @@ h5 {}
 
 .mealOuterWrapper {
 	position: relative;
-	width: 1100px;
+	//width: 600px;
 	min-width: 330px;
 	width: 90%;
 	margin: 0px auto;
@@ -295,7 +295,7 @@ h5 {}
 
 .mealBox {
 	position: relative;
-	padding: 15px;
+	padding: 11px;
 	//font-family: serif;
 	flex: 25%;
 	max-width: 25%;
@@ -309,9 +309,7 @@ h5 {}
 	display: flex;
 	flex-direction: column;
 	padding: 5px 5px;
-	//box-shadow: 0 8px 6px -6px #868686;
-	//box-shadow: 0 8px 6px -6px #bebebe;
-	box-shadow: 0 8px 6px -6px #e5e5e5;
+	//box-shadow: 0 8px 6px -6px #e5e5e5;
 	height: 100%;
 	transition: 0.5s;
 	//max-width: 340px;
@@ -319,7 +317,7 @@ h5 {}
 	text-align: center;
 	//border: solid 1px #d3d3d3;
 	//border: solid 1px #d0d0d0;
-	border: solid 1px #cecece;
+	border: solid 1px #dedede;
 }
 
 .mealHead {
@@ -332,6 +330,8 @@ h5 {}
 	//background-color: #261e1e;
 	//padding: 5px 0;
 	font-size: 1.5rem;
+	padding: 3px;
+	background-color: #f0f0f0;
 }
 
 .mealHead-numberWrapper {
@@ -387,6 +387,7 @@ h5 {}
 	//width: 70%;
 	width: 60%;
 	text-align: center;
+	//background-color: #f0f0f0;
 }
 
 .mealBody {
@@ -650,10 +651,10 @@ h5 {}
 
 @media (min-width: 900px) {
 	.mealBox {
-		//flex: 33.3%;
-		//max-width: 33.3%;
-		flex: 50%;
-		max-width: 100%;
+		flex: 33.3%;
+		max-width: 33.3%;
+		//flex: 50%;
+		//max-width: 100%;
 	}
 
 	.test {
@@ -663,7 +664,7 @@ h5 {}
 
 	.mealOuterWrapper {
 		margin-top: 100px;
-		padding: 10px;
+		padding: 5px;
 	}
 
 	#navbar_1 {
@@ -678,13 +679,13 @@ h5 {}
 @media (min-width: 1300px) {
 	.mealBox {
 		flex: 100%;
-		flex: 33.3%;
-		max-width: 33.3%;
+		flex: 25%;
+		max-width: 25%;
 		//max-width: 100%;
 	}
 
 	.mealOuterWrapper {
-		max-width: 1250px;
+		max-width: 1400px;
 	}
 
 }
