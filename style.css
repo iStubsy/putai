@@ -33,8 +33,6 @@
 	background-position: center;
 }
 
-
-
 html {}
 
 body {
@@ -85,16 +83,15 @@ h3 {
 	border-radius: 0;
 	background-color: transparent;
 	border: none;
-	color: black;
+
 	//border-bottom: solid 1px #6a6a6a;
 	padding: 8px 8px;
 	//box-shadow: 0 8px 6px -6px #d9d9d9;
 	//background-color: #222222;
 	display: inline-block;
-	margin: 5px 0;
+	margin: 12px 0 8px 0;
 	padding: 5px 20px;
 	font-family: 'Raleway', sans-serif;
-
 }
 
 h4 {
@@ -142,7 +139,7 @@ h5 {}
 
 #title {
 	//width: 1200px;
-	margin: 0px auto;
+	margin: 57px auto 0 auto;
 }
 
 .header {
@@ -175,13 +172,19 @@ h5 {}
 	border-bottom: solid 1px #454545;
 	background-color: #191919;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	position: absolute;
+	top: 0;
 }
 
 /********************** CONTENT ***************************/
 
+.speisekarteWrapper {
+	//padding: 5px;
+}
+
 #content {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1300px;
 }
 
 .contentHeader {
@@ -199,6 +202,7 @@ h5 {}
 	//box-shadow: 0px 0px 8px #9d9d9d;
 	min-height: 500px;
 	display: none;
+	padding: 5px;
 }
 
 .contentHeaderHeadline {
@@ -235,20 +239,10 @@ h5 {}
 
 .mealOuterWrapper {
 	position: relative;
-	//width: 600px;
 	min-width: 330px;
-	width: 90%;
 	margin: 0px auto;
-	//top: -70px;
-	//top: 100px;
-	//box-shadow: 0px 3px 4px 0px rgba(118, 118, 118, 0.17);
-	//box-shadow: 0px 5px 10px #9d9d9d;
 	box-shadow: 0px 3px 10px #b9b9b9;
-	//background-color: #f4f4f4;
-	//background-color: #f8f8f8;
 	background-color: #f5f5f5;
-	//border: solid 1px #d3d3d3;
-	//padding: 10px;
 }
 
 .mealOuter {}
@@ -258,12 +252,7 @@ h5 {}
 #section_3 {
 	//padding: 0px 5px 5px 5px;
 	//padding: 20px;
-	padding: 20px 3px;
-}
-
-.menuTest {
-	display: flex;
-	flex-wrap: wrap;
+	padding: 20px 5px 0 5px;
 }
 
 #section_2 {
@@ -288,34 +277,37 @@ h5 {}
 	//background-color: #f4f4f4;
 	padding: 0;
 	display: flex;
-
+	justify-content: center;
 }
 
 .mealBox {
 	position: relative;
-	padding: 11px;
+	padding: 12px;
 	//font-family: serif;
-	flex: 25%;
-	max-width: 25%;
+	flex: 100%;
+	max-width: 100%;
+	max-width: 900px;
 }
 
 .meal {
 	//background-color: #f7f7f7;
-	background-color: #fbfbfb;
-	//border: solid 1px #ebebeb;
+	//background-color: #fbfbfb;
+	background-color: white;
+	border: solid 1px #ebebeb;
 
 	display: flex;
 	flex-direction: column;
-	padding: 3px;
+	//padding: 3px;
 	//box-shadow: 0 8px 6px -6px #e5e5e5;
 	height: 100%;
 	transition: 0.5s;
 	//max-width: 340px;
 	margin: 0px auto;
 	text-align: center;
-	//border: solid 1px #d3d3d3;
+	border: solid 1px #e8e8e8;
 	//border: solid 1px #d0d0d0;
-	border: solid 1px #dedede;
+	//border-bottom: solid 1px #dedede;
+	//box-shadow: 0px 2px 3px #dedede;
 }
 
 .mealHead {
@@ -328,8 +320,10 @@ h5 {}
 	//background-color: #261e1e;
 	//padding: 5px 0;
 	font-size: 1.5rem;
-	padding: 3px;
-	//background-color: #f2f2f2;
+	padding: 5px;
+	//border-radius: 3px;
+	//background-color: #2c2c2c;
+	//background-color: #fafafa;
 }
 
 .mealHead-numberWrapper {
@@ -337,7 +331,7 @@ h5 {}
 	//min-width: 40px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .mealHead-number {
@@ -345,6 +339,7 @@ h5 {}
 	//border-radius: 2px;
 	//font-size: 2rem;
 	//position: absolute;
+	//top: -4px;
 	//padding: 0px 6px 0 0;
 	//margin: 5px;
 	//top: -5px;
@@ -355,7 +350,9 @@ h5 {}
 	//top: -1px;
 	//left: -1px;
 	//height: 40px;
-	width: 38px;
+	width: 40px;
+	height: 40px;
+	//width: 100%;
 	//box-shadow: 1px 1px 3px #797979;
 	//background-color: #222222;
 	font-family: arial;
@@ -371,6 +368,9 @@ h5 {}
 	//text-align: left;
 	//padding: 4px;
 	text-align: center;
+
+	//box-shadow: 2px 2px 3px #d8d8d8;
+	//border: solid 1px grey;
 }
 
 #collapseVorspeisen,
@@ -381,22 +381,21 @@ h5 {}
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	//padding: 0 5px;
 	//width: 70%;
 	width: 60%;
-	text-align: center;
 	//background-color: #f0f0f0;
 }
 
 .mealBody {
 	//line-height: 1.2rem;
 	font-size: 1rem;
-	text-align: center;
+	text-align: left;
 	color: #5c5c5c;
 
 	//border-top: solid 1px #4d4d4d;
 	padding: 10px 5px;
 	//margin: 0px 10px 10px 10px;
+	text-align: center;
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -405,7 +404,7 @@ h5 {}
 
 .mealFooter {
 	text-align: left;
-	padding: 4px;
+	padding: 5px;
 }
 
 .mealFooterLeft {}
@@ -432,12 +431,13 @@ h5 {}
 	//border-radius: 3px;
 	text-align: left;
 	margin: 0px auto;
-	padding: 1rem;
+	//padding: 1rem;
 	text-align: center;
+	background-color: #f7f7f7;
 }
 
 .priceTest {
-	background-color: #f4f4f4;
+	background-color: #f7f7f7;
 	padding: 8px;
 	border-radius: 3px;
 }
@@ -452,6 +452,8 @@ h5 {}
 .option {
 	display: flex;
 	justify-content: space-between;
+	margin: 0 auto;
+	width: 90%;
 }
 
 .optionName {}
@@ -556,6 +558,7 @@ h5 {}
 .navWrapper {
 	width: 100%;
 	background-color: #1d1d1d;
+	background-color: black;
 }
 
 .scrollByWrapper {
@@ -583,7 +586,7 @@ h5 {}
 }
 
 .nav-pills .nav-link {
-	padding: 14px 0;
+	padding: 12px 0;
 	border-radius: 0;
 	color: #696969;
 	//width: 33.3%;
@@ -614,12 +617,11 @@ h5 {}
 
 @media (max-width: 600px) {
 	.contentHeaderHeadline {
-		padding: 0;
-		padding: 20px 30px;
+		//padding: 20px 30px;
 	}
 
 	.mealOuterWrapper {
-		width: 100%;
+		padding-bottom: 10px;
 	}
 
 	.contentHeader {}
@@ -661,14 +663,14 @@ h5 {}
 	}
 
 	.mealOuterWrapper {
-		width: 100%;
+		padding-bottom: 10px;
 	}
 }
 
 @media (min-width: 900px) {
 	.mealBox {
-		flex: 33.3%;
-		max-width: 33.3%;
+		//flex: 33.3%;
+		//max-width: 33.3%;
 		//flex: 50%;
 		//max-width: 100%;
 	}
@@ -680,7 +682,6 @@ h5 {}
 
 	.mealOuterWrapper {
 		margin-top: 100px;
-		padding: 5px;
 	}
 
 	#navbar_1 {
@@ -694,14 +695,8 @@ h5 {}
 
 @media (min-width: 1300px) {
 	.mealBox {
-		flex: 100%;
 		flex: 25%;
 		max-width: 25%;
-		//max-width: 100%;
-	}
-
-	.mealOuterWrapper {
-		max-width: 1400px;
 	}
 
 }
