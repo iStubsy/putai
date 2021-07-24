@@ -1,10 +1,6 @@
 /******************* HTML *********************/
 
-.testHeader {
-	background-color: red;
-	height: 800px;
-	position: relative;
-}
+.testHeader {}
 
 .testHeaderTopLeft {
 	width: 50%;
@@ -57,11 +53,11 @@ h1 {
 	color: white;
 	text-shadow: 2px 2px 1px black;
 	padding: 80px 0;
-	//background-color: #272727;
-	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	background-color: #272727;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	margin: 0;
 
-	background-image: url("restaurant.jpg");
+	//background-image: url("restaurant.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -184,8 +180,6 @@ h5 {}
 
 #content {
 	width: 100%;
-	max-width: 1300px;
-
 }
 
 .contentHeader {
@@ -241,6 +235,7 @@ h5 {}
 .mealOuterWrapper {
 	position: relative;
 	min-width: 330px;
+	max-width: 1200px;
 	margin: 0px auto;
 	box-shadow: 0px 3px 10px #b9b9b9;
 	background-color: #f5f5f5;
@@ -257,7 +252,7 @@ h5 {}
 }
 
 #section_2 {
-	//background-color: #fafafa;
+	background-color: #fafafa;
 
 }
 
@@ -376,6 +371,8 @@ h5 {}
 
 #collapseVorspeisen,
 #collapseHauptspeisen {}
+
+
 
 .mealHead-name {
 	//width: 60%;
@@ -555,6 +552,10 @@ h5 {}
 	//box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
+.navbar-collapse {
+	position: relative;
+}
+
 .nav {
 	max-width: 600px;
 	margin: 0px auto;
@@ -659,6 +660,11 @@ h5 {}
 		max-width: 100%;
 	}
 
+	.ml-auto {
+
+		height: 100vh;
+	}
+
 }
 
 
@@ -670,6 +676,11 @@ h5 {}
 
 	.mealOuterWrapper {
 		padding-bottom: 10px;
+	}
+
+	.ml-auto {
+		//height: 100vh;
+		//z-index: 100;
 	}
 }
 
@@ -688,6 +699,7 @@ h5 {}
 
 	.mealOuterWrapper {
 		margin-top: 100px;
+		padding: 5px;
 	}
 
 	#navbar_1 {
@@ -697,12 +709,13 @@ h5 {}
 	#content {
 		margin: 4% auto;
 	}
+
 }
 
 @media (min-width: 1300px) {
 	.mealBox {
-		flex: 25%;
-		max-width: 25%;
+		flex: 50%;
+		max-width: 50%;
 	}
 
 }
