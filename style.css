@@ -165,7 +165,7 @@ h5 {}
 	//box-shadow: 0px 3px 5px #1d1d1d;
 	background-color: #191919;
 	border-bottom: solid 2px #9d0000;
-	border-bottom: solid 1px #454545;
+	border-bottom: solid 1px #242424;
 	background-color: #191919;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	position: absolute;
@@ -234,7 +234,7 @@ h5 {}
 
 .mealOuterWrapper {
 	position: relative;
-	min-width: 330px;
+	min-width: 300px;
 	max-width: 1200px;
 	margin: 0px auto;
 	box-shadow: 0px 3px 10px #b9b9b9;
@@ -623,6 +623,7 @@ h5 {}
 
 
 @media (max-width: 600px) {
+
 	.contentHeaderHeadline {
 		//padding: 20px 30px;
 	}
@@ -661,10 +662,8 @@ h5 {}
 	}
 
 	.ml-auto {
-
 		height: 100vh;
 	}
-
 }
 
 
@@ -685,6 +684,7 @@ h5 {}
 }
 
 @media (min-width: 900px) {
+
 	.mealBox {
 		//flex: 33.33%;
 		//max-width: 33.33%;
@@ -700,6 +700,8 @@ h5 {}
 	.mealOuterWrapper {
 		margin-top: 100px;
 		padding: 5px;
+		//width: 80%;
+		width: 90%;
 	}
 
 	#navbar_1 {
@@ -709,7 +711,6 @@ h5 {}
 	#content {
 		margin: 4% auto;
 	}
-
 }
 
 @media (min-width: 1300px) {
