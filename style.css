@@ -52,7 +52,7 @@ h1 {
 	font-size: 7rem;
 	color: white;
 	text-shadow: 2px 2px 1px black;
-	padding: 80px 0;
+	padding: 60px 0;
 	background-color: #272727;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	margin: 0;
@@ -235,7 +235,7 @@ h5 {}
 .mealOuterWrapper {
 	position: relative;
 	min-width: 300px;
-	max-width: 1200px;
+	max-width: 1150px;
 	margin: 0px auto;
 	box-shadow: 0px 3px 10px #b9b9b9;
 	background-color: #f5f5f5;
@@ -248,7 +248,7 @@ h5 {}
 #section_3 {
 	//padding: 0px 5px 5px 5px;
 	//padding: 20px;
-	padding: 20px 5px 0 5px;
+	padding: 20px 5px 10px 5px;
 }
 
 #section_2 {
@@ -278,7 +278,7 @@ h5 {}
 
 .mealBox {
 	position: relative;
-	padding: 12px;
+	padding: 16px;
 	//font-family: serif;
 	flex: 100%;
 	max-width: 100%;
@@ -386,9 +386,8 @@ h5 {}
 
 .mealBody {
 	//line-height: 1.2rem;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	text-align: left;
-	color: #5c5c5c;
 
 	//border-top: solid 1px #4d4d4d;
 	padding: 10px 5px;
@@ -570,7 +569,9 @@ h5 {}
 .navWrapper {
 	width: 100%;
 	background-color: #1d1d1d;
-	background-color: black;
+	background-color: #222222;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	background-color: #191919;
 }
 
 .scrollByWrapper {
@@ -635,7 +636,7 @@ h5 {}
 	}
 
 	.mealOuterWrapper {
-		padding-bottom: 10px;
+		//padding-bottom: 10px;
 	}
 
 	.contentHeader {}
@@ -692,8 +693,8 @@ h5 {}
 @media (min-width: 900px) {
 
 	.mealBox {
-		//flex: 33.33%;
-		//max-width: 33.33%;
+		flex: 33.33%;
+		max-width: 33.33%;
 		//flex: 50%;
 		//max-width: 100%;
 	}
@@ -721,8 +722,7 @@ h5 {}
 
 @media (min-width: 1300px) {
 	.mealBox {
-		flex: 50%;
-		max-width: 50%;
+		flex: 33.3%;
+		max-width: 33.3%;
 	}
-
 }
