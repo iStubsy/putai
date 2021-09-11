@@ -20,6 +20,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Merriweather:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 	<title>Putai</title>
@@ -75,15 +77,26 @@
 			}
 		}); // jquery end
 
+
+
+		/* Open when someone clicks on the span element */
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		/* Close when someone clicks on the "x" symbol inside the overlay */
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+
 	</script>
 </head>
 
 <body>
 	<section id="title">
-		<nav class="test navbar navbar-expand-md navbar-dark">
+		<!-- <nav class="test navbar navbar-expand-md navbar-dark">
 			<div class="container-fluid header">
 				<a class="navbar-brand" href="putai.de">Putai Rockenhausen</a>
-				<!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">-->
 				<button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -101,7 +114,28 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</nav>  -->
+		<div class="test">
+			<div class="header">
+				<!-- The overlay -->
+				<div id="myNav" class="overlay">
+
+					<!-- Button to close the overlay navigation -->
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+					<!-- Overlay content -->
+					<div class="overlay-content">
+						<a href="#">Willkommen</a>
+						<a href="#">Speisekarte</a>
+						<a href="#">Kontakt</a>
+					</div>
+
+				</div>
+
+				<!-- Use any element to open/show the overlay navigation menu -->
+				<span onclick="openNav()"><i class="fas fa-bars"></i></span>
+			</div>
+		</div>
 	</section>
 	<section id="content">
 		<div class="contentHeader">
