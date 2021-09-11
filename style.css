@@ -39,7 +39,7 @@ body {
 	background-color: #dddddd;
 
 	background-color: #d3d3d3;
-	background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+	//background-image: url("https://www.transparenttextures.com/patterns/connected.png");
 	background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 	background-attachment: fixed;
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -235,7 +235,7 @@ h5 {}
 	//border-bottom: dashed 1px #626262;
 	//box-shadow: 0px 3px 3px #1a1a1a;
 	//padding: 10px 0;
-	font-size: 1.2rem;
+	//font-size: 2rem;
 	//background-color: rgb(31, 31, 31);
 	//position: absolute;
 	//top: 0;
@@ -263,50 +263,6 @@ h5 {}
 	width: 100%;
 }
 
-.contentHeader {
-	position: relative;
-	background-image: url("restaurant.jpg");
-	background-size: cover;
-	background-position: center;
-	color: white;
-	//padding: 70px 0 100px 0;
-	padding: 9rem 0 11rem 0;
-	width: 100%;
-	//max-width: 1350px;
-	margin: 0px auto;
-	//margin-bottom: 30px;
-	//box-shadow: 0px 0px 8px #9d9d9d;
-	min-height: 500px;
-	display: none;
-	padding: 5px;
-}
-
-.contentHeaderHeadline {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	border: solid 3px #dbdbdb;
-	padding: 50px 120px;
-	//margin: 20px;
-	//padding: 10px;
-	background-color: rgba(0, 0, 0, 0.66);
-	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-	//background-color: rgba(0, 0, 0, 0.82);
-	display: none;
-}
-
-.logo {
-	background-color: white;
-	border: solid 1px black;
-	border-radius: 6px;
-	padding: 4px;
-	margin: 20px;
-	//width: 310px;
-	width: 100%;
-	max-width: 250px;
-	display: none;
-}
-
 .oneTwoThree {
 	margin: 0px auto;
 	justify-content: center;
@@ -320,7 +276,6 @@ h5 {}
 	margin: 0px auto;
 	box-shadow: 0px 3px 10px #b9b9b9;
 	background-color: #f5f5f5;
-	margin-bottom: 100px;
 }
 
 .mealOuter {}
@@ -334,7 +289,7 @@ h5 {}
 }
 
 #section_2 {
-	background-color: #fafafa;
+	//background-color: #fafafa;
 
 }
 
@@ -371,6 +326,7 @@ h5 {}
 	//background-color: #f7f7f7;
 	//background-color: #fbfbfb;
 	background-color: white;
+	background-color: rgba(255, 255, 255, 0.79);
 	border: solid 1px #ebebeb;
 	display: flex;
 	flex-direction: column;
@@ -637,6 +593,10 @@ h5 {}
 	//box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
+.navbar-brand {
+	font-size: 1.6rem;
+}
+
 .navbar-toggler {
 	border: none;
 }
@@ -749,11 +709,23 @@ button.btn:focus {
 	.headerPic {
 		display: none;
 	}
+
+	.mealOuter {
+		background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+	}
 }
 
 /************* medium **************/
 
 @media (min-width: 601px) {
+	.test {
+		background-color: #272727;
+		background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+		background-size: cover;
+		background-position: center;
+		border: none;
+	}
+
 	.mealBox {
 		flex: 50%;
 		max-width: 50%;
@@ -765,6 +737,10 @@ button.btn:focus {
 
 	.headerPic {
 		display: none;
+	}
+
+	.mealOuter {
+		background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 	}
 }
 
@@ -779,10 +755,12 @@ button.btn:focus {
 		//max-width: 100%;
 	}
 
-	.test {}
+	.mealOuter {
+		background-image: none;
+	}
 
 	.mealOuterWrapper {
-		margin-top: 150px;
+		margin: 200px auto 100px auto;
 		padding: 5px;
 		//width: 80%;
 		width: 90%;
@@ -794,9 +772,9 @@ button.btn:focus {
 
 	.headerPic {
 		position: absolute;
-		width: 150px;
+		width: 200px;
 		left: 50%;
-		transform: translate(-50%, 40%);
+		transform: translate(-50%, 45%);
 		border: solid 1px black;
 		padding: 5px;
 		display: block;
