@@ -151,7 +151,7 @@ h5 {}
 	/* Black w/opacity */
 	overflow-x: hidden;
 	/* Disable horizontal scroll */
-	transition: 0.5s;
+	transition: 0.3s;
 	/* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
@@ -763,7 +763,7 @@ button.btn:focus {
 	}
 
 	.mealOuterWrapper {
-		margin: 200px auto 100px auto;
+		margin: 80px auto 100px auto;
 		padding: 5px;
 		//width: 80%;
 		width: 90%;
@@ -778,9 +778,10 @@ button.btn:focus {
 		width: 200px;
 		left: 50%;
 		transform: translate(-50%, 45%);
-		border: solid 1px black;
+		border: solid 1px #191919;
 		padding: 5px;
 		display: block;
+		display: none;
 	}
 
 }
@@ -789,7 +790,7 @@ button.btn:focus {
 
 @media (min-width: 1300px) {
 	.mealBox {
-		flex: 33.3%;
-		max-width: 33.3%;
+		flex: 50%;
+		max-width: 50%;
 	}
 }
