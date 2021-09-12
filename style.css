@@ -594,7 +594,7 @@ h5 {}
 }
 
 .navbar-brand {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 }
 
 .navbar-toggler {
@@ -704,6 +704,7 @@ button.btn:focus {
 	.mealBox {
 		flex: 100%;
 		max-width: 100%;
+		padding: 5px 2px;
 	}
 
 	.headerPic {
@@ -711,7 +712,7 @@ button.btn:focus {
 	}
 
 	.mealOuter {
-		background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+		//background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 	}
 }
 
@@ -740,7 +741,7 @@ button.btn:focus {
 	}
 
 	.mealOuter {
-		background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+		//background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 	}
 }
 
