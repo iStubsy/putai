@@ -172,7 +172,7 @@ h5 {}
 .overlay a {
 	padding: 8px;
 	text-decoration: none;
-	font-size: 36px;
+	font-size: 30px;
 	color: #818181;
 	display: block;
 	/* Display block instead of inline */
@@ -310,7 +310,7 @@ h5 {}
 	//background-color: #f4f4f4;
 	padding: 0;
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 }
 
 .mealBox {
@@ -790,7 +790,7 @@ button.btn:focus {
 
 @media (min-width: 1300px) {
 	.mealBox {
-		flex: 50%;
-		max-width: 50%;
+		flex: 33.33%;
+		max-width: 33.33%;
 	}
 }
