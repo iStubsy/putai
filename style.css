@@ -147,7 +147,7 @@ h5 {}
 	top: 0;
 	background-color: rgb(0, 0, 0);
 	/* Black fallback color */
-	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.87);
 	/* Black w/opacity */
 	overflow-x: hidden;
 	/* Disable horizontal scroll */
@@ -240,6 +240,7 @@ h5 {}
 	//position: absolute;
 	//top: 0;
 	width: 100%;
+	min-width: 280px;
 	z-index: 1;
 	//background-color: rgb(25, 25, 25);
 	//background-color: rgb(15, 15, 15);
@@ -255,17 +256,15 @@ h5 {}
 /********************** CONTENT ***************************/
 
 .speisekarteWrapper {
-	padding: 20px 0;
 
 	background-color: #272727;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 
 	background-color: #9d0000;
 	background-color: white;
-	background-color: red;
 }
 
-img {}
+#speisekarteWrapperLogo {}
 
 #content {
 	width: 100%;
@@ -587,7 +586,7 @@ img {}
 	width: 100%;
 	margin: 0px auto;
 	padding: 0;
-	padding: 6px;
+	padding: 4px;
 	//margin-bottom: 15px;
 	//background-color: #212121;
 	//background-color: rgba(244, 244, 244, 0.74);
@@ -760,6 +759,11 @@ button.btn:focus {
 	.mealOuter {
 		//background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 	}
+
+	#speisekarteWrapperLogo {
+		display: none;
+	}
+
 }
 
 /************* large **************/
@@ -799,6 +803,10 @@ button.btn:focus {
 		display: none;
 	}
 
+	#speisekarteWrapperLogo {
+		display: none;
+	}
+
 }
 
 /************* extra large **************/
@@ -808,4 +816,9 @@ button.btn:focus {
 		flex: 33.33%;
 		max-width: 33.33%;
 	}
+
+	#speisekarteWrapperLogo {
+		display: none;
+	}
+
 }
