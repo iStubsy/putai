@@ -41,7 +41,7 @@ body {
 	background-color: #d3d3d3;
 	//background-image: url("https://www.transparenttextures.com/patterns/connected.png");
 	background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
-	background-attachment: fixed;
+	//background-attachment: fixed;
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -258,14 +258,14 @@ h5 {}
 .speisekarteWrapper {
 
 	background-color: #272727;
-	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 
-	background-color: #9d0000;
-	background-color: white;
+	background-color: #242424;
 }
 
 #speisekarteWrapperLogo {
-	margin: 20px 0;
+	margin: 40px 0;
+	border-radius: 5px;
 }
 
 #content {
@@ -588,7 +588,7 @@ h5 {}
 	width: 100%;
 	margin: 0px auto;
 	padding: 0;
-	padding: 4px;
+	//padding: 4px;
 	//margin-bottom: 15px;
 	//background-color: #212121;
 	//background-color: rgba(244, 244, 244, 0.74);
