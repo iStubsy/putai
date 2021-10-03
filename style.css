@@ -147,7 +147,7 @@ h5 {}
 	top: 0;
 	background-color: rgb(0, 0, 0);
 	/* Black fallback color */
-	background-color: rgba(0, 0, 0, 0.92);
+	background-color: rgba(0, 0, 0, 0.98);
 	/* Black w/opacity */
 	overflow-x: hidden;
 	/* Disable horizontal scroll */
@@ -208,7 +208,7 @@ h5 {}
 }
 
 .fas {
-	color: #b2b2b2;
+	color: #e2e2e2;
 	font-size: 30px;
 }
 
@@ -234,7 +234,7 @@ h5 {}
 	//background-color: #121212;
 	//border-bottom: dashed 1px #626262;
 	//box-shadow: 0px 3px 3px #1a1a1a;
-	//padding: 10px 0;
+	padding: 30px 0;
 	//font-size: 2rem;
 	//background-color: rgb(31, 31, 31);
 	//position: absolute;
@@ -250,6 +250,7 @@ h5 {}
 	border-bottom: solid 2px #9d0000;
 	border-bottom: solid 1px #242424;
 	background-color: #191919;
+	background-color: #1c1c1c;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 }
 
@@ -261,10 +262,11 @@ h5 {}
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 
 	background-color: #242424;
+	background-color: #212121;
 }
 
 #speisekarteWrapperLogo {
-	margin: 40px 0;
+	margin: 60px 0;
 	border-radius: 5px;
 }
 
@@ -606,7 +608,7 @@ h5 {}
 }
 
 .navbar-brand {
-	font-size: 1.2rem;
+	font-size: 1.0rem;
 }
 
 .navbar-toggler {
@@ -653,8 +655,7 @@ button.btn:focus {
 	transition: 0.5s;
 	background-color: #f5f5f5;
 	color: black;
-	background-color: black;
-	color: white;
+
 }
 
 .nav-pills .nav-link {
@@ -664,9 +665,8 @@ button.btn:focus {
 	color: #696969;
 	//width: 25%;
 	transition: 0.5s;
-	//background-color: #272727;
-	color: black;
-	background-color: #f4f4f4;
+	background-color: #272727;
+	background-color: black;
 }
 
 .nav {
@@ -694,11 +694,13 @@ button.btn:focus {
 @media (max-width: 600px) {
 
 	.test {
-		background-color: #272727;
-		background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+		//background-color: #272727;
+		//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 		background-size: cover;
 		background-position: center;
 		border: none;
+		//background-color: #f4f4f4;
+		padding: 5px 15px;
 	}
 
 	h1 {
@@ -755,7 +757,7 @@ button.btn:focus {
 	}
 
 	.headerPic {
-		display: none;
+		//display: none;
 	}
 
 	.mealOuter {
@@ -784,7 +786,7 @@ button.btn:focus {
 	}
 
 	.mealOuterWrapper {
-		margin: 80px auto 100px auto;
+		margin: 100px auto 100px auto;
 		padding: 5px;
 		//width: 80%;
 		width: 90%;
@@ -796,13 +798,13 @@ button.btn:focus {
 
 	.headerPic {
 		position: absolute;
-		width: 200px;
+		width: 150px;
 		left: 50%;
-		transform: translate(-50%, 45%);
+		transform: translate(-50%, 35%);
 		border: solid 1px #191919;
 		padding: 5px;
 		display: block;
-		display: none;
+		//display: none;
 	}
 
 	#speisekarteWrapperLogo {
@@ -821,6 +823,10 @@ button.btn:focus {
 
 	#speisekarteWrapperLogo {
 		display: none;
+	}
+
+	.navbar-brand {
+		font-size: 1.6rem;
 	}
 
 }

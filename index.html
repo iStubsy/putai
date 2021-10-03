@@ -61,7 +61,7 @@
 				$('.scrollto').click(function(event) {
 					var $anchor = $(this);
 					$('html, body').stop().animate({
-						scrollTop: $($anchor.attr('href')).offset().top - 46
+						scrollTop: $($anchor.attr('href')).offset().top - 42
 					}, 1300);
 					event.preventDefault();
 				});
@@ -71,7 +71,7 @@
 				$('.scrollto').click(function(event) {
 					var $anchor = $(this);
 					$('html, body').stop().animate({
-						scrollTop: $($anchor.attr('href')).offset().top - 48
+						scrollTop: $($anchor.attr('href')).offset().top - 46
 					}, 300);
 					event.preventDefault();
 				});
@@ -130,7 +130,7 @@
 	<section id="content">
 		<div class="mealOuterWrapper">
 			<div class="speisekarteWrapper">
-				<img id="speisekarteWrapperLogo" src="puTaiLogo.jpg" width="80%">
+				<div data-aos="fade-down" data-aos-duration="1000"><img id="speisekarteWrapperLogo" src="puTaiLogo.jpg" width="70%"></div>
 				<h1>Speisekarte</h1>
 			</div>
 			<nav id="navbar_1" class="navbar">
