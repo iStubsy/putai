@@ -1,5 +1,9 @@
 /******************* HTML *********************/
 
+img {
+	border-radius: 5px;
+}
+
 .testHeader {}
 
 .testHeaderTopLeft {
@@ -267,7 +271,6 @@ h5 {}
 	background-color: #212121;
 
 	color: black;
-	font-size: 1.6rem;
 	height: 250px;
 }
 
@@ -281,19 +284,23 @@ h5 {}
 	height: 100%;
 	width: 50%;
 	padding: 20px;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .speisekarteWrapperHeadline {
 	color: orange;
 	font-size: 1rem;
 	text-align: left;
-	line-height: 2.4rem;
+	line-height: 2rem;
 }
 
 .speisekarteWrapperBottomText {
 	text-align: left;
-	line-height: 1.6rem;
+	line-height: 1.4rem;
+	font-size: 1.5rem;
 	//width: 50%;
 	color: white;
 }
