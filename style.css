@@ -266,6 +266,7 @@ h5 {}
 	background-color: #272727;
 	background-image: url(menu.jpg);
 	background-size: cover;
+	background-position: center;
 
 	background-color: #242424;
 	background-color: #212121;
@@ -652,6 +653,7 @@ h5 {}
 .navbar-brand {
 	font-size: 1.2rem;
 	color: #151515;
+	font-family: fantasy;
 }
 
 .navbar-toggler {
@@ -756,7 +758,7 @@ button.btn:focus {
 	}
 
 	h3 {
-		font-size: 2.2rem;
+		font-size: 1.8rem;
 	}
 
 	.column {
