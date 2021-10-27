@@ -101,8 +101,6 @@ h4 {
 	padding: 0;
 }
 
-h5 {}
-
 .scrollBottom {
 	background-color: #333333;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
@@ -212,7 +210,7 @@ h5 {}
 }
 
 .fas {
-	color: #606060;
+	color: #d9d9d9;
 	font-size: 30px;
 }
 
@@ -251,18 +249,35 @@ h5 {}
 	background-color: #191919;
 	border-bottom: solid 2px #9d0000;
 	border-bottom: solid 1px #242424;
-	background-color: #191919;
-	background-color: #070707;
-	background-color: #eaeaea;
+	//background-color: rgb(0, 0, 0);
+	//background-color: #191919;
+	//background-color: #070707;
+	//background-color: #eaeaea;
+	background-color: #e2e2e2;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	background-color: #e69500;
 }
 
 /********************** CONTENT ***************************/
 
+#collapseExample {
+	//display: flex;
+	//justify-content: center;
+}
+
+.navbar collapse {
+	flex-grow: 2;
+}
+
+.headerPic {
+	background-color: red;
+	padding: 2px;
+}
+
 .speisekarteWrapper {
 	position: relative;
 	background-color: #272727;
-	background-image: url(menu.jpg);
+	background-image: url(innen.jpeg);
 	background-size: cover;
 	background-position: center;
 
@@ -270,24 +285,42 @@ h5 {}
 	background-color: #212121;
 
 	color: black;
+	//position: fixed;
 	height: 250px;
-}
-
-.img {
-	display: inline;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .speisekarteWrapperText {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.speisekarteWrapperImg {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+}
+
+/** .speisekarteWrapperText {
 	position: absolute;
 	right: 0;
 	height: 100%;
-	width: 50%;
+	width: 100%;
 	padding: 20px;
 	background-color: rgba(0, 0, 0, 0.4);
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-}
+} **/
 
 .speisekarteWrapperHeadline {
 	color: orange;
@@ -326,32 +359,23 @@ h5 {}
 	max-width: 1150px;
 	margin: 0px auto;
 	box-shadow: 0px 3px 10px #b9b9b9;
+	background-color: #f5f5f5;
 }
 
-.mealOuter {
-	position: relative;
-}
+.mealOuter {}
 
 #section_1,
 #section_2,
 #section_3 {
 	//padding: 0px 5px 5px 5px;
 	//padding: 20px;
-	padding: 20px 5px 10px 5px;
-	background-color: #f2f2f2;
-	width: 98%;
-	margin: 20px auto;
-	border-radius: 15px;
-	box-shadow: 0px 0px 10px #bfbfbf;
-	position: sticky;
-	top: 20px;
-	border-top: solid 1px white;
+	padding: 20px 0px 10px 0px;
+	//transform: skewY(-5deg);
 }
 
 #section_2 {
 	//background-color: #fafafa;
-	//position: sticky;
-	//top: 20px;
+
 }
 
 #section_flex {
@@ -377,6 +401,7 @@ h5 {}
 .mealBox {
 	position: relative;
 	padding: 8px;
+	//margin-bottom: 5px;
 	//font-family: serif;
 	flex: 100%;
 	max-width: 100%;
@@ -387,7 +412,8 @@ h5 {}
 	//background-color: #f7f7f7;
 	//background-color: #fbfbfb;
 	background-color: white;
-	background-color: rgba(255, 255, 255, 0.79);
+	background-color: rgba(255, 255, 255, 0.69);
+	//background-color: rgba(255, 255, 255, 0.97);
 	border: solid 1px #ebebeb;
 	display: flex;
 	flex-direction: column;
@@ -398,8 +424,8 @@ h5 {}
 	//max-width: 340px;
 	margin: 0px auto;
 	text-align: center;
-	border: solid 1px #e8e8e8;
-	border: solid 1px #eaeaea;
+	//border: solid 1px #e8e8e8;
+	//border: solid 1px #eaeaea;
 	//border-bottom: solid 1px #dedede;
 	//box-shadow: 0px 2px 3px #dedede;
 }
@@ -655,7 +681,6 @@ h5 {}
 	//background-color: #272727;
 	//background-color: #d4d4d4;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-	display: none;
 }
 
 .navbar-brand {
@@ -720,6 +745,12 @@ button.btn:focus {
 	transition: 0.5s;
 	background-color: #272727;
 	background-color: black;
+	background-color: #151515;
+}
+
+.nav-link {
+	color: black;
+	font-size: 1.2rem;
 }
 
 .nav {
@@ -749,11 +780,13 @@ button.btn:focus {
 	.test {
 		//background-color: #272727;
 		//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-		background-size: cover;
-		background-position: center;
+		//background-size: cover;
+		//background-position: center;
 		border: none;
 		//background-color: #f4f4f4;
 		padding: 0px 5px;
+		background-color: #151515;
+		color: white;
 	}
 
 	h1 {
@@ -766,9 +799,27 @@ button.btn:focus {
 	}
 
 	h3 {
-		font-size: 1.6rem;
+		font-size: 2rem;
+		width: 98%;
+		margin: 0px auto;
+		text-align: center;
+		color: black;
+		font-weight: bold;
+		padding: 3px 0;
+		//background-color: #e69500;
+		//box-shadow: 0px 0px 5px #222222;
+		//background-color: #212121;
+
+		position: -webkit-sticky;
 		position: sticky;
-		top: 10px;
+		top: 3px;
+		z-index: 1;
+		margin-bottom: 10px;
+	}
+
+	h5 {
+		margin: 12px 0;
+		font-weight: 200;
 	}
 
 	.column {
@@ -780,6 +831,11 @@ button.btn:focus {
 		flex: 100%;
 		max-width: 100%;
 		padding: 5px;
+		//padding: 0;
+	}
+
+	.menu {
+		padding: 0;
 	}
 
 	.headerPic {
@@ -792,8 +848,10 @@ button.btn:focus {
 	}
 
 	.mealOuter {
+		background-color: #f4f4f4;
 		//background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 	}
+
 }
 
 /************* medium **************/
@@ -857,13 +915,14 @@ button.btn:focus {
 	}
 
 	.headerPic {
-		position: absolute;
-		width: 150px;
-		left: 50%;
-		transform: translate(-50%, 35%);
-		border: solid 1px #191919;
-		padding: 5px;
-		display: block;
+		//position: absolute;
+		width: 500px;
+		//margin: 0px auto;
+		//left: 50%;
+		//transform: translate(-50%, 35%);
+		//border: solid 1px #191919;
+		//padding: 5px;
+		//display: block;
 		//display: none;
 	}
 
