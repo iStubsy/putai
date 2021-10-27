@@ -92,8 +92,8 @@ h3 {
 	margin: 8px 0 8px 0;
 	padding: 5px 20px;
 	font-family: 'Raleway', sans-serif;
-	//position: sticky;
-	//top: 120px;
+	position: sticky;
+	top: 120px;
 }
 
 h4 {
@@ -279,7 +279,7 @@ h4 {
 .speisekarteWrapper {
 	position: relative;
 	background-color: #272727;
-	background-image: url(menu.jpg);
+	background-image: url(innen.jpeg);
 	background-size: cover;
 	background-position: center;
 
@@ -288,7 +288,7 @@ h4 {
 
 	color: black;
 	//position: fixed;
-	height: 200px;
+	height: 300px;
 	width: 100%;
 }
 
@@ -668,7 +668,6 @@ h4 {
 	//background-color: #272727;
 	//background-color: #d4d4d4;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-	display: none;
 }
 
 .navbar-brand {
@@ -801,7 +800,7 @@ button.btn:focus {
 		position: sticky;
 		top: 3px;
 		z-index: 1;
-		//margin-bottom: 30px;
+		margin-bottom: 10px;
 		color: orange;
 	}
 
