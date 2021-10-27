@@ -212,7 +212,7 @@ h4 {
 }
 
 .fas {
-	color: #717171;
+	color: #d9d9d9;
 	font-size: 30px;
 }
 
@@ -257,7 +257,7 @@ h4 {
 	//background-color: #eaeaea;
 	background-color: #e2e2e2;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-	background-color: #f5f5f5;
+	background-color: #e69500;
 }
 
 /********************** CONTENT ***************************/
@@ -357,6 +357,7 @@ h4 {
 	//padding: 0px 5px 5px 5px;
 	//padding: 20px;
 	padding: 20px 0px 10px 0px;
+	//transform: skewY(-5deg);
 }
 
 #section_2 {
@@ -771,7 +772,8 @@ button.btn:focus {
 		border: none;
 		//background-color: #f4f4f4;
 		padding: 0px 5px;
-		//background-color: black;
+		background-color: #1c1c1c;
+		color: white;
 	}
 
 	h1 {
@@ -785,24 +787,24 @@ button.btn:focus {
 
 	h3 {
 		font-size: 2rem;
-		width: 100%;
+		width: 98%;
+		margin: 0px auto;
 		text-align: center;
 		color: black;
 		font-weight: bold;
 		padding: 3px 0;
-		transform: skewY(-2deg);
 		background-color: #e69500;
 		//box-shadow: 0px 0px 5px #222222;
 		background-color: #212121;
 		color: white;
 		position: sticky;
-		top: 20px;
+		top: 3px;
 		z-index: 1;
-		margin-bottom: 30px;
+		//margin-bottom: 30px;
 	}
 
 	h5 {
-		margin: 15px 0;
+		margin: 12px 0;
 	}
 
 	.column {
