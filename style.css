@@ -220,6 +220,18 @@ h4 {
 #title {
 	//width: 1200px;
 	//margin: 57px auto 0 auto;
+
+	background-image: url(innen.jpeg);
+	background-size: cover;
+	background-position: center;
+
+
+	color: black;
+	//position: fixed;
+	//height: 280px;
+	width: 100%;
+	//display: flex;
+	//justify-content: center;
 }
 
 .header {
@@ -255,7 +267,6 @@ h4 {
 	//background-color: #eaeaea;
 	background-color: #e2e2e2;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-	background-color: #e69500;
 }
 
 /********************** CONTENT ***************************/
@@ -286,10 +297,16 @@ h4 {
 
 	color: black;
 	//position: fixed;
-	height: 250px;
+	height: 280px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+
+.wrapper {
+	display: flex;
+	height: 230px;
+	//background-color: red;
 }
 
 .speisekarteWrapperText {
@@ -299,7 +316,7 @@ h4 {
 	justify-content: center;
 	flex-direction: column;
 	padding: 20px;
-	background-color: rgba(0, 0, 0, 0.4);
+	//background-color: rgba(0, 0, 0, 0.4);
 }
 
 .speisekarteWrapperImg {
@@ -681,6 +698,8 @@ h4 {
 	//background-color: #272727;
 	//background-color: #d4d4d4;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	//border: solid 3px rgba(222, 222, 222, 0.26);
+	display: none;
 }
 
 .navbar-brand {
@@ -784,9 +803,10 @@ button.btn:focus {
 		//background-position: center;
 		border: none;
 		//background-color: #f4f4f4;
-		padding: 0px 5px;
-		background-color: #151515;
+		padding: 0px 10px;
+		//background-color: #151515;
 		color: white;
+		background-color: rgba(255, 255, 255, 0);
 	}
 
 	h1 {
@@ -809,16 +829,14 @@ button.btn:focus {
 		//background-color: #e69500;
 		//box-shadow: 0px 0px 5px #222222;
 		//background-color: #212121;
-
-		position: -webkit-sticky;
-		position: sticky;
-		top: 3px;
 		z-index: 1;
 		margin-bottom: 10px;
 	}
 
+
 	h5 {
 		margin: 12px 0;
+		font-size: 1.3rem;
 		font-weight: 200;
 	}
 
