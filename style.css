@@ -212,6 +212,8 @@ h4 {
 .fas {
 	color: #d9d9d9;
 	font-size: 30px;
+	color: #5d3500;
+	color: black;
 }
 
 
@@ -221,9 +223,6 @@ h4 {
 	//width: 1200px;
 	//margin: 57px auto 0 auto;
 
-	background-image: url(innen.jpeg);
-	background-size: cover;
-	background-position: center;
 
 
 	color: black;
@@ -266,6 +265,7 @@ h4 {
 	//background-color: #070707;
 	//background-color: #eaeaea;
 	background-color: #e2e2e2;
+	background-color: rgba(255, 255, 255, 0);
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 }
 
@@ -304,9 +304,22 @@ h4 {
 }
 
 .wrapper {
-	display: flex;
 	height: 230px;
 	//background-color: red;
+	background-image: url(innen.jpeg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.textTest {
+	position: absolute;
+	font-size: 3rem;
+	color: white;
+	text-shadow: 0 0 10px black;
+	padding: 30px;
+	bottom: 0px;
+
 }
 
 .speisekarteWrapperText {
@@ -316,7 +329,6 @@ h4 {
 	justify-content: center;
 	flex-direction: column;
 	padding: 20px;
-	//background-color: rgba(0, 0, 0, 0.4);
 }
 
 .speisekarteWrapperImg {
@@ -425,27 +437,28 @@ h4 {
 	max-width: 900px;
 }
 
-.meal {
-	//background-color: #f7f7f7;
-	//background-color: #fbfbfb;
+/* .meal {
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0.69);
-	//background-color: rgba(255, 255, 255, 0.97);
 	border: solid 1px #ebebeb;
 	display: flex;
 	flex-direction: column;
-	//padding: 3px;
-	//box-shadow: 0 8px 6px -6px #e5e5e5;
 	height: 100%;
 	transition: 0.5s;
-	//max-width: 340px;
 	margin: 0px auto;
 	text-align: center;
-	//border: solid 1px #e8e8e8;
-	//border: solid 1px #eaeaea;
-	//border-bottom: solid 1px #dedede;
-	//box-shadow: 0px 2px 3px #dedede;
+	border-radius: 5px;
+	border: none;
+} */
+
+.meal {
+	display: flex;
+	flex-direction: column;
+	border-bottom: solid 1px #c3c3c3;
+	padding: 10px 0;
 }
+
+
 
 .mealHead {
 	position: relative;
@@ -475,8 +488,10 @@ h4 {
 	//color: white;
 	//border-radius: 2px;
 	//font-size: 2rem;
-	//position: absolute;
-	//top: -4px;
+	position: absolute;
+	top: 0px;
+	left: -20px;
+	letter-spacing: -8px;
 	//padding: 0px 6px 0 0;
 	//margin: 5px;
 	//top: -5px;
@@ -487,15 +502,15 @@ h4 {
 	//top: -1px;
 	//left: -1px;
 	//height: 40px;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	//width: 100%;
 	//box-shadow: 1px 1px 3px #797979;
 	//background-color: #222222;
 	font-family: arial;
 	font-family: 'Fira Code', monospace;
 	font-weight: bold;
-	background-color: #222222;
+	//background-color: #222222;
 	border-radius: 3px;
 	display: flex;
 	flex-direction: column;
@@ -505,7 +520,8 @@ h4 {
 	//text-align: left;
 	//padding: 4px;
 	text-align: center;
-
+	font-size: 3rem;
+	color: #cccccc;
 	//box-shadow: 2px 2px 3px #d8d8d8;
 	//border: solid 1px grey;
 }
@@ -806,7 +822,9 @@ button.btn:focus {
 		padding: 0px 10px;
 		//background-color: #151515;
 		color: white;
-		background-color: rgba(255, 255, 255, 0);
+		background-color: rgb(240, 240, 240);
+
+		//box-shadow: 0 0 0 2px rgb(82, 42, 1);
 	}
 
 	h1 {
@@ -819,25 +837,32 @@ button.btn:focus {
 	}
 
 	h3 {
+		position: sticky;
+		top: 0;
+
 		font-size: 2rem;
-		width: 98%;
+		width: 100%;
 		margin: 0px auto;
 		text-align: center;
 		color: black;
 		font-weight: bold;
-		padding: 3px 0;
-		//background-color: #e69500;
+		padding: 8px 0;
+		background-color: #e69500;
+		background-color: rgb(240, 240, 240);
 		//box-shadow: 0px 0px 5px #222222;
 		//background-color: #212121;
 		z-index: 1;
 		margin-bottom: 10px;
+		background-color: #f4f4f4;
 	}
 
 
 	h5 {
 		margin: 12px 0;
 		font-size: 1.3rem;
-		font-weight: 200;
+		font-weight: 300;
+		color: #653e0a;
+		color: black;
 	}
 
 	.column {
@@ -848,7 +873,7 @@ button.btn:focus {
 	.mealBox {
 		flex: 100%;
 		max-width: 100%;
-		padding: 5px;
+		padding: 0px 40px;
 		//padding: 0;
 	}
 
