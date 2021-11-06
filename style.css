@@ -841,6 +841,8 @@ button.btn:focus {
 		margin-left: -30px !important;
 		/* 50% of your logo width */
 		display: block;
+		//box-shadow: 0 0 6px #1c1c1c;
+		border-radius: 10px;
 	}
 
 	.test {
@@ -857,7 +859,6 @@ button.btn:focus {
 	}
 
 	h3 {
-
 		font-size: 2rem;
 		width: 100%;
 		margin: 0px auto;
@@ -905,7 +906,8 @@ button.btn:focus {
 	}
 
 	.mealOuter {
-		background-color: #f4f4f4;
+		//background-color: #f4f4f4;
+		background-color: #f8f8f8;
 		//background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 	}
 
