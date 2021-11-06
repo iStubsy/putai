@@ -210,10 +210,8 @@ h4 {
 }
 
 .fas {
-	color: #d9d9d9;
-	font-size: 30px;
-	color: #5d3500;
-	color: black;
+	font-size: 2rem;
+	color: white;
 }
 
 
@@ -247,26 +245,28 @@ h4 {
 	//background-color: #121212;
 	//border-bottom: dashed 1px #626262;
 	//box-shadow: 0px 3px 3px #1a1a1a;
-	padding: 30px 0;
 	//font-size: 2rem;
 	//background-color: rgb(31, 31, 31);
 	width: 100%;
-	min-width: 280px;
+	//min-width: 300px;
 	z-index: 1;
 	//background-color: rgb(25, 25, 25);
 	//background-color: rgb(15, 15, 15);
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-	//box-shadow: 0px 3px 5px #1d1d1d;
-	background-color: #191919;
-	border-bottom: solid 2px #9d0000;
-	border-bottom: solid 1px #242424;
+	//box-shadow: 0px 1px 2px #191919;
+	//background-color: #191919;
+	//border-bottom: solid 2px #9d0000;
+	//border-bottom: solid 1px #171717;
 	//background-color: rgb(0, 0, 0);
 	//background-color: #191919;
 	//background-color: #070707;
 	//background-color: #eaeaea;
-	background-color: #e2e2e2;
-	background-color: rgba(255, 255, 255, 0);
+	//background-color: #e2e2e2;
+	//background-color: rgba(255, 255, 255, 0);
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	background-color: #1a1a1a;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	position: absolute;
 }
 
 /********************** CONTENT ***************************/
@@ -304,22 +304,36 @@ h4 {
 }
 
 .wrapper {
-	height: 230px;
+	height: 320px;
 	//background-color: red;
 	background-image: url(innen.jpeg);
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.putailogo {
+	//position: absolute;
+	//width: 100%;
+}
+
+.loool {
+	background-color: red;
 }
 
 .textTest {
-	position: absolute;
 	font-size: 3rem;
 	color: white;
 	text-shadow: 0 0 10px black;
 	padding: 30px;
-	bottom: 0px;
-
+	text-align: left;
+	margin: 0px auto;
+	//background-color: rgba(0, 0, 0, 0.29);
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
 }
 
 .speisekarteWrapperText {
@@ -387,7 +401,6 @@ h4 {
 	min-width: 300px;
 	max-width: 1150px;
 	margin: 0px auto;
-	box-shadow: 0px 3px 10px #b9b9b9;
 	background-color: #f5f5f5;
 }
 
@@ -399,7 +412,7 @@ h4 {
 	//padding: 0px 5px 5px 5px;
 	//padding: 20px;
 	padding: 20px 0px 10px 0px;
-	//transform: skewY(-5deg);
+	//transform: skewY(1deg);
 }
 
 #section_2 {
@@ -454,11 +467,9 @@ h4 {
 .meal {
 	display: flex;
 	flex-direction: column;
-	border-bottom: solid 1px #c3c3c3;
-	padding: 10px 0;
+	border-bottom: solid 1px #d1d1d1;
+	padding: 15px 0;
 }
-
-
 
 .mealHead {
 	position: relative;
@@ -490,7 +501,7 @@ h4 {
 	//font-size: 2rem;
 	position: absolute;
 	top: 0px;
-	left: -20px;
+	left: 00px;
 	letter-spacing: -8px;
 	//padding: 0px 6px 0 0;
 	//margin: 5px;
@@ -521,7 +532,7 @@ h4 {
 	//padding: 4px;
 	text-align: center;
 	font-size: 3rem;
-	color: #cccccc;
+	color: #dedede;
 	//box-shadow: 2px 2px 3px #d8d8d8;
 	//border: solid 1px grey;
 }
@@ -547,7 +558,7 @@ h4 {
 	text-align: left;
 
 	//border-top: solid 1px #4d4d4d;
-	padding: 10px 5px;
+	padding: 2px 5px;
 	//margin: 0px 10px 10px 10px;
 	text-align: center;
 	height: 100%;
@@ -622,7 +633,7 @@ h4 {
 	position: relative;
 	width: 100%;
 
-	background-color: #292929;
+	background-color: #1a1a1a;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	z-index: 2;
 	padding: 10px 0 20px 0;
@@ -715,7 +726,8 @@ h4 {
 	//background-color: #d4d4d4;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	//border: solid 3px rgba(222, 222, 222, 0.26);
-	display: none;
+	//display: none;
+	border-bottom: solid 1px #e2e2e2;
 }
 
 .navbar-brand {
@@ -766,9 +778,8 @@ button.btn:focus {
 	width: 100%;
 	//background-color: black;
 	transition: 0.5s;
-	background-color: #f5f5f5;
+	background-color: #ffffff;
 	color: black;
-
 }
 
 .nav-pills .nav-link {
@@ -778,9 +789,19 @@ button.btn:focus {
 	color: #696969;
 	//width: 25%;
 	transition: 0.5s;
-	background-color: #272727;
-	background-color: black;
-	background-color: #151515;
+	//background-color: #272727;
+	//background-color: black;
+	//background-color: #151515;
+	background-color: #f5f5f5;
+	//border-right: solid 1px #d3d3d3;
+}
+
+.nav-item {
+	border-right: solid 1px #e2e2e2;
+}
+
+.nav-item:last-child {
+	border-right: none;
 }
 
 .nav-link {
@@ -812,19 +833,16 @@ button.btn:focus {
 
 @media (max-width: 600px) {
 
-	.test {
-		//background-color: #272727;
-		//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-		//background-size: cover;
-		//background-position: center;
-		border: none;
-		//background-color: #f4f4f4;
-		padding: 0px 10px;
-		//background-color: #151515;
-		color: white;
-		background-color: rgb(240, 240, 240);
+	.brand {
+		position: absolute;
+		left: 50%;
+		margin-left: -30px !important;
+		/* 50% of your logo width */
+		display: block;
+	}
 
-		//box-shadow: 0 0 0 2px rgb(82, 42, 1);
+	.test {
+		height: 80px;
 	}
 
 	h1 {
@@ -837,8 +855,6 @@ button.btn:focus {
 	}
 
 	h3 {
-		position: sticky;
-		top: 0;
 
 		font-size: 2rem;
 		width: 100%;
@@ -847,22 +863,18 @@ button.btn:focus {
 		color: black;
 		font-weight: bold;
 		padding: 8px 0;
-		background-color: #e69500;
-		background-color: rgb(240, 240, 240);
+		//background-color: #e69500;
+		//background-color: rgb(240, 240, 240);
 		//box-shadow: 0px 0px 5px #222222;
 		//background-color: #212121;
 		z-index: 1;
 		margin-bottom: 10px;
-		background-color: #f4f4f4;
 	}
 
 
 	h5 {
 		margin: 12px 0;
 		font-size: 1.3rem;
-		font-weight: 300;
-		color: #653e0a;
-		color: black;
 	}
 
 	.column {
@@ -873,7 +885,7 @@ button.btn:focus {
 	.mealBox {
 		flex: 100%;
 		max-width: 100%;
-		padding: 0px 40px;
+		padding: 0px 50px;
 		//padding: 0;
 	}
 
