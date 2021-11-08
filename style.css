@@ -307,7 +307,7 @@ h4 {
 }
 
 .wrapper {
-	height: 280px;
+	height: 260px;
 	//background-color: red;
 	background-image: url(innen.jpeg);
 	background-size: cover;
@@ -322,10 +322,10 @@ h4 {
 	font-size: 3rem;
 	color: white;
 	text-shadow: 0 0 10px black;
-	padding: 30px;
-	text-align: left;
+	padding: 10px;
+	text-align: center;
 	margin: 0px auto;
-	//background-color: rgba(0, 0, 0, 0.29);
+	background-color: rgba(0, 0, 0, 0.29);
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
 }
@@ -839,7 +839,8 @@ button.btn:focus {
 	.brand {
 		position: absolute;
 		left: 50%;
-		margin-left: -30px !important;
+		top: 20px;
+		margin-left: -50px !important;
 		/* 50% of your logo width */
 		display: block;
 		//box-shadow: 0 0 6px #1c1c1c;
@@ -850,6 +851,7 @@ button.btn:focus {
 		height: 80px;
 		//border-bottom: solid 3px black;
 		box-shadow: 0 0px 10px #1d1d1d;
+		background-color: white;
 	}
 
 	h1 {
