@@ -839,7 +839,7 @@ button.btn:focus {
 	.brand {
 		position: absolute;
 		left: 50%;
-		top: 20px;
+		top: 30px;
 		margin-left: -50px !important;
 		/* 50% of your logo width */
 		display: block;
