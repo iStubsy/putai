@@ -307,7 +307,7 @@ h4 {
 }
 
 .wrapper {
-	height: 320px;
+	height: 280px;
 	//background-color: red;
 	background-image: url(innen.jpeg);
 	background-size: cover;
@@ -524,7 +524,7 @@ h4 {
 	//text-align: left;
 	//padding: 4px;
 	text-align: center;
-	font-size: 3rem;
+	font-size: 2.8rem;
 	color: #dedede;
 	color: #bebebe;
 	//box-shadow: 2px 2px 3px #d8d8d8;
