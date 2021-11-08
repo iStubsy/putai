@@ -213,6 +213,7 @@ h4 {
 .fas {
 	font-size: 2rem;
 	color: #434343;
+	color: black;
 }
 
 
@@ -839,19 +840,39 @@ button.btn:focus {
 	.brand {
 		position: absolute;
 		left: 50%;
-		top: 30px;
-		margin-left: -50px !important;
+		top: 0px;
+		margin-left: -60px !important;
 		/* 50% of your logo width */
 		display: block;
 		//box-shadow: 0 0 6px #1c1c1c;
 		border-radius: 10px;
 	}
 
+	.brandInner {
+		position: absolute;
+		height: 120px;
+		width: 120px;
+		left: 50%;
+		top: 0px;
+		margin-left: -60px !important;
+		/* 50% of your logo width */
+		display: block;
+		box-shadow: 0 0px 10px #1d1d1d;
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0);
+		outline: solid 2px #e0c600;
+		outline: double 4px black;
+		z-index: 1;
+		//box-shadow: 0 1px 5px black;
+	}
+
 	.test {
 		height: 80px;
 		//border-bottom: solid 3px black;
-		box-shadow: 0 0px 10px #1d1d1d;
+		//box-shadow: 0 0px 10px #1d1d1d;
 		background-color: white;
+		outline: solid 2px #e0c600;
+		outline: double 4px black;
 	}
 
 	h1 {
