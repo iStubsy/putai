@@ -765,8 +765,8 @@ button.btn:focus {
 	.brand {
 		position: absolute;
 		left: 50%;
-		top: 5px;
-		margin-left: -50px !important;
+		//top: px;
+		margin-left: -40px !important;
 		/* 50% of your logo width */
 		display: block;
 		//box-shadow: 0 0 6px #1c1c1c;
@@ -787,6 +787,7 @@ button.btn:focus {
 		//border: solid 1px #362424;
 		//outline: double 4px black;
 		z-index: 1;
+		//background-color: red;
 		//box-shadow: 0 0px 8px #6d6d6d;
 		box-shadow: 0 0px 5px rgba(0, 0, 0, 0.71);
 		//box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
@@ -876,7 +877,7 @@ button.btn:focus {
 	}
 
 	.test {
-		height: 80px;
+		//height: 80px;
 		//border-bottom: solid 3px black;
 		//box-shadow: 0 0px 10px #1d1d1d;
 		background-color: white;
