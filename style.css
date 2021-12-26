@@ -17,7 +17,14 @@ body {
 	//background-image: url("https://www.transparenttextures.com/patterns/connected.png");
 	//background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 	//background-attachment: fixed;
+	background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 	background-color: #ededed;
+	background-color: #ededed;
+	background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	background-color: white;
 }
 
 h1 {
@@ -200,7 +207,7 @@ h4 {
 }
 
 .header {
-	max-width: 1150px;
+	max-width: 1850px;
 	font-size: 1rem;
 }
 
@@ -211,6 +218,7 @@ h4 {
 .test {
 	width: 100%;
 	z-index: 1;
+	margin: 0px auto;
 }
 
 /********************** CONTENT ***************************/
@@ -357,7 +365,7 @@ h4 {
 
 .mealBox {
 	position: relative;
-	padding: 20px 20px;
+	padding: 10px 10px;
 	//margin-bottom: 5px;
 	//font-family: serif;
 	flex: 100%;
