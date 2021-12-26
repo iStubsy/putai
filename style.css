@@ -30,7 +30,9 @@ body {
 h1 {
 	font-family: 'Poiret One', cursive;
 	font-size: 7rem;
+	line-height: 7rem;
 	color: white;
+	margin-bottom: 0;
 	text-shadow: 2px 2px 1px black;
 	//padding: 100px 0;
 	//background-color: #272727;
@@ -213,6 +215,12 @@ h4 {
 
 .headerItem {
 	margin: 0px 15px;
+	font-family: 'Poiret One', cursive;
+	font-weight: 900;
+}
+
+.headerItem a:hover {
+	color: darkred;
 }
 
 .test {
@@ -255,6 +263,12 @@ h4 {
 	box-shadow: 2px 2px 5px #898989;
 }
 
+.speisekarteWrapperLine {
+	background-color: white;
+	height: 2px;
+	width: 70%;
+}
+
 .speisekarteHeaderRight {
 
 	width: 50%;
@@ -264,7 +278,7 @@ h4 {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	padding: 20px;
+	padding: 40px;
 	background-color: #121212;
 	background-color: #222222;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
@@ -744,7 +758,6 @@ button.btn:focus {
 
 .nav-item {
 	border-right: solid 1px #e2e2e2;
-
 }
 
 .nav-item:last-child {
