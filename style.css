@@ -49,7 +49,7 @@ h3 {
 	font-weight: bold;
 
 
-	font-size: 2rem;
+	font-size: 2.5rem;
 	//line-height: 2.5rem;
 	border-radius: 0;
 	background-color: transparent;
@@ -207,7 +207,7 @@ h4 {
 }
 
 .header {
-	max-width: 1850px;
+	max-width: 1300px;
 	font-size: 1rem;
 }
 
@@ -219,6 +219,7 @@ h4 {
 	width: 100%;
 	z-index: 1;
 	margin: 0px auto;
+	border-bottom: solid 1px #ebebeb;
 }
 
 /********************** CONTENT ***************************/
@@ -239,26 +240,42 @@ h4 {
 
 .speisekarteWrapper {
 	position: relative;
-	//background-color: #272727;
-	//background-image: url(innen.jpeg);
-	background-size: cover;
-	background-position: center;
-
-	//background-color: #242424;
-	//background-color: #212121;
 
 	color: black;
 	//position: fixed;
 	height: 400px;
 	width: 100%;
-	max-width: 1800px;
-	margin: 0px auto;
+	max-width: 1200px;
+	margin: 40px auto 30px auto;
 	display: flex;
 	justify-content: center;
-	background-image: url(innen.jpeg);
 	display: flex;
+	//flex-direction: column;
+	justify-content: center;
+	box-shadow: 2px 2px 5px #898989;
+}
+
+.speisekarteHeaderRight {
+
+	width: 50%;
+	text-align: left;
+	font-size: 5rem;
+
+	display: flex;
+	justify-content: center;
 	flex-direction: column;
-	justify-content: center;
+	padding: 20px;
+	background-color: #121212;
+	background-color: #222222;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+}
+
+.speisekarteHeaderLeft {
+	width: 50%;
+	background-image: url(innen.jpeg);
+	background-size: cover;
+	background-position: center;
+	border: solid 0px darkred;
 }
 
 .wrapper {
@@ -587,6 +604,7 @@ h4 {
 	margin: 0px auto;
 	color: #e2e2e2;
 	padding: 10px 0;
+	max-width: 1600px;
 }
 
 .footerColumn {
@@ -880,7 +898,7 @@ button.btn:focus {
 		//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 		background-size: cover;
 		background-position: center;
-		border: none;
+
 		background-color: white;
 	}
 
