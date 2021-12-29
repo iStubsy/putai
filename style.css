@@ -280,7 +280,7 @@ h5 {
 	background-color: white;
 	height: 2px;
 	width: 70%;
-	min-width: 300px;
+	min-width: 240px;
 }
 
 .speisekarteHeaderRight {
@@ -300,7 +300,7 @@ h5 {
 
 .speisekarteHeaderLeft {
 	width: 40%;
-	min-width: 400px;
+	min-width: 30px;
 	background-image: url(innen.jpeg);
 	background-size: cover;
 	background-position: center;
@@ -791,7 +791,7 @@ button.btn:focus {
 
 .nav-link:hover {
 	color: black;
-	border-bottom: solid 2px black;
+	//border-bottom: solid 2px black;
 	transition: 0.5s;
 }
 
@@ -859,7 +859,6 @@ button.btn:focus {
 		z-index: 1;
 		//background-color: red;
 		//box-shadow: 0 0px 8px #6d6d6d;
-		box-shadow: 0 0px 5px rgba(0, 0, 0, 0.71);
 		//box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
 	}
 
@@ -1011,7 +1010,7 @@ button.btn:focus {
 	}
 
 	.brand {
-		border: solid 1px #b2b2b2;
+		box-shadow: 2px 2px 5px grey;
 	}
 
 }
