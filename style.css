@@ -29,8 +29,8 @@ body {
 
 h1 {
 	font-family: 'Poiret One', cursive;
-	font-size: 7rem;
-	line-height: 7rem;
+	font-size: 6rem;
+	line-height: 6rem;
 	color: white;
 	margin-bottom: 0;
 	text-shadow: 2px 2px 1px black;
@@ -280,6 +280,7 @@ h5 {
 	background-color: white;
 	height: 2px;
 	width: 70%;
+	min-width: 300px;
 }
 
 .speisekarteHeaderRight {
@@ -305,7 +306,7 @@ h5 {
 	background-position: center;
 	border: solid 0px darkred;
 	transform: rotate(-5deg);
-	box-shadow: 2px 2px 2px #151515;
+	box-shadow: 2px 2px 5px #151515;
 }
 
 .wrapper {
@@ -828,7 +829,7 @@ button.btn:focus {
 
 /************* small **************/
 
-@media (max-width: 600px) {
+@media (max-width: 766px) {
 	.brand {
 		position: absolute;
 		left: 50%;
@@ -872,7 +873,7 @@ button.btn:focus {
 	}
 
 	h1 {
-		font-size: 3.8rem;
+		font-size: 5rem;
 		display: none;
 	}
 
@@ -927,8 +928,8 @@ button.btn:focus {
 }
 
 /************* medium **************/
-
-@media (min-width: 601px) {
+/*
+@media (min-width: 720px) {
 	.test {
 		//background-color: #272727;
 		//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
@@ -963,7 +964,7 @@ button.btn:focus {
 		display: none;
 	}
 }
-
+*/
 /************* large **************/
 
 @media (min-width: 767px) {
@@ -1001,6 +1002,10 @@ button.btn:focus {
 
 	.nav-item {
 		border: none;
+	}
+
+	.brand {
+		border: solid 1px #b2b2b2;
 	}
 
 }
