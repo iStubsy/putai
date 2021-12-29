@@ -292,7 +292,7 @@ h5 {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	padding: 40px 100px;
+	padding: 40px 0px 40px 100px;
 	background-color: #121212;
 	background-color: #222222;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
@@ -401,6 +401,8 @@ h5 {
 }
 
 .menu {}
+
+.mealOuterWrapper {}
 
 .mealOuter {
 	display: flex;
@@ -925,6 +927,10 @@ button.btn:focus {
 		display: none;
 	}
 
+	.nav-link {
+		transition: 0s;
+	}
+
 }
 
 /************* medium **************/
@@ -1046,6 +1052,8 @@ button.btn:focus {
 	border-radius: 2px;
 	display: inline-block;
 	width: 300px;
+
+	display: none;
 }
 
 .polaroidText {
