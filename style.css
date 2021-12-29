@@ -1,10 +1,10 @@
 /******************* HTML *********************/
 
-img {
-	border-radius: 5px;
-}
+img {}
 
-html {}
+html {
+	overflow-x: hidden;
+}
 
 body {
 	text-align: center;
@@ -72,6 +72,13 @@ h4 {
 	margin: 0 auto;
 	font-weight: 300;
 	padding: 0;
+}
+
+h5 {
+	color: #939393;
+	font-size: 1.5rem;
+	font-weight: 300;
+	padding: 5px 0;
 }
 
 .headlineUnderline {
@@ -215,13 +222,11 @@ h4 {
 
 .headerItem {
 	margin: 0px 15px;
-	font-family: 'Poiret One', cursive;
-	font-weight: 900;
+	//font-family: 'Poiret One', cursive;
+	//font-weight: 900;
 }
 
-.headerItem a:hover {
-	color: darkred;
-}
+.headerItem a:hover {}
 
 .test {
 	width: 100%;
@@ -242,7 +247,7 @@ h4 {
 }
 
 .headerPic {
-	background-color: red;
+	background-color: #1c0e0e;
 	padding: 2px;
 }
 
@@ -260,7 +265,15 @@ h4 {
 	display: flex;
 	//flex-direction: column;
 	justify-content: center;
+
+	//overflow: hidden;
+}
+
+.speisekarteWrapperBackground {
+	background-color: #222222;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	box-shadow: 2px 2px 5px #898989;
+
 }
 
 .speisekarteWrapperLine {
@@ -271,25 +284,28 @@ h4 {
 
 .speisekarteHeaderRight {
 
-	width: 50%;
+	width: 60%;
 	text-align: left;
 	font-size: 5rem;
 
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	padding: 40px;
+	padding: 40px 100px;
 	background-color: #121212;
 	background-color: #222222;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 }
 
 .speisekarteHeaderLeft {
-	width: 50%;
+	width: 40%;
+	min-width: 400px;
 	background-image: url(innen.jpeg);
 	background-size: cover;
 	background-position: center;
 	border: solid 0px darkred;
+	transform: rotate(-5deg);
+	box-shadow: 2px 2px 2px #151515;
 }
 
 .wrapper {
@@ -390,7 +406,7 @@ h4 {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -765,8 +781,20 @@ button.btn:focus {
 }
 
 .nav-link {
+	color: #6d6d6d;
+	font-size: 1rem;
+	border-bottom: solid 2px transparent;
+}
+
+.nav-link:hover {
 	color: black;
-	font-size: 1.2rem;
+	border-bottom: solid 2px black;
+	transition: 0.5s;
+}
+
+.nav-link.active {
+	color: black;
+	border-bottom: solid 2px black;
 }
 
 .nav {
@@ -868,11 +896,6 @@ button.btn:focus {
 		margin-bottom: 10px;
 	}
 
-	h5 {
-		margin: 12px 0;
-		font-size: 1.3rem;
-	}
-
 	.column {
 		flex: 100%;
 		max-width: 100%;
@@ -924,6 +947,11 @@ button.btn:focus {
 		//outline: double 4px black;
 		//box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
 		//box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+	}
+
+	.speisekarteWrapper {
+		margin: 0 auto;
+
 	}
 
 	.mealBox {
@@ -985,6 +1013,8 @@ button.btn:focus {
 		max-width: 33.33%;
 	}
 
+	.speisekarteWrapper {}
+
 	#speisekarteWrapperLogo {
 		display: none;
 	}
@@ -997,4 +1027,26 @@ button.btn:focus {
 		box-shadow: none;
 	}
 
+}
+
+/************* EXTRA FUN ***************/
+
+.polaroid {
+	background-color: white;
+	box-shadow: 3px 2px 5px #acacac;
+	padding: 10px;
+	position: relative;
+	right: -730px;
+	transform: rotate(20deg);
+	border-radius: 2px;
+	display: inline-block;
+	width: 300px;
+}
+
+.polaroidText {
+	margin: 10px 0 0 0;
+}
+
+.hoverTest {
+	position: absolute;
 }
