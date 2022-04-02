@@ -491,7 +491,7 @@ h5 {
 
 .mealBox {
 	position: relative;
-	padding: 1% 1%;
+	padding: 1.5% 1.5%;
 	//margin-bottom: 5px;
 	//font-family: serif;
 	flex: 100%;
@@ -519,8 +519,8 @@ h5 {
 	flex-direction: column;
 	height: 100%;
 	border-bottom: solid 1px #e8e8e8;
-	padding: 10px 0;
-	background-color: rgba(31, 31, 31, 0.02);
+	padding: 0 0 15px 0;
+	//background-color: rgba(31, 31, 31, 0.02);
 }
 
 .mealHead {
@@ -617,7 +617,7 @@ h5 {
 	text-align: left;
 
 	//border-top: solid 1px #4d4d4d;
-	padding: 20px 5px;
+	padding: 20px 5px 10px 5px;
 	//margin: 0px 10px 10px 10px;
 	text-align: center;
 	height: 100%;
