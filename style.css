@@ -25,6 +25,7 @@ body {
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 	background-color: white;
+	transition: 0.2s;
 }
 
 h1 {
@@ -203,14 +204,12 @@ h5 {
 
 .fab {
 	color: white;
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 }
 
 .fab:hover {
-	color: red;
+	color: #600700;
 }
-
-
 
 
 /*********************** TITLE ****************************/
@@ -241,15 +240,6 @@ h5 {
 	padding: 15px 0;
 }
 
-.headerBelow {
-
-	width: 100%;
-	height: 38px;
-
-	border-top: solid 1px #d6d6d6;
-	display: none;
-}
-
 .headerItem a {
 	margin: 0px 15px;
 	color: grey;
@@ -276,6 +266,10 @@ h5 {
 	border-radius: none;
 }
 
+.nav-link:hover {
+	color: black;
+}
+
 /********************** CONTENT ***************************/
 
 #collapseExample {
@@ -300,7 +294,7 @@ h5 {
 
 	width: 100%;
 	max-width: 1000px;
-	margin: 0px auto 30px auto;
+	margin: 0px auto 0px auto;
 	display: flex;
 	justify-content: center;
 	display: flex;
@@ -308,13 +302,47 @@ h5 {
 	justify-content: center;
 
 	//overflow: hidden;
+
 }
+
+.phoneBar {
+	position: sticky;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+
+	font-size: 1.2rem;
+	padding: 10px;
+	width: 90%;
+	max-width: 1100px;
+}
+
+.adress {}
+
+.phone {
+	display: flex;
+	justify-content: center;
+}
+
+.phoneNumber {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.fa-mobile-screen-button {
+	padding: 10px;
+}
+
 
 .speisekarteWrapperBackground {
 	background-color: #121212;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	box-shadow: 2px 2px 5px #898989;
-
 }
 
 .speisekarteWrapperLine {
@@ -473,7 +501,7 @@ h5 {
 #section_2,
 #section_3 {
 	width: 100%;
-	padding: 20px 0;
+	padding: 40px 0 0 0;
 }
 
 .menu {}
@@ -521,6 +549,7 @@ h5 {
 	border-bottom: solid 1px #e8e8e8;
 	padding: 0 0 15px 0;
 	//background-color: rgba(31, 31, 31, 0.02);
+	//background-color: rgba(222, 222, 222, 0.13);
 }
 
 .mealHead {
@@ -592,6 +621,8 @@ h5 {
 	background-color: #404040;
 	padding: 4px;
 	color: white;
+	background-color: #121212;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 }
 
 #collapseVorspeisen,
@@ -671,7 +702,7 @@ h5 {
 
 .wahlweise {
 	text-align: center;
-	text-decoration: underline;
+	//text-decoration: underline;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
@@ -694,6 +725,9 @@ h5 {
 	width: 100%;
 
 	background-color: #1a1a1a;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+
+	background-color: #121212;
 	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	z-index: 2;
 	padding: 10px 0 20px 0;
@@ -729,6 +763,15 @@ h5 {
 	position: relative;
 	width: 100%;
 	margin: 15px 0;
+}
+
+.socialLinkWrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.socialLink {
+	padding: 15px 5px;
 }
 
 .footerBottom {
@@ -1031,7 +1074,7 @@ button.btn:focus {
 		flex: 100%;
 		max-width: 100%;
 		//padding: 0px 0px;
-		padding: 2% 0;
+		padding: 0 0 5% 0;
 	}
 
 	.menu {
