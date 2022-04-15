@@ -309,7 +309,7 @@ h5 {
 	position: fixed;
 	z-index: 100;
 	bottom: 0;
-	width: 100%;
+	//width: 100%;
 	display: flex;
 	justify-content: space-between;
 	width: 80%;
@@ -318,6 +318,11 @@ h5 {
 	font-size: 1.2rem;
 	padding: 2px;
 	width: 100%;
+
+	background-color: grey;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	display: none;
 }
 
 .adress {}
@@ -327,6 +332,7 @@ h5 {
 	justify-content: center;
 	margin: 0px auto;
 }
+
 
 .phoneNumber {
 	display: flex;
@@ -404,7 +410,7 @@ h5 {
 .fotoTest3 {
 	background-image: url(191847686_437230597526507_3884559355525967384_n.jpeg);
 	background-size: cover;
-	width: 200px;
+	min-width: 200px;
 	height: 200px;
 	border: solid 2px white;
 	border-bottom: solid 40px white;
@@ -561,7 +567,7 @@ h5 {
 	//padding: 10px 10px;
 	//background-color: #272219;
 	//background-color: #261e1e;
-	padding: 3px 0;
+	padding: 6px 0 0 0;
 	font-size: 1.5rem;
 	//padding: 5px;
 	//border-radius: 3px;
@@ -649,10 +655,11 @@ h5 {
 	text-align: left;
 
 	//border-top: solid 1px #4d4d4d;
-	padding: 20px 5px 10px 5px;
-	//margin: 0px 10px 10px 10px;
+	padding: 20px 0;
+	width: 80%;
 	text-align: center;
 	height: 100%;
+	margin: 0px auto;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -994,7 +1001,8 @@ button.btn:focus {
 
 /************* small **************/
 
-@media (max-width: 650px) {
+@media (max-width: 620px) {
+
 	.brand {
 		position: absolute;
 		left: 50%;
@@ -1090,10 +1098,6 @@ button.btn:focus {
 		display: none;
 	}
 
-	.navbar_1 {
-		display: none;
-	}
-
 	.nav-link {
 		transition: 0s;
 	}
@@ -1101,46 +1105,27 @@ button.btn:focus {
 }
 
 /************* medium **************/
-/*
-@media (min-width: 720px) {
-	.test {
-		//background-color: #272727;
-		//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-		background-size: cover;
-		background-position: center;
 
-		background-color: white;
-	}
-
-	.test {
-		//height: 80px;
-		//border-bottom: solid 3px black;
-		//box-shadow: 0 0px 10px #1d1d1d;
-		background-color: white;
-		//border-bottom: solid 1px #362424;
-		//outline: double 4px black;
-		//box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
-		//box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
-	}
-
-	.speisekarteWrapper {
-		margin: 0 auto;
-
-	}
-
+@media (min-width: 621px) {
 	.mealBox {
 		flex: 50%;
 		max-width: 50%;
 	}
 
-	.wrapper {
+	.speisekarteWrapper {
 		display: none;
 	}
+
+	.brand {
+		//position: absolute;
+		//top: 0.5rem;
+		box-shadow: 2px 2px 5px #c3c3c3;
+	}
 }
-*/
+
 /************* large **************/
 
-@media (min-width: 651px) {
+@media (min-width: 800px) {
 
 	.mealBox {
 		flex: 33.33%;
@@ -1151,6 +1136,10 @@ button.btn:focus {
 
 	.wrapper {
 		display: none;
+	}
+
+	.speisekarteWrapper {
+		display: flex;
 	}
 
 	#navbar_1 {
