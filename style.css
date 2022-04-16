@@ -4,7 +4,6 @@ img {}
 
 html {
 	overflow-x: hidden;
-	scroll-behavior: smooth;
 }
 
 body {
@@ -521,7 +520,7 @@ h5 {
 #section_2,
 #section_3 {
 	width: 100%;
-	padding: 40px 0 0 0;
+	padding: 20px 0 0 0;
 }
 
 .menu {}
