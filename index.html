@@ -62,7 +62,7 @@
 					var $anchor = $(this);
 					$('html, body').stop().animate({
 						scrollTop: $($anchor.attr('href')).offset().top - 46
-					}, 1300);
+					}, 0); /* was 1300 DELETE */
 					event.preventDefault();
 				});
 			} else {
@@ -93,6 +93,13 @@
 			document.getElementsByTagName("BODY")[0].style.height = "100%";
 			document.getElementsByTagName("HTML")[0].style.overflow = "visible";
 
+		}
+
+
+		/*		BACK TO TOP BUTTON		*/
+		function backToTopFunc() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
 		}
 
 	</script>
@@ -147,6 +154,7 @@
 		</div>
 	</section>
 	<section id="content">
+		<button onclick="backToTopFunc()" id="backToTop">Top</button>
 		<div class="mealOuterWrapper">
 			<div class="speisekarteWrapperBackground">
 				<div class="speisekarteWrapper">

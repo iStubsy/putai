@@ -4,6 +4,7 @@ img {}
 
 html {
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -496,6 +497,18 @@ h5 {
 
 #content {
 	width: 100%;
+}
+
+#backToTop {
+	background-color: blue;
+	color: white;
+	border-radius: 3px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 5px;
+	font-size: 1.5rem;
+	z-index: 100;
 }
 
 .oneTwoThree {
