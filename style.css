@@ -1,5 +1,13 @@
 /******************* HTML *********************/
 
+@font-face {
+  font-family: 'MyWebFont'; /* Define the custom font name */
+  src:  url('myfont.woff2') format('woff2'),
+        url('myfont.woff') format('woff'); /* Define where the font can be downloaded */
+  font-display: fallback; /* Define how the browser behaves during download */
+}
+
+
 img {}
 
 html {
@@ -35,6 +43,7 @@ h1 {
 	color: white;
 	margin-bottom: 0;
 	text-shadow: 2px 2px 1px black;
+	letter-spacing: 10px;
 	//padding: 100px 0;
 	//background-color: #272727;
 	//background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
@@ -69,11 +78,14 @@ h3 {
 }
 
 h4 {
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	margin: 0 auto;
 	font-weight: 300;
 	padding: 0;
 	text-align: center;
+	font-weight: 400;
+	font-family: 'Kaushan Script', cursive;
+
 }
 
 h5 {
@@ -223,13 +235,12 @@ h5 {
 	//margin: 57px auto 0 auto;
 
 
-
 	color: black;
 	width: 100%;
 }
 
 .test {
-	max-width: 1200px;
+	max-width: 1000px;
 
 	width: 100%;
 	z-index: 1;
@@ -239,7 +250,6 @@ h5 {
 .header {
 	max-width: 1200px;
 	font-size: 1rem;
-	//background-color: red;
 
 	padding: 15px 0;
 }
@@ -298,7 +308,8 @@ h5 {
 
 	width: 100%;
 	max-width: 1000px;
-	margin: 0px auto 0px auto;
+	margin: 0px auto;
+	padding: 20px 0;
 	display: flex;
 	justify-content: center;
 	display: flex;
@@ -306,7 +317,6 @@ h5 {
 	justify-content: center;
 
 	//overflow: hidden;
-
 }
 
 .phoneBar {
@@ -383,44 +393,50 @@ h5 {
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	height: 400px;
 }
 
 .fotoTest {
 	background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
 	background-size: cover;
-	width: 200px;
-	height: 200px;
-	border: solid 2px white;
-	border-bottom: solid 40px white;
-	transform: rotate(3deg);
+	width: 220px;
+	height: 220px;
+	border: solid 3px white;
+	border-top: solid 5px white;
+	border-bottom: solid 50px white;
+	transform: rotate(4deg);
 	position: relative;
-	top: 30px;
+	top: 0px;
+	left: -5%;
 }
 
 .fotoTest2 {
 	background-image: url(191847686_437230597526507_3884559355525967384_n.jpeg);
 	background-size: cover;
-	width: 200px;
-	height: 200px;
-	border: solid 2px white;
-	border-bottom: solid 40px white;
-	transform: rotate(-4deg);
-	position: relative;
-	left: 5%;
-	bottom: 5%;
+	width: 220px;
+	height: 220px;
+	border: solid 3px white;
+	border-bottom: solid 50px white;
+	border-top: solid 5px white;
+	transform: rotate(-5deg);
+	position: absolute;
+	left: -10%;
+	bottom: 0%;
 	box-shadow: 0px 0px 10px black;
 }
 
 .fotoTest3 {
 	background-image: url(191847686_437230597526507_3884559355525967384_n.jpeg);
 	background-size: cover;
-	min-width: 200px;
-	height: 200px;
-	border: solid 2px white;
-	border-bottom: solid 40px white;
+	min-width: 220px;
+	height: 220px;
+	border: solid 3px white;
+	border-top: solid 5px white;
+	border-bottom: solid 50px white;
 	transform: rotate(5deg);
 	position: relative;
-	top: 25%;
+	top: 0%;
+	right: -5%;
 	box-shadow: 0px 0px 10px black;
 }
 
@@ -540,19 +556,18 @@ h5 {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 90%;
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
 .mealBox {
 	position: relative;
-	padding: 1.5% 1.5%;
+	padding: 2% 2%;
 	//margin-bottom: 5px;
 	//font-family: serif;
 	flex: 100%;
 	max-width: 100%;
 	max-width: 900px;
-
 }
 
 /* .meal {
@@ -570,14 +585,45 @@ h5 {
 } */
 
 .meal {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	border: solid 1px #e8e8e8;
-	border: dashed 1px #d8d8d8;
+	//border: solid 1px #e8e8e8;
+	border: solid 1px #dbdbdb;
 	padding: 0 0 15px 0;
 	//background-color: rgba(31, 31, 31, 0.02);
-	//background-color: rgba(222, 222, 222, 0.13);
+	//background-color: rgba(186, 186, 186, 0.13);
+}
+
+.bottomRightBorder {
+	border-right: solid 2px black;
+	border-bottom: solid 2px black;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	bottom: -1px;
+	right: -1px;
+}
+
+.bottomLeftBorder {
+	border-left: solid 2px black;
+	border-bottom: solid 2px black;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	bottom: -1px;
+	left: -1px;
+}
+
+.topRightBorder {
+	border-right: solid 2px black;
+	border-top: solid 2px black;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: -1px;
+	right: -1px;
 }
 
 .mealHead {
@@ -589,7 +635,7 @@ h5 {
 	//background-color: #272219;
 	//background-color: #261e1e;
 	padding: 6px 0 0 0;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	//padding: 5px;
 	//border-radius: 3px;
 	//background-color: #2c2c2c;
@@ -609,8 +655,8 @@ h5 {
 	//border-radius: 2px;
 	//font-size: 2rem;
 	position: absolute;
-	top: 0px;
-	//left: 5px;
+	top: -1px;
+	left: -1px;
 	//letter-spacing: -2px;
 	//padding: 0px 6px 0 0;
 	//margin: 5px;
@@ -623,7 +669,7 @@ h5 {
 	//left: -1px;
 	//height: 40px;
 	//width: 35px;
-	height: 35px;
+	height: 40px;
 	//width: 100%;
 	//box-shadow: 1px 1px 3px #797979;
 	//background-color: #222222;
@@ -685,7 +731,7 @@ h5 {
 	justify-content: center;
 	flex-direction: column;
 
-	color: #898787;
+	//color: #898787;
 }
 
 .mealFooter {
@@ -1023,11 +1069,13 @@ button.btn:focus {
 /************* small **************/
 
 @media (max-width: 620px) {
+	#title {
+		background-color: white;
+	}
 
 	.brand {
 		position: absolute;
 		left: 50%;
-		//top: px;
 		margin-left: -50px !important;
 		/* 50% of your logo width */
 		display: block;
@@ -1111,6 +1159,10 @@ button.btn:focus {
 		padding: 0;
 	}
 
+	.wrapper {
+		background-color: black;
+	}
+
 	.headerPic {
 		display: none;
 	}
@@ -1128,6 +1180,10 @@ button.btn:focus {
 /************* medium **************/
 
 @media (min-width: 621px) {
+	#title {
+		background-color: white;
+	}
+
 	.mealBox {
 		flex: 50%;
 		max-width: 50%;
@@ -1140,7 +1196,7 @@ button.btn:focus {
 	.brand {
 		//position: absolute;
 		//top: 0.5rem;
-		box-shadow: 2px 2px 5px #c3c3c3;
+		//box-shadow: 2px 2px 5px #c3c3c3;
 	}
 }
 
@@ -1192,7 +1248,7 @@ button.btn:focus {
 	.brand {
 		//position: absolute;
 		//top: 0.5rem;
-		box-shadow: 2px 2px 5px #c3c3c3;
+		//box-shadow: 2px 2px 5px #c3c3c3;
 	}
 
 	.test {
@@ -1204,7 +1260,7 @@ button.btn:focus {
 
 /************* extra large **************/
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
 	.mealBox {
 		flex: 33.33%;
 		max-width: 33.33%;
