@@ -4,7 +4,7 @@
   font-family: 'MyWebFont'; /* Define the custom font name */
   src:  url('myfont.woff2') format('woff2'),
         url('myfont.woff') format('woff'); /* Define where the font can be downloaded */
-  font-display: fallback; /* Define how the browser behaves during download */
+  font-display: block; /* Define how the browser behaves during download */
 }
 
 
