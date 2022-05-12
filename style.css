@@ -1,10 +1,13 @@
 /******************* HTML *********************/
 
 @font-face {
-  font-family: 'MyWebFont'; /* Define the custom font name */
-  src:  url('myfont.woff2') format('woff2'),
-        url('myfont.woff') format('woff'); /* Define where the font can be downloaded */
-  font-display: block; /* Define how the browser behaves during download */
+	font-family: 'MyWebFont';
+	/* Define the custom font name */
+	src: url('myfont.woff2') format('woff2'),
+		url('myfont.woff') format('woff');
+	/* Define where the font can be downloaded */
+	font-display: block;
+	/* Define how the browser behaves during download */
 }
 
 
@@ -84,7 +87,7 @@ h4 {
 	padding: 0;
 	text-align: center;
 	font-weight: 400;
-	font-family: 'Kaushan Script', cursive;
+	//font-family: 'Kaushan Script', cursive;
 
 }
 
