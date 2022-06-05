@@ -11,10 +11,15 @@
 }
 
 
+@font-face {
+	font-family:
+}
+
 img {}
 
 html {
 	overflow-x: hidden;
+	background-color: black;
 }
 
 body {
@@ -88,7 +93,6 @@ h4 {
 	text-align: center;
 	font-weight: 400;
 	//font-family: 'Kaushan Script', cursive;
-
 }
 
 h5 {
@@ -243,8 +247,8 @@ h5 {
 }
 
 .test {
-	max-width: 1000px;
-
+	max-width: 1100px;
+	background-color: white;
 	width: 100%;
 	z-index: 1;
 	margin: 0px auto;
@@ -254,7 +258,7 @@ h5 {
 	max-width: 1200px;
 	font-size: 1rem;
 
-	padding: 15px 0;
+	//padding: 15px 0;
 }
 
 .headerItem a {
@@ -364,8 +368,13 @@ h5 {
 
 .speisekarteWrapperBackground {
 	background-color: #121212;
-	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-	box-shadow: 2px 2px 5px #898989;
+	//box-shadow: 2px 2px 5px #898989;
+	//background-image: url(197622501_440152393900994_2107169479052042263_n.jpeg);
+	//height: 100vh;
+	width: 1200px;
+	margin: 0 auto;
+	background-size: cover;
+	max-height: 700px;
 }
 
 .speisekarteWrapperLine {
@@ -439,7 +448,7 @@ h5 {
 	transform: rotate(5deg);
 	position: relative;
 	top: 0%;
-	right: -5%;
+	right: 0%;
 	box-shadow: 0px 0px 10px black;
 }
 
@@ -555,11 +564,13 @@ h5 {
 .mealOuterWrapper {}
 
 .mealOuter {
+
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 90%;
 	max-width: 1200px;
+	min-width: 320px;
 	margin: 0 auto;
 }
 
@@ -594,9 +605,64 @@ h5 {
 	height: 100%;
 	//border: solid 1px #e8e8e8;
 	border: solid 1px #dbdbdb;
-	padding: 0 0 15px 0;
 	//background-color: rgba(31, 31, 31, 0.02);
 	//background-color: rgba(186, 186, 186, 0.13);
+}
+
+.symbols {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.fa-leaf {
+	position: relative;
+	color: #098309;
+	font-size: 1rem;
+	border: solid 2px green;
+	border-radius: 50%;
+	padding: 5px;
+	z-index: 1;
+}
+
+.fa-pepper-hot {
+	position: relative;
+	color: #c60000;
+	font-size: 1rem;
+	border: solid 2px #c60000;
+	border-radius: 50%;
+	padding: 5px;
+	z-index: 1;
+}
+
+.veganTooltip {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 0 0 10px;
+}
+
+.veganTooltipText {
+	font-size: .7rem;
+	color: green;
+	visibility: hidden;
+}
+
+.spicyTooltipText {
+	font-size: .7rem;
+	color: #c60000;
+	visibility: hidden;
+}
+
+.veganTooltip:hover .veganTooltipText {
+	visibility: visible;
+}
+
+.veganTooltip:hover .spicyTooltipText {
+	visibility: visible;
 }
 
 .bottomRightBorder {
@@ -637,7 +703,7 @@ h5 {
 	//padding: 10px 10px;
 	//background-color: #272219;
 	//background-color: #261e1e;
-	padding: 6px 0 0 0;
+	padding: 10px 0 0 0;
 	font-size: 1.7rem;
 	//padding: 5px;
 	//border-radius: 3px;
@@ -738,8 +804,10 @@ h5 {
 }
 
 .mealFooter {
+	position: relative;
 	text-align: left;
 	padding: 0px;
+	padding: 10px;
 }
 
 .mealFooterLeft {}
@@ -1110,7 +1178,7 @@ button.btn:focus {
 		height: 100px;
 		//border-bottom: solid 3px black;
 		//box-shadow: 0 0px 10px #1d1d1d;
-		background-color: white;
+		//background-color: white;
 		//border-bottom: solid 1px #362424;
 		//outline: double 4px black;
 		//box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
@@ -1184,7 +1252,7 @@ button.btn:focus {
 
 @media (min-width: 621px) {
 	#title {
-		background-color: white;
+		//background-color: white;
 	}
 
 	.mealBox {
@@ -1199,7 +1267,7 @@ button.btn:focus {
 	.brand {
 		//position: absolute;
 		//top: 0.5rem;
-		//box-shadow: 2px 2px 5px #c3c3c3;
+		box-shadow: 2px 2px 5px #c3c3c3;
 	}
 }
 
