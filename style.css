@@ -248,7 +248,6 @@ h5 {
 
 .test {
 	max-width: 1100px;
-	background-color: white;
 	width: 100%;
 	z-index: 1;
 	margin: 0px auto;
@@ -368,10 +367,12 @@ h5 {
 
 .speisekarteWrapperBackground {
 	background-color: #121212;
+	background-color: #1c1c1c;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 	//box-shadow: 2px 2px 5px #898989;
 	//background-image: url(197622501_440152393900994_2107169479052042263_n.jpeg);
 	//height: 100vh;
-	width: 1200px;
+	//width: 1200px;
 	margin: 0 auto;
 	background-size: cover;
 	max-height: 700px;
@@ -453,8 +454,14 @@ h5 {
 }
 
 .wrapper {
-	height: 260px;
+	padding: 10px;
+	background-color: #f7f7f7;
+}
+
+.mobileWrapperPicture {
 	background-image: url(innen.jpeg);
+	height: 260px;
+	height: 30vh;
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -544,6 +551,11 @@ h5 {
 	padding: 5px;
 	font-size: 1.5rem;
 	z-index: 100;
+	border: solid 1px grey;
+}
+
+#backToTop:hover {
+	border: solid 1px white;
 }
 
 .oneTwoThree {
@@ -621,7 +633,7 @@ h5 {
 .fa-leaf {
 	position: relative;
 	color: #098309;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	border: solid 2px green;
 	border-radius: 50%;
 	padding: 5px;
@@ -631,7 +643,7 @@ h5 {
 .fa-pepper-hot {
 	position: relative;
 	color: #c60000;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	border: solid 2px #c60000;
 	border-radius: 50%;
 	padding: 5px;
@@ -663,36 +675,6 @@ h5 {
 
 .veganTooltip:hover .spicyTooltipText {
 	visibility: visible;
-}
-
-.bottomRightBorder {
-	border-right: solid 2px black;
-	border-bottom: solid 2px black;
-	width: 25px;
-	height: 25px;
-	position: absolute;
-	bottom: -1px;
-	right: -1px;
-}
-
-.bottomLeftBorder {
-	border-left: solid 2px black;
-	border-bottom: solid 2px black;
-	width: 25px;
-	height: 25px;
-	position: absolute;
-	bottom: -1px;
-	left: -1px;
-}
-
-.topRightBorder {
-	border-right: solid 2px black;
-	border-top: solid 2px black;
-	width: 25px;
-	height: 25px;
-	position: absolute;
-	top: -1px;
-	right: -1px;
 }
 
 .mealHead {
@@ -1175,7 +1157,7 @@ button.btn:focus {
 	}
 
 	.test {
-		height: 100px;
+		height: 80px;
 		//border-bottom: solid 3px black;
 		//box-shadow: 0 0px 10px #1d1d1d;
 		//background-color: white;
@@ -1230,10 +1212,6 @@ button.btn:focus {
 		padding: 0;
 	}
 
-	.wrapper {
-		background-color: black;
-	}
-
 	.headerPic {
 		display: none;
 	}
@@ -1252,7 +1230,7 @@ button.btn:focus {
 
 @media (min-width: 621px) {
 	#title {
-		//background-color: white;
+		background-color: white;
 	}
 
 	.mealBox {
@@ -1267,13 +1245,13 @@ button.btn:focus {
 	.brand {
 		//position: absolute;
 		//top: 0.5rem;
-		box-shadow: 2px 2px 5px #c3c3c3;
+		//box-shadow: 2px 2px 5px #c3c3c3;
 	}
 }
 
 /************* large **************/
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
 	.mealBox {
 		flex: 33.33%;
