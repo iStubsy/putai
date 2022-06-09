@@ -462,6 +462,7 @@ h5 {
 	background-image: url(innen.jpeg);
 	height: 260px;
 	height: 30vh;
+	min-height: 280px;
 	background-size: cover;
 	background-position: center;
 	position: relative;
