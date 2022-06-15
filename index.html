@@ -18,7 +18,8 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
-
+	<!-- AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<script src="https://kit.fontawesome.com/8fc67f8040.js" crossorigin="anonymous"></script>
 
@@ -36,6 +37,32 @@
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript">
 		/// some script
+
+		/* REDUCE WRAPPER HEIGHT ON SCROLL */
+
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+				//document.getElementById("header").style.backgroundColor = "red";
+				//document.getElementById("wrapper").style.padding = "0";
+				//document.getElementById("mobileWrapperPicture").style.height = "50px";
+				document.getElementById("backToTop").style.right = "20px";
+			} else {
+			//	document.getElementById("wrapper").style.backgroundColor = "red";
+			//document.getElementById("wrapper").style.padding = "10px";
+				//document.getElementById("menuDisplay").style.height = "0px";
+				//document.getElementById("wrapper").style.padding = "5px";
+				//document.getElementById("mobileWrapperPicture").style.height = "180px";
+					document.getElementById("backToTop").style.right = "-50px";
+			}
+		}
+
+
+
+
 
 		// jquery ready start
 		$(document).ready(function() {
@@ -98,10 +125,16 @@
 			document.documentElement.scrollTop = 0;
 		}
 
+
 	</script>
 </head>
 
 <body>
+
+	<div id="menuDisplay">
+		Unser Menü
+	</div>
+
 	<section id="title">
 		<!--fixed-top-->
 		<div class="brandInner"></div> <!-- DELEEEETE -->
@@ -132,8 +165,11 @@
 				</div>
 			</div>
 		</nav>
-		<div class="wrapper">
-			<div class="mobileWrapperPicture">
+
+	</section>
+	<section id="content">
+		<div id="wrapper">
+			<div id="mobileWrapperPicture">
 				<div class="textTest">
 					Unser Menü
 				</div>
@@ -150,8 +186,6 @@
 			</div>-->
 			</div>
 		</div>
-	</section>
-	<section id="content">
 		<button onclick="backToTopFunc()" id="backToTop"><i class="fa-solid fa-angle-up"></i></button>
 		<div class="mealOuterWrapper">
 			<div class="speisekarteWrapperBackground">
@@ -1708,7 +1742,6 @@
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init();
-
 	</script>
 </body>
 

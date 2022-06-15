@@ -191,8 +191,7 @@ h5 {
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover,
-.overlay a:focus {
+.overlay a:hover {
 	color: #f1f1f1;
 }
 
@@ -323,6 +322,23 @@ h5 {
 	justify-content: center;
 
 	//overflow: hidden;
+
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.speisekarteWrapperBackground {
+	background-color: #121212;
+	background-color: #1c1c1c;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+	//box-shadow: 2px 2px 5px #898989;
+	//background-image: url(197622501_440152393900994_2107169479052042263_n.jpeg);
+	//height: 100vh;
+	//width: 1200px;
+	margin: 0 auto;
+	background-size: cover;
+    background-position: center;
+	max-height: 700px;
+	background-image: url(innen.jpeg);
 }
 
 .phoneBar {
@@ -362,20 +378,6 @@ h5 {
 
 .fa-mobile-screen-button {
 	padding: 10px;
-}
-
-
-.speisekarteWrapperBackground {
-	background-color: #121212;
-	background-color: #1c1c1c;
-	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-	//box-shadow: 2px 2px 5px #898989;
-	//background-image: url(197622501_440152393900994_2107169479052042263_n.jpeg);
-	//height: 100vh;
-	//width: 1200px;
-	margin: 0 auto;
-	background-size: cover;
-	max-height: 700px;
 }
 
 .speisekarteWrapperLine {
@@ -453,22 +455,51 @@ h5 {
 	box-shadow: 0px 0px 10px black;
 }
 
-.wrapper {
-	padding: 10px;
+#wrapper {
+	padding: 5px 5px 0px 5px;
 	background-color: #f7f7f7;
+	//position: sticky;
+	//top: 0;
+	z-index: 100;
+	transition: .5s;
+	//height: 260px;
+	//position: sticky;
+	//top: 0;
 }
 
-.mobileWrapperPicture {
+#mobileWrapperPicture {
 	background-image: url(innen.jpeg);
-	height: 260px;
+	//height: 260px;
 	height: 30vh;
-	min-height: 280px;
+	min-height: 220px;
+	//height: 250px;
 	background-size: cover;
 	background-position: center;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	overflow: hidden;
+	transition: .1s;
+	transition: height 1s;
+}
+
+#menuDisplay {
+	width: 100%;
+	height: 0px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	transition: .2s;
+	overflow: hidden;
+	background-color: #121212;
+	background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+
+	box-shadow: 2px 2px 2px grey;
 }
 
 .textTest {
@@ -481,7 +512,7 @@ h5 {
 	background-color: rgba(0, 0, 0, 0.29);
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
-
+	//height: 100%;
 }
 
 .speisekarteWrapperText {
@@ -548,11 +579,12 @@ h5 {
 	border-radius: 4px;
 	position: fixed;
 	bottom: 20px;
-	right: 20px;
-	padding: 5px;
+	right: -50px;
+	//padding: 5px;
 	font-size: 1.5rem;
 	z-index: 100;
-	border: solid 1px grey;
+	//border: solid 1px grey;
+	transition: .2s;
 }
 
 #backToTop:hover {
@@ -582,7 +614,7 @@ h5 {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1100px;
 	min-width: 320px;
 	margin: 0 auto;
 }
@@ -616,10 +648,11 @@ h5 {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	//border: solid 1px #e8e8e8;
-	border: solid 1px #dbdbdb;
-	//background-color: rgba(31, 31, 31, 0.02);
-	//background-color: rgba(186, 186, 186, 0.13);
+	border: dashed 1px #b7b7b7;
+	//border: dashed 1px #dbdbdb;
+
+	//background-color: rgba(31, 31, 31, 0.01);
+	//background-color: #f9f9f9;
 }
 
 .symbols {
@@ -634,8 +667,10 @@ h5 {
 .fa-leaf {
 	position: relative;
 	color: #098309;
-	font-size: 1.2rem;
-	border: solid 2px green;
+
+	color: #135200;
+	font-size: 1rem;
+	border: solid 2px #135200;
 	border-radius: 50%;
 	padding: 5px;
 	z-index: 1;
@@ -644,8 +679,10 @@ h5 {
 .fa-pepper-hot {
 	position: relative;
 	color: #c60000;
-	font-size: 1.2rem;
-	border: solid 2px #c60000;
+
+	color: #931313;
+	font-size: 1rem;
+	border: solid 2px #931313;
 	border-radius: 50%;
 	padding: 5px;
 	z-index: 1;
@@ -840,7 +877,7 @@ h5 {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	width: 90%;
+	//width: 95%;
 }
 
 .optionName {}
@@ -1127,6 +1164,19 @@ button.btn:focus {
 		background-color: white;
 	}
 
+	.fotoSection,
+	.fotoTest3 {
+		display: none;
+	}
+
+	#wrapper {
+		display: none;
+	}
+
+	h5 {
+		font-size: 1.2rem;
+	}
+
 	.brand {
 		position: absolute;
 		left: 50%;
@@ -1174,7 +1224,7 @@ button.btn:focus {
 
 	h1 {
 		font-size: 5rem;
-		display: none;
+		//display: none;
 	}
 
 	h2 {
@@ -1218,7 +1268,7 @@ button.btn:focus {
 	}
 
 	.speisekarteWrapper {
-		display: none;
+		//display: none;
 	}
 
 	.nav-link {
@@ -1252,7 +1302,7 @@ button.btn:focus {
 
 /************* large **************/
 
-@media (min-width: 820px) {
+@media (min-width: 800px) {
 
 	.mealBox {
 		flex: 33.33%;
@@ -1261,7 +1311,7 @@ button.btn:focus {
 		max-width: 50%;
 	}
 
-	.wrapper {
+	#wrapper {
 		display: none;
 	}
 
