@@ -572,7 +572,9 @@ h5 {
 #backToTop {
 	background-color: rgb(21, 21, 21);
 	color: white;
-	width: 40px;
+    position: fixed;
+    bottom: 20px;
+	/*width: 40px;
 	height: 40px;
     margin: 0px auto;
 	outline: none;
@@ -588,7 +590,7 @@ h5 {
 	transition: .2s;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 
 #backToTop:hover {
