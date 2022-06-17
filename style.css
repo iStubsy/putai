@@ -570,7 +570,7 @@ h5 {
 }
 
 #backToTop {
-	background-color: rgb(136, 0, 0);
+	background-color: rgb(5, 0, 136);
 	color: white;
 	width: 60px;
 	height: 60px;
@@ -586,6 +586,8 @@ h5 {
 	z-index: 100;
 	//border: solid 1px grey;
 	transition: .2s;
+    display: flex;
+    justify-content: center;
 }
 
 #backToTop:hover {
