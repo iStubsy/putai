@@ -574,9 +574,13 @@ h5 {
 	color: white;
     position: fixed;
     bottom: 20px;
+    right: -50px;
     z-index: 100;
     border-radius: 4px;
-    padding: 20px;
+    padding: 5px 12px;
+    outline: none;
+	border: none;
+    transition: .2s;
 	/*width: 40px;
 	height: 40px;
     margin: 0px auto;
