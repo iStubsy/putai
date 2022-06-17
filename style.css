@@ -96,8 +96,8 @@ h4 {
 }
 
 h5 {
-	color: #939393;
-	font-size: 1.5rem;
+	color: #c3c3c3;
+	font-size: 1.4rem;
 	font-weight: 300;
 	padding: 5px 0;
 }
@@ -570,10 +570,10 @@ h5 {
 }
 
 #backToTop {
-	background-color: rgb(23, 23, 23);
+	background-color: rgb(136, 0, 0);
 	color: white;
-	width: 100px;
-	height: 45px;
+	width: 50px;
+	height: 50px;
     margin: 0px auto;
 	outline: none;
 	border: none;
