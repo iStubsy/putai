@@ -577,10 +577,11 @@ h5 {
     right: -50px;
     z-index: 100;
     border-radius: 4px;
-    padding: 8px 14px;
+    padding: 6px 14px;
     outline: none;
 	border: none;
     transition: .2s;
+    font-size: 1.2rem;
 	/*width: 40px;
 	height: 40px;
     margin: 0px auto;
@@ -1280,7 +1281,8 @@ button.btn:focus {
 
 	.speisekarteWrapper {
 		//display: none;
-	}
+        height: 250px;
+    }
 
 	.nav-link {
 		transition: 0s;
