@@ -88,7 +88,7 @@
 					var $anchor = $(this);
 					$('html, body').stop().animate({
 						scrollTop: $($anchor.attr('href')).offset().top - 40
-					}, 300); /* was 1300 DELETE */
+					}, 1000); /* was 1300 DELETE */
 					event.preventDefault();
 				});
 			} else {
@@ -97,7 +97,7 @@
 				$('.scrollto').click(function(event) {
 					var $anchor = $(this);
 					$('html, body').stop().animate({
-						scrollTop: $($anchor.attr('href')).offset().top - 50
+						scrollTop: $($anchor.attr('href')).offset().top - 40
 					}, 300);
 					event.preventDefault();
 				});

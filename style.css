@@ -1341,7 +1341,7 @@ button.btn:focus {
     .speisekarteWrapper {
         //display: none;
         height: 40vh;
-        min-height: 200px;
+        min-height: 250px;
         overflow: hidden;
     }
     
