@@ -13,7 +13,7 @@
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
+  
 	<!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
@@ -25,7 +25,7 @@
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Merriweather:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
-
+    
 
 	<title>Putai</title>
 
@@ -35,8 +35,11 @@
 
 
 	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript">
+	<script>
 		/// some script
+        
+        
+        
 
 		/* REDUCE WRAPPER HEIGHT ON SCROLL */
 
@@ -130,6 +133,12 @@
 </head>
 
 <body>
+
+   <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+
 
 	<div id="menuDisplay">
 		Unser Menü
@@ -1742,6 +1751,9 @@
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init();
+          $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
 	</script>
 </body>
 
