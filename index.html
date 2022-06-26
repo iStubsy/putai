@@ -87,8 +87,8 @@
 				$('.scrollto').click(function(event) {
 					var $anchor = $(this);
 					$('html, body').stop().animate({
-						scrollTop: $($anchor.attr('href')).offset().top - 50
-					}, 2000); /* was 1300 DELETE */
+						scrollTop: $($anchor.attr('href')).offset().top - 40
+					}, 300); /* was 1300 DELETE */
 					event.preventDefault();
 				});
 			} else {
@@ -177,24 +177,6 @@
 
 	</section>
 	<section id="content">
-		<div id="wrapper">
-			<div id="mobileWrapperPicture">
-				<div class="textTest">
-					Unser Menü
-				</div>
-				<!--<div class="speisekarteWrapperImg">
-				<div data-aos="fade-down" data-aos-duration="1000"><img src="puTaiLogo.jpg" width="90%"></div>
-			</div>
-			<div class="speisekarteWrapperText">
-				<div data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
-					<div class="speisekarteWrapperHeadline">Unser Menü</div>
-				</div>
-				<div data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1000">
-					<div class="speisekarteWrapperBottomText">Discover the taste of authentic vietnamese cuisine</div>
-				</div>
-			</div>-->
-			</div>
-		</div>
 		<button onclick="backToTopFunc()" id="backToTop"><i class="fa-solid fa-angle-up"></i></button>
 		<div class="mealOuterWrapper">
 			<div class="speisekarteWrapperBackground">
@@ -202,18 +184,7 @@
 					<div class="fotoSection">
 						<div class="fotoTest"></div>
 						<div class="fotoTest2"></div>
-					</div>
-					<!--<div class="speisekarteWrapperImg">
-					<div data-aos="fade-down" data-aos-duration="1000"><img src="puTaiLogo.jpg" width="90%"></div>
-				</div>-->
-					<!--<div class="speisekarteWrapperText">
-					<div data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
-						<div class="speisekarteWrapperHeadline">Unser Menü</div>
-					</div>
-					<div data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1000">
-						<div class="speisekarteWrapperBottomText">Discover the taste of authentic vietnamese cuisine</div>
-					</div>
-				</div>-->
+                    </div>
 					<div class="speisekarteHeaderRight">
 						<!--<h2>Unser</h2>-->
 						<h1>MENÜ</h1>

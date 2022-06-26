@@ -1256,6 +1256,7 @@ button.btn:focus {
         display: block;
         //box-shadow: 0 0 6px #1c1c1c;
     }
+    
 
     .brandInner {
         position: absolute;
@@ -1339,8 +1340,18 @@ button.btn:focus {
 
     .speisekarteWrapper {
         //display: none;
-        //height: 40vh;
-        //min-height: 200px;
+        height: 40vh;
+        min-height: 200px;
+        overflow: hidden;
+    }
+    
+    .speisekarteWrapperBackground {
+        overflow: hidden;
+        transition: transform 8s ease;
+    }
+    
+      .speisekarteWrapperBackground:hover {
+        transform: scale(1.5);
     }
 
     .nav-link {
@@ -1478,6 +1489,8 @@ button.btn:focus {
 
         background-color: #121212;
         background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+        
+        
     }
 
     #speisekarteWrapperLogo {
