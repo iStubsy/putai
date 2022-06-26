@@ -1344,15 +1344,6 @@ button.btn:focus {
         min-height: 250px;
         overflow: hidden;
     }
-    
-    .speisekarteWrapperBackground {
-        overflow: hidden;
-        transition: transform 8s ease;
-    }
-    
-      .speisekarteWrapperBackground:hover {
-        transform: scale(1.5);
-    }
 
     .nav-link {
         transition: 0s;
