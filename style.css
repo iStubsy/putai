@@ -81,7 +81,7 @@ h4 {
 }
 
 h5 {
-    color: #c3c3c3;
+    color: #b9b9b9;
     font-size: 1.4rem;
     font-weight: 300;
     padding: 5px 0;
@@ -741,10 +741,12 @@ h5 {
     color: #098309;
 
     color: #135200;
+    color: white;
     font-size: 1rem;
-    border: solid 2px #135200;
+    //border: solid 2px #135200;
+    background-color: #135200;
     border-radius: 50%;
-    padding: 5px;
+    padding: 6px;
     z-index: 1;
 }
 
@@ -753,14 +755,19 @@ h5 {
     color: #c60000;
 
     color: #931313;
+    color: white;
+    background-color: #931313;
     font-size: 1rem;
-    border: solid 2px #931313;
+    //border: solid 2px #931313;
     border-radius: 50%;
-    padding: 5px;
+    padding: 6px;
     z-index: 1;
+    
+    //text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000
 }
 
-.veganTooltip {
+.veganTooltip,
+.toolTip {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -783,7 +790,7 @@ h5 {
     visibility: visible;
 }
 
-.veganTooltip:hover .spicyTooltipText {
+.toolTip:hover .spicyTooltipText {
     visibility: visible;
 }
 
@@ -1251,6 +1258,7 @@ button.btn:focus {
     .brand {
         position: absolute;
         left: 50%;
+        width: 80px;
         margin-left: -40px !important;
         /* 50% of your logo width */
         display: block;
@@ -1361,14 +1369,15 @@ button.btn:focus {
     .brand {
         position: absolute;
         left: 50%;
-        margin-left: -40px !important;
+        margin-left: -50px !important;
         /* 50% of your logo width */
         display: block;
         //box-shadow: 0 0 6px #1c1c1c;
+        width: 100px;
     }
 
     .test {
-        height: 80px;
+        height: 120px;
     }
 
     #wrapper {
@@ -1460,6 +1469,16 @@ button.btn:focus {
 /************* extra large **************/
 
 @media (min-width: 1200px) {
+    .brand {
+        position: relative;
+        left: 0;
+        width: 140px;
+    }
+    
+    .test {
+        height: auto;
+    }
+    
     .speisekarteWrapper {
         height: auto;
     }
@@ -1480,6 +1499,7 @@ button.btn:focus {
 
         background-color: #121212;
         background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+        
         
         
     }
