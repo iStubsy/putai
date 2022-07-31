@@ -397,7 +397,7 @@ h5 {
     background-size: cover;
     background-position: center;
     max-height: 700px;
-    background-image: url(innenDark.jpeg);
+    background-image: url(innendarki.jpeg);
 }
 
 .phoneBar {
@@ -414,10 +414,9 @@ h5 {
     padding: 2px;
     width: 100%;
 
-    background-color: grey;
+    background-color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    display: none;
 }
 
 .adress {}
@@ -676,7 +675,28 @@ h5 {
     padding: 30px 0 0 0;
 }
 
-.menu {}
+.menuCardInformation {
+    position: relative;
+    background-color: rgba(199, 199, 199, 0.22);
+    border: solid 1px #d0d0d0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    color: #555555;
+    margin: 30px auto 0 auto;
+}
+
+.fa-xmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.fa-xmark:hover {
+    cursor: pointer;
+}
 
 .mealOuterWrapper {}
 
@@ -742,11 +762,11 @@ h5 {
 
     color: #135200;
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     //border: solid 2px #135200;
     background-color: #135200;
     border-radius: 50%;
-    padding: 6px;
+    padding: 8px;
     z-index: 1;
 }
 
@@ -756,12 +776,14 @@ h5 {
 
     color: #931313;
     color: white;
-    background-color: #931313;
-    font-size: 1rem;
+    background-color: #720404;
+    //background-color: #931313;
+    font-size: 0.8rem;
     //border: solid 2px #931313;
     border-radius: 50%;
-    padding: 6px;
+    padding: 8px;
     z-index: 1;
+    
     
     //text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000
 }
@@ -1190,7 +1212,7 @@ button.btn:focus {
     //border-right: solid 1px #e2e2e2;
     border-radius: 0;
 
-    padding: 12px 0px;
+    padding: 10px 0px;
     //border-radius: 0;
     background-color: #000000;
     width: 50%;
