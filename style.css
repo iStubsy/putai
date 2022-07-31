@@ -417,6 +417,8 @@ h5 {
     background-color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    
+    display: none;
 }
 
 .adress {}
@@ -692,6 +694,7 @@ h5 {
     right: 0;
     padding: 10px;
     font-size: 1.5rem;
+    color: black;
 }
 
 .fa-xmark:hover {
