@@ -309,6 +309,7 @@ h5 {
     width: 100%;
     z-index: 1;
     margin: 0px auto;
+    box-shadow: 0 3px 10px #343434;
 }
 
 .header {
