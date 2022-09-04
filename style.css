@@ -309,7 +309,7 @@ h5 {
     width: 100%;
     z-index: 1;
     margin: 0px auto;
-    box-shadow: 0 3px 10px #343434;
+    //box-shadow: 0 3px 10px #343434;
 }
 
 .header {
@@ -630,7 +630,8 @@ h5 {
 }
 
 #backToTop {
-    background-color: rgb(21, 21, 21);
+    background-color: rgba(21, 21, 21, 0.86);
+    background-color: black;
     color: white;
     position: fixed;
     bottom: 20px;
@@ -642,6 +643,7 @@ h5 {
     border: none;
     transition: .2s;
     font-size: 1.2rem;
+    border: solid 1px white;
     /*width: 40px;
 	height: 40px;
     margin: 0px auto;
@@ -1526,7 +1528,7 @@ button.btn:focus {
         background-color: #121212;
         background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
         
-        
+        background-image: url("bgtest.jpg");
         
     }
 
