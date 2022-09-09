@@ -1267,9 +1267,18 @@ button.btn:focus {
 
 @media (max-width: 621px) {
     #title {
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0);
     }
 
+    #content {
+        position: relative;
+        top: -80px;
+    }
+    
+    .fa-bars {
+        color: white;
+    }
+    
     .fotoSection,
     .fotoTest3 {
         display: none;
@@ -1376,9 +1385,10 @@ button.btn:focus {
 
     .speisekarteWrapper {
         //display: none;
-        height: 40vh;
+        height: 45vh;
         min-height: 250px;
         overflow: hidden;
+        padding: 80px 0 0 0;
     }
 
     .nav-link {
