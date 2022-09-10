@@ -1267,7 +1267,6 @@ button.btn:focus {
 
 @media (max-width: 621px) {
     #title {
-        background-color: rgba(0, 0, 0, 0);
     }
 
     #content {
@@ -1295,8 +1294,8 @@ button.btn:focus {
     .brand {
         position: absolute;
         left: 50%;
-        width: 80px;
-        margin-left: -40px !important;
+        width: 60px;
+        margin-left: -30px !important;
         /* 50% of your logo width */
         display: block;
         //box-shadow: 0 0 6px #1c1c1c;
@@ -1326,6 +1325,7 @@ button.btn:focus {
 
     .test {
         height: 80px;
+        background-color: rgba(0, 0, 0, 0.31);
         //border-bottom: solid 3px black;
         //box-shadow: 0 0px 10px #1d1d1d;
         //background-color: white;
@@ -1386,7 +1386,7 @@ button.btn:focus {
     .speisekarteWrapper {
         //display: none;
         height: 45vh;
-        min-height: 250px;
+        min-height: 380px;
         overflow: hidden;
         padding: 80px 0 0 0;
     }
