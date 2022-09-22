@@ -207,7 +207,7 @@ h5 {
 }
 
 .fa-bars:active {
-    color: grey;
+
 }
 
 .fab {
@@ -326,6 +326,7 @@ h5 {
     padding-left: 0;
     padding-right: 0;
     font-size: 100%;
+    color: white;
 }
 
 .headerItem a:hover {
@@ -347,7 +348,7 @@ h5 {
 }
 
 .nav-link:hover {
-    color: black;
+    //color: black;
 }
 
 /********************** CONTENT ***************************/
@@ -420,7 +421,7 @@ h5 {
     background-color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    
+
     display: none;
 }
 
@@ -470,7 +471,7 @@ h5 {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 400px;
+    //height: 400px;
 }
 
 .fotoTest {
@@ -791,8 +792,8 @@ h5 {
     border-radius: 50%;
     padding: 8px;
     z-index: 1;
-    
-    
+
+
     //text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000
 }
 
@@ -1268,18 +1269,22 @@ button.btn:focus {
 /************* small **************/
 
 @media (max-width: 621px) {
-    #title {
-    }
+    #title {}
 
     #content {
         position: relative;
         top: -80px;
     }
-    
+
+    .test {
+        height: 80px;
+        background-color: rgba(0, 0, 0, 0.47);
+    }
+
     .fa-bars {
         color: white;
     }
-    
+
     .fotoSection,
     .fotoTest3 {
         display: none;
@@ -1302,7 +1307,7 @@ button.btn:focus {
         display: block;
         //box-shadow: 0 0 6px #1c1c1c;
     }
-    
+
 
     .brandInner {
         position: absolute;
@@ -1323,18 +1328,6 @@ button.btn:focus {
         //box-shadow: 0 0px 8px #6d6d6d;
         //box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
         display: none;
-    }
-
-    .test {
-        height: 80px;
-        background-color: rgba(0, 0, 0, 0.47);
-        //border-bottom: solid 3px black;
-        //box-shadow: 0 0px 10px #1d1d1d;
-        //background-color: white;
-        //border-bottom: solid 1px #362424;
-        //outline: double 4px black;
-        //box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
-        //box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
     }
 
     .headerBelow {
@@ -1363,6 +1356,7 @@ button.btn:focus {
         //background-color: #212121;
         z-index: 1;
         margin-bottom: 10px;
+        font-family: 'Raleway', sans-serif;
     }
 
     .column {
@@ -1389,6 +1383,7 @@ button.btn:focus {
         //display: none;
         height: 45vh;
         min-height: 360px;
+        max-height: 420px;
         overflow: hidden;
         padding: 80px 0 0 0;
     }
@@ -1403,7 +1398,25 @@ button.btn:focus {
 
 @media (min-width: 621px) {
     #title {
-        background-color: white;
+        //background-color: white;
+    }
+
+    #content {
+        position: relative;
+        top: -120px;
+    }
+
+    .test {
+        height: 120px;
+        background-color: rgba(0, 0, 0, 0.47);
+    }
+
+    .speisekarteWrapper {
+        //display: none;
+        height: 45vh;
+        min-height: 450px;
+        overflow: hidden;
+        padding: 150px 0 0 0;
     }
 
     .brand {
@@ -1416,10 +1429,6 @@ button.btn:focus {
         width: 100px;
     }
 
-    .test {
-        height: 120px;
-    }
-
     #wrapper {
         display: none;
     }
@@ -1429,14 +1438,15 @@ button.btn:focus {
         display: none;
     }
 
-    .test {
-        //height: 100px;
-    }
 
-    .speisekarteWrapper {
+    /* .speisekarteWrapper {
         //display: none;
         height: 40vh;
         min-height: 300px;
+    } */
+    
+      .fa-bars {
+        color: white;
     }
 }
 
@@ -1458,8 +1468,9 @@ button.btn:focus {
     .speisekarteWrapper {
         //display: none;
         height: 40vh;
-        min-height: 300px;
+        min-height: 400px;
         //height: auto;
+        //padding: 120px 0 0 0;
     }
 
     #navbar_1 {
@@ -1503,6 +1514,11 @@ button.btn:focus {
         //display: flex;
         //flex-direction: column;
     }
+    
+    .speisekarteWrapper {
+        height: 45vh;
+        min-height: 500px;
+    }
 
 }
 
@@ -1514,13 +1530,32 @@ button.btn:focus {
         left: 0;
         width: 140px;
     }
-    
+
+    #content {
+        position: relative;
+        top: 0px;
+    }
+
     .test {
         height: auto;
+        background-color: rgba(255, 255, 255, 0);
     }
-    
+
     .speisekarteWrapper {
-        height: auto;
+        height: 60vh;
+        //width: 1000px;
+        overflow: visible;
+        padding: 0;
+
+        position: relative;
+        color: black;
+        //position: fixed;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 30px 0 30px 0;
+        display: flex;
+        justify-content: center;
     }
 
     .fotoSection,
@@ -1539,9 +1574,9 @@ button.btn:focus {
 
         background-color: #121212;
         background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-        
+
         background-image: url("bgtest.jpg");
-        
+
     }
 
     #speisekarteWrapperLogo {
@@ -1554,6 +1589,10 @@ button.btn:focus {
 
     .test {
         box-shadow: none;
+    }
+    
+    .headerItem a {
+        color: grey;
     }
 
 }
