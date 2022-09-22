@@ -67,6 +67,7 @@ h3 {
     display: inline-block;
     margin: 8px 0 8px 0;
     padding: 5px 20px;
+    font-weight: 100;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -874,7 +875,7 @@ h5 {
     //background-color: #222222;
     font-family: arial;
     font-family: 'Fira Code', monospace;
-    font-weight: bold;
+    font-weight: 100;
     //background-color: #222222;
     //border-radius: 3px;
     display: flex;
@@ -1348,7 +1349,7 @@ button.btn:focus {
         margin: 0px auto;
         text-align: center;
         color: black;
-        font-weight: bold;
+        font-weight: 100;
         padding: 0px 0;
         //background-color: #e69500;
         //background-color: rgb(240, 240, 240);
