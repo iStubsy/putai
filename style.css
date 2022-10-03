@@ -389,6 +389,9 @@ h5 {
 
 .speisekarteWrapperBackground {
     padding: 6px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .phoneBar {
@@ -705,6 +708,7 @@ h5 {
     max-width: 1100px;
     min-width: 320px;
     margin: 0 auto 40px auto;
+
 }
 
 .mealBox {
@@ -1295,8 +1299,8 @@ button.btn:focus {
         margin-left: -30px !important;
         /* 50% of your logo width */
         display: block;
-        //box-shadow: 0 0 6px #1c1c1c;
-        border: solid 1px black;
+        //box-shadow: 0 0 3px #1c1c1c;
+        //border: solid 1px black;
     }
 
 
@@ -1388,10 +1392,11 @@ button.btn:focus {
         border: solid 2px black;
 
         //display: none;
-        height: 30vh;
         //min-height: 360px;
         //max-height: 420px;
         overflow: hidden;
+
+        height: 120px;
     }
 
     .nav-link {
