@@ -310,7 +310,7 @@ h5 {
     //background-color: rgba(244, 244, 244, 0.74);
     //letter-spacing: 1px;
     //padding: 5px 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255);
     //font-family: 'Merriweather', serif;
     //background-color: #1d1d1d;
     //border-bottom: solid 2px #f5f5f5;
@@ -363,10 +363,40 @@ button.btn:focus {
 .scrollToSelection {
     width: 33.33%;
     border-right: solid 1px #e2e2e2;
+    //border-top: solid 1px #e2e2e2;
 }
 
 .scrollToSelection:last-child {
     border-right: none;
+}
+
+.scrollto {
+    //width: 33.33%;
+    //margin: 0px auto;
+    //overflow: hidden;
+    //border-right: solid 1px #e2e2e2;
+    border-radius: 0;
+
+    padding: 10px 0px;
+    //border-radius: 0;
+    background-color: #000000;
+    width: 50%;
+    width: 100%;
+    //background-color: black;
+    transition: 0.5s;
+    background-color: #f7f7f7;
+    color: #868686;
+
+    border-top: solid 1px #d0d0d0;
+}
+
+
+/*	NAVBAR ACTIVE    */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: white;
+    color: black;
+    border-top: solid 1px white;
 }
 
 
@@ -1142,99 +1172,9 @@ button.btn:focus {
     text-align: right;
 }
 
-/* DELETE?
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-	//padding: 12px 0px;
-	//border-radius: 0;
-	//background-color: #000000;
-	width: 50%;
-	width: 100%;
-	//background-color: black;
-	transition: 0.5s;
-	background-color: #ffffff;
-	color: black;
-}
-
-.nav-pills .nav-link {
-	padding: 12px 0;
-	font-size: 0.9rem;
-	border-radius: 0;
-	color: #696969;
-	//width: 25%;
-	transition: 0.5s;
-	//background-color: #272727;
-	//background-color: black;
-	//background-color: #151515;
-	background-color: #f5f5f5;
-	//border-right: solid 1px #d3d3d3;
-}
-
-*/
-
-/*
-
-.nav-item {
-	border-right: solid 1px #e2e2e2;
-}
-
-.nav-item:last-child {
-	border-right: none;
-}
-
-.nav-link {
-	color: #6d6d6d;
-	font-size: 1rem;
-	border-bottom: solid 2px transparent;
-}
-
-.nav-link:hover {
-	color: black;
-	//border-bottom: solid 2px black;
-	transition: 0.5s;
-}
-
-.nav-link.active {
-	color: black;
-	border-bottom: solid 2px black;
-}	*/
-
 .nav {
     width: 100%;
 }
-
-.scrollto {
-    //width: 33.33%;
-    //margin: 0px auto;
-    //overflow: hidden;
-    //border-right: solid 1px #e2e2e2;
-    border-radius: 0;
-
-    padding: 10px 0px;
-    //border-radius: 0;
-    background-color: #000000;
-    width: 50%;
-    width: 100%;
-    //background-color: black;
-    transition: 0.5s;
-    background-color: #f7f7f7;
-    color: #868686;
-
-}
-
-.scrollto:last-child {
-    border: none;
-}
-
-
-/*	NAVBAR ACTIVE    */
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-    background-color: white;
-    color: black;
-}
-
 
 
 /* .navbar-expand-md .navbar-nav .nav-link {
@@ -1378,7 +1318,7 @@ button.btn:focus {
         position: sticky;
         top: 0;
         z-index: 100;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgb(255, 255, 255);
     }
 
     .speisekarteWrapper {
@@ -1514,12 +1454,6 @@ button.btn:focus {
     #speisekarteWrapperLogo {
         display: none;
     }
-
-    /*
-	.nav-item {
-		border: none;
-	}
-	*/
 
     .brand {
         //position: absolute;
