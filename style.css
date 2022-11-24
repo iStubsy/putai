@@ -67,7 +67,7 @@ h3 {
     padding: 5px 20px;
     font-family: 'Raleway', sans-serif;
     font-family: 'Poiret One', cursive;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 h4 {
@@ -550,7 +550,9 @@ button.btn:focus {
     //background-color: rgba(0, 0, 0, 0.8);
 }
 
-.speisekarteWrapperBackground {}
+.speisekarteWrapperBackground {
+    background-color: black;
+}
 
 .phoneBar {
     position: fixed;
@@ -863,7 +865,7 @@ button.btn:focus {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 95%;
+    width: 100%;
     max-width: 1100px;
     min-width: 320px;
     margin: 0 auto 40px auto;
@@ -1349,12 +1351,16 @@ button.btn:focus {
         //background-color: #212121;
         z-index: 1;
         margin-bottom: 10px;
-        font-weight: bold;
+        font-weight: 100;
     }
 
     .column {
         flex: 100%;
         max-width: 100%;
+    }
+    
+    .mealOuter {
+         width: 90%;
     }
 
     .mealBox {
@@ -1566,10 +1572,10 @@ button.btn:focus {
     }
 
     .speisekarteWrapperBackground {
-        background-color: #1c1c1c;
+        //background-color: #1c1c1c;
         background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 
-        background-color: #121212;
+        //background-color: #121212;
         background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 
         background-image: url("bgtest.jpg");
@@ -1641,14 +1647,16 @@ button.btn:focus {
     }
 
     .speisekarteWrapperBackground {
-        background-color: #1c1c1c;
-        background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+        //background-color: #1c1c1c;
+        //background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 
-        background-color: #000000;
-        background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+        //background-color: #000000;
+        //background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 
-        background-color: #1a1a1a;
-        background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+        //background-color: #1a1a1a;
+        //background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+        
+        background-color: black;
     }
 
     #speisekarteWrapperLogo {
