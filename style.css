@@ -5,6 +5,13 @@ img {}
 html {
     overflow-x: hidden;
     background-color: black;
+    scroll-behavior: smooth;
+}
+
+#goUp {
+    background-color: red;
+    width: 50px;
+    height: 50px;
 }
 
 body {
@@ -464,6 +471,7 @@ button.btn:focus {
 
     color: black;
     width: 100%;
+    background-color: white;
 }
 
 .test {
@@ -555,7 +563,7 @@ button.btn:focus {
 }
 
 .phoneBar {
-    position: fixed;
+    //position: fixed;
     z-index: 100;
     bottom: 0;
     //width: 100%;
@@ -571,8 +579,6 @@ button.btn:focus {
     background-color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
-    display: none;
 }
 
 .adress {}
@@ -1358,9 +1364,9 @@ button.btn:focus {
         flex: 100%;
         max-width: 100%;
     }
-    
+
     .mealOuter {
-         width: 90%;
+        width: 90%;
     }
 
     .mealBox {
@@ -1417,16 +1423,16 @@ button.btn:focus {
     #navbar_1 {
         display: none;
     }
-    
+
     .test {
         height: 120px;
     }
-    
+
     .fotoSection,
     .fotoTest3 {
         display: none;
     }
-    
+
     .speisekarteWrapperBackground {
         background-image: url(innendarki.jpeg);
         background-size: cover;
@@ -1435,7 +1441,7 @@ button.btn:focus {
         border-bottom: solid 2px black;
         box-shadow: 0 0 6px grey;
     }
-    
+
     .brand {
         position: absolute;
         left: 50%;
@@ -1446,7 +1452,7 @@ button.btn:focus {
         //box-shadow: 0 0 3px #1c1c1c;
         //border: solid 1px black;
     }
-    
+
     .mealBox {
         flex: 50%;
         width: 50%;
@@ -1499,12 +1505,6 @@ button.btn:focus {
 
     #speisekarteWrapperLogo {
         display: none;
-    }
-
-    .brand {
-        //position: absolute;
-        //top: 0.5rem;
-        //box-shadow: 2px 2px 5px #c3c3c3;
     }
 
     .brand {
@@ -1602,15 +1602,14 @@ button.btn:focus {
 /************* extra large **************/
 
 @media (min-width: 1200px) {
+    #title {
+    }
+
+
     .brand {
         position: relative;
         left: 0;
         width: 140px;
-    }
-
-    #content {
-        position: relative;
-        top: 0px;
     }
 
     .test {
@@ -1655,7 +1654,7 @@ button.btn:focus {
 
         //background-color: #1a1a1a;
         //background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-        
+
         background-color: black;
     }
 
