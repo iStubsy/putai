@@ -38,6 +38,7 @@ body {
 
 h1 {
     font-family: 'Poiret One', cursive;
+    
     font-size: 6rem;
     line-height: 6rem;
     color: white;
@@ -50,25 +51,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
-    letter-spacing: 4px;
-    margin: 0;
-    color: #888787;
-}
-
-h3 {
-
-
-    font-size: 2.5rem;
-    //line-height: 2.5rem;
+    font-size: 2rem;
     border-radius: 0;
     background-color: transparent;
     border: none;
 
-    //border-bottom: solid 1px #6a6a6a;
     padding: 8px 8px;
-    //box-shadow: 0 8px 6px -6px #d9d9d9;
-    //background-color: #222222;
     display: inline-block;
     margin: 8px 0 8px 0;
     padding: 5px 20px;
@@ -78,7 +66,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin: 0 auto;
     font-weight: 300;
     padding: 0;
@@ -90,7 +78,7 @@ h4 {
 h5 {
     color: #b9b9b9;
     color: white;
-    font-size: 1.4rem;
+  
     font-weight: 300;
     padding: 5px 0;
 }
@@ -112,7 +100,7 @@ h5 {
     bottom: 0;
     z-index: 1;
     color: white;
-    font-size: 2rem;
+
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
@@ -384,13 +372,14 @@ h5 {
     //background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
     //border: solid 3px rgba(222, 222, 222, 0.26);
 
-    border-bottom: solid 1px #e2e2e2;
+    //border-bottom: solid 1px #e2e2e2;
 
     /*NAVBAR NEW TEST REMOVE */
+    display: none;
 }
 
 .navbar-brand {
-    font-size: 1.2rem;
+  
     color: #151515;
     font-family: fantasy;
 }
@@ -420,14 +409,12 @@ button.btn:focus {
     //background-color: #262626;
     margin: 0px auto 0px auto;
     width: 100%;
-    font-size: 1rem;
     max-width: 800px;
 }
 
 .scrollToSelection {
     width: 33.33%;
-    border-right: solid 1px #e2e2e2;
-    //border-top: solid 1px #e2e2e2;
+    //border-right: solid 1px #e2e2e2;
 }
 
 .scrollToSelection:last-child {
@@ -483,8 +470,7 @@ button.btn:focus {
 
 .header {
     max-width: 1200px;
-    font-size: 1rem;
-
+ 
     //padding: 15px 0;
 }
 
@@ -493,7 +479,7 @@ button.btn:focus {
     color: grey;
     padding-left: 0;
     padding-right: 0;
-    font-size: 100%;
+ 
     color: white;
 }
 
@@ -571,7 +557,7 @@ button.btn:focus {
     width: 80%;
     margin: 0 auto;
 
-    font-size: 1.2rem;
+ 
     padding: 2px;
     width: 100%;
 
@@ -612,7 +598,7 @@ button.btn:focus {
 
     width: 70%;
     text-align: left;
-    font-size: 5rem;
+  
 
     display: flex;
     justify-content: center;
@@ -723,7 +709,7 @@ button.btn:focus {
 }
 
 .textTest {
-    font-size: 3rem;
+
     color: white;
     text-shadow: 0 0 10px black;
     padding: 10px;
@@ -766,7 +752,7 @@ button.btn:focus {
 
 .speisekarteWrapperHeadline {
     color: orange;
-    font-size: 1rem;
+
     text-align: left;
     line-height: 2rem;
 }
@@ -774,7 +760,7 @@ button.btn:focus {
 .speisekarteWrapperBottomText {
     text-align: left;
     line-height: 1.4rem;
-    font-size: 1.5rem;
+
     //width: 50%;
     color: white;
 }
@@ -802,7 +788,7 @@ button.btn:focus {
     outline: none;
     border: none;
     transition: .2s;
-    font-size: 1.2rem;
+
     border: solid 1px white;
     //width: 40px;
     height: 46.8px;
@@ -873,7 +859,7 @@ button.btn:focus {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     min-width: 320px;
     margin: 0 auto 40px auto;
 
@@ -881,12 +867,14 @@ button.btn:focus {
 
 .mealBox {
     position: relative;
-    padding: 2% 2%;
+    padding: 1.5%;
     //margin-bottom: 5px;
     //font-family: serif;
     flex: 100%;
     max-width: 100%;
     max-width: 900px;
+    
+    font-size: .9rem;
 }
 
 /* .meal {
@@ -930,11 +918,11 @@ button.btn:focus {
 
     color: #135200;
     color: white;
-    font-size: 0.8rem;
+    font-size: .8rem;
     //border: solid 2px #135200;
     background-color: #135200;
     border-radius: 50%;
-    padding: 8px;
+    padding: 5px;
     z-index: 1;
 }
 
@@ -946,10 +934,10 @@ button.btn:focus {
     color: white;
     background-color: #720404;
     //background-color: #931313;
-    font-size: 0.8rem;
+    font-size: .8rem;
     //border: solid 2px #931313;
     border-radius: 50%;
-    padding: 8px;
+    padding: 5px;
     z-index: 1;
 
 
@@ -964,26 +952,6 @@ button.btn:focus {
     margin: 0 0 0 10px;
 }
 
-.veganTooltipText {
-    font-size: .7rem;
-    color: green;
-    visibility: hidden;
-}
-
-.spicyTooltipText {
-    font-size: .7rem;
-    color: #c60000;
-    visibility: hidden;
-}
-
-.veganTooltip:hover .veganTooltipText {
-    visibility: visible;
-}
-
-.toolTip:hover .spicyTooltipText {
-    visibility: visible;
-}
-
 .mealHead {
     position: relative;
     display: flex;
@@ -993,7 +961,7 @@ button.btn:focus {
     //background-color: #272219;
     //background-color: #261e1e;
     padding: 10px 0 0 0;
-    font-size: 1.7rem;
+
     //padding: 5px;
     //border-radius: 3px;
     //background-color: #2c2c2c;
@@ -1009,9 +977,9 @@ button.btn:focus {
 }
 
 .mealHead-number {
+    font-size: 1.5rem;
     //color: white;
     //border-radius: 2px;
-    //font-size: 2rem;
     position: absolute;
     top: -1px;
     left: -1px;
@@ -1043,7 +1011,6 @@ button.btn:focus {
     //text-align: left;
     //padding: 4px;
     text-align: center;
-    font-size: 1.6rem;
     //color: #dedede;
     //color: #bebebe;
     color: black;
@@ -1075,7 +1042,6 @@ button.btn:focus {
 
 .mealBody {
     //line-height: 1.2rem;
-    font-size: 0.9rem;
     text-align: left;
 
     //border-top: solid 1px #4d4d4d;
@@ -1110,12 +1076,10 @@ button.btn:focus {
     border-radius: 3px;
     //width: 100px;
     margin: 0px auto;
-    font-size: 0.9rem;
     width: 20%;
 }
 
 .price {
-    font-size: 1rem;
     //padding: 3px 0;
     //border-radius: 3px;
     margin: 0px auto;
@@ -1167,7 +1131,6 @@ button.btn:focus {
 }
 
 .footerHeadline {
-    font-size: 1.3rem;
     font-family: 'Poiret One', cursive;
     font-family: 'Merriweather Sans', sans-serif;
     //font-family: 'Oswald';
@@ -1179,8 +1142,6 @@ button.btn:focus {
 
 .footerBody {
     color: white;
-
-    font-size: 1rem;
     text-align: left;
     margin: 0px auto;
     color: #e2e2e2;
@@ -1264,7 +1225,12 @@ button.btn:focus {
 /************* small **************/
 
 @media (max-width: 621px) {
-    #title {}
+    #title {
+    }
+    
+    .btn:active {
+        background-color: black;
+    }
 
     #content {
         position: relative;
@@ -1272,13 +1238,14 @@ button.btn:focus {
     }
 
     .test {
-        height: 100px;
+        height: 102px;
         //background-color: rgba(0, 0, 0, 0.47);
         //background-color: #1a1a1a;
         background-color: rgba(255, 255, 255, 0.7);
         margin: 0;
-        padding-top: 20px;
+        padding-top: 10px;
         background-color: white;
+        box-shadow: 2px 0 5px #c4c4c4;
     }
 
     .fa-bars {
@@ -1296,7 +1263,7 @@ button.btn:focus {
     }
 
     h5 {
-        font-size: 1rem;
+        
     }
 
     .brand {
@@ -1337,16 +1304,11 @@ button.btn:focus {
     }
 
     h1 {
-        font-size: 5rem;
-        font-size: 4rem;
+    
     }
 
     h2 {
-        font-size: 1.2rem;
-    }
-
-    h3 {
-        font-size: 2rem;
+        
         width: 100%;
         margin: 0px auto;
         text-align: center;
@@ -1358,7 +1320,7 @@ button.btn:focus {
         //background-color: #212121;
         z-index: 1;
         margin-bottom: 10px;
-        font-weight: 100;
+        font-weight: bold;
     }
 
     .column {
@@ -1591,7 +1553,7 @@ button.btn:focus {
     }
 
     .navbar-brand {
-        font-size: 1.6rem;
+        
     }
 
     .test {
@@ -1644,8 +1606,8 @@ button.btn:focus {
     }
 
     .mealBox {
-        flex: 33.33%;
-        max-width: 33.33%;
+        flex: 25%;
+        max-width: 25%;
     }
 
     .speisekarteWrapperBackground {
@@ -1666,7 +1628,7 @@ button.btn:focus {
     }
 
     .navbar-brand {
-        font-size: 1.6rem;
+       
     }
 
     .test {
