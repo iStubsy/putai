@@ -14,7 +14,6 @@ html {
 }
 
 body {
-    text-align: center;
 
     //background: rgb(8, 0, 148);
     //background: linear-gradient(90deg, rgba(8, 0, 148, 1) 0%, rgba(1, 1, 255, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -35,7 +34,6 @@ body {
     transition: 0.2s;
 
     position: relative;
-    padding-top: 100px;
 
 }
 
@@ -73,17 +71,16 @@ h1 {
 }
 
 h2 {
+    width: 100%;
+    text-align: center;
     font-size: 2rem;
     border-radius: 0;
-    background-color: transparent;
-    border: none;
-
-    padding: 8px 8px;
-    display: inline-block;
-    margin: 8px 0 8px 0;
+    //display: inline-block;
+    margin: 8px auto;
     padding: 5px 20px;
     font-family: 'Raleway', sans-serif;
     font-family: 'Poiret One', cursive;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 900;
 }
 
@@ -406,12 +403,11 @@ h5 {
     //border-bottom: solid 1px #e2e2e2;
 
     /*NAVBAR NEW TEST REMOVE */
-    display: none;
+    //display: none;
 }
 
 .navbar-brand {
-    color: #151515;
-    font-family: fantasy;
+    display: none;
 }
 
 .navbar-toggler {
@@ -445,6 +441,8 @@ button.btn:focus {
 .scrollToSelection {
     width: 33.33%;
     //border-right: solid 1px #e2e2e2;
+    text-align: center;
+    border-radius: 0;
 }
 
 .scrollToSelection:last-child {
@@ -469,6 +467,10 @@ button.btn:focus {
     color: #868686;
 }
 
+.nav-link {
+    border-radius: 0;
+}
+
 
 /*	NAVBAR ACTIVE    */
 .nav-pills .nav-link.active,
@@ -480,7 +482,6 @@ button.btn:focus {
 
 /*********************** TITLE ****************************/
 
-
 .test {
     height: auto;
     width: 100%;
@@ -489,21 +490,14 @@ button.btn:focus {
     z-index: 100;
     background-color: white;
     padding: 0 0.5rem;
-    box-shadow: 2px 0 4px #bebebe;
+    //box-shadow: 2px 0 4px #bebebe;
+    border-bottom: solid 1px #ededed;
 }
 
 .header {
     max-width: 1200px;
     height: 100%;
     display: flex;
-}
-
-.navbar-brand {
-    display: none;
-}
-
-.btn {
-
 }
 
 .headerItem a {
@@ -524,7 +518,7 @@ button.btn:focus {
 }
 
 .nav-pills .nav-link {
-    border-radius: 5px;
+    //border-radius: 5px;
 }
 
 .nav-link.active {
@@ -536,6 +530,10 @@ button.btn:focus {
 .nav-link:hover {
     //color: black;
     color: #868686;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
 }
 
 /********************** CONTENT ***************************/
@@ -832,7 +830,7 @@ button.btn:focus {
 #section_2,
 #section_3 {
     width: 100%;
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 .menuCardInformation {
@@ -905,7 +903,9 @@ button.btn:focus {
     flex-direction: column;
     height: 100%;
     border: dashed 1px #b7b7b7;
+    border: dashed 1px #919191;
     //border: dashed 1px #dbdbdb;
+
 
     //background-color: rgba(31, 31, 31, 0.01);
     //background-color: #f9f9f9;
@@ -1205,14 +1205,11 @@ button.btn:focus {
 /************* small **************/
 
 @media (max-width: 621px) {
-    .btn:active {
-        background-color: black;
-    }
-    
+
     h1 {
         font-size: 4rem;
     }
-    
+
 
     #content {
         position: relative;
@@ -1250,8 +1247,29 @@ button.btn:focus {
     
     */
 
-    .headerBelow {
-        display: none;
+    .brand {
+        width: 33.33%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-brand {
+        width: 33.33%;
+        display:inherit;
+        margin: 0 0;
+    }
+
+    .btn {
+
+        height: 100%;
+        width: 33.33%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .btn:active {
+        background-color: black;
     }
 
     .column {
@@ -1469,8 +1487,6 @@ button.btn:focus {
         display: none;
     }
 
-    .navbar-brand {}
-
     .headerItem a {
         color: grey;
     }
@@ -1538,8 +1554,6 @@ button.btn:focus {
     #speisekarteWrapperLogo {
         display: none;
     }
-
-    .navbar-brand {}
 
     .test {
         box-shadow: none;
