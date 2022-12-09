@@ -81,7 +81,6 @@ h2 {
     font-family: 'Raleway', sans-serif;
     font-family: 'Poiret One', cursive;
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 900;
 }
 
 h4 {
@@ -1259,13 +1258,11 @@ button.btn:focus {
         margin: 0 0;
     }
 
-    .btn {
+    .buttonOuter {
 
-        height: 100%;
         width: 33.33%;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
     }
 
     .btn:active {
