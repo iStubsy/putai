@@ -51,6 +51,7 @@
                 //document.getElementById("wrapper").style.padding = "0";
                 //document.getElementById("mobileWrapperPicture").style.height = "50px";
                 document.getElementById("backToTop").style.right = "20px";
+                document.querySelector(".navWrapper").style.boxShadow = "0 3px 10px #a8a8a8";
                 //document.getElementById("title").childNodes[1].style.height = "50px";
             } else {
                 //	document.getElementById("wrapper").style.backgroundColor = "red";
@@ -59,6 +60,7 @@
                 //document.getElementById("wrapper").style.padding = "5px";
                 //document.getElementById("mobileWrapperPicture").style.height = "180px";
                 document.getElementById("backToTop").style.right = "-50px";
+                document.querySelector(".navWrapper").style.boxShadow = "none";
                 //document.getElementById("title").childNodes[1].style.height = "100px";
             }
         }
@@ -74,7 +76,7 @@
             ////////////////////////  Highlight the top nav as scrolling occurs. /bootstrap/
             $('body').scrollspy({
                 target: '#navbar_1',
-                offset: 190
+                offset: 140
             });
 
             ///////////////// for small screen
@@ -87,7 +89,7 @@
                 $('.scrollto').click(function(event) {
                     var $anchor = $(this);
                     $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top - 150
+                        scrollTop: $($anchor.attr('href')).offset().top - 40
                     }, 1300); /* was 1300 DELETE */
                     event.preventDefault();
                 });

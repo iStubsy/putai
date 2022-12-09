@@ -428,6 +428,9 @@ button.btn:focus {
     //background-color: #222222;
     //background-image: //url("https://www.transparenttextures.com/patterns/black-linen.png");
     //background-color: #191919;
+    //box-shadow: 0 3px 3px #d1d1d1;
+    transition: .5s;
+    border-bottom: solid 1px #f2f2f2;
 }
 
 .scrollByWrapper {
@@ -462,7 +465,7 @@ button.btn:focus {
     width: 100%;
     //background-color: black;
     transition: 0.5s;
-    background-color: #f7f7f7;
+    background-color: #fafafa;
     color: #868686;
 }
 
@@ -490,7 +493,8 @@ button.btn:focus {
     background-color: white;
     padding: 0 0.5rem;
     //box-shadow: 2px 0 4px #bebebe;
-    border-bottom: solid 1px #ededed;
+    //border-bottom: solid 1px #ededed;
+    border-bottom: solid 1px #f2f2f2;
 }
 
 .header {
@@ -864,7 +868,7 @@ button.btn:focus {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     min-width: 320px;
     margin: 0 auto 40px auto;
 
@@ -1150,6 +1154,7 @@ button.btn:focus {
 .footerBottom {
     color: grey;
     margin: 5px 0;
+    text-align: center;
 }
 
 .open {
@@ -1532,8 +1537,8 @@ button.btn:focus {
     }
 
     .mealBox {
-        flex: 25%;
-        max-width: 25%;
+        flex: 33.33%;
+        max-width: 33.33%;
     }
 
     .speisekarteWrapperBackground {
