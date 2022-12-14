@@ -115,6 +115,9 @@
             document.getElementById("myNav").style.width = "100%";
             document.getElementsByTagName("BODY")[0].style.margin = "0";
             document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
+            
+            document.getElementById("hamburger").style.height = "40px";
+            
         }
 
         /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -122,6 +125,8 @@
             document.getElementById("myNav").style.width = "0%";
             document.getElementsByTagName("BODY")[0].style.height = "100%";
             document.getElementsByTagName("HTML")[0].style.overflow = "visible";
+            
+            document.getElementById("hamburger").style.height = "20px";
 
         }
 
@@ -176,7 +181,7 @@
                     <!--<span class="navbar-toggler-icon"></span>-->
                     <!-- Use any element to open/show the overlay navigation menu -->
                     <!--<i class="fas fa-bars"></i>-->
-                    <div class="hamburger">
+                    <div id="hamburger">
                         <div class="hamburgerLine"></div>
                         <div class="hamburgerLine"></div>
                         <div class="hamburgerLine"></div>
