@@ -74,10 +74,11 @@ h2 {
     //display: inline-block;
     margin: 8px auto;
     padding: 6px 20px;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Poiret One', cursive;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 500;
+    //font-family: 'Raleway', sans-serif;
+    //font-family: 'Poiret One', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 h4 {
@@ -99,9 +100,9 @@ h5 {
 }
 
 .headlineUnderline {
-    height: 2px;
+    height: 1.5px;
     background-color: black;
-    width: 10%;
+    width: 15%;
     margin: 5px auto 30px auto;
 }
 
@@ -487,7 +488,7 @@ button.btn:focus {
     transition: .2s;
     z-index: 100;
     background-color: white;
-    padding: 0.5rem 0.5rem;
+    padding: 0.2rem 0.2rem;
     //box-shadow: 2px 0 4px #bebebe;
     //border-bottom: solid 1px #ededed;
     border-bottom: solid 1px #f2f2f2;
@@ -863,7 +864,7 @@ button.btn:focus {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 95%;
     max-width: 1000px;
     min-width: 320px;
     margin: 0 auto 40px auto;
@@ -872,14 +873,14 @@ button.btn:focus {
 
 .mealBox {
     position: relative;
-    padding: 15px 0;
+    padding: 15px 15px;
     //margin-bottom: 5px;
     //font-family: serif;
     flex: 100%;
     max-width: 100%;
     max-width: 900px;
 
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 /* .meal {
@@ -903,6 +904,7 @@ button.btn:focus {
     height: 100%;
     border: dashed 1px #b7b7b7;
     border: dashed 1px #919191;
+    padding: 5px;
     //border: dashed 1px #dbdbdb;
 
 
@@ -1364,7 +1366,6 @@ button.btn:focus {
     .mealBox {
         flex: 50%;
         width: 50%;
-        padding: 15px;
     }
 }
 
