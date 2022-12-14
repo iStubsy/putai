@@ -167,7 +167,7 @@ h5 {
     top: 0;
     background-color: rgb(0, 0, 0);
     /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.98);
     /* Black w/opacity */
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -839,12 +839,12 @@ button.btn:focus {
 #section_3 {
     position: relative;
     width: 100%;
-    padding: 20px;
+    //padding: 20px;
     
-    margin-top: 40px;
+    //margin-top: 40px;
     //margin-bottom: 20px;
     //background-color: rgba(0, 0, 0, 0.04);
-    border: solid 1px #d6d6d6;
+    //border: solid 1px #d6d6d6;
 }
 
 .menuCardInformation {
@@ -878,10 +878,10 @@ button.btn:focus {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 95%;
+    width: 90%;
     max-width: 1300px;
     min-width: 320px;
-    margin: 0px auto 40px auto;
+    margin: 40px auto 40px auto;
 }
 
 .mealBox {
@@ -1320,17 +1320,14 @@ button.btn:focus {
         margin: 0 auto;
         background-size: cover;
         background-position: 0px -150px;
-        max-height: 700px;
+        //max-height: 700px;
         background-image: url(innenDark.jpeg);
 
         //border: solid 2px black;
 
         //display: none;
-        //min-height: 360px;
-        //max-height: 420px;
-        overflow: hidden;
-
-        height: 35vh;
+        min-height: 250px;
+        max-height: 400px;
     }
 
     .nav-link {
@@ -1603,10 +1600,6 @@ button.btn:focus {
     margin: 10px 0 0 0;
 }
 
-.hoverTest {
-    position: absolute;
-}
-
 #hamburger {
     //background-color: red;
     height: 20px;
@@ -1625,5 +1618,24 @@ button.btn:focus {
     height: 2px;
     width: 100%;
     background-color: black;
-    
+}
+
+#cross {
+    margin-top: 100px;
+    width: 25px;
+    height: 25px;
+}
+
+.crossLine {
+    height: 1px;
+    background-color: red;
+    width: 100%;
+    transform: rotate(45deg);
+}
+
+.crossLine2 {
+    height: 1px;
+    background-color: blue;
+    width: 100%;
+    transform: rotate(-45deg);
 }
