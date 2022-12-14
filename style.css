@@ -77,12 +77,11 @@ h2 {
     //font-family: 'Raleway', sans-serif;
     //font-family: 'Poiret One', cursive;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: -2px;
 }
 
 h4 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 0 auto;
     font-weight: 300;
     padding: 0;
@@ -398,6 +397,7 @@ h5 {
     //border: solid 3px rgba(222, 222, 222, 0.26);
 
     //border-bottom: solid 1px #e2e2e2;
+    padding: 0;
 
     /*NAVBAR NEW TEST REMOVE */
     //display: none;
@@ -429,6 +429,7 @@ button.btn:focus {
     //box-shadow: 0 3px 3px #d1d1d1;
     transition: .5s ease-out;
     border-bottom: solid 1px #f2f2f2;
+    display: none;
 }
 
 .scrollByWrapper {
@@ -443,6 +444,7 @@ button.btn:focus {
     border-right: solid 1px #f2f2f2;
     text-align: center;
     border-radius: 0;
+    
 }
 
 .scrollto {
@@ -484,14 +486,14 @@ button.btn:focus {
 .test {
     height: auto;
     width: 100%;
-    height: 130px;
+    height: 100px;
     transition: .2s;
     z-index: 100;
     background-color: white;
-    padding: 0.2rem 0.2rem;
     //box-shadow: 2px 0 4px #bebebe;
     //border-bottom: solid 1px #ededed;
     border-bottom: solid 1px #f2f2f2;
+    padding: 0 1rem;
 }
 
 .header {
@@ -1269,7 +1271,7 @@ button.btn:focus {
     }
 
     .btn:active {
-        background-color: black;
+        background-color: #adadad;
     }
 
     .column {
@@ -1297,33 +1299,31 @@ button.btn:focus {
     }
 
     .speisekarteWrapperBackground {
-        padding: 3px;
-        position: sticky;
-        top: 50px;
+        padding: 0px;
+        //position: sticky;
+        //top: 50px;
         z-index: 100;
         background-color: rgb(255, 255, 255);
-        display: none;
+        box-shadow: 0px 2px 8px #6a6a6a;
     }
 
     .speisekarteWrapper {
         background-color: #121212;
         background-color: #1c1c1c;
-        background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
         margin: 0 auto;
         background-size: cover;
-        background-position: 0px -180px;
+        background-position: 0px -150px;
         max-height: 700px;
-        background-image: url(innendarki.jpeg);
-        background-image: url(lamp.jpeg);
+        background-image: url(innenDark.jpeg);
 
-        border: solid 2px black;
+        //border: solid 2px black;
 
         //display: none;
         //min-height: 360px;
         //max-height: 420px;
         overflow: hidden;
 
-        height: 100px;
+        //height: 100px;
     }
 
     .nav-link {
@@ -1587,4 +1587,25 @@ button.btn:focus {
 
 .hoverTest {
     position: absolute;
+}
+
+.hamburger {
+    //background-color: red;
+    height: 20px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .1s;
+}
+
+.hamburger:active {
+    height: 80px;
+}
+
+.hamburgerLine {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    
 }
