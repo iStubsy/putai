@@ -74,7 +74,7 @@ h1 {
 h2 {
     width: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-radius: 0;
     //display: inline-block;
     margin: 8px auto;
@@ -83,6 +83,9 @@ h2 {
     //font-family: 'Poiret One', cursive;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -2px;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
 }
 
 h4 {
@@ -208,9 +211,12 @@ h5 {
 /* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: 25px;
+    right: 38px;
     font-size: 60px;
+    
+    width: 30px;
+    height: 30px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -1624,22 +1630,26 @@ button.btn:focus {
     background-color: black;
 }
 
-#cross {
-    margin-top: 100px;
-    width: 25px;
-    height: 25px;
+#crossButton {
+    //margin-top: 100px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
-.crossLine {
+.crossLine1 {
     height: 1px;
-    background-color: red;
+    background-color: white;
     width: 100%;
     transform: rotate(45deg);
 }
 
 .crossLine2 {
     height: 1px;
-    background-color: blue;
+    background-color: white;
     width: 100%;
     transform: rotate(-45deg);
 }

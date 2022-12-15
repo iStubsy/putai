@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Merriweather:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Poiret+One&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
    
    
     <title>Putai Rockenhausen</title>
@@ -126,7 +128,7 @@
             document.getElementsByTagName("BODY")[0].style.height = "100%";
             document.getElementsByTagName("HTML")[0].style.overflow = "visible";
             
-            document.getElementById("hamburger").style.height = "20px";
+            document.getElementById("hamburger").style.height = "22px";
 
         }
 
@@ -237,7 +239,13 @@
             <div id="myNav" class="overlay">
 
                 <!-- Button to close the overlay navigation -->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <!--&times;-->
+                    <div id="crossButton">
+                        <div class="crossLine1"></div>
+                        <div class="crossLine2"></div>
+                    </div>
+                </a>
 
                 <!-- Overlay content -->
                 <div class="overlay-content">
