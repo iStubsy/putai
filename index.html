@@ -10,12 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Merriweather:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Poiret+One&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
-   
-   
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+
+
     <title>Putai Rockenhausen</title>
 
     <!-- jQuery loader -->
@@ -117,9 +121,12 @@
             document.getElementById("myNav").style.width = "100%";
             document.getElementsByTagName("BODY")[0].style.margin = "0";
             document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
-            
+
             document.getElementById("hamburger").style.height = "40px";
-            
+
+
+            document.getElementById("crossButton").childNodes[1].style.transform = "rotate(45deg)";
+            document.getElementById("crossButton").childNodes[3].style.transform = "rotate(-45deg)";
         }
 
         /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -127,9 +134,10 @@
             document.getElementById("myNav").style.width = "0%";
             document.getElementsByTagName("BODY")[0].style.height = "100%";
             document.getElementsByTagName("HTML")[0].style.overflow = "visible";
-            
-            document.getElementById("hamburger").style.height = "22px";
 
+            document.getElementById("hamburger").style.height = "22px";
+            document.getElementById("crossButton").childNodes[1].style.transform = "rotate(0deg)";
+            document.getElementById("crossButton").childNodes[3].style.transform = "rotate(0deg)";
         }
 
 
@@ -171,24 +179,24 @@
         </div>
     </div>
     <section id="title">
-          <nav class="test navbar navbar-expand-md">
-           <!--fixed-top-->
+        <nav class="test navbar navbar-expand-md">
+            <!--fixed-top-->
             <div class="container-fluid header">
                 <a class="navbar-brand" href="putai.de"></a>
                 <a class="brand" href="putai.de">
                     <img src="puTaiLogo.jpg" height="100%">
                 </a>
                 <div class="buttonOuter">
-                <button onclick="openNav()" class="btn navbar-toggler" type="button" data-toggle="collapse" aria-expanded="true">
-                    <!--<span class="navbar-toggler-icon"></span>-->
-                    <!-- Use any element to open/show the overlay navigation menu -->
-                    <!--<i class="fas fa-bars"></i>-->
-                    <div id="hamburger">
-                        <div class="hamburgerLine"></div>
-                        <div class="hamburgerLine"></div>
-                        <div class="hamburgerLine"></div>
-                    </div>
-                </button>
+                    <button onclick="openNav()" class="btn navbar-toggler" type="button" data-toggle="collapse" aria-expanded="true">
+                        <!--<span class="navbar-toggler-icon"></span>-->
+                        <!-- Use any element to open/show the overlay navigation menu -->
+                        <!--<i class="fas fa-bars"></i>-->
+                        <div id="hamburger">
+                            <div class="hamburgerLine"></div>
+                            <div class="hamburgerLine"></div>
+                            <div class="hamburgerLine"></div>
+                        </div>
+                    </button>
                 </div>
                 <div class="collapse navbar-collapse" id="collapseExample">
                     <ul class="navbar-nav ml-auto">
@@ -210,15 +218,7 @@
         <button onclick="backToTopFunc()" id="backToTop"><i class="fa-solid fa-angle-up"></i></button>
         <div class="mealOuterWrapper">
 
-            <nav id="navbar_1" class="navbar">
-                <div class="navWrapper">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item scrollToSelection"><a href="#section_1" class="scrollto nav-link"> Vorspeisen </a></li>
-                        <li class="nav-item scrollToSelection"><a href="#section_2" class="scrollto nav-link"> Hauptspeisen </a></li>
-                        <li class="nav-item scrollToSelection"><a href="#section_3" class="scrollto nav-link"> Extras </a></li>
-                    </ul>
-                </div>
-            </nav>
+
             <div class="speisekarteWrapperBackground">
                 <div class="speisekarteWrapper">
                     <div class="fotoSection">
@@ -235,12 +235,21 @@
                     <div class="fotoTest3"></div>
                 </div>
             </div>
+            <nav id="navbar_1" class="navbar">
+                <div class="navWrapper">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item scrollToSelection"><a href="#section_1" class="scrollto nav-link"> Vorspeisen </a></li>
+                        <li class="nav-item scrollToSelection"><a href="#section_2" class="scrollto nav-link"> Hauptspeisen </a></li>
+                        <li class="nav-item scrollToSelection"><a href="#section_3" class="scrollto nav-link"> Extras </a></li>
+                    </ul>
+                </div>
+            </nav>
             <!-- The overlay -->
             <div id="myNav" class="overlay">
 
                 <!-- Button to close the overlay navigation -->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <!--&times;-->
+                    <!--&times;-->
                     <div id="crossButton">
                         <div class="crossLine1"></div>
                         <div class="crossLine2"></div>

@@ -35,7 +35,7 @@ body {
 
     position: relative;
     background-color: white;
-    
+
     background-color: white;
     background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
     //border: groove 1px #d4d4d4;
@@ -77,19 +77,19 @@ h2 {
     font-size: 2.5rem;
     border-radius: 0;
     //display: inline-block;
-    margin: 8px auto;
-    padding: 6px 20px;
+    margin: 35px auto 0 auto;
+    padding: 0px 20px;
     //font-family: 'Raleway', sans-serif;
     //font-family: 'Poiret One', cursive;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -2px;
-    
+
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
 }
 
 h4 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin: 0 auto;
     font-weight: 300;
     padding: 0;
@@ -214,7 +214,7 @@ h5 {
     top: 25px;
     right: 38px;
     font-size: 60px;
-    
+
     width: 30px;
     height: 30px;
 }
@@ -440,7 +440,7 @@ button.btn:focus {
     //box-shadow: 0 3px 3px #d1d1d1;
     transition: .5s ease-out;
     border-bottom: solid 1px #f2f2f2;
-    display: none;
+    //display: none;
 }
 
 .scrollByWrapper {
@@ -455,7 +455,7 @@ button.btn:focus {
     border-right: solid 1px #f2f2f2;
     text-align: center;
     border-radius: 0;
-    
+
 }
 
 .scrollto {
@@ -500,7 +500,7 @@ button.btn:focus {
     height: 100px;
     transition: .2s;
     z-index: 100;
-    background-color: white;
+    //background-color: white;
     //box-shadow: 2px 0 4px #bebebe;
     //border-bottom: solid 1px #ededed;
     border-bottom: solid 1px #f2f2f2;
@@ -574,7 +574,7 @@ button.btn:focus {
     width: 100%;
     max-width: 1000px;
     margin: 0px auto;
-    padding: 30px 0 30px 0;
+    //padding: 30px 0 30px 0;
     display: flex;
     justify-content: center;
     display: flex;
@@ -584,8 +584,7 @@ button.btn:focus {
     //overflow: hidden;
 
     //background-color: rgba(0, 0, 0, 0.8);
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
+   
 }
 
 .phoneBar {
@@ -656,6 +655,7 @@ button.btn:focus {
     flex-direction: column;
     position: relative;
     //height: 400px;
+    display: none;
 }
 
 .fotoTest {
@@ -700,6 +700,7 @@ button.btn:focus {
     top: 0%;
     right: 0%;
     box-shadow: 0px 0px 10px black;
+    display: none;
 }
 
 #wrapper {
@@ -848,7 +849,7 @@ button.btn:focus {
     position: relative;
     width: 100%;
     //padding: 20px;
-    
+
     //margin-top: 40px;
     //margin-bottom: 20px;
     //background-color: rgba(0, 0, 0, 0.04);
@@ -887,7 +888,7 @@ button.btn:focus {
     justify-content: center;
     flex-wrap: wrap;
     width: 90%;
-    max-width: 1300px;
+    max-width: 1000px;
     min-width: 320px;
     margin: 10px auto 40px auto;
 }
@@ -979,7 +980,8 @@ button.btn:focus {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 0 0 10px;
+    margin: 0 2px 0 2px;
+
 }
 
 .mealHead {
@@ -1335,9 +1337,9 @@ button.btn:focus {
         border: solid 1px black;
 
         //display: none;
-        min-height: 100px;
-        max-height: 100px;
-        
+        //min-height: 100px;
+        //max-height: 100px;
+
     }
 
     .nav-link {
@@ -1349,10 +1351,33 @@ button.btn:focus {
 /************* medium **************/
 
 @media (min-width: 622px) {
-    #navbar_1 {
+   .speisekarteWrapper {
+        height: 35vh;
+        //width: 1000px;
+        overflow: visible;
+        padding: 0;
+
+        position: relative;
+        color: black;
+        //position: fixed;
+        width: 100%;
+        max-width: 1000px;
+        //padding: 30px 0 30px 0;
+        display: flex;
+        justify-content: center;
+        //max-height: 500px;
+        background-image: url(innenPaintTest.png);
+        background-size: cover;
+        background-position: center;
+        //background-size: contain;
+        //background-repeat: no-repeat;
+    }
+    
+    /* #navbar_1 {
         display: none;
     }
 
+    
     .fotoSection,
     .fotoTest3 {
         display: none;
@@ -1367,24 +1392,16 @@ button.btn:focus {
         //box-shadow: 0 0 6px grey;
     }
 
-    /* .brand {
-        position: absolute;
-        left: 50%;
-        width: 90px;
-        margin-left: -50px !important;
-        display: block;
-        //box-shadow: 0 0 3px #1c1c1c;
-        //border: solid 1px black;
-    } */
-
     .mealBox {
         flex: 50%;
         width: 50%;
     }
-    
-     .headerItem a {
+
+    .headerItem a {
         color: grey;
     }
+    
+    */
 }
 
 /************* large **************/
@@ -1402,20 +1419,7 @@ button.btn:focus {
         display: none;
     }
 
-    .speisekarteWrapper {
-        //display: none;
-        height: 40vh;
-        min-height: 400px;
-        //height: auto;
-        //padding: 120px 0 0 0;
-    }
-
     #navbar_1 {
-        display: none;
-    }
-
-    .fotoSection,
-    .fotoTest3 {
         display: none;
     }
 
@@ -1443,50 +1447,20 @@ button.btn:focus {
     }
     */
 
-    .speisekarteWrapper {
-        height: 45vh;
-        min-height: 500px;
-    }
-    
-     .headerItem a {
+    .headerItem a {
         color: grey;
     }
 
-}
-
-@media (min-width: 800px) {
-    /*.brand {
-        position: relative;
-        left: 0;
-        width: 140px;
-    } */
 
     #content {
         position: relative;
 
     }
 
-    .speisekarteWrapper {
-        height: 60vh;
-        //width: 1000px;
-        overflow: visible;
-        padding: 0;
-
-        position: relative;
-        color: black;
-        //position: fixed;
-        width: 100%;
-        max-width: 1000px;
-        margin: 0px auto;
-        padding: 30px 0 30px 0;
-        display: flex;
-        justify-content: center;
-        max-height: 500px;
-    }
-
     .fotoSection,
     .fotoTest3 {
         display: block;
+        display: none;
     }
 
     .mealBox {
@@ -1518,7 +1492,7 @@ button.btn:focus {
 
 @media (min-width: 1200px) {
     .header {
-        max-width: 1200px;
+        max-width: 1100px;
         height: 138px;
         //padding: 15px 0;
         height: 100%;
@@ -1533,35 +1507,15 @@ button.btn:focus {
         height: 100%;
     }*/
 
-    .speisekarteWrapper {
-        height: 60vh;
-        //width: 1000px;
-        overflow: visible;
-        padding: 0;
-
-        position: relative;
-        color: black;
-        //position: fixed;
-        width: 100%;
-        max-width: 1000px;
-        margin: 0px auto;
-        padding: 30px 0 30px 0;
-        display: flex;
-        justify-content: center;
-        max-height: 500px;
-    }
-
     .fotoSection,
     .fotoTest3 {
         display: block;
+        display: none;
     }
 
     .mealBox {
         flex: 33.33%;
         max-width: 33.33%;
-        
-        flex: 25%;
-        max-width: 25%;
     }
 
     .speisekarteWrapperBackground {
@@ -1573,7 +1527,10 @@ button.btn:focus {
 
         //background-color: #1a1a1a;
         //background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-
+        
+        //background-image: url(innenPaintTest.png);
+        //background-size: contain;
+       // background-repeat: no-repeat;
     }
 
     #speisekarteWrapperLogo {
@@ -1637,7 +1594,7 @@ button.btn:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 .crossLine1 {
@@ -1645,6 +1602,7 @@ button.btn:focus {
     background-color: white;
     width: 100%;
     transform: rotate(45deg);
+    transition: .2s;
 }
 
 .crossLine2 {
@@ -1652,4 +1610,5 @@ button.btn:focus {
     background-color: white;
     width: 100%;
     transform: rotate(-45deg);
+    transition: .2s;
 }
