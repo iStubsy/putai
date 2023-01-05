@@ -78,7 +78,7 @@ h1 {
 h2 {
     width: 100%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     border-radius: 0;
     //display: inline-block;
     margin: 35px auto 0 auto;
@@ -525,8 +525,9 @@ button.btn:focus {
     padding-left: 0;
     padding-right: 0;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Poiret One', cursive;
+    font-family: 'Raleway', sans-serif;
 }
 
 .headerItem a:hover {
