@@ -62,7 +62,7 @@
                 //document.getElementById("wrapper").style.padding = "0";
                 //document.getElementById("mobileWrapperPicture").style.height = "50px";
                 document.getElementById("backToTop").style.right = "20px";
-                document.querySelector(".navWrapper").style.boxShadow = "0 3px 3px #d3d3d3";
+                document.querySelector(".navWrapper").style.boxShadow = "rgba(0, 0, 0, 0.15) 0px 24px 32px";
                 //document.getElementById("title").childNodes[1].style.height = "50px";
             } else {
                 //	document.getElementById("wrapper").style.backgroundColor = "red";
@@ -100,7 +100,7 @@
                 $('.scrollto').click(function(event) {
                     var $anchor = $(this);
                     $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top - 40
+                        scrollTop: $($anchor.attr('href')).offset().top - 55
                     }, 1300); /* was 1300 DELETE */
                     event.preventDefault();
                 });
@@ -110,7 +110,7 @@
                 $('.scrollto').click(function(event) {
                     var $anchor = $(this);
                     $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top - 40
+                        scrollTop: $($anchor.attr('href')).offset().top - 55
                     }, 300);
                     event.preventDefault();
                 });
