@@ -116,7 +116,7 @@ h5 {
     height: 1.5px;
     background-color: black;
     width: 10%;
-    margin: 15px auto 40px auto;
+    margin: 15px auto 20px auto;
 }
 
 .scrollBottom {
@@ -445,8 +445,8 @@ button.btn:focus {
     //background-color: #191919;
     //box-shadow: 0 3px 3px #d1d1d1;
     transition: .5s ease-out;
-    border-bottom: solid 1px #e0e0e0;
-    border-top: solid 1px #e0e0e0;
+    border-bottom: solid 1px #eaeaea;
+    border-top: solid 1px #eaeaea;
     //display: none;
 }
 
@@ -459,7 +459,7 @@ button.btn:focus {
 
 .scrollToSelection {
     width: 33.33%;
-    border-right: solid 1px #e0e0e0;
+    border-right: solid 1px #eaeaea;
     text-align: center;
     border-radius: 0;
 
@@ -511,7 +511,7 @@ button.btn:focus {
     //box-shadow: 2px 0 4px #bebebe;
     //border-bottom: solid 1px #ededed;
     border-bottom: solid 1px #f2f2f2;
-    padding: 0 1rem;
+    padding: .5rem .5rem;
 }
 
 .header {
