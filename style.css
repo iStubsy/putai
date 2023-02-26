@@ -57,11 +57,10 @@ body {
 
 h1 {
     font-family: 'Poiret One', cursive;
-    font-family: "Trirong", serif;
+    //font-family: "Trirong", serif;
     font-size: 6rem;
     line-height: 6rem;
     color: white;
-    margin: 35px;
     text-shadow: 2px 2px 1px black;
     letter-spacing: 10px;
     //padding: 100px 0;
@@ -90,7 +89,7 @@ h2 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0 auto;
     font-weight: 300;
     padding: 0;
@@ -99,7 +98,7 @@ h4 {
     font-weight: 400;
 
     font-family: 'Raleway', sans-serif;
-    font-family: "Trirong", serif;
+    //font-family: "Trirong", serif;
 }
 
 h5 {
@@ -110,15 +109,18 @@ h5 {
     padding: 5px;
     letter-spacing: 5px;
     display: inline;
+    font-size: 1rem;
 }
 
 h6 {
-    color: black;
-    background-color: white;
-    padding: 5px 5px 5px 10px;
+    color: #b9b9b9;
+    color: white;
+
+    font-weight: 300;
+    padding: 5px;
     letter-spacing: 5px;
-    border-radius: 3px;
     display: inline;
+    font-size: 1rem;
 }
 
 .headlineUnderline {
@@ -648,8 +650,7 @@ button.btn:focus {
     background-color: white;
     height: 2px;
     width: 20%;
-    margin: 40px auto;
-    display: none;
+    margin: 30px auto;
 }
 
 .speisekarteHeaderRight {
@@ -1345,6 +1346,10 @@ button.btn:focus {
         //max-height: 100px;
     }
 
+    .speisekarteWrapperLine {
+        display: none;
+    }
+
 
 
     .nav-link {
@@ -1522,13 +1527,13 @@ button.btn:focus {
 
     @keyframes example {
         from {
-            background-position: 0px -800px;
+            background-position: 0 -300px;
             //background-color: black;
         }
 
         to {
             //background-color: red;
-            background-position: 0px -300px;
+            background-position: 0 -100px;
         }
     }
 
@@ -1546,13 +1551,13 @@ button.btn:focus {
         background-image: url(innenPaintTest.png);
         //background-image: url(restaurant.jpg);
         //background-size: cover;
-        background-size: 1000px;
+        background-size: 800px;
         background-repeat: no-repeat;
-        background-position: 80% -300px;
+        background-position: 0 -300px;
         border: solid 1px black;
 
-        //animation-name: example;
-        animation-duration: 120s;
+        animation-name: example;
+        animation-duration: 220s;
     }
 
     #speisekarteWrapperLogo {
