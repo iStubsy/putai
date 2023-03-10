@@ -56,9 +56,10 @@ body {
 }
 
 h1 {
-    font-family: 'Poiret One', cursive;
+    //font-family: 'Poiret One', cursive;
     //font-family: "Trirong", serif;
-    font-size: 6rem;
+    font-size: 8rem;
+    font-weight: 100;
     line-height: 6rem;
     color: white;
     text-shadow: 2px 2px 1px black;
@@ -73,6 +74,7 @@ h2 {
     width: 100%;
     text-align: center;
     font-size: 2.3rem;
+    font-size: 3rem;
     border-radius: 0;
     //display: inline-block;
     margin: 30px auto 0 auto;
@@ -82,10 +84,13 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -2px;
 
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 100;
+    //font-family: 'Josefin Sans', sans-serif;
+    //font-weight: 100;
 
-    font-family: 'Raleway', sans-serif;
+    //font-family: 'Raleway', sans-serif;
+    
+    //font-family: Montserrat, sans-serif;
+    //font-weight: 700;
 }
 
 h4 {
@@ -99,6 +104,7 @@ h4 {
 
     font-family: 'Raleway', sans-serif;
     //font-family: "Trirong", serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h5 {
@@ -106,7 +112,7 @@ h5 {
     color: white;
 
     font-weight: 300;
-    padding: 5px;
+    padding: 10px 5px;
     letter-spacing: 5px;
     display: inline;
     font-size: 1rem;
@@ -124,10 +130,10 @@ h6 {
 }
 
 .headlineUnderline {
-    height: 1.5px;
+    height: 2px;
     background-color: black;
     width: 10%;
-    margin: 15px auto 20px auto;
+    margin: 30px auto 30px auto;
 }
 
 .scrollBottom {
@@ -651,6 +657,7 @@ button.btn:focus {
     height: 2px;
     width: 20%;
     margin: 30px auto;
+    display: none;
 }
 
 .speisekarteHeaderRight {
@@ -666,6 +673,10 @@ button.btn:focus {
     //background-color: #121212;
     //background-color: #222222;
     //background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+}
+
+.unterline {
+    padding: 10px 0;
 }
 
 .fotoSection {
@@ -1239,6 +1250,15 @@ button.btn:focus {
         font-size: 3rem;
         margin: 0;
     }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .headlineUnderline {
+    height: 2px;
+    margin: 20px auto 25px auto;
+}
 
 
     #content {
@@ -1386,36 +1406,6 @@ button.btn:focus {
         //background-size: contain;
         //background-repeat: no-repeat;
     }
-
-    /* #navbar_1 {
-        display: none;
-    }
-
-    
-    .fotoSection,
-    .fotoTest3 {
-        display: none;
-    }
-
-    .speisekarteWrapperBackground {
-        background-image: url(innendarki.jpeg);
-        background-size: cover;
-        background-position: center;
-        //border-top: solid 2px black;
-        //border-bottom: solid 2px black;
-        //box-shadow: 0 0 6px grey;
-    }
-
-    .mealBox {
-        flex: 50%;
-        width: 50%;
-    }
-
-    .headerItem a {
-        color: grey;
-    }
-    
-    */
 }
 
 /************* large **************/
@@ -1551,7 +1541,7 @@ button.btn:focus {
         background-image: url(innenPaintTest.png);
         //background-image: url(restaurant.jpg);
         //background-size: cover;
-        background-size: 800px;
+        background-size: 900px;
         background-repeat: no-repeat;
         background-position: 0 -300px;
         border: solid 1px black;
