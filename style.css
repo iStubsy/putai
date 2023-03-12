@@ -436,7 +436,7 @@ h6 {
     padding: 0;
 
     /*NAVBAR NEW TEST REMOVE */
-    //display: none;
+    display: none;
 }
 
 .navbar-brand {
@@ -1341,7 +1341,7 @@ button.btn:focus {
     }
 
     .speisekarteWrapperBackground {
-        padding: 5px;
+        //padding: 5px;
         //position: sticky;
         //top: 50px;
         z-index: 100;
@@ -1362,6 +1362,8 @@ button.btn:focus {
         background-image: url(innenDark.jpeg);
 
         border: solid 1px black;
+        border-left: none;
+        border-right: none;
 
         //display: none;
         //min-height: 100px;
@@ -1543,7 +1545,7 @@ button.btn:focus {
         background-image: url(innenPaintTest.png);
         //background-image: url(restaurant.jpg);
         //background-size: cover;
-        background-size: 900px;
+        background-size: 50%;
         background-repeat: no-repeat;
         background-position: 0 -300px;
         border: solid 1px black;
