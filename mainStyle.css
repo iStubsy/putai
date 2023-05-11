@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 2rem;
+
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+#header {
+    position: relative;
+    background-image: url(innenDark.jpeg);
+    background-size: cover;
+    background-position: 0 -250px;
+    background-repeat: no-repeat;
+    padding: 300px 0 200px 0;
+}
+
+#navigationBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.40);
+}
+
+#navigationInnerBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    padding: 20px;
+}
+
+#brand {
+    height: 100%;
+}
+
+#navigationMenu {}
+
+#hamburgerMenu {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.hamburgerMenuLine {
+    height: 3px;
+    width: 70px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+#headerInformation {
+    color: white;
+}
+
+#headerBottom {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.50);
+
+    position: absolute;
+    bottom: 0;
+}
