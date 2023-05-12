@@ -8,97 +8,135 @@ body {
 }
 
 
-@media (max-width: 621px) {
+.empty {
+    width: 33.33%;
 
-    .empty {
-        width: 33.33%;
+    height: 100%;
+}
 
-        height: 100%;
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 5.2rem;
-        font-weight: 300;
-        font-family: 'Josefin Sans', sans-serif;
-        padding: 30px 0;
-
-    }
-
-    h2 {
-        font-size: 2rem;
-        text-align: center;
-        padding: 30px 0;
-        font-family: arial;
-    }
-
-
-    #header {
-        position: relative;
-        background-image: url(innenDark.jpeg);
-        background-size: cover;
-        background-position: 0 -250px;
-        background-repeat: no-repeat;
-        //background-attachment: fixed;
-        padding: 300px 0 200px 0;
-    }
-
-    #navigationBar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.40);
-    }
-
-    #navigationInnerBar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 150px;
-        padding: 10px;
-    }
-
-    #brand {
-        height: 100%;
-        width: 33.33%;
-
-        display: flex;
-        justify-content: center;
-    }
-
-    #navigationMenu {
-
-        width: 33.33%;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    #hamburgerMenu {
-        //padding: 10px 20px;
-        background-color: rgba(0, 0, 0, 0.50);
-        width: 33.33%;
-    }
-
-    .hamburgerMenuLine {
-        height: 3px;
-        width: 70px;
-        background-color: white;
-        margin: 20px auto;
-    }
-
-    #headerInformation {
-        color: white;
-    }
-
-    #headerBottom {
-        width: 100%;
-        height: 70px;
-        background-color: rgba(0, 0, 0, 0.50);
-
-        position: absolute;
-        bottom: 0;
-    }
-
-    #content {}
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    padding: 10px 0;
+    line-height: 2.6rem;
 
 }
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 0;
+    font-family: arial;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2rem;
+    width: 220px;
+    margin: 0 auto;
+}
+
+
+#header {
+    position: relative;
+    background-image: url(innenDark.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -80px;
+    padding: 150px 0 100px 0;
+}
+
+#navigationBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.40);
+}
+
+#navigationInnerBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 10px;
+}
+
+#brand {
+    height: 100%;
+    width: 33.33%;
+
+    display: flex;
+    justify-content: center;
+}
+
+#navigationMenu {
+
+    width: 33.33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hamburgerMenu {
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 8px;
+}
+
+.hamburgerMenuLine {
+    height: 2px;
+    width: 35px;
+    background-color: white;
+    border-radius: 1px;
+    margin: 10px;
+}
+
+#headerInformation {
+    color: white;
+}
+
+#headerBottom {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.50);
+
+    position: absolute;
+    bottom: 0;
+}
+
+.line {
+    height: 2px;
+    width: 50px;
+    background-color: black;
+    margin: 25px auto;
+}
+
+#content {}
+
+#content-1 {
+    margin: 40px 0;
+}
+
+.card {
+    display: flex;
+}
+
+.leftBox {
+    height: 130px;
+    width: 50%;
+    margin: 2px 2px 2px 4px;
+    overflow: hidden;
+}
+
+.rightBox {
+    height: 130px;
+    width: 50%;
+    margin: 2px 4px 2px 2px;
+    background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 600px) {}
