@@ -37,9 +37,23 @@ h3 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     width: 220px;
     margin: 0 auto;
+}
+
+h4 {
+    color: black;
+    text-align: left;
+    font-size: .8rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.smDa {
+    color: #343434;
+    font-size: .8rem;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -49,14 +63,15 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 -80px;
-    padding: 150px 0 100px 0;
+    padding: 130px 0 80px 0;
+    z-index: 0;
 }
 
 #navigationBar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.40);
+    background-color: rgba(0, 0, 0, 0.20);
 }
 
 #navigationInnerBar {
@@ -84,12 +99,12 @@ h3 {
 
 #hamburgerMenu {
     background-color: rgba(0, 0, 0, 0.50);
-    padding: 8px;
+    padding: 2px;
 }
 
 .hamburgerMenuLine {
     height: 2px;
-    width: 35px;
+    width: 34px;
     background-color: white;
     border-radius: 1px;
     margin: 10px;
@@ -101,24 +116,39 @@ h3 {
 
 #headerBottom {
     width: 100%;
-    height: 40px;
+    height: 30px;
     background-color: rgba(0, 0, 0, 0.50);
 
     position: absolute;
     bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    z-index: -1;
+}
+
+.text {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 8px;
+    margin: 0 auto;
 }
 
 .line {
     height: 2px;
     width: 50px;
     background-color: black;
-    margin: 25px auto;
+    margin: 20px auto;
 }
 
-#content {}
+#content {
+    background-color: #f5f5f5;
+}
 
 #content-1 {
-    margin: 40px 0;
+    padding: 40px 0;
 }
 
 .card {
@@ -137,6 +167,14 @@ h3 {
     width: 50%;
     margin: 2px 4px 2px 2px;
     background-color: #f2f2f2;
+
+    margin: 0 5px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {}
