@@ -11,12 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@600;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <script>
         window.onscroll = function() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 document.querySelector(".navigationBar").classList.add("navigationBarScrolled");
             } else {
                 document.querySelector(".navigationBar").classList.remove("navigationBarScrolled");
@@ -44,8 +47,8 @@
             </div>
         </div>
         <div id="headerInformation">
-            <h2>Putai Rockenhausen</h2>
-            <h1>Home made vietnamese cusisine</h1>
+            <h2 data-aos="fade-down" data-aos-duration="1000">Putai Rockenhausen</h2>
+            <h1 data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">Home made vietnamese cusisine</h1>
         </div>
         <div id="headerBottom">
             <div class="text">Tel. 063979-29939, Rognac-Allee 6, 67806 Rockenhausen</div>
@@ -58,7 +61,7 @@
             <div class="card">
                 <div class="cardImage"></div>
                 <div class="cardText">
-                    <h4>test</h4>
+                    <h4>Ein wundervolles Ambiente</h4>
                     <div class="smDa">In unserem Restaurant finden Sie ein außergewöhnliches Ambiente. Ein Ort
                         zum wohlfühlen mitten im schönen Rockenhausen.</div>
                 </div>
@@ -67,6 +70,12 @@
         <div id="content-2">
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
 </body>
 
 </html>
