@@ -13,21 +13,23 @@ body {
     position: absolute;
     right: 0;
 
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.95);
     width: 0;
     height: 100%;
 
-    z-index: 100;
+    z-index: 1000;
     transition: ease-out .2s;
     overflow-x: hidden;
 
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: fixed;
 }
 
 .overlayShow {
     width: 100% !important;
+    //height: 100%;
     position: fixed;
 }
 
@@ -314,7 +316,6 @@ h4 {
 
 .card {
     margin: 45px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .cardImage {
