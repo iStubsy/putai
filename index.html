@@ -16,23 +16,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-    <script>
-        window.onscroll = function() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                document.querySelector(".navigationBar").classList.add("navigationBarScrolled");
-            } else {
-                document.querySelector(".navigationBar").classList.remove("navigationBarScrolled");
-            }
-        }
-
-    </script>
-
-
 </head>
 
 <body>
+    <div class="overlayHide">
+        <div class="closeButton">
+            <div class="hmlTransform1"></div>
+            <div class="hmlTransform2"></div>
+        </div>
+    </div>
+
+
     <div id="header">
         <div class="navigationBar">
             <!--<div id="navigationInnerBar">-->
@@ -59,7 +53,7 @@
         <div id="content-1">
             <h3>Was Sie bei uns erwartet</h3>
             <div class="line"></div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000">
                 <div class="cardImage cardImage-1"></div>
                 <div class="cardText">
                     <h4>Ein wundervolles Ambiente</h4>
@@ -67,7 +61,7 @@
                         zum wohlfühlen mitten im schönen Rockenhausen.</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000">
                 <div class="cardImage cardImage-2"></div>
                 <div class="cardText">
                     <h4>Ein wundervolles Ambiente</h4>
@@ -75,7 +69,7 @@
                         zum wohlfühlen mitten im schönen Rockenhausen.</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000">
                 <div class="cardImage cardImage-3"></div>
                 <div class="cardText">
                     <h4>Ein wundervolles Ambiente</h4>
@@ -93,7 +87,7 @@
             </div>
         </div>
     </div>
-
+    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

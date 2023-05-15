@@ -7,6 +7,24 @@ body {
     height: 4000px;
 }
 
+.overlayHide {
+    position: absolute;
+    right: 0;
+
+    background-color: black;
+    width: 0;
+    height: 100%;
+
+    z-index: 100;
+    transition: ease-out .1s;
+}
+
+.overlayShow {
+    width: 100% !important;
+    overflow: hidden;
+    position: fixed;
+}
+
 
 .empty {
     width: 33.33%;
@@ -73,7 +91,7 @@ h4 {
     font-weight: 300;
     line-height: 1rem;
     color: rgba(255, 255, 255, 0.95);
-    margin: 5px 0 20px 0;
+    margin: 5px 0 15px 0;
 }
 
 
@@ -101,6 +119,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    transition: .2s;
 }
 
 .navigationBarScrolled {
@@ -132,6 +151,10 @@ h4 {
     margin: 0 10px 0 0;
     border-radius: 3px;
     cursor: pointer;
+
+    //display: flex;
+    //justify-content: center;
+    //flex-direction: column;
 }
 
 .hamburgerMenuLine {
@@ -140,6 +163,50 @@ h4 {
     background-color: white;
     border-radius: 1px;
     margin: 10px;
+}
+
+.hmlTransform1 {
+    transform: rotate(45deg);
+    position: absolute;
+    height: 2px;
+    width: 34px;
+    background-color: white;
+    border-radius: 1px;
+    //margin: 10px;
+}
+
+.hmlTransform2 {
+    transform: rotate(-45deg);
+    position: absolute;
+    height: 2px;
+    width: 34px;
+    background-color: white;
+    border-radius: 1px;
+    //margin: 10px;
+}
+
+
+
+/* #closeButton {
+    position: relative;
+    left: 300px;
+    top: 0;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 35px;
+    height: 35px;
+    border: solid 1px white;
+} */
+
+.overlayShow .closeButton {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+
 }
 
 #headerInformation {
