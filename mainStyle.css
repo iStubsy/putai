@@ -58,6 +58,20 @@ h4 {
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     width: 90%;
+    margin: 5px 0;
+}
+
+.bigBr {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.smBr {
+    color: white;
+    font-size: .8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
 }
 
 
@@ -162,6 +176,23 @@ h4 {
 
 #content-1 {
     padding: 40px 0;
+}
+
+#content-2 {
+    background-color: black;
+    background-image: url("innenPaintTest.png");
+    height: 200px;
+    background-position: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-2-menu {
+    width: 200px;
+    padding: 20px;
 }
 
 .card {
