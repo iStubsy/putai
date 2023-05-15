@@ -189,7 +189,7 @@ h4 {
 
 
 
-/* #closeButton {
+#closeButton {
     position: relative;
     left: 300px;
     top: 0;
@@ -201,7 +201,7 @@ h4 {
     width: 35px;
     height: 35px;
     border: solid 1px white;
-} */
+}
 
 .overlayShow .closeButton {
     position: absolute;
