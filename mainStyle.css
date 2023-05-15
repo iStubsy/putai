@@ -169,20 +169,22 @@ h4 {
     transform: rotate(45deg);
     position: absolute;
     height: 2px;
-    width: 34px;
+    //width: 34px;
     background-color: white;
     border-radius: 1px;
     //margin: 10px;
+    display: none;
 }
 
 .hmlTransform2 {
     transform: rotate(-45deg);
     position: absolute;
     height: 2px;
-    width: 34px;
+    //width: 34px;
     background-color: white;
     border-radius: 1px;
     //margin: 10px;
+    display: none;
 }
 
 
