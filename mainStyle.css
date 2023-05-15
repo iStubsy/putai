@@ -72,6 +72,8 @@ h4 {
     font-size: .8rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
+    line-height: 1rem;
+    color: rgba(255, 255, 255, 0.79);
 }
 
 
@@ -181,7 +183,7 @@ h4 {
 #content-2 {
     background-color: black;
     background-image: url("innenPaintTest.png");
-    height: 200px;
+
     background-position: 200px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -192,7 +194,26 @@ h4 {
 
 .content-2-menu {
     width: 200px;
-    padding: 20px;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: inline;
+}
+
+.clickBox {
+    color: white;
+    border: solid 1px white;
+    padding: 8px 15px;
+    margin: 10px 0;
+    display: inline-flex;
+    font-size: .8rem;
+}
+
+.clickBox:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
 .card {
