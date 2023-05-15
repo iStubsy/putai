@@ -3,9 +3,13 @@
     margin: 0;
 }
 
-body {}
+body {
+    height: 3000px;
+    background-color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+}
 
-.overlayHide {
+.overlay {
     position: absolute;
     right: 0;
 
@@ -14,13 +18,16 @@ body {}
     height: 100%;
 
     z-index: 100;
-    transition: ease-out .1s;
+    transition: ease-out .2s;
     overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .overlayShow {
     width: 100% !important;
-    overflow: hidden;
     position: fixed;
 }
 
@@ -85,7 +92,7 @@ h4 {
 }
 
 .smBr {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     line-height: 1.2rem;
@@ -203,6 +210,30 @@ h4 {
 
 .overlayNavigation {
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    position: relative;
+    top: -50px;
+}
+
+.overlayBrand {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.overlayNavigation a {
+    font-size: 1.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 10px;
+    cursor: pointer;
 }
 
 #headerInformation {
@@ -271,7 +302,7 @@ h4 {
     border: solid 1px white;
     padding: 10px 15px;
     display: inline-flex;
-    font-size: .8rem;
+    font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -283,6 +314,7 @@ h4 {
 
 .card {
     margin: 45px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .cardImage {

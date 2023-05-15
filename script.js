@@ -14,7 +14,11 @@ window.onscroll = function () {
 }
 
 document.querySelector("#hamburgerMenu").onclick = function () {
-    document.querySelector(".overlayHide").classList.toggle("overlayShow");
+    document.querySelector(".overlay").classList.toggle("overlayShow");
     document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
-    document.querySelector("#closeButton").style.display = "flex";
+}
+
+document.querySelector(".closeButton").onclick = function () {
+    document.querySelector(".overlay").classList.toggle("overlayShow");
+    document.getElementsByTagName("HTML")[0].style.overflow = "auto";
 }
