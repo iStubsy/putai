@@ -3,9 +3,7 @@
     margin: 0;
 }
 
-body {
-    height: 4000px;
-}
+body {}
 
 .overlayHide {
     position: absolute;
@@ -17,6 +15,7 @@ body {
 
     z-index: 100;
     transition: ease-out .1s;
+    overflow-x: hidden;
 }
 
 .overlayShow {
@@ -86,10 +85,10 @@ h4 {
 }
 
 .smBr {
-    font-size: .9rem;
+    font-size: 1.1rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    line-height: 1rem;
+    line-height: 1.2rem;
     color: rgba(255, 255, 255, 0.95);
     margin: 5px 0 15px 0;
 }
@@ -169,46 +168,41 @@ h4 {
     transform: rotate(45deg);
     position: absolute;
     height: 2px;
-    //width: 34px;
+    width: 38px;
     background-color: white;
     border-radius: 1px;
     //margin: 10px;
-    display: none;
 }
 
 .hmlTransform2 {
     transform: rotate(-45deg);
     position: absolute;
     height: 2px;
-    //width: 34px;
+    width: 38px;
     background-color: white;
     border-radius: 1px;
     //margin: 10px;
-    display: none;
 }
 
-
-
-#closeButton {
-    position: relative;
-    left: 300px;
-    top: 0;
-    margin: 20px;
+.closeButton {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    margin: 20px;
 
-    width: 35px;
-    height: 35px;
-    border: solid 1px white;
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
 }
 
-.overlayShow .closeButton {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-
-
+.overlayNavigation {
+    color: white;
 }
 
 #headerInformation {
@@ -275,7 +269,7 @@ h4 {
 .clickBox {
     color: white;
     border: solid 1px white;
-    padding: 8px 15px;
+    padding: 10px 15px;
     display: inline-flex;
     font-size: .8rem;
     font-family: 'Josefin Sans', sans-serif;
@@ -288,7 +282,7 @@ h4 {
 }
 
 .card {
-    margin: 40px;
+    margin: 45px;
 }
 
 .cardImage {
