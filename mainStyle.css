@@ -54,7 +54,7 @@ h4 {
 
 .smDa {
     color: #343434;
-    font-size: .8rem;
+    font-size: .9rem;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     width: 90%;
@@ -68,12 +68,12 @@ h4 {
 }
 
 .smBr {
-    color: white;
     font-size: .8rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
     line-height: 1rem;
-    color: rgba(255, 255, 255, 0.79);
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0px 0 10px 0;
 }
 
 
@@ -130,6 +130,7 @@ h4 {
 #hamburgerMenu {
     background-color: rgba(0, 0, 0, 0.50);
     margin: 0 10px 0 0;
+    cursor: pointer;
 }
 
 .hamburgerMenuLine {
@@ -194,7 +195,7 @@ h4 {
 
 .content-2-menu {
     width: 200px;
-    padding: 60px 20px;
+    padding: 60px 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -205,9 +206,9 @@ h4 {
     color: white;
     border: solid 1px white;
     padding: 8px 15px;
-    margin: 10px 0;
     display: inline-flex;
     font-size: .8rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .clickBox:hover {
@@ -217,7 +218,7 @@ h4 {
 }
 
 .card {
-    margin: 25px;
+    margin: 30px;
 }
 
 .cardImage {
