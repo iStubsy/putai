@@ -29,3 +29,5 @@ document.querySelector(".closeButton").onclick = function () {
         document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "10px";
     }
 }
+
+document.querySelector(".cardText").style.textAlign = "right";
