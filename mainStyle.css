@@ -13,7 +13,7 @@ body {
     position: absolute;
     right: 0;
 
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.99);
     width: 0;
     height: 100%;
 
@@ -97,9 +97,9 @@ h4 {
     font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
     color: rgba(255, 255, 255, 0.95);
-    margin: 5px 0 15px 0;
+    margin: 10px 0 25px 0;
 }
 
 
@@ -115,7 +115,7 @@ h4 {
 
 .navigationBarScrolled {
     //background-color: rgba(0, 0, 0, 0.24);
-    //height: 65px !important;
+    height: 65px !important;
 }
 
 .navigationBar {
@@ -126,9 +126,10 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    transition: .2s;
+    height: 100px;
+    transition: .6s;
 }
+
 
 .navigationBarScrolled {
     background-color: rgba(0, 0, 0, 0.74);
@@ -159,10 +160,14 @@ h4 {
     margin: 0 10px 0 0;
     border-radius: 3px;
     cursor: pointer;
-
     //display: flex;
     //justify-content: center;
     //flex-direction: column;
+    height: 100%;
+}
+
+#hamburgerMenu:active {
+    background-color: #2e2e2e;
 }
 
 .hamburgerMenuLine {
@@ -180,7 +185,7 @@ h4 {
     width: 38px;
     background-color: white;
     border-radius: 1px;
-    //margin: 10px;
+    margin: 10px;
 }
 
 .hmlTransform2 {
@@ -190,22 +195,23 @@ h4 {
     width: 38px;
     background-color: white;
     border-radius: 1px;
-    //margin: 10px;
+    margin: 10px;
 }
 
 .closeButton {
     position: absolute;
     top: 0px;
     right: 0px;
-    margin: 15px;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
 
-    width: 40px;
-    height: 40px;
+    margin: 15px;
+
+    width: 50px;
+    height: 50px;
 
     cursor: pointer;
 }
@@ -338,8 +344,9 @@ h4 {
 }
 
 .cardText {
-    background-color: #f5f5f5;
+    background-color: rgba(245, 245, 245, 0.69);
     padding: 10px;
+
 }
 
 @media only screen and (max-width: 600px) {}
