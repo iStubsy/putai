@@ -63,8 +63,8 @@ h3 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     text-align: center;
-    font-size: 1.4rem;
-    width: 200px;
+    font-size: 1.6rem;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -121,7 +121,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
     transition: .6s;
 }
 
@@ -153,21 +153,21 @@ h4 {
     width: 33.33%;
     display: flex;
     justify-content: flex-end;
-}
-
-#hamburgerMenu {
-    background-color: rgba(0, 0, 0, 0.50);
-    margin: 0 10px 0 0;
-    border-radius: 3px;
-    cursor: pointer;
-    //display: flex;
-    //justify-content: center;
-    //flex-direction: column;
     height: 100%;
 }
 
+#hamburgerMenu {
+    background-color: rgba(0, 0, 0, 0.60);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 80px;
+}
+
 #hamburgerMenu:active {
-    background-color: #2e2e2e;
+    background-color: #000000;
 }
 
 .hamburgerMenuLine {
@@ -175,27 +175,29 @@ h4 {
     width: 34px;
     background-color: white;
     border-radius: .75px;
-    margin: 10px;
+    margin: 5px auto;
 }
 
 .hmlTransform1 {
-    transform: rotate(45deg);
+    //transform: rotate(45deg);
     position: absolute;
     height: 2px;
     width: 38px;
     background-color: white;
     border-radius: 1px;
     margin: 10px;
+    transition: .2s;
 }
 
 .hmlTransform2 {
-    transform: rotate(-45deg);
+    //transform: rotate(-45deg);
     position: absolute;
     height: 2px;
     width: 38px;
     background-color: white;
     border-radius: 1px;
     margin: 10px;
+    transition: .2s;
 }
 
 .closeButton {
@@ -305,6 +307,7 @@ h4 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0 0 150px 0;
 }
 
 .content-2-menu {
@@ -346,7 +349,7 @@ h4 {
     height: 2px;
     background-color: black;
     margin: 20px 0;
-    width: 25%;
+    width: 60px;
     border-radius: 1px;
 }
 
@@ -365,6 +368,75 @@ h4 {
 
 .cardImage-3 {
     background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
+}
+
+/***** FOOTER *****/
+
+#footer {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    padding: 10px 0 20px 0;
+    background-color: black;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.footerHeadline {
+    text-align: center;
+    line-height: 2.5rem;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 1.2rem;
+}
+
+.footerBody {
+    color: white;
+    text-align: left;
+    margin: 0px auto;
+    color: #e2e2e2;
+    padding: 10px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footerColumn {
+    text-align: center;
+}
+
+.footerContent {
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.open {
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.openContainer {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+
+}
+
+.socialLinkWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.socialLink {
+    padding: 15px 5px;
+}
+
+.footerBottom {
+    color: grey;
+    margin: 5px 0;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {}
