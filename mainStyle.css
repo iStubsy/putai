@@ -80,7 +80,8 @@ h4 {
 
 .smDa {
     color: #535353;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
     text-align: left;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -284,15 +285,16 @@ h4 {
 #content {}
 
 #content-1 {
-    padding: 40px 0;
+    padding: 40px;
     position: relative;
     z-index: -1;
 }
 
 .darkBG {
-    background-color: #fafafa;
+    background-color: #f5f5f5;
     position: absolute;
     top: 0;
+    left: 0;
     height: 100%;
     width: 50%;
     z-index: -1;
@@ -336,14 +338,32 @@ h4 {
 }
 
 .card {
-    margin: 45px 45px 60px 45px;
+    margin: 40px 0 0 0;
 }
 
 .cardImage {
+    position: relative;
     height: 200px;
     width: 100%;
     background-size: cover;
     background-position: center;
+}
+
+.cardIcon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #760000;
+    z-index: 100;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.6rem;
+    text-shadow: 0 0 1px black;
 }
 
 .textLine {
@@ -355,8 +375,8 @@ h4 {
 }
 
 .cardText {
-    padding: 10px;
-    margin: 20px 0;
+    padding: 40px 0;
+    //margin: 20px 0;
 }
 
 .cardImage-1 {
@@ -376,7 +396,7 @@ h4 {
 #footer {
     position: relative;
     width: 100%;
-    z-index: 2;
+    z-index: -1;
     padding: 10px 0 20px 0;
     background-color: black;
     font-family: 'Merriweather Sans', sans-serif;
@@ -395,7 +415,7 @@ h4 {
     text-align: left;
     margin: 0px auto;
     color: #e2e2e2;
-    padding: 10px 0;
+    //padding: 10px 0;
     max-width: 1200px;
     display: flex;
     justify-content: center;
@@ -409,14 +429,14 @@ h4 {
 .footerContent {
     position: relative;
     width: 100%;
-    margin: 15px 0;
+    margin: 20px auto;
 }
 
 .footerInformation,
 .start,
 .to,
 .end {
-    margin: 8px 0 0 0;
+    margin: 6px 0 0 0;
 }
 
 .footerInformation a {
@@ -444,7 +464,7 @@ h4 {
 }
 
 .socialLink {
-    padding: 15px 5px;
+    padding: 30px 5px 10px 5px;
 }
 
 .footerBottom {
@@ -453,4 +473,15 @@ h4 {
     text-align: center;
 }
 
+.fab {
+    color: white;
+    font-size: 2rem;
+}
+
 @media only screen and (max-width: 600px) {}
+
+@media (min-width: 1200px) {
+    body {
+        background-color: red;
+    }
+}
