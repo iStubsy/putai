@@ -66,6 +66,7 @@ h3 {
     font-size: 1.6rem;
     width: 70%;
     margin: 0 auto;
+    color: black;
 }
 
 h4 {
@@ -99,7 +100,7 @@ h4 {
     font-size: 1.2rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    line-height: 1.6rem;
+    line-height: 1.3rem;
     color: rgba(255, 255, 255, 0.95);
     margin: 15px 0 30px 0;
 }
@@ -285,9 +286,10 @@ h4 {
 #content {}
 
 #content-1 {
-    padding: 40px;
+    padding: 30px;
     position: relative;
     z-index: -1;
+    background-image: linear-gradient(179.3deg, rgba(234, 234, 234, 1) 2.4%, rgba(255, 255, 255, 1) 92.3%);
 }
 
 .darkBG {
@@ -338,7 +340,9 @@ h4 {
 }
 
 .card {
-    margin: 40px 0 0 0;
+    margin: 40px 0 60px 0;
+    padding: 10px;
+    border: solid 1px #ededed;
 }
 
 .cardImage {
@@ -364,6 +368,8 @@ h4 {
     flex-direction: column;
     font-size: 1.6rem;
     text-shadow: 0 0 1px black;
+    display: none;
+    //REMOVE
 }
 
 .textLine {
@@ -375,7 +381,7 @@ h4 {
 }
 
 .cardText {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     //margin: 20px 0;
 }
 
