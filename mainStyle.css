@@ -15,8 +15,8 @@ body {
 
     background-color: rgba(0, 0, 0, 0.99);
     width: 0;
-    top: 50px;
-    height: 80%;
+    top: 0;
+    height: 105%;
 
     z-index: 1000;
     transition: ease-out .2s;
