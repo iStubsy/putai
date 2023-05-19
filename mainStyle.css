@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 
     //background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
@@ -320,6 +324,7 @@ h4 {
     justify-content: center;
     flex-direction: column;
     display: inline;
+    height: 400px;
 }
 
 .clickBox {
@@ -475,6 +480,30 @@ h4 {
     color: grey;
     margin: 5px 0;
     text-align: center;
+}
+
+.backToTop {
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: -50px;
+    z-index: 100;
+    border-radius: 4px;
+    transition: .2s;
+
+    border: solid 1px white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.backToTopScrolled {
+    right: 20px;
 }
 
 .fab {
