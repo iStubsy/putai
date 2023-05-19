@@ -8,10 +8,12 @@ window.onscroll = function () {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         document.querySelector(".navigationBar").classList.add("navigationBarScrolled");
         document.querySelector("#hamburgerMenu").style.width = "65px";
+        document.querySelector(".backToTop").classList.add("backToTopScrolled");
 
     } else {
         document.querySelector(".navigationBar").classList.remove("navigationBarScrolled");
         document.querySelector("#hamburgerMenu").style.width = "80px";
+        document.querySelector(".backToTop").classList.remove("backToTopScrolled");
     }
 }
 
@@ -39,4 +41,7 @@ document.querySelector(".closeButton").onclick = function () {
     }
 }
 
-document.querySelector(".cardText").style.textAlign = "right";
+document.querySelector(".backToTop").onclick = function () {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
+}
