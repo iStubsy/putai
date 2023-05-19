@@ -129,18 +129,10 @@ h4 {
 }
 
 .navigationBarScrolled {
-    background-color: rgba(0, 0, 0, 0.90);
+    background-color: rgba(0, 0, 0, 0.80);
     height: 65px !important;
-}
-
-
-.navigationBarScrolled {
-    background-color: rgba(0, 0, 0, 0.74);
-    //height: 60px;
-
     position: fixed;
     top: 0;
-
 }
 
 #brand {
@@ -261,19 +253,18 @@ h4 {
 #headerBottom {
     width: 100%;
     height: 30px;
-    background-color: rgba(0, 0, 0, 0.75);
-
     position: sticky;
     top: 65px;
 
     display: flex;
     justify-content: center;
     flex-direction: column;
+    display: none;
 }
 
 .text {
     font-family: 'Josefin Sans', sans-serif;
-    color: white;
+    color: black;
     font-size: 12px;
     margin: 0 auto;
 }
@@ -294,7 +285,8 @@ h4 {
     //background-image: linear-gradient(179.3deg, rgba(234, 234, 234, 1) 2.4%, rgba(255, 255, 255, 1) 92.3%);
     background-image: linear-gradient(180deg, rgb(245, 245, 245), 0%, rgb(149, 82, 82) 50%, rgb(245, 245, 245) 100%);
     background-image: linear-gradient(179.7deg, rgba(255, 255, 255, 1) 2%, rgba(220, 220, 220, 1) 49.1%, rgba(255, 255, 255, 1) 102.3%);
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(226, 226, 226) 50%, rgba(255, 255, 255, 1) 100%);
+    background-image: linear-gradient(180deg, rgb(245, 245, 245) 0%, rgb(232, 232, 232) 50%, rgba(255, 255, 255, 1) 100%);
+    //background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(226, 226, 226) 100%);
     //background-color: rgb(245, 245, 245);
 }
 
@@ -348,7 +340,7 @@ h4 {
 .card {
     margin: 0 0 60px 0;
     padding: 10px;
-    border: solid 1px #eaeaea;
+    border: solid 1px #dedede;
 }
 
 .cardImage {
@@ -540,7 +532,6 @@ h4 {
     }
 
     #content-1 {
-        background-image: none;
         padding: 100px 0;
     }
 
