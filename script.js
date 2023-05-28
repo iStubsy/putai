@@ -1,18 +1,14 @@
 window.onscroll = function () {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 
-    } else {
 
-    }
-
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         document.querySelector(".navigationBar").classList.add("navigationBarScrolled");
-        document.querySelector("#hamburgerMenu").style.width = "65px";
+        //document.querySelector("#hamburgerMenu").style.width = "65px";
         document.querySelector(".backToTop").classList.add("backToTopScrolled");
 
     } else {
         document.querySelector(".navigationBar").classList.remove("navigationBarScrolled");
-        document.querySelector("#hamburgerMenu").style.width = "80px";
+        //document.querySelector("#hamburgerMenu").style.width = "80px";
         document.querySelector(".backToTop").classList.remove("backToTopScrolled");
     }
 }
