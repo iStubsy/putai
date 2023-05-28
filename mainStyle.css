@@ -75,23 +75,24 @@ h3 {
 
 h4 {
     color: black;
-    text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: left;
+    margin: 10px 0;
 }
 
 .smDa {
     color: #000000;
     font-size: 1.2rem;
     line-height: 1.4rem;
-    text-align: left;
+    text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    width: 70%;
+    width: 100%;
     margin: 5px 0;
+    text-align: left;
 }
 
 .bigBr {
@@ -104,7 +105,7 @@ h4 {
     font-size: 1.2rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     color: rgba(255, 255, 255, 0.95);
     margin: 18px 0 30px 0;
 }
@@ -112,16 +113,15 @@ h4 {
 
 #header {
     position: relative;
-    background-image: url(innenDark.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url("innenDark.jpeg");
     background-position: 0 -80px;
     //padding: 150px 0 60px 0;
-    z-index: 0;
 }
 
 .navigationBar {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.20);
@@ -137,6 +137,7 @@ h4 {
     height: 65px !important;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 #brand {
@@ -257,39 +258,38 @@ h4 {
 #headerBottom {
     width: 100%;
     height: 30px;
-    position: sticky;
-    top: 65px;
-
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    display: none;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.41);
 }
 
 .text {
     font-family: 'Josefin Sans', sans-serif;
-    color: black;
-    font-size: 12px;
-    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    margin: 0 30px;
 }
 
 .line {
     height: 2px;
     width: 50px;
     background-color: black;
-    margin: 20px auto;
+    margin: 35px auto;
 }
 
-#content {}
+.content {}
 
 #content-1 {
-    padding: 30px;
-    position: relative;
-    z-index: -1;
+    padding: 30px 0;
     //background-image: linear-gradient(179.3deg, rgba(234, 234, 234, 1) 2.4%, rgba(255, 255, 255, 1) 92.3%);
     background-image: linear-gradient(180deg, rgb(245, 245, 245), 0%, rgb(149, 82, 82) 50%, rgb(245, 245, 245) 100%);
     background-image: linear-gradient(179.7deg, rgba(255, 255, 255, 1) 2%, rgba(220, 220, 220, 1) 49.1%, rgba(255, 255, 255, 1) 102.3%);
     background-image: linear-gradient(180deg, rgb(245, 245, 245) 0%, rgb(239, 239, 239) 50%, rgba(255, 255, 255, 1) 100%);
+    background-image: linear-gradient(180deg, rgb(245, 245, 245) 0%, rgb(219, 219, 219) 100%);
     //background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(226, 226, 226) 100%);
     //background-color: rgb(245, 245, 245);
 }
@@ -313,8 +313,6 @@ h4 {
     background-repeat: no-repeat;
     //display: flex;
     //justify-content: center;
-
-    margin: 0 0 150px 0;
 }
 
 .content-2-menu {
@@ -341,6 +339,12 @@ h4 {
     width: 150px;
 }
 
+#headerInformation .clickBox {
+    margin: 20px auto;
+    font-size: 1.2rem;
+    width: 180px;
+}
+
 .clickBox:hover {
     background-color: white;
     color: black;
@@ -348,9 +352,10 @@ h4 {
 }
 
 .card {
-    margin: 0 0 60px 0;
+    margin: 0 20px 60px 20px;
     padding: 10px;
     border: solid 1px #dedede;
+    max-width: 400px;
 }
 
 .cardImage {
@@ -387,10 +392,11 @@ h4 {
     margin: 20px 0;
     width: 60px;
     border-radius: 1px;
+    display: none;
 }
 
 .cardText {
-    padding: 30px 0 0 0;
+    padding: 10px 0 0 0;
     //margin: 20px 0;
 }
 
@@ -404,6 +410,21 @@ h4 {
 
 .cardImage-3 {
     background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
+}
+
+#content-3 {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+.content-3-image {
+    width: 50%;
+}
+
+.content-3-text {
+    width: 50%;
+    background-color: red;
 }
 
 /***** FOOTER *****/
@@ -422,7 +443,7 @@ h4 {
     line-height: 2.5rem;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .footerBody {
@@ -447,11 +468,27 @@ h4 {
     margin: 20px auto;
 }
 
-.footerInformation,
-.start,
-.to,
+.footerInformation {
+    margin: 6px 0 0 0;
+}
+
+.start {
+    margin: 6px 0 0 0;
+    width: 40%;
+}
+
 .end {
     margin: 6px 0 0 0;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.to {
+    margin: 6px 0 0 0;
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }
 
 .footerInformation a {
@@ -518,9 +555,55 @@ h4 {
     font-size: 2rem;
 }
 
-@media only screen and (max-width: 600px) {}
+.fa-solid {
+    color: #CC9900;
+    margin: 0 5px;
+    font-size: 1.5rem;
+}
 
-@media (min-width: 1200px) {
+.fa-angle-up {
+    color: white;
+}
+
+.empty {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/******* PHONE ******/
+@media only screen and (max-width: 600px) {
+    #headerBottom {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    #content-1 {
+        padding: 20px 0;
+    }
+
+    h4 {
+        font-size: .9rem;
+    }
+
+    .cardBox {
+        display: flex;
+    }
+
+    .smDa {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        border: none;
+    }
+}
+
+@media (min-width: 1100px) {
     /***** NAVIGATION BAR *****/
 
     .empty {
@@ -554,21 +637,26 @@ h4 {
         width: 300px;
     }
 
+    h4 {
+        font-size: 1.2rem;
+    }
+
     #header {
         background-color: black;
         background-repeat: no-repeat;
         background-image: url(innenTest.png);
+
         background-size: 1000px;
         background-position: 0px -300px;
         background-attachment: fixed;
     }
 
     #headerInformation {
-        height: 500px;
+        height: 600px;
     }
 
     #content-1 {
-        padding: 100px 0;
+        padding: 60px 0;
     }
 
     .darkBG {
@@ -582,19 +670,22 @@ h4 {
     }
 
     .card {
-        margin: 15px;
+        margin: 0 15px;
+        border: solid 1px #d8d8d8;
+        padding: 10px;
     }
 
+
     #content-2 {
-        background-position: 80%;
+        background-position: 110%;
         background-size: contain;
         background-attachment: fixed;
     }
 
     .content-2-menu {
-        width: 1000px;
         margin: 0 auto;
         height: 400px;
+        width: 1200px;
     }
 
     .content-2-image {
@@ -602,8 +693,9 @@ h4 {
         width: 50%;
         position: relative;
 
-        margin: 40px 180px 40px 120px;
         box-sizing: border-box;
+        background-color: blue;
+        margin: 0 50px;
     }
 
     img {
@@ -615,7 +707,7 @@ h4 {
         top: 0;
         left: 0;
         border: solid 2px white;
-        width: 200px;
+        width: 300px;
     }
 
     .imageBox1 {
@@ -623,7 +715,14 @@ h4 {
         bottom: 0;
         right: 0;
         border: solid 2px white;
-        width: 250px;
+        width: 300px;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    .imageBox1:hover {
+        bottom: 20px;
+        box-shadow: 0 10px 10px black;
     }
 
     .content-2-text {
@@ -631,6 +730,7 @@ h4 {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin: 0 50px;
     }
 
     .smBr {
