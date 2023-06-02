@@ -117,7 +117,7 @@ h4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("innenDark.jpeg");
-    background-position: 0 -80px;
+    background-position: 0 -60px;
     //padding: 150px 0 60px 0;
 }
 
@@ -399,7 +399,7 @@ li a {
 
 .cardImage {
     position: relative;
-    height: 250px;
+    height: 200px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -700,7 +700,7 @@ li a {
     }
 
     h4 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     #header {
@@ -725,7 +725,7 @@ li a {
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        width: 1200px;
+        width: 1100px;
     }
 
     .card {
