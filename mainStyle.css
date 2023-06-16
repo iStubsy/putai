@@ -1,3 +1,7 @@
+:root {
+    --main-background: black;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -66,7 +70,7 @@ h3 {
     text-align: center;
     font-size: 1.6rem;
     width: 70%;
-    width: 300px;
+    width: 280px;
     color: red;
     margin: 20px auto;
     color: black;
@@ -146,6 +150,7 @@ h4 {
 
 .navigationBarScrolled {
     background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(0, 0, 0, 0.90);
     height: 65px !important;
     position: fixed;
     top: 0;
@@ -153,7 +158,7 @@ h4 {
 }
 
 #brand {
-    height: 75%;
+    height: 80%;
     width: 33.33%;
 
     display: flex;
@@ -338,7 +343,7 @@ li a {
 }
 
 #content-2 {
-    background-color: black;
+    background-color: var(--main-background);
     background-image: url("innenPaintTest.png");
 
     background-position: 150px;
@@ -400,8 +405,8 @@ li a {
 
 .cardImage {
     position: relative;
-    height: 280px;
-    width: 280px;
+    height: 260px;
+    width: 260px;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -474,7 +479,7 @@ li a {
     width: 100%;
     z-index: -1;
     padding: 20px 0 20px 0;
-    background-color: black;
+    background-color: var(--main-background);
     font-family: 'Merriweather Sans', sans-serif;
 }
 
