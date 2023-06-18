@@ -1,5 +1,7 @@
 :root {
     --main-background: black;
+
+    --main-font: 'Josefin Sans', sans-serif;
 }
 
 * {
@@ -48,7 +50,7 @@ h1 {
     text-align: center;
     font-size: 1.8rem;
     font-weight: 300;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
     padding: 5px 0;
     line-height: 2.6rem;
@@ -65,7 +67,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
     text-align: center;
     font-size: 1.6rem;
@@ -79,7 +81,7 @@ h3 {
 h4 {
     color: black;
     font-size: 1.2rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--main-font);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: left;
@@ -91,7 +93,7 @@ h4 {
     font-size: 1.2rem;
     line-height: 1.5rem;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--main-font);
     font-weight: 300;
     margin: 5px 0;
     text-align: left;
@@ -100,12 +102,12 @@ h4 {
 .bigBr {
     color: white;
     font-size: 3.2rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--main-font);
 }
 
 .smBr {
     font-size: 1.2rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--main-font);
     font-weight: 300;
     line-height: 1.7rem;
     color: rgba(255, 255, 255, 0.95);
@@ -205,7 +207,7 @@ li {
 li a {
     color: white;
     text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--main-font);
     font-size: 1.2rem;
     font-weight: 300;
     padding: 0 20px;
@@ -282,7 +284,7 @@ li a {
 
 .overlayNavigation a {
     font-size: 2rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--main-font);
     margin: 15px;
     cursor: pointer;
     color: grey;
@@ -370,7 +372,7 @@ li a {
     border: solid 1px white;
     padding: 10px 0;
     font-size: 1rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--main-font);
     //display: inline-flex;
     display: flex;
     justify-content: center;
@@ -405,12 +407,13 @@ li a {
 
 .cardImage {
     position: relative;
-    height: 260px;
-    width: 260px;
+    height: 230px;
+    width: 230px;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     margin-bottom: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.44);
 }
 
 .cardIcon {
@@ -458,14 +461,49 @@ li a {
     background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
 }
 
-#content-3 {
+#content-3 {}
+
+#content-3-image-box {
+    background-color: red;
+    height: 500px;
+    width: 500px;
     display: flex;
-    flex-direction: row;
-    height: 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.content-3-image {
-    width: 50%;
+.content-3-image-1 {
+    background-color: blue;
+    width: 49%;
+    height: 69%;
+    background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
+    background-size: cover;
+    margin: .5%;
+}
+
+.content-3-image-2 {
+    background-color: green;
+    width: 49%;
+    height: 29%;
+    background-image: url(food.jpeg);
+    background-size: cover;
+    margin: .5%;
+}
+
+.content-3-image-3 {
+    background-color: brown;
+    width: 49%;
+    height: 29%;
+    background-image: url(lamp.jpeg);
+    background-size: cover;
+    margin: .5%;
+}
+
+.content-3-image-4 {
+    background-color: yellow;
+    width: 49%;
+    height: 69%;
+    margin: .5%;
 }
 
 .content-3-text {
@@ -734,7 +772,7 @@ li a {
     }
 
     #content-1 {
-        padding: 70px 0 90px 0;
+        padding: 70px 0;
     }
 
     .cardBox {
@@ -754,7 +792,7 @@ li a {
 
     #content-2 {
         background-position: 110%;
-        background-size: contain;
+        background-size: 800px;
         background-attachment: fixed;
     }
 
