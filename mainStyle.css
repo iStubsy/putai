@@ -124,7 +124,7 @@ h4 {
     background-image: url("innenDark.jpeg");
     //background-position: 0 -60px;
     //padding: 150px 0 60px 0;
-    height: 400px;
+    height: 360px;
     padding-top: 80px;
 }
 
@@ -341,7 +341,12 @@ li a {
 
 
     background-color: white;
-    //background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+    background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+
+    background-color: #fffcfc;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-attachment: fixed;
 }
 
 #content-2 {
@@ -464,7 +469,6 @@ li a {
 #content-3 {}
 
 #content-3-image-box {
-    background-color: red;
     height: 500px;
     width: 500px;
     display: flex;
@@ -479,6 +483,7 @@ li a {
     background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
     background-size: cover;
     margin: .5%;
+    display: none;
 }
 
 .content-3-image-2 {
@@ -488,6 +493,7 @@ li a {
     background-image: url(food.jpeg);
     background-size: cover;
     margin: .5%;
+    display: none;
 }
 
 .content-3-image-3 {
@@ -497,6 +503,7 @@ li a {
     background-image: url(lamp.jpeg);
     background-size: cover;
     margin: .5%;
+    display: none;
 }
 
 .content-3-image-4 {
@@ -504,6 +511,7 @@ li a {
     width: 49%;
     height: 69%;
     margin: .5%;
+    display: none;
 }
 
 .content-3-text {
