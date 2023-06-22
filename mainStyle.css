@@ -125,7 +125,7 @@ h4 {
     background-image: url("innenDark.jpeg");
     //background-position: 0 -60px;
     //padding: 150px 0 60px 0;
-    height: 360px;
+    height: 440px;
     padding-top: 80px;
 }
 
@@ -271,7 +271,7 @@ li a {
 }
 
 .overlayNavigation {
-    color: white;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -299,11 +299,12 @@ li a {
     font-size: 2rem;
     margin: 15px;
     cursor: pointer;
-    color: #ffffff;
+
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .overlayFooter {
-    color: white;
+    color: rgba(255, 255, 255, 0.85);
     //padding: 20px 0;
     width: 100%;
 
@@ -317,10 +318,11 @@ li a {
     align-items: center;
 
     min-width: 330px;
+    color: rgba(255, 255, 255, 0.72);
 }
 
 .overlayFooterSocial .fa-brands {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0 5px;
 }
 
@@ -843,6 +845,11 @@ li a {
         //border: solid 1px #d8d8d8;
         //padding: 10px;
         //box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .cardImage {
+        width: 280px;
+        height: 280px;
     }
 
 
