@@ -154,6 +154,8 @@ h4 {
 .navigationBarScrolled {
     background-color: rgba(0, 0, 0, 0.80);
     background-color: rgba(0, 0, 0, 0.90);
+    background-color: White;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
     height: 65px !important;
     position: fixed;
     top: 0;
@@ -161,7 +163,7 @@ h4 {
 }
 
 #brand {
-    height: 80%;
+    height: 90%;
     width: 33.33%;
 
     display: flex;
@@ -281,7 +283,7 @@ li a {
 
     border: dashed 1px black;
 
-    height: 55%;
+    height: 58%;
 }
 
 .overlayBrand {
@@ -290,7 +292,7 @@ li a {
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    height: 15%;
+    height: 12%;
 }
 
 
@@ -319,6 +321,7 @@ li a {
 
     min-width: 330px;
     color: rgba(255, 255, 255, 0.72);
+
 }
 
 .overlayFooterSocial .fa-brands {
@@ -330,7 +333,7 @@ li a {
     height: 1px;
     width: 85%;
     background-color: rgba(255, 255, 255, 0.55);
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .overlayFooterMore {
@@ -341,6 +344,7 @@ li a {
 
 .overlayFooterMore span {
     margin: 5px auto;
+    font-weight: 100;
 }
 
 #headerInformation {
