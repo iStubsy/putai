@@ -1,19 +1,22 @@
 window.onscroll = function () {
-
-
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         document.querySelector(".navigationBar").classList.add("navigationBarScrolled");
-        //document.querySelector("#hamburgerMenu").style.width = "65px";
+        document.querySelector(".hamburgerMenu").classList.add("hamburgerMenuScrolled");
+        document.querySelectorAll(".hamburgerMenuLine")[0].classList.add("hamburgerMenuLineScrolled");
+        document.querySelectorAll(".hamburgerMenuLine")[1].classList.add("hamburgerMenuLineScrolled");
+        document.querySelectorAll(".hamburgerMenuLine")[2].classList.add("hamburgerMenuLineScrolled");
         document.querySelector(".backToTop").classList.add("backToTopScrolled");
-
     } else {
         document.querySelector(".navigationBar").classList.remove("navigationBarScrolled");
-        //document.querySelector("#hamburgerMenu").style.width = "80px";
+        document.querySelector(".hamburgerMenu").classList.remove("hamburgerMenuScrolled");
+        document.querySelectorAll(".hamburgerMenuLine")[0].classList.remove("hamburgerMenuLineScrolled");
+        document.querySelectorAll(".hamburgerMenuLine")[1].classList.remove("hamburgerMenuLineScrolled");
+        document.querySelectorAll(".hamburgerMenuLine")[2].classList.remove("hamburgerMenuLineScrolled");
         document.querySelector(".backToTop").classList.remove("backToTopScrolled");
     }
 }
 
-document.querySelector("#hamburgerMenu").onclick = function () {
+document.querySelector(".hamburgerMenu").onclick = function () {
     document.querySelector(".overlay").classList.add("overlayShow");
     document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
 
