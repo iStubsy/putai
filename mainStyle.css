@@ -117,6 +117,7 @@ h4 {
     color: rgba(255, 255, 255, 0.85);
     margin: 18px 0 30px 0;
     min-width: 200px;
+    max-width: 280px;
     //font-family: "Open Sans", sans-serif;
 }
 
@@ -193,10 +194,11 @@ h4 {
     margin: 0 10px 0 0;
     border-radius: 3px;
     height: 45px;
+    transition: .2s;
 }
 
 .hamburgerMenu:active {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hamburgerMenuScrolled {
@@ -235,7 +237,7 @@ li a {
 .hamburgerMenuLineScrolled {
     background-color: black;
     height: 2px;
-    width: 34px;
+    width: 30px;
 }
 
 .hmlTransform1 {
@@ -463,7 +465,7 @@ li a {
 }
 
 .card {
-    margin: 0 20px 60px 20px;
+    margin: 0 auto 60px auto;
     //padding: 10px;
     max-width: 330px;
     //background-color: rgba(157, 157, 157, 0.04);
@@ -792,6 +794,20 @@ li a {
         display: flex;
     }
 
+    #content-2 {
+        display: flex;
+        align-items: center;
+        height: 500px;
+    }
+
+
+    #content-2 {
+        background-position: 150%;
+        background-size: 55%;
+        background-attachment: fixed;
+    }
+
+
     .content-2-menu {
         margin: 0 auto;
     }
@@ -805,29 +821,27 @@ li a {
         box-sizing: border-box;
 
         max-width: 400px;
+        margin: 0 30px 0 30px;
     }
+
+    .content-2-image {}
 
     .imageBox {
         position: absolute;
-        top: 60px;
-        left: 50px;
+        top: 0px;
+        left: 20px;
         border: solid 2px white;
-        width: 200px;
+        width: 250px;
     }
 
     .imageBox1 {
         position: absolute;
-        bottom: 60px;
-        right: 50px;
+        bottom: 0px;
+        right: 10px;
         border: solid 2px white;
-        width: 200px;
+        width: 250px;
         transition: .4s;
         cursor: pointer;
-    }
-
-    .imageBox1:hover {
-        bottom: 20px;
-        box-shadow: 0 10px 10px black;
     }
 
     #header {
@@ -881,34 +895,21 @@ li a {
     }
 
     #content-1 {
-        padding: 70px 0;
+        padding: 50px 0 30px 0;
     }
 
     .cardBox {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         margin: 0 auto;
-        width: 90%;
-    }
-
-    .card {
-        //border: solid 1px #d8d8d8;
-        //padding: 10px;
-        //box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+        width: 85%;
+        max-width: 1500px;
     }
 
     .cardImage {
         width: 280px;
         height: 280px;
     }
-
-
-    #content-2 {
-        background-position: 110%;
-        background-size: 800px;
-        background-attachment: fixed;
-    }
-
 
     .footerBody {
         display: flex;
