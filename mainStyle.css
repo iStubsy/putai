@@ -765,7 +765,7 @@ li a {
     .navigationBarScrolled {
         background-color: rgba(0, 0, 0, 0.90);
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-        height: 85px !important;
+        height: 100px !important;
         position: fixed;
         top: 0;
         padding: 8px;
