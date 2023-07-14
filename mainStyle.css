@@ -160,7 +160,7 @@ h4 {
     background-color: rgba(0, 0, 0, 0.80);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
     background-color: white;
-    height: 65px !important;
+
     position: fixed;
     top: 0;
     z-index: 1;
@@ -759,16 +759,16 @@ li a {
     }
 
     .navigationBar {
-        height: 120px;
+        height: 100px;
     }
 
     .navigationBarScrolled {
         background-color: rgba(0, 0, 0, 0.90);
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-        height: 100px !important;
+        //height: 85px !important;
         position: fixed;
         top: 0;
-        padding: 8px;
+        padding: 10px;
     }
 
     .navigationBarInner {

@@ -1,5 +1,5 @@
 window.onscroll = function () {
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.querySelector(".navigationBar").classList.add("navigationBarScrolled");
         document.querySelector(".hamburgerMenu").classList.add("hamburgerMenuScrolled");
         document.querySelectorAll(".hamburgerMenuLine")[0].classList.add("hamburgerMenuLineScrolled");
