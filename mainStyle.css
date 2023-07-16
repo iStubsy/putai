@@ -27,7 +27,7 @@ body {}
     background-color: rgba(0, 0, 0, 0.99);
     width: 0;
     //top: -5;
-    height: 120%;
+    height: 100%;
 
     z-index: 1001;
     transition: ease-out .2s;
@@ -35,27 +35,15 @@ body {}
     display: flex;
     justify-content: center;
     flex-direction: column;
-    //position: fixed;
-
-
+    position: fixed;
 }
 
 .overlayShow {
     width: 100% !important;
     //height: 100%;
-    //position: fixed;
-}
-
-.toot {
     position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
-    background-color: black;
-    transition: 1s;
+    overflow-y: scroll;
 }
-
 
 .empty {
     width: 33.33%;
@@ -301,7 +289,6 @@ li a {
 }
 
 .overlayNavigation {
-
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -319,9 +306,8 @@ li a {
     justify-content: center;
     padding: 10px 0;
     height: 12%;
+    height: 95px;
 }
-
-
 
 .overlayNavigation a {
     font-size: 2rem;

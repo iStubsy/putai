@@ -18,9 +18,7 @@ window.onscroll = function () {
 
 document.querySelector(".hamburgerMenu").onclick = function () {
     document.querySelector(".overlay").classList.add("overlayShow");
-    //document.getElementsByTagName("#toot")[0].style.overflow = "hidden";
-    document.getElementById("contentWrapper").style.position = "fixed";
-    document.getElementById("toot").classList.add("toot");
+    document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
 
     document.querySelector(".hmlTransform1").style.transform = "rotate(45deg)";
     document.querySelector(".hmlTransform2").style.transform = "rotate(-45deg)";
@@ -36,9 +34,6 @@ document.querySelector(".closeButton").onclick = function () {
 
     document.querySelector(".overlay").classList.remove("overlayShow");
     document.getElementsByTagName("HTML")[0].style.overflow = "auto";
-
-    document.getElementById("contentWrapper").style.position = "relative";
-    document.getElementById("toot").classList.remove("toot");
 
     for (let i = 0; i < document.querySelectorAll(".hamburgerMenuLine").length; i++) {
         document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "4px auto";
