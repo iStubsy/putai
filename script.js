@@ -44,3 +44,17 @@ document.querySelector(".backToTop").onclick = function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0;
 }
+
+
+$(document).ready(function () {
+    $(document).scroll(function (evt) {
+        var v2 = Math.abs($('.cardImage-1').position().top - $(window).height() / 2 - 150);
+        var v1 = $(this).scrollTop();
+        if (v1 > v2) {
+            $('.card').css("opacity", "1");
+            $('.cardImage-1').addClass("cardImageFinal");
+            $('.cardImage-2').addClass("cardImageFinal");
+            $('.cardImage-3').addClass("cardImageFinal");
+        }
+    });
+});

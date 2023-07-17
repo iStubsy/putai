@@ -58,7 +58,8 @@ h1 {
     font-weight: 400;
     padding: 5px 0;
     line-height: 2.6rem;
-
+    margin: 0 auto;
+    width: 350px;
 }
 
 h2 {
@@ -471,6 +472,9 @@ li a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    transition: .6s;
+    opacity: 0;
 }
 
 
@@ -483,6 +487,14 @@ li a {
     border-radius: 50%;
     margin-bottom: 30px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.44);
+    transform: rotate(50deg);
+    opacity: 0;
+    transition: 2s;
+}
+
+.cardImageFinal {
+    transform: rotate(0deg);
+    opacity: 1;
 }
 
 .cardIcon {
@@ -530,52 +542,68 @@ li a {
     background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
 }
 
-#content-3 {}
+#content-3 {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    display: none;
+}
+
+#content-3-text {
+    width: 50%;
+
+}
+
+#content-3-image-wrapper {
+    width: 50%;
+}
 
 #content-3-image-box {
-    height: 500px;
+    //height: 100%;
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
 .content-3-image-1 {
-    width: 49%;
-    height: 69%;
+    width: 48.5%;
+    min-width: 100px;
+    height: 68.5%;
+    min-height: 140px;
     background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
     background-size: cover;
-    margin: .5%;
-    display: none;
+    margin: .75%;
 }
 
 .content-3-image-2 {
-    width: 49%;
-    height: 29%;
+    width: 48.5%;
+    min-width: 100px;
+    height: 28.5%;
+    min-height: 60px;
     background-image: url(food.jpeg);
     background-size: cover;
-    margin: .5%;
-    display: none;
+    margin: .75%;
 }
 
 .content-3-image-3 {
-    width: 49%;
-    height: 29%;
+    width: 48.5%;
+    min-width: 100px;
+    height: 28.5%;
+    min-height: 60px;
     background-image: url(lamp.jpeg);
     background-size: cover;
-    margin: .5%;
-    display: none;
+    margin: .75%;
 }
 
 .content-3-image-4 {
-    background-color: yellow;
-    width: 49%;
-    height: 69%;
-    margin: .5%;
-    display: none;
-}
-
-.content-3-text {
-    width: 50%;
+    background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
+    background-size: cover;
+    width: 48.5%;
+    min-width: 100px;
+    height: 68.5%;
+    min-height: 140px;
+    margin: .75%;
 }
 
 /***** FOOTER *****/
@@ -621,7 +649,20 @@ li a {
 
 .footerInformation {
     margin: 6px 0 0 0;
+
 }
+
+.footerInformation a {
+    color: white;
+}
+
+
+.footerBottom {
+    color: grey;
+    margin: 5px 0;
+    text-align: center;
+}
+
 
 .start {
     margin: 6px 0 0 0;
@@ -640,10 +681,6 @@ li a {
     width: 20%;
     display: flex;
     justify-content: center;
-}
-
-.footerInformation a {
-    color: white;
 }
 
 .open {
@@ -670,12 +707,6 @@ li a {
     padding: 30px 5px 10px 5px;
 }
 
-.footerBottom {
-    color: grey;
-    margin: 5px 0;
-    text-align: center;
-}
-
 .backToTop {
     color: white;
     position: fixed;
@@ -687,8 +718,8 @@ li a {
     font-size: 1rem;
 
     border: solid 1px white;
-    height: 45px;
-    width: 45px;
+    height: 46px;
+    width: 46px;
     display: flex;
     background-color: black;
     justify-content: center;
@@ -795,13 +826,11 @@ li a {
         display: flex;
         align-items: center;
         height: 500px;
-    }
 
-
-    #content-2 {
         background-position: 150%;
         background-size: 55%;
         background-attachment: fixed;
+        //transform: skewY(-2deg);
     }
 
 
@@ -883,7 +912,7 @@ li a {
         background-attachment: fixed;
         height: 100vh;
         min-height: 500px;
-        max-height: 800px;
+        max-height: 700px;
         padding: 0;
     }
 
