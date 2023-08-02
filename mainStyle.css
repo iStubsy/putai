@@ -156,7 +156,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     //background-color: rgba(0, 0, 0, 0.2);
-    padding: 8px;
+    padding: 8px 0px;
     transition: .5s;
 }
 
@@ -238,18 +238,12 @@ li a {
 
 .hamburgerMenuLine {
     height: 1.5px;
-    width: 33px;
+    width: 32px;
     background-color: white;
     border-radius: .75px;
     margin: 4px auto;
 }
 
-/* DELETE */
-.hamburgerMenuLineScrolled {
-    //background-color: black;
-    //height: 2px;
-    width: 30px;
-}
 
 .hmlTransform1 {
     //transform: rotate(45deg);
