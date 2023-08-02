@@ -142,7 +142,7 @@ h4 {
     display: flex;
     justify-content: center;
 
-    height: 70px;
+    height: 90px;
     transition: .5s;
     //padding: 10px 0;
     padding: 5px;
@@ -156,21 +156,22 @@ h4 {
     justify-content: space-between;
     align-items: center;
     //background-color: rgba(0, 0, 0, 0.2);
-    padding: 5px;
+    padding: 8px;
     transition: .5s;
 }
 
 .navigationBarInnerScrolled {
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.90);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
 
 .navigationBarScrolled {
     //background-color: rgba(0, 0, 0, 0.80);
     //box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
     background-color: rgba(0, 0, 0, 0.00);
+    height: 80px;
     position: fixed;
-    height: 70px;
     top: 0;
     z-index: 1;
     //padding: 5px;
@@ -282,7 +283,7 @@ li a {
     flex-direction: column;
     align-items: center;
 
-    margin: 15px;
+    margin: 20px;
 
     width: 50px;
     height: 50px;
