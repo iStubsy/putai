@@ -142,9 +142,10 @@ h4 {
     display: flex;
     justify-content: center;
 
-    height: 75px;
+    height: 70px;
     transition: .5s;
-    padding: 10px 0;
+    //padding: 10px 0;
+    padding: 5px;
 }
 
 .navigationBarInner {
@@ -154,19 +155,25 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    //background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    transition: .5s;
+}
+
+.navigationBarInnerScrolled {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 .navigationBarScrolled {
-    background-color: rgba(0, 0, 0, 0.80);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-    background-color: white;
-
+    //background-color: rgba(0, 0, 0, 0.80);
+    //box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.00);
     position: fixed;
     height: 70px;
-
     top: 0;
     z-index: 1;
-    padding: 3px 0;
+    //padding: 5px;
 }
 
 #brand {
@@ -236,9 +243,10 @@ li a {
     margin: 4px auto;
 }
 
+/* DELETE */
 .hamburgerMenuLineScrolled {
-    background-color: black;
-    height: 2px;
+    //background-color: black;
+    //height: 2px;
     width: 30px;
 }
 
@@ -463,6 +471,7 @@ li a {
 }
 
 .card {
+    position: relative;
     margin: 0 auto 60px auto;
     //padding: 10px;
     max-width: 330px;
@@ -485,8 +494,8 @@ li a {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    margin-bottom: 30px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.44);
+    margin-bottom: 45px;
+
     transform: rotate(50deg);
     opacity: 0;
     transition: 2s;
@@ -495,6 +504,9 @@ li a {
 .cardImageFinal {
     transform: rotate(0deg);
     opacity: 1;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.44);
+    width: 230px;
+    height: 230px;
 }
 
 .cardIcon {
@@ -546,7 +558,6 @@ li a {
     display: flex;
     justify-content: center;
     padding: 80px 0;
-    display: none;
 }
 
 #content-3-text {
@@ -560,7 +571,7 @@ li a {
 
 #content-3-image-box {
     //height: 100%;
-    width: 400px;
+    //width: 400px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -738,7 +749,7 @@ li a {
 }
 
 .fa-solid {
-    color: #CC9900;
+    color: #e0a800;
     margin: 0 5px;
     font-size: 1.2rem;
     display: none;
@@ -830,7 +841,6 @@ li a {
         background-position: 150%;
         background-size: 55%;
         background-attachment: fixed;
-        //transform: skewY(-2deg);
     }
 
 
@@ -912,8 +922,8 @@ li a {
         background-attachment: fixed;
         height: 100vh;
         min-height: 500px;
-        max-height: 700px;
-        padding: 0;
+        max-height: 800px;
+        padding: 20px 0 0 0;
     }
 
     #headerInformation {
@@ -921,7 +931,7 @@ li a {
     }
 
     #content-1 {
-        padding: 50px 0 30px 0;
+        padding: 70px 0 50px 0;
     }
 
     .cardBox {
@@ -929,7 +939,7 @@ li a {
         justify-content: space-around;
         margin: 0 auto;
         width: 85%;
-        max-width: 1500px;
+        max-width: 1300px;
     }
 
     .cardImage {

@@ -1,6 +1,7 @@
 window.onscroll = function () {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.querySelector(".navigationBar").classList.add("navigationBarScrolled");
+        document.querySelector(".navigationBarInner").classList.add("navigationBarInnerScrolled");
         document.querySelector(".hamburgerMenu").classList.add("hamburgerMenuScrolled");
         document.querySelectorAll(".hamburgerMenuLine")[0].classList.add("hamburgerMenuLineScrolled");
         document.querySelectorAll(".hamburgerMenuLine")[1].classList.add("hamburgerMenuLineScrolled");
@@ -8,6 +9,8 @@ window.onscroll = function () {
         document.querySelector(".backToTop").classList.add("backToTopScrolled");
     } else {
         document.querySelector(".navigationBar").classList.remove("navigationBarScrolled");
+        document.querySelector(".navigationBarInner").classList.remove("navigationBarInnerScrolled");
+        
         document.querySelector(".hamburgerMenu").classList.remove("hamburgerMenuScrolled");
         document.querySelectorAll(".hamburgerMenuLine")[0].classList.remove("hamburgerMenuLineScrolled");
         document.querySelectorAll(".hamburgerMenuLine")[1].classList.remove("hamburgerMenuLineScrolled");
@@ -48,7 +51,7 @@ document.querySelector(".backToTop").onclick = function () {
 
 $(document).ready(function () {
     $(document).scroll(function (evt) {
-        var v2 = Math.abs($('.cardImage-1').position().top - $(window).height() / 2 - 150);
+        var v2 = Math.abs($('.cardImage-1').position().top - $(window).height() / 2 + 100);
         var v1 = $(this).scrollTop();
         if (v1 > v2) {
             $('.card').css("opacity", "1");
