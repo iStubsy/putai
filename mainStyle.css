@@ -132,7 +132,7 @@ h4 {
 }
 
 .navigationBar {
-
+    position: fixed;
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.20);
@@ -154,7 +154,7 @@ h4 {
     align-items: center;
     //background-color: rgba(0, 0, 0, 0.2);
     padding: 8px 0px;
-    //transition: .5s;
+    transition: .5s;
 }
 
 .navigationBarInnerScrolled {
@@ -364,7 +364,7 @@ li a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 80px 0;
+    padding: 180px 0 100px 0;
 }
 
 #headerBottom {
