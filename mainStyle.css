@@ -1,6 +1,5 @@
 :root {
     --main-background: black;
-
     --main-font: 'Josefin Sans', sans-serif;
 }
 
@@ -18,32 +17,82 @@ html {
     scroll-behavior: smooth;
 }
 
-body {}
+body {
+}
 
+
+/*
 .overlay {
-    position: absolute;
+    position: fixed;
+    top: 0;
     right: 0;
+    overflow: scroll;
 
     background-color: rgba(0, 0, 0, 0.99);
     width: 0;
-    //top: -5;
-    height: 100%;
+    
 
     z-index: 1001;
     transition: ease-out .2s;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+}
+*/
+
+.overlay {
     position: fixed;
+
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.99);
+    transition: ease-out .2s;
+    z-index: 1001;
+    overflow-x: hidden;
 }
 
 .overlayShow {
     width: 100% !important;
     //height: 100%;
-    position: fixed;
+    //position: fixed;
     overflow-y: scroll;
+    overflow-x: hidden;
+    //height: 2000px;
+    //z-index: 1001;
 }
+
+.overlayInner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 800px;
+}
+
+
+
+/*
+.overlay {
+            position: fixed;
+            overflow-y: scroll;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+  
+        
+  
+        
+*/
+
+
+
+
+
+
+
+
 
 .empty {
     width: 33.33%;
@@ -112,7 +161,7 @@ h4 {
 .smBr {
     font-size: 1.2rem;
     font-family: var(--main-font);
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.7rem;
     color: rgba(255, 255, 255, 0.85);
     margin: 18px 0 30px 0;
@@ -132,7 +181,7 @@ h4 {
 }
 
 .navigationBar {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.20);
@@ -154,12 +203,11 @@ h4 {
     align-items: center;
     //background-color: rgba(0, 0, 0, 0.2);
     padding: 8px 0px;
-    transition: .5s;
 }
 
 .navigationBarInnerScrolled {
     background-color: rgba(0, 0, 0, 0.90);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    //box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
 
 .navigationBarScrolled {
@@ -410,14 +458,14 @@ li a {
     //transform: translateY(150px);
     opacity: 0;
     transform: rotate(50deg);
-    transition: 2s all ease;
+    transition: transform opacity 2s all ease;
 }
 
 .reveal.active {
     //transform: translateY(0);
     transform: rotate(0deg);
     opacity: 1;
-    transition: 2s;
+    transition: transform 2s, opacity 2s;
 }
 
 #content-1 {
@@ -489,9 +537,6 @@ li a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    //transition: .6s;
-    //opacity: 0;
 }
 
 
@@ -504,10 +549,6 @@ li a {
     border-radius: 50%;
     margin-bottom: 45px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.44);
-
-    //transform: rotate(50deg);
-    //opacity: 0;
-    //transition: transform 2s;
 }
 
 .cardImage1 {
@@ -571,20 +612,54 @@ li a {
 }
 
 #content-3 {
-    display: flex;
-    justify-content: center;
-    padding: 80px 0;
-    max-width: 400px;
-    overflow: hidden;
+    //display: flex;
+    //justify-content: center;
+    //padding: 80px 0;
+    padding: 40px 0 100px 0;
 }
 
 #content-3-text {
-    width: 50%;
-
+    //width: 50%;
 }
 
+#content-3-image {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5px;
+
+    border: solid 1px #cecece;
+    max-width: 500px;
+}
+
+.image1 {
+    width: 70%;
+    height: 100px;
+    margin: 0 4px 0 0;
+    background-image: url(food.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 2px 2px 5px #b5b5b5;
+}
+
+.image2 {
+    width: 30%;
+    height: 100px;
+    margin: 0 0 0 4px;
+
+    background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 5px #b5b5b5;
+}
+
+
+
+/*
 #content-3-image-wrapper {
-    width: 50%;
+    //width: 50%;
 }
 
 #content-3-image-box {
@@ -633,7 +708,7 @@ li a {
     height: 68.5%;
     min-height: 140px;
     margin: .75%;
-}
+} */
 
 /***** FOOTER *****/
 
@@ -817,15 +892,16 @@ li a {
 
     .navigationBar {
         height: 100px;
+        padding: 5px;
     }
 
     .navigationBarScrolled {
-        background-color: rgba(0, 0, 0, 0.90);
+        //background-color: rgba(0, 0, 0, 0.90);
+        //background-color: white;
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-        height: 85px !important;
-        position: fixed;
+        height: 100px !important;
+        position: relative;
         top: 0;
-        padding: 10px;
     }
 
     .navigationBarInner {
@@ -899,7 +975,6 @@ li a {
         right: 10px;
         border: solid 2px white;
         width: 250px;
-        transition: .4s;
         cursor: pointer;
     }
 
@@ -946,7 +1021,6 @@ li a {
         height: 100vh;
         min-height: 500px;
         max-height: 800px;
-        padding: 30px 0 0 0;
     }
 
     #headerInformation {
