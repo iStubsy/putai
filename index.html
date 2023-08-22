@@ -29,7 +29,12 @@
 </head>
 
 <body>
-
+    <div class="loader-wrapper">
+        <div class="LOADING"><img src="puTaiLogo.jpg" width="100px"></div>
+        <span class="loader"><span class="loader-inner"></span></span>
+       
+    </div>
+    
     <div class="overlay">
         <div class="overlayInner">
             <div class="closeButton">
@@ -104,9 +109,10 @@
                 <div class="line"></div>
                 <div class="cardBox">
                     <div class="card">
-                        <div class="cardImage cardImage-1 reveal">
-                            <div class="cardIcon"><i class="fa-solid fa-chair"></i></div>
+                        <div class="cardImageBox">
+                            <div class="cardImage cardImage-1 reveal"></div>
                         </div>
+
                         <div class="cardText">
                             <h4>Ein wundervolles Ambiente</h4>
                             <div class="textLine"></div>
@@ -223,10 +229,15 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+          $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+        
         AOS.init();
         AOS.init({
             once: true
         });
+        
 
     </script>
 </body>

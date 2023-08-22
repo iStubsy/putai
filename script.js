@@ -34,6 +34,7 @@ document.querySelector(".hamburgerMenu").onclick = function () {
 document.querySelector(".closeButton").onclick = function () {
     document.querySelector(".hmlTransform1").style.transform = "rotate(0)";
     document.querySelector(".hmlTransform2").style.transform = "rotate(0)";
+    
 
     document.querySelector(".overlay").classList.remove("overlayShow");
     document.getElementsByTagName("HTML")[0].style.overflow = "auto";
@@ -41,6 +42,7 @@ document.querySelector(".closeButton").onclick = function () {
     for (let i = 0; i < document.querySelectorAll(".hamburgerMenuLine").length; i++) {
         document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "4px auto";
     }
+
 }
 
 document.querySelector(".backToTop").onclick = function () {
