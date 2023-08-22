@@ -1,6 +1,7 @@
 :root {
     --main-background: black;
     --main-font: 'Josefin Sans', sans-serif;
+    --akzente: #e0a800;
 }
 
 * {
@@ -805,7 +806,6 @@ li a {
     align-items: center;
 }
 
-/* LOADER */
 
 .loader-wrapper {
     width: 100%;
@@ -816,49 +816,72 @@ li a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
-.loader {
-    margin: 0px auto;
-    border: 8px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 8px solid black;
-    width: 180px;
-    height: 180px;
-    -webkit-animation: spin 2s linear infinite;
-    
-    animation: spin 2s linear infinite;
+.loader-wrapper > * {
+    margin: 20px auto;
 }
 
-.LOADING {
+.loadImage {
+    border-radius: 3px;
+}
+
+.line-wobble {
+    --uib-size: 80px;
+    --uib-speed: 1.55s;
+    --uib-color: black;
+    --uib-line-weight: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--uib-line-weight);
+    width: var(--uib-size);
+    border-radius: calc(var(--uib-line-weight) / 2);
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.line-wobble::before {
+    content: '';
     position: absolute;
-    left: 50%;
-    margin-left: -50px !important;
-    top: 50%;
-    margin-top: -50px;
-
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--akzente);
+    opacity: 0.1;
 }
 
+.line-wobble::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: calc(var(--uib-line-weight) / 2);
+    animation: wobble var(--uib-speed) ease-in-out infinite;
+    transform: translateX(-90%);
+    background-color: var(--akzente);
+}
 
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
+@keyframes wobble {
 
+    0%,
     100% {
-        -webkit-transform: rotate(360deg);
+        transform: translateX(-90%);
+    }
+
+    50% {
+        transform: translateX(90%);
     }
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
 
-    100% {
-        transform: rotate(360deg);
-    }
-}
+
+
+
+
+
 
 /******* PHONE ******/
 @media only screen and (max-width: 600px) {
@@ -893,19 +916,19 @@ li a {
         padding: 5px;
         position: absolute;
     }
-    
+
     .navigationBarScrolled {
         position: absolute;
     }
 
- 
+
     .navigationBarInner {
         width: 90%;
         max-width: 1200px;
         padding: 0;
     }
 
-   
+
 
     .hamburgerMenu {
         display: none;

@@ -30,8 +30,14 @@
 
 <body>
     <div class="loader-wrapper">
-        <div class="LOADING"><img src="puTaiLogo.jpg" width="100px"></div>
-        <span class="loader"><span class="loader-inner"></span></span>
+        <!-- <div class="LOADING"></div> -->
+        
+
+        <img class="loadImage" src="puTaiLogo.jpg" width="100px">
+        <div class="line-wobble"></div>
+    
+   
+        <!-- <span class="loader"><span class="loader-inner"></span></span> -->
        
     </div>
     
@@ -230,7 +236,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
           $(window).on("load", function() {
-            $(".loader-wrapper").fadeOut("slow");
+       $(".loader-wrapper").fadeOut("slow");
+              document.getElementsByTagName("HTML")[0].style.overflow = "auto";
         });
         
         AOS.init();

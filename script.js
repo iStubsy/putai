@@ -1,3 +1,5 @@
+document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
+
 window.onscroll = function () {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.querySelector(".navigationBar").classList.add("navigationBarScrolled");
