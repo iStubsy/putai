@@ -36,7 +36,7 @@ document.querySelector(".hamburgerMenu").onclick = function () {
 document.querySelector(".closeButton").onclick = function () {
     document.querySelector(".hmlTransform1").style.transform = "rotate(0)";
     document.querySelector(".hmlTransform2").style.transform = "rotate(0)";
-    
+
 
     document.querySelector(".overlay").classList.remove("overlayShow");
     document.getElementsByTagName("HTML")[0].style.overflow = "auto";
@@ -81,7 +81,30 @@ function reveal() {
     }
 }
 
+function moveUpRevealFun() {
+    var moveUpReveals = document.querySelectorAll(".moveUpReveal");
+    for (var i = 0; i < moveUpReveals.length; i++) {
+        for (var x = 0; x < moveUpReveals[i].getElementsByTagName("div").length; x++) {
+                moveUpReveals[i].getElementsByTagName("div")[x].classList.add("moveUpReveals");
+               
+            }
+        var windowHeight = window.innerHeight;
+        var elementTop = moveUpReveals[i].getBoundingClientRect().top;
+        var elementVisible = 100;
+        if (elementTop < windowHeight - elementVisible) {
+            for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
+                //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
+                moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x/2 + "s";
+                moveUpReveals[i].getElementsByTagName("*")[x].classList.add("active");
+            }
+        }
+    }
+}
+
+
 window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", moveUpRevealFun);
 
 // To check the scroll position on page load
 reveal();
+moveUpRevealFun();
