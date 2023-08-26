@@ -84,8 +84,8 @@ function reveal() {
 function moveUpRevealFun() {
     var moveUpReveals = document.querySelectorAll(".moveUpReveal");
     for (var i = 0; i < moveUpReveals.length; i++) {
-        for (var x = 0; x < moveUpReveals[i].getElementsByTagName("div").length; x++) {
-                moveUpReveals[i].getElementsByTagName("div")[x].classList.add("moveUpReveals");
+        for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
+                moveUpReveals[i].getElementsByTagName("*")[x].classList.add("moveUpReveals");
                
             }
         var windowHeight = window.innerHeight;
