@@ -513,6 +513,10 @@ li a {
     align-items: center;
 }
 
+.cardImageBox {
+    position: relative;
+}
+
 .cardImage {
     position: relative;
     height: 230px;
@@ -520,7 +524,6 @@ li a {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    margin-bottom: 45px;
 
     /* DELETE */
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.44);
@@ -539,12 +542,6 @@ li a {
     transform: translate(-50%, -50%);
     text-align: center;
     transition: .1s;
-}
-
-.lineTest:hover {
-    height: 230px;
-    width: 230px;
-    transform: rotate3d(20deg);
 }
 
 .lineTestInner {
@@ -597,7 +594,7 @@ li a {
 
 .cardText {
     padding: 0px;
-    //margin: 20px 0;
+    margin: 45px 0 0 0;
 }
 
 .cardImage-1 {
@@ -1132,6 +1129,11 @@ li a {
     .cardImage {
         width: 300px;
         height: 300px;
+    }
+    
+    .lineTest {
+        width: 280px;
+        height: 280px;
     }
 
     .footerBody {
