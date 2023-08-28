@@ -27,6 +27,8 @@ document.querySelector(".hamburgerMenu").onclick = function () {
 
     document.querySelector(".hmlTransform1").style.transform = "rotate(45deg)";
     document.querySelector(".hmlTransform2").style.transform = "rotate(-45deg)";
+    
+    moveUpRevealFunOverlay();
 
     for (let i = 0; i < document.querySelectorAll(".hamburgerMenuLine").length; i++) {
         document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "8px auto";
@@ -101,6 +103,26 @@ function moveUpRevealFun() {
     }
 }
 
+function moveUpRevealFunOverlay() {
+    var moveUpReveals = document.querySelectorAll(".moveUpRevealOverlay");
+    for (var i = 0; i < moveUpReveals.length; i++) {
+        for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
+            moveUpReveals[i].getElementsByTagName("*")[x].classList.add("moveUpReveals");
+
+        }
+        var windowHeight = window.innerHeight;
+        var elementTop = moveUpReveals[i].getBoundingClientRect().top;
+        var elementVisible = 100;
+        if (elementTop < windowHeight - elementVisible) {
+            for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
+                //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
+                moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 4 + "s";
+                moveUpReveals[i].getElementsByTagName("*")[x].classList.add("active");
+            }
+        }
+    }
+}
+
 document.addEventListener("keypress", function (event) {
     if (event.key == "Enter") {
         document.body.scrollTop = 0; // For Safari
@@ -114,4 +136,4 @@ window.addEventListener("scroll", moveUpRevealFun);
 
 // To check the scroll position on page load
 reveal();
-//moveUpRevealFun();
+moveUpRevealFun();

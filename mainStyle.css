@@ -547,8 +547,8 @@ li a {
 .lineTestInner {
     width: 20px;
     height: 20px;
-    border-top: solid 2px black;
-    border-right: solid 2px black;
+    border-top: solid 2px rgba(0, 0, 0, 0.4);
+    border-right: solid 2px rgba(0, 0, 0, 0.4);
     position: absolute;
     top: -1px;
     right: -1px;
@@ -557,8 +557,8 @@ li a {
 .lineTestInner2 {
     width: 20px;
     height: 20px;
-    border-bottom: solid 2px black;
-    border-left: solid 2px black;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.4);
+    border-left: solid 2px rgba(0, 0, 0, 0.4);
     position: absolute;
     bottom: -1px;
     left: -1px;
