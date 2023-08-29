@@ -442,6 +442,18 @@ li a {
     transition: transform ease 0.6s, opacity 2s;
 }
 
+.troi {
+    opacity: 0;
+    transform: translateY(100px);
+    transition-delay: 0;
+}
+
+.tro {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.6s;
+}
+
 #content-1 {
     padding: 20px 0;
 
@@ -547,8 +559,8 @@ li a {
 .lineTestInner {
     width: 20px;
     height: 20px;
-    border-top: solid 2px rgba(0, 0, 0, 0.4);
-    border-right: solid 2px rgba(0, 0, 0, 0.4);
+    border-top: solid 2px #525252;
+    border-right: solid 2px #525252;
     position: absolute;
     top: -1px;
     right: -1px;
@@ -557,8 +569,8 @@ li a {
 .lineTestInner2 {
     width: 20px;
     height: 20px;
-    border-bottom: solid 2px rgba(0, 0, 0, 0.4);
-    border-left: solid 2px rgba(0, 0, 0, 0.4);
+    border-bottom: solid 2px #525252;
+    border-left: solid 2px #525252;
     position: absolute;
     bottom: -1px;
     left: -1px;

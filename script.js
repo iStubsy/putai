@@ -28,7 +28,16 @@ document.querySelector(".hamburgerMenu").onclick = function () {
     document.querySelector(".hmlTransform1").style.transform = "rotate(45deg)";
     document.querySelector(".hmlTransform2").style.transform = "rotate(-45deg)";
     
-    moveUpRevealFunOverlay();
+    //moveUpRevealFunOverlay();
+    
+    for (var x = 0; x < document.querySelector(".overlayNavigation").getElementsByTagName("*").length; x++) {
+        document.querySelector(".overlayNavigation").getElementsByTagName("*")[x].classList.add("tro");
+        document.querySelector(".overlayNavigation").getElementsByTagName("*")[x].style.transition = "1s";
+        document.querySelector(".overlayNavigation").getElementsByTagName("*")[x].style.transitionDelay = x / 4 + "s";
+        
+        
+    }
+    
 
     for (let i = 0; i < document.querySelectorAll(".hamburgerMenuLine").length; i++) {
         document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "8px auto";
@@ -42,6 +51,13 @@ document.querySelector(".closeButton").onclick = function () {
 
     document.querySelector(".overlay").classList.remove("overlayShow");
     document.getElementsByTagName("HTML")[0].style.overflow = "auto";
+    
+    
+    for (var x = 0; x < document.querySelector(".overlayNavigation").getElementsByTagName("*").length; x++) {
+        document.querySelector(".overlayNavigation").getElementsByTagName("*")[x].style.transition = "0s";
+        document.querySelector(".overlayNavigation").getElementsByTagName("*")[x].classList.remove("tro");
+    }
+    
 
     for (let i = 0; i < document.querySelectorAll(".hamburgerMenuLine").length; i++) {
         document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "4px auto";
