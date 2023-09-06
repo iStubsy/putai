@@ -68,14 +68,14 @@
 
      document.querySelector(".overlay").classList.remove("overlayShow");
      document.getElementsByTagName("HTML")[0].style.overflow = "auto";
-     
-          for (var y = 0; y < document.querySelectorAll(".overlayAnimation").length; y++) {
-              for (var x = 0; x < document.querySelectorAll(".overlayAnimation")[y].children.length; x++) {
-                  document.querySelectorAll(".overlayAnimation")[y].children[x].classList.remove("tro");
-                  document.querySelectorAll(".overlayAnimation")[y].children[x].style.transitionDelay = "0s";
-              }
-          }
-     
+
+     for (var y = 0; y < document.querySelectorAll(".overlayAnimation").length; y++) {
+         for (var x = 0; x < document.querySelectorAll(".overlayAnimation")[y].children.length; x++) {
+             document.querySelectorAll(".overlayAnimation")[y].children[x].classList.remove("tro");
+             document.querySelectorAll(".overlayAnimation")[y].children[x].style.transitionDelay = "0s";
+         }
+     }
+
 
      for (var i = 0; i < document.querySelectorAll(".hamburgerMenuLine").length; i++) {
          document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "4px auto";
@@ -157,6 +157,47 @@
      }
  }
 
+ /*
+  function revealo() {
+      var reveals = document.querySelectorAll(".lineTestAnimation");
+      for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 100;
+          if (elementTop < windowHeight - elementVisible) {
+              for (var x = 0; x < document.querySelectorAll(".lineTestAnimation").length; x++) {
+                  document.querySelectorAll(".lineTestInner")[x].classList.add("lineTestInnerAni");
+                  document.querySelectorAll(".lineTestInner2")[x].classList.add("lineTestInnerAni2");
+                  document.querySelectorAll(".lineTest2")[x].classList.add("lineTestAni");
+              }
+          } else {
+           
+          }
+      }
+  }
+ */
+
+ function revealo() {
+     var reveals = document.querySelectorAll(".revealo");
+     for (var i = 0; i < reveals.length; i++) {
+         var windowHeight = window.innerHeight;
+         var elementTop = reveals[i].getBoundingClientRect().top;
+         var elementVisible = 100;
+         if (elementTop < windowHeight - elementVisible) {
+             reveals[i].querySelector(".lineTestInner").classList.add("lineTestInnerAni");
+             reveals[i].querySelector(".lineTestInner2").classList.add("lineTestInnerAni2");
+             //reveals[i].querySelector(".lineTest2").classList.add("lineTestAni");
+             
+         } else {
+             //reveals[i].classList.remove("active");
+         }
+     }
+ }
+
+
+
+
+
  document.addEventListener("keypress", function (event) {
      if (event.key == "Enter") {
          document.body.scrollTop = 0; // For Safari
@@ -165,7 +206,12 @@
  });
 
 
+
+
+
+
  window.addEventListener("scroll", reveal);
+ window.addEventListener("scroll", revealo);
  window.addEventListener("scroll", moveUpRevealFun);
 
  // To check the scroll position on page load
