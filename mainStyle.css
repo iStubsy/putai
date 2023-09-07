@@ -18,6 +18,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow: hidden;
+}
+
 .overlay {
     position: fixed;
 
@@ -545,6 +549,7 @@ li a {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.44);
 
     border: solid 1px white;
+    
 }
 
 .lineTest {
@@ -560,6 +565,7 @@ li a {
     transform: translate(-50%, -50%);
     opacity: 0;
    //overflow: hidden;
+    
 }
 
 
