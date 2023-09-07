@@ -554,9 +554,12 @@ li a {
     position: absolute;
     top: 50%;
     left: 50%;
+     transition: 2s;
     transform: translate(-50%, -50%);
     text-align: center;
     transform: translate(-50%, -50%);
+    opacity: 0;
+   //overflow: hidden;
 }
 
 
@@ -575,9 +578,9 @@ li a {
 }
 
 .lineTestAni {
-    width: 250px;
-    height: 250px;
+    //height: 250px;
     opacity: 1;
+    border: solid 1px #c4c4c4;
 }
 
 .lineTestInner,
@@ -597,7 +600,7 @@ li a {
     transition: 0.6s;
     opacity: 0;
     
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
 }
 
 
@@ -608,7 +611,7 @@ li a {
     left: -80px;
     opacity: 0;
     transition: 0.6s;
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
 }
 
 .lineTestInner3 {
@@ -1203,6 +1206,11 @@ li a {
     .cardImage {
         width: 270px;
         height: 270px;
+    }
+    
+    .lineTest {
+        width: 250px;
+        height: 250px;
     }
 
 

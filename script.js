@@ -186,7 +186,7 @@
          if (elementTop < windowHeight - elementVisible) {
              reveals[i].querySelector(".lineTestInner").classList.add("lineTestInnerAni");
              reveals[i].querySelector(".lineTestInner2").classList.add("lineTestInnerAni2");
-             //reveals[i].querySelector(".lineTest2").classList.add("lineTestAni");
+             reveals[i].classList.add("lineTestAni");
              
          } else {
              //reveals[i].classList.remove("active");
