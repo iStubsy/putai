@@ -2,6 +2,8 @@
     --main-background: black;
     --main-font: 'Josefin Sans', sans-serif;
     --akzente: #e0a800;
+    --moveIt: 1.2s;
+    --contentWidth: 1080px;
 }
 
 * {
@@ -88,8 +90,7 @@ h3 {
     font-weight: 400;
     text-align: center;
     font-size: 1.6rem;
-    width: 70%;
-    width: 280px;
+    //width: 280px;
     color: red;
     margin: 20px auto;
     color: black;
@@ -100,18 +101,20 @@ h4 {
     font-size: 1.4rem;
     font-family: var(--main-font);
     font-weight: 500;
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: center;
 }
 
 .smDa {
     color: #000000;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
     text-align: center;
     font-family: var(--main-font);
     font-weight: 300;
     margin: 5px 0;
+    width: 110%;
+    transform: translateX(-5%);
 }
 
 .bigBr {
@@ -391,8 +394,14 @@ li a {
     bottom: 0;
 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+}
+
+.headerBottomContent {
+    width: var(--contentWidth);
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .headerBottomPart {
@@ -401,7 +410,7 @@ li a {
     font-weight: 300;
     font-size: 1rem;
     color: white;
-    margin: 0 30px;
+    //margin: 0 30px;
 
     display: flex;
 }
@@ -417,7 +426,7 @@ li a {
     height: 2px;
     width: 50px;
     background-color: black;
-    margin: 0px auto 50px auto;
+    margin: 0px auto 65px auto;
 }
 
 .content {}
@@ -427,14 +436,14 @@ li a {
     //transform: translateY(150px);
     opacity: 0;
     transform: rotate(40deg);
-    transition: transform opacity 2s all ease;
+    transition: transform opacity var(--moveIt) all ease;
 }
 
 .reveal.active {
     //transform: translateY(0);
     transform: rotate(0deg);
     opacity: 1;
-    transition: transform 2s, opacity 2s;
+    transition: transform var(--moveIt), opacity var(--moveIt);
 }
 
 .moveUpReveals {
@@ -476,20 +485,54 @@ li a {
     background-position: 150px;
     background-size: cover;
     background-repeat: no-repeat;
-    //display: flex;
-    //justify-content: center;
 }
 
 .content-2-menu {
-    width: 85%;
-    max-width: 1300px;
-    //height: 400px;
-    padding: 60px 40px;
     display: flex;
     justify-content: center;
+    padding: 50px 30px;
+    //width: 85%;
+    color: white;
 }
 
-.content-2-image {
+.content-2-menu h3 {
+    color: var(--akzente);
+    font-size: 3rem;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.content-2-image p {
+    font-family: var(--main-font);
+    font-weight: 300;
+    color: #c6c6c6;
+}
+
+.content-2-cards {
+    margin: 25px 0;
+    position: relative;
+    width: 100%;
+    font-family: var(--main-font);
+    font-weight: 300;
+}
+
+.number {
+    color: white;
+    font-weight: 400;
+    border-radius: 1px;
+    padding: 0 2px;
+    display: inline-block;
+    color: var(--akzente);
+    font-size: 1.4rem;
+}
+
+.price {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content-2-text {
     display: none;
 }
 
@@ -505,6 +548,7 @@ li a {
     width: 150px;
     background-color: rgba(0, 0, 0, 0.44);
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .headerInformation .clickBox {
@@ -523,7 +567,7 @@ li a {
     position: relative;
     margin: 0 auto 60px auto;
     //padding: 10px;
-    max-width: 330px;
+    max-width: 280px;
     //background-color: rgba(157, 157, 157, 0.04);
 
     display: flex;
@@ -549,7 +593,7 @@ li a {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.44);
 
     border: solid 1px white;
-    
+
 }
 
 .lineTest {
@@ -559,13 +603,12 @@ li a {
     position: absolute;
     top: 50%;
     left: 50%;
-     transition: 2s;
+    transition: 2s;
     transform: translate(-50%, -50%);
     text-align: center;
     transform: translate(-50%, -50%);
     opacity: 0;
-   //overflow: hidden;
-    
+    //overflow: hidden;
 }
 
 
@@ -601,18 +644,18 @@ li a {
 .lineTestInner {
     top: -80px;
     right: -80px;
-    border-top: solid 2px #767676;
-    border-right: solid 2px #767676;
-    transition: 0.6s;
+    border-top: solid 2px #4a4a4a;
+    border-right: solid 2px #4a4a4a;
+    transition: .6s;
     opacity: 0;
-    
+
     transition-delay: 0.3s;
 }
 
 
 .lineTestInner2 {
-    border-bottom: solid 2px #767676;
-    border-left: solid 2px #767676;
+    border-bottom: solid 2px #4a4a4a;
+    border-left: solid 2px #4a4a4a;
     bottom: -80px;
     left: -80px;
     opacity: 0;
@@ -677,7 +720,7 @@ li a {
 
 .cardText {
     padding: 0px;
-    margin: 45px 0 0 0;
+    margin: 35px 0 0 0;
 }
 
 .cardImage-1 {
@@ -1038,10 +1081,6 @@ li a {
         font-size: 4.2rem;
     }
 
-    .smDa {
-        font-size: 1.2rem;
-    }
-
     .card {
         border: none;
     }
@@ -1059,7 +1098,7 @@ li a {
 
     .navigationBarInner {
         width: 90%;
-        max-width: 1200px;
+        max-width: var(--contentWidth);
         padding: 0;
     }
 
@@ -1084,18 +1123,18 @@ li a {
     }
 
     #content-2 {
-        display: flex;
-        align-items: center;
-        height: 620px;
-
-        background-position: 150%;
-        background-size: 55%;
+        padding: 80px 0;
+        background-position: 125%;
+        background-size: 35%;
         background-attachment: fixed;
     }
 
 
     .content-2-menu {
         margin: 0 auto;
+        padding: 30px 0;
+        width: var(--contentWidth);
+        color: white;
     }
 
     .content-2-image,
@@ -1105,25 +1144,20 @@ li a {
         position: relative;
 
         box-sizing: border-box;
-
-        max-width: 400px;
-        margin: 0 30px 0 30px;
     }
-
-    .content-2-image {}
 
     .imageBox {
         position: absolute;
-        top: 0px;
-        left: 20px;
+        top: -40px;
+        left: 50%;
         border: solid 2px white;
         width: 250px;
     }
 
     .imageBox1 {
         position: absolute;
-        bottom: 0px;
-        right: 10px;
+        bottom: -40px;
+        left: 30%;
         border: solid 2px white;
         width: 250px;
         cursor: pointer;
@@ -1157,7 +1191,7 @@ li a {
     }
 
     h3 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         //width: 300px;
     }
 
@@ -1198,25 +1232,29 @@ li a {
     }
 
     #content-1 {
-        padding: 70px 0 50px 0;
+        padding: 90px 0 90px 0;
+    }
+
+    .card {
+        margin: 0;
     }
 
     .cardBox {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 0 auto;
         width: 85%;
-        max-width: 1200px;
+        max-width: var(--contentWidth);
     }
 
     .cardImage {
-        width: 270px;
-        height: 270px;
+        width: 260px;
+        height: 260px;
     }
-    
+
     .lineTest {
-        width: 250px;
-        height: 250px;
+        width: 240px;
+        height: 240px;
     }
 
 

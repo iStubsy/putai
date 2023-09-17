@@ -130,7 +130,7 @@
          if (elementTop < windowHeight - elementVisible) {
              for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
                  //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
-                 moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 2 + "s";
+                 moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 3 + "s";
                  moveUpReveals[i].getElementsByTagName("*")[x].classList.add("active");
              }
          }
