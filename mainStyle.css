@@ -482,16 +482,21 @@ li a {
     background-color: var(--main-background);
     background-image: url("innenPaintTest.png");
 
+
     background-position: 150px;
     background-size: cover;
     background-repeat: no-repeat;
+
+    background-image: none;
+
+    padding: 40px 40px;
+
+    font-size: 1.1rem;
 }
 
 .content-2-menu {
     display: flex;
     justify-content: center;
-    padding: 50px 30px;
-    //width: 85%;
     color: white;
 }
 
@@ -502,18 +507,36 @@ li a {
     margin: 10px 0;
 }
 
-.content-2-image p {
-    font-family: var(--main-font);
-    font-weight: 300;
-    color: #c6c6c6;
-}
-
 .content-2-cards {
-    margin: 25px 0;
+    margin: 25px 0 25px 0;
     position: relative;
     width: 100%;
     font-family: var(--main-font);
     font-weight: 300;
+}
+
+.content-2-subtext {
+    font-family: var(--main-font);
+    font-weight: 300;
+    width: 90%;
+    margin: 0 0 50px 0;
+    line-height: 1.5rem;
+}
+
+.content-2-menuName {
+    font-weight: 400;
+    display: inline-block;
+}
+
+.content-2-menuText {
+    width: 80%;
+}
+
+.content-2-menuLine {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: .5px;
+    margin: 8px 0;
+    width: 100%;
 }
 
 .number {
@@ -523,7 +546,7 @@ li a {
     padding: 0 2px;
     display: inline-block;
     color: var(--akzente);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .price {
@@ -534,6 +557,10 @@ li a {
 
 .content-2-text {
     display: none;
+}
+
+.content-2-image {
+    margin-bottom: 20px;
 }
 
 .clickBox {
@@ -1127,12 +1154,12 @@ li a {
         background-position: 125%;
         background-size: 35%;
         background-attachment: fixed;
-    }
 
+        background-image: url("innenPaintTest.png");
+    }
 
     .content-2-menu {
         margin: 0 auto;
-        padding: 30px 0;
         width: var(--contentWidth);
         color: white;
     }
