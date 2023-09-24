@@ -489,7 +489,7 @@ li a {
 
     background-image: none;
 
-    padding: 40px 40px;
+    padding: 0px 40px;
 
     font-size: 1.1rem;
 }
@@ -515,9 +515,12 @@ li a {
     align-items: center;
 }
 
-.content-2-left,
+.content-2-left {
+    margin: 0px auto 0px auto;
+}
+
 .content-2-right {
-    margin: 0px auto 60px auto;
+    margin: 60px auto 40px auto;
     width: 100%;
 }
 
@@ -574,7 +577,7 @@ li a {
     width: 150px;
     background-color: rgba(0, 0, 0, 0.44);
     cursor: pointer;
-    margin: 50px 0 0 auto;
+    margin: 50px auto 0 auto;
 }
 
 .content-2-cards {
