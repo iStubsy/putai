@@ -96,7 +96,7 @@ h3 {
     color: black;
 }
 
-h3 span {
+h3 .sub {
     font-size: 3.2rem;
     color: var(--akzente);
 }
@@ -487,6 +487,7 @@ li a {
     padding: 20px 0;
 
     background-color: #efefef;
+    background-color: white;
     //background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
 
     //background-color: #fffcfc;
@@ -1106,13 +1107,18 @@ li a {
     #headerBottom {
         display: none;
     }
-    
+
     .content-2-right {
         display: none;
     }
+    
+   
 }
 
 @media (min-width: 800px) {
+  
+   
+
     #content-1 {
         padding: 20px 0;
     }
@@ -1129,42 +1135,15 @@ li a {
         border: none;
     }
 
-    .navigationBar {
-        height: 100px;
-        padding: 5px;
-        position: absolute;
-    }
-
-    .navigationBarScrolled {
-        position: absolute;
-    }
-
-
-    .navigationBarInner {
-        width: 90%;
-        max-width: var(--contentWidth);
-        padding: 0;
-    }
 
 
 
-    .hamburgerMenu {
-        display: none;
-    }
 
     #brand {
-        justify-content: flex-start;
+        justify-content: center;
         width: 50%;
     }
 
-    #navigationMenu {
-        justify-content: flex-end;
-        width: 50%;
-    }
-
-    ul {
-        display: flex;
-    }
 
     #content-2 {
         padding: 60px 0;
@@ -1183,6 +1162,10 @@ li a {
 
     .content-2-menu h3 {
         font-size: 3rem;
+    }
+    
+    .content-2-right {
+        display: none;
     }
 
     .content-2-left,
@@ -1219,18 +1202,48 @@ li a {
         width: 250px;
         cursor: pointer;
     }
-
-    #header {
-        background-position: 0px -300px;
-        background-attachment: fixed;
-    }
 }
 
 @media (min-width: 1100px) {
     /***** NAVIGATION BAR *****/
 
+    .hamburgerMenu {
+       display: none;
+    }
+
+    .navigationBar {
+        height: 100px;
+        padding: 5px;
+        position: absolute;
+    }
+
+    .navigationBarScrolled {
+        position: absolute;
+    }
+
+
+    .navigationBarInner {
+        width: 90%;
+        max-width: var(--contentWidth);
+        padding: 0;
+    }
+    
+    #brand {
+        justify-content: flex-start;
+        width: 50%;
+    }
+    
+    ul {
+        display: flex;
+    }
+    
     .empty {
         display: none;
+    }
+
+    #navigationMenu {
+        justify-content: flex-end;
+        width: 50%;
     }
 
     h1 {
@@ -1251,35 +1264,40 @@ li a {
         font-size: 2.3rem;
         //width: 300px;
     }
+    
+    h3 .sub {
+        display: inline-block;
+    }
 
     #header {
         background-color: black;
         background-repeat: no-repeat;
         background-image: url(innenTest.png);
 
-        background-size: 1000px;
+        //background-size: 1000px;
         background-position: 0px -300px;
 
 
 
-        background-size: 50%;
-        background-position: 0, 50%;
+        //background-size: 50% 50%;
+        background-size: contain;
+        background-position: 0%, 0%;
 
         background-attachment: fixed;
         height: 100vh;
         min-height: 500px;
         max-height: 800px;
-        animation: headerZoom 50s;
+        //animation: headerZoom 50s;
     }
 
     @keyframes headerZoom {
         from {
-            background-size: 40%;
+            background-size: 40% 100%;
             background-position: 0, 40%;
         }
 
         to {
-            background-size: 50%;
+            background-size: 50% 100%;
             background-position: 0, 50%;
         }
     }
