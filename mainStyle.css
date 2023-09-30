@@ -499,6 +499,15 @@ li a {
     font-size: 1.1rem;
 }
 
+.opacityReveal {
+    opacity: 0;
+    transition: 2s;
+}
+
+.opacityReveal.active {
+    opacity: 1;
+}
+
 .content-2-menu {
     display: flex;
     flex-direction: column;
@@ -861,61 +870,6 @@ li a {
     background-position: center;
     box-shadow: 2px 2px 5px #b5b5b5;
 }
-
-
-
-/*
-#content-3-image-wrapper {
-    //width: 50%;
-}
-
-#content-3-image-box {
-    //height: 100%;
-    //width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.content-3-image-1 {
-    width: 48.5%;
-    min-width: 100px;
-    height: 68.5%;
-    min-height: 140px;
-    background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
-    background-size: cover;
-    margin: .75%;
-}
-
-.content-3-image-2 {
-    width: 48.5%;
-    min-width: 100px;
-    height: 28.5%;
-    min-height: 60px;
-    background-image: url(food.jpeg);
-    background-size: cover;
-    margin: .75%;
-}
-
-.content-3-image-3 {
-    width: 48.5%;
-    min-width: 100px;
-    height: 28.5%;
-    min-height: 60px;
-    background-image: url(lamp.jpeg);
-    background-size: cover;
-    margin: .75%;
-}
-
-.content-3-image-4 {
-    background-image: url(198152487_443294453586788_4063078726020976003_n.jpeg);
-    background-size: cover;
-    width: 48.5%;
-    min-width: 100px;
-    height: 68.5%;
-    min-height: 140px;
-    margin: .75%;
-} */
 
 /***** FOOTER *****/
 
