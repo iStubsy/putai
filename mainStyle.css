@@ -18,6 +18,7 @@ img {
 
 html {
     scroll-behavior: smooth;
+    background-color: white;
 }
 
 body {
@@ -433,7 +434,8 @@ li a {
     margin: 0px auto 65px auto;
 }
 
-.content {}
+
+/*** REVEALS ***/
 
 .reveal {
     position: relative;
@@ -448,6 +450,15 @@ li a {
     transform: rotate(0deg);
     opacity: 1;
     transition: transform var(--moveIt), opacity var(--moveIt);
+}
+
+.opacityReveal {
+    opacity: 0;
+    transition: 1s;
+}
+
+.opacityReveal.active {
+    opacity: 1;
 }
 
 .moveUpReveals {
@@ -497,15 +508,6 @@ li a {
     padding: 0px 30px;
 
     font-size: 1.1rem;
-}
-
-.opacityReveal {
-    opacity: 0;
-    transition: 2s;
-}
-
-.opacityReveal.active {
-    opacity: 1;
 }
 
 .content-2-menu {
@@ -832,6 +834,7 @@ li a {
     //justify-content: center;
     //padding: 80px 0;
     padding: 40px 0 100px 0;
+    background-color: white;
 }
 
 #content-3-text {

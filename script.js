@@ -187,14 +187,14 @@
              reveals[i].querySelector(".lineTestInner").classList.add("lineTestInnerAni");
              reveals[i].querySelector(".lineTestInner2").classList.add("lineTestInnerAni2");
              reveals[i].classList.add("lineTestAni");
-             
+
          } else {
              //reveals[i].classList.remove("active");
          }
      }
  }
 
-function opacityReveal() {
+ function opacityReveal() {
      var reveals = document.querySelectorAll(".opacityReveal");
      for (var i = 0; i < reveals.length; i++) {
          var windowHeight = window.innerHeight;
@@ -232,4 +232,4 @@ function opacityReveal() {
  // To check the scroll position on page load
  reveal();
  moveUpRevealFun();
-opacityReveal();
+ opacityReveal();
