@@ -455,7 +455,7 @@ li a {
     height: 2px;
     width: 50px;
     background-color: black;
-    margin: 20px auto 60px auto;
+    margin: 20px auto 40px auto;
 }
 
 #content-2 {
@@ -671,7 +671,6 @@ li a {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.44);
 
     border: solid 1px white;
-
 }
 
 .lineTest {
@@ -688,7 +687,6 @@ li a {
     opacity: 0;
     //overflow: hidden;
 }
-
 
 .lineTest2 {
     //height: 250px;
