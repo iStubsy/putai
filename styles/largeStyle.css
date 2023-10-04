@@ -1,0 +1,107 @@
+@media (min-width: 1100px) {
+    /***** NAVIGATION BAR *****/
+
+    .empty {
+        display: none;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin: 0 auto;
+        width: 900px;
+        padding: 20px;
+    }
+
+    h2 {
+        padding: 20px;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+        //width: 300px;
+    }
+
+    #header {
+        background-color: black;
+        background-repeat: no-repeat;
+        background-image: url("../innenTest.png");
+
+        background-size: 800px;
+        background-position: 0px -300px;
+
+
+
+        //background-size: 50%;
+        background-position: inherit;
+
+        background-attachment: fixed;
+        height: 100vh;
+        min-height: 500px;
+        max-height: 800px;
+        animation: headerZoom 1s;
+    }
+
+    @keyframes headerZoom {
+        from {
+            //background-size: 50%;
+            //background-position: 0, 0;
+        }
+
+        to {
+            //background-size: 50%;
+            //background-position: 0, 0;
+        }
+    }
+
+    .headerInformation {
+        height: 100%;
+    }
+    
+    .card {
+        margin: 0;
+    }
+
+    .cardBox {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 85%;
+        max-width: var(--contentWidth);
+    }
+
+    .cardImage {
+        width: 270px;
+        height: 270px;
+    }
+
+    .lineTest {
+        width: 240px;
+        height: 240px;
+    }
+
+    .content-2-menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-2-right {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .footerBody {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        width: 100%;
+    }
+
+    .footerColumn {
+        width: 33.33%;
+    }
+}

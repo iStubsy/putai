@@ -1,0 +1,104 @@
+@media (min-width: 800px) {
+
+    .cardBox {
+        flex-direction: row;
+    }
+    
+    #content-1,
+    #content-2,
+    #content-3 {
+        padding: 5.5rem 0;
+    }
+
+    .navigationBar {
+        height: 100px;
+        padding: 5px;
+        position: absolute;
+    }
+
+    .navigationBarScrolled {
+        position: absolute;
+    }
+
+    .navigationBarInner {
+        width: 90%;
+        max-width: var(--contentWidth);
+        padding: 0;
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    #brand {
+        justify-content: flex-start;
+        width: 50%;
+    }
+
+    #navigationMenu {
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    #content-2 {
+        background-position: 125%;
+        background-size: 35%;
+        background-attachment: fixed;
+
+        background-image: url("../innenPaintTest.png");
+    }
+
+    .content-2-menu {
+        margin: 0 auto;
+        max-width: var(--contentWidth);
+        color: white;
+    }
+
+    .content-2-menu h3 {
+        font-size: 3rem;
+    }
+
+    .content-2-left,
+    .content-2-right {
+        position: relative;
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    .content-2-rightInner {
+        width: 400px;
+        height: 400px;
+    }
+
+    .content-2-leftOne,
+    .content-2-leftTwo {
+        width: 280px;
+        height: 320px;
+    }
+
+    .imageBox {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        border: solid 2px white;
+        width: 250px;
+    }
+
+    .imageBox1 {
+        position: absolute;
+        bottom: -40px;
+        left: 30%;
+        border: solid 2px white;
+        width: 250px;
+        cursor: pointer;
+    }
+
+    #header {
+        background-position: 0px -300px;
+        background-attachment: fixed;
+    }
+}

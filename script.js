@@ -208,19 +208,12 @@
      }
  }
 
-
-
-
-
  document.addEventListener("keypress", function (event) {
      if (event.key == "Enter") {
          document.body.scrollTop = 0; // For Safari
          document.documentElement.scrollTop = 0;
      }
  });
-
-
-
 
 
 
