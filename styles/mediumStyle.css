@@ -58,15 +58,13 @@
         color: white;
     }
 
-    .content-2-menu h3 {
-        font-size: 3rem;
-    }
-
-    .content-2-left,
-    .content-2-right {
+    .content-2-left {
         position: relative;
         width: 80%;
-        box-sizing: border-box;
+    }
+    
+    .content-2-right {
+        
     }
 
     .content-2-rightInner {

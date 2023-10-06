@@ -2,6 +2,7 @@
     --main-background: black;
     --beta-background: white;
     --main-font: 'Josefin Sans', sans-serif;
+    --second-font: 'Caveat', cursive;
     --akzente: #e0a800;
     --moveIt: 1.2s;
     --contentWidth: 1100px;
@@ -78,7 +79,7 @@ h1 {
 h2 {
     font-size: 1.4rem;
     padding: 5px 0;
-    font-family: 'Caveat', cursive;
+    font-family: var(--second-font);
     color: #e0e0e0;
     text-shadow: 0 0 1px black;
     text-align: center;
@@ -94,12 +95,6 @@ h3 {
     color: black;
 }
 
-h3 .sub {
-    font-size: 3.2rem;
-    color: var(--akzente);
-    display: inline-block;
-}
-
 h4 {
     color: black;
     font-size: 1.4rem;
@@ -107,6 +102,13 @@ h4 {
     font-weight: 500;
     margin: 5px 0;
     text-align: center;
+}
+
+h5 {
+    color: var(--akzente);
+    font-family: var(--main-font);
+    font-size: 3.5rem;
+    margin: 8px auto;
 }
 
 .smDa {
@@ -490,14 +492,25 @@ li a {
     color: white;
 }
 
-.content-2-menuText {
-    width: 90%;
+.content-2-menuText,
+.content-2-subtext {
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    //width: 90%;
+    margin: 0 0 30px 0;
 }
 
-.content-2-menu h3 {
+.content-2-subtext {
+    width: 80%;
+}
+
+.content-2-menu h2 {
     font-size: 1.5rem;
     text-align: left;
     color: white;
+    padding: 0;
 }
 
 .content-2-right {
@@ -513,7 +526,6 @@ li a {
 
 .content-2-right {
     margin: 80px auto 40px auto;
-    width: 100%;
 }
 
 .content-2-rightInner {
@@ -585,14 +597,6 @@ li a {
     position: relative;
 }
 
-.content-2-subtext {
-    font-family: var(--main-font);
-    font-weight: 300;
-    width: 90%;
-    margin: 0 0 30px 0;
-    line-height: 1.5rem;
-}
-
 .content-2-menuName {
     font-weight: 400;
     display: inline-block;
@@ -614,6 +618,7 @@ li a {
     display: inline-block;
     color: var(--akzente);
     font-size: 1.8rem;
+    line-height: 0.001;
 }
 
 .price {
