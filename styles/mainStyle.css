@@ -108,9 +108,8 @@ h5 {
     color: var(--akzente);
     font-family: var(--main-font);
     font-weight: 300;
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin: 8px auto;
-    color: red;
 }
 
 .smDa {
@@ -586,10 +585,17 @@ li a {
     margin: 50px auto 0 auto;
 }
 
+.content-2-cardWrapper {
+    //display: flex;
+    //flex-wrap: wrap;
+    //width: 90%;
+}
+
 .content-2-cards {
-    margin: 20px 0;
+    //margin: 0px 20px 0 0;
+    padding: 0 20px 0 0;
     position: relative;
-    width: 100%;
+    //width: 50%;
     max-width: 500px;
     font-family: var(--main-font);
     font-weight: 300;

@@ -1,5 +1,9 @@
 @media (min-width: 800px) {
 
+    h5 {
+        font-size: 6.2rem;
+    }
+    
     .cardBox {
         flex-direction: row;
     }
