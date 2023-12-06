@@ -455,7 +455,7 @@ li a {
 #content-1,
 #content-2,
 #content-3 {
-    padding: 2.5rem 0 3rem 0;
+    padding: 2.5rem 0 3.5rem 0;
     position: relative;
     background-image: url("../french-stucco.png");
 }
@@ -466,7 +466,7 @@ li a {
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    padding: 0px 20px;
+    padding: 0px 35px;
     gap: 40px;
 }
 
@@ -474,8 +474,8 @@ li a {
 .content-1-text {
     font-family: var(--main-font);
     font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 
 .content-1-text h2 {
@@ -584,7 +584,7 @@ li a {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 30px;
+    bottom: 40px;
 }
 
 .content-2-left-head {
