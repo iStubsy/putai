@@ -468,6 +468,7 @@ li a {
     margin: 0 auto;
     padding: 0px 35px;
     gap: 40px;
+    max-width: 600px;
 }
 
 
@@ -489,8 +490,9 @@ li a {
 
 .content-1-image {
     position: relative;
-    width: 300px;
     height: 250px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .content-1-image > div {
@@ -503,9 +505,8 @@ li a {
     margin: auto;
     position: absolute;
     top: 0;
-    left: -20px;
+    left: 0px;
     background-image: url("../lamp.jpeg");
-    background-color: red;
     background-size: cover;
 
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.44);
@@ -517,7 +518,7 @@ li a {
     margin: auto;
     position: absolute;
     bottom: 0;
-    right: -20px;
+    right: 0px;
     background-image: url("../puTaiLogo.jpg");
     background-image: url("../198152487_443294453586788_4063078726020976003_n.jpeg");
     background-size: cover;
@@ -588,7 +589,8 @@ li a {
 }
 
 .content-2-left-head {
-    margin-bottom: 60px
+    margin: 0 auto 60px auto;
+    max-width: 500px;
 }
 
 .content-2-right {
@@ -598,7 +600,9 @@ li a {
     align-items: center;
 }
 
-.content-2-left {}
+.content-2-left {
+    //margin: 0 auto;
+}
 
 .content-2-right {}
 
