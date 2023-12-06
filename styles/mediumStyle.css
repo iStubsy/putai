@@ -1,7 +1,15 @@
-@media (min-width: 800px) {
+@media (min-width: 811px) {
 
     h5 {
         font-size: 4.2rem;
+    }
+
+    h6 {
+        text-align: left;
+        max-width: 100%;
+        width: 100%;
+        font-size: 4rem;
+        line-height: 4rem;
     }
 
     .cardBox {
@@ -13,6 +21,78 @@
     #content-3 {
         padding: 5.5rem 0;
     }
+
+    .content-1-sub {
+        max-width: var(--contentWidth);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin: 0 auto;
+    }
+
+
+    .content-1-text {
+        font-family: var(--main-font);
+        font-weight: 300;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+
+        padding: 30px;
+    }
+
+    .content-1-text h2 {
+        color: rgba(0, 0, 0, 0.4);
+        text-align: left;
+        padding: 0;
+        font-size: 1.4rem;
+        text-shadow: none;
+        line-height: 4rem;
+    }
+
+    .content-1-image {
+        display: flex;
+        position: relative;
+        min-width: 500px;
+        height: 500px;
+    }
+
+    .content-1-image > div {
+        border: solid 1px rgba(0, 0, 0, 0.46);
+    }
+
+    .content-1-image-first {
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 100px;
+        left: 0;
+        right: 100px;
+        background-image: url("../lamp.jpeg");
+        background-color: red;
+        background-size: cover;
+
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.44);
+    }
+
+    .content-1-image-second {
+        width: 270px;
+        height: 220px;
+        margin: auto;
+        position: absolute;
+        top: 200px;
+        bottom: 0;
+        right: 0;
+        left: 100px;
+        background-image: url("../puTaiLogo.jpg");
+        background-image: url("../198152487_443294453586788_4063078726020976003_n.jpeg");
+        background-size: cover;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.44);
+    }
+
 
     .line {
         height: 2px;
@@ -55,8 +135,9 @@
         display: flex;
     }
 
+
     #content-2 {
-        background-position: 100%;
+        //background-position: 100%;
         background-size: 50%;
         background-attachment: fixed;
 
@@ -65,16 +146,51 @@
 
     .content-2-menu {
         margin: 0 auto;
-        max-width: var(--contentWidth);
+        //max-width: var(--contentWidth);
+        max-width: 1500px;
         color: white;
+        display: flex;
+        flex-direction: row;
     }
 
     .content-2-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         position: relative;
-        width: 80%;
+        padding-bottom: 80px;
     }
 
-    .content-2-right {}
+    .content-2-left .clickBox {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+    }
+
+    .content-2-subtext {
+        margin: 20px auto;
+        text-align: center;
+        width: 350px;
+    }
+
+    .content-2-left-head {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .content-2-left-head h6 {
+        text-align: center;
+    }
+
+    .content-2-right {
+        width: 50%;
+    }
 
     .content-2-rightInner {
         width: 400px;
