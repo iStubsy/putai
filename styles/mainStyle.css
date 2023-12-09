@@ -66,7 +66,6 @@ h1 {
     font-weight: 300;
     font-family: var(--main-font);
     font-weight: 400;
-    padding: 5px 0;
     line-height: 2.6rem;
     margin: 0 auto;
     width: 350px;
@@ -74,7 +73,6 @@ h1 {
 
 h2 {
     font-size: 1.4rem;
-    padding: 5px 0;
     font-family: var(--second-font);
     color: #e0e0e0;
     text-shadow: 0 0 1px black;
@@ -373,8 +371,9 @@ li a {
     height: 100%;
     display: flex;
     justify-content: center;
+    gap: 25px;
     flex-direction: column;
-    padding: 180px 0 100px 0;
+    padding: 160px 0 100px 0;
     background-size: 50px;
 }
 
@@ -522,7 +521,7 @@ li a {
     margin: auto;
     position: absolute;
     bottom: 0;
-    right: 0px;
+    right: 0;
     background-image: url("../puTaiLogo.jpg");
     background-image: url("../198152487_443294453586788_4063078726020976003_n.jpeg");
     background-size: cover;
@@ -662,7 +661,7 @@ li a {
     width: 150px;
     background-color: rgba(0, 0, 0, 0.44);
     cursor: pointer;
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
 }
 
 .content-2-cardWrapper {
@@ -717,9 +716,9 @@ li a {
 }
 
 .headerInformation .clickBox {
-    margin: 20px auto;
     font-size: 1rem;
     width: 160px;
+    margin: 0 auto;
 }
 
 .clickBox:hover {
