@@ -109,8 +109,8 @@ h5 {
 }
 
 h6 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 3rem;
+    line-height: 3.2rem;
     margin: 10px auto 10px auto;
     text-align: left;
     font-family: var(--main-font);
@@ -467,7 +467,7 @@ li a {
     flex-direction: column;
     margin: 0 auto;
     padding: 0px 35px;
-    gap: 60px;
+    gap: 50px;
     max-width: 600px;
 }
 
@@ -476,7 +476,7 @@ li a {
     font-family: var(--main-font);
     font-weight: 300;
     font-size: 1.2rem;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
 }
 
 .content-1-text h2 {
