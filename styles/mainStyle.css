@@ -14,13 +14,13 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: -webkit-fill-available;
-}
-
 html {
     scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 .overlay {
@@ -142,13 +142,12 @@ h6 {
     //height: 100%;
     z-index: 100;
 
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: 100vh;
 }
 
 .navigationBar {
