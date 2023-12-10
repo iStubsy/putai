@@ -139,7 +139,9 @@ h6 {
     background-image: url("../innenDark.jpeg");
     //background-position: 0 -60px;
     //padding: 150px 0 60px 0;
-    height: 100% !important;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
 }
 
 .navigationBar {
