@@ -14,7 +14,6 @@
     background-color: black;
     opacity: 1;
     z-index: 1;
-    display: none;
 }
 
 .bh-element {
@@ -66,4 +65,13 @@
     overflow: hidden;
     text-overflow: clip;
     white-space: nowrap;
+}
+
+.fromDark {
+    opacity: 0;
+    transition: 10s;
+}
+
+.fromDark.active {
+    opacity: .6;
 }

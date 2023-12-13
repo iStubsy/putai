@@ -19,7 +19,7 @@
     #content-1,
     #content-2,
     #content-3 {
-        padding: 5.5rem 0;
+        padding: 3rem 0;
     }
 
     .content-1-sub {
@@ -144,6 +144,10 @@
         color: white;
         display: flex;
         flex-direction: row;
+    }
+
+    .content-2-cardWrapper {
+        padding: 0;
     }
 
     .content-2-left {
