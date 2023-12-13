@@ -3,46 +3,369 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+
+
+    <title>Putai Rockenhausen</title>
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="styles/mediumStyle.css">
+    <link rel="stylesheet" href="styles/largeStyle.css">
+    <link rel="stylesheet" href="styles/testStyle.css">
+
+
+    <!-- JOSEFIN FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8fc67f8040.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Josefin+Slab:wght@300;400&family=Merriweather&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <!-- <div class="LOADING"></div> -->
+
+
+        <img class="loadImage" src="puTaiLogo.jpg" width="100px">
+        <div class="line-wobble"></div>
+
+
+        <!-- <span class="loader"><span class="loader-inner"></span></span> -->
+
+    </div>
+    <div class="overlay">
+        <div class="overlayInner">
+            <div class="closeButton">
+                <div class="hmlTransform1"></div>
+                <div class="hmlTransform2"></div>
+            </div>
+            <div class="overlayBrand">
+                <img src="puTaiLogo.jpg" height="100%">
+            </div>
+
+            <div class="overlayNavigation overlayAnimation">
+                <a>Home</a>
+                <a>Speisekarte</a>
+                <a>Kontakt</a>
+            </div>
+            <div class="overlayFooter">
+                <div class="overlayFooterSocial">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </div>
+                <div class="overlayFooterLine"></div>
+                <div class="overlayFooterMore">
+                    <span><i class="fa-solid fa-location-dot"></i>Rognac Allee 50, 67806 Rockenhausen</span>
+                    <span><i class="fa-solid fa-mobile-screen-button"></i>06302-5589</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div id="header">
-        test
+        <div class="navigationBar">
+            <div class="navigationBarInner">
+                <div class="empty"></div>
+                <div id="brand"><img src="puTaiLogo.jpg" height="100%"></div>
+                <div id="navigationMenu">
+                    <div class="hamburgerMenu">
+                        <div class="hamburgerMenuLine"></div>
+                        <div class="hamburgerMenuLine"></div>
+                        <div class="hamburgerMenuLine"></div>
+                    </div>
+                    <ul>
+                        <li><a href="">Willkommen</a></li>
+                        <li><a href="">Speisekarte</a></li>
+                        <li><a href="">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="headerInformation moveUpReveal">
+            <h2>Putai Rockenhausen</h2>
+            <h1>Home made vietnamese cusisine</h1>
+            <div class="clickBox">zur Speisekarte</div>
+        </div>
+        <div id="headerBottom">
+            <div class="headerBottomContent">
+                <div class="headerBottomPart">
+                    <div class="headerBottomText"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div class="headerBottomText">Tel. 063979-29939</div>
+                </div>
+                <div class="headerBottomPart">
+                    <div class="headerBottomText"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="headerBottomText">Rognac-Allee 6, 67806 Rockenhausen</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="content">
+    <div class="content">
+        <!--<div id="content-1" class="opacityReveal">
+            <div class="backgroundText reveal">thức ăn</div>
+            <h3>Was Sie bei uns<br> erwartet</h3>
+            <div class="line"></div>
+            <div class="cardBox">
+                <div class="card">
+                    <div class="cardImageBox">
+                        <div class="lineTest2"></div>
+                        <div class="lineTest revealo">
+                            <div class="lineTestInner"></div>
+                            <div class="lineTestInner2"></div>
+                        </div>
+                        <div class="cardImage cardImage-1 reveal"></div>
 
+
+                    </div>
+
+                    <div class="cardText">
+                        <h4>Ein wundervolles Ambiente</h4>
+                        <div class="textLine"></div>
+                        <div class="smDa">In unserem Restaurant finden Sie ein außergewöhnliches Ambiente. Ein Ort
+                            zum wohlfühlen mitten im schönen Rockenhausen.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImageBox">
+                        <div class="lineTest2"></div>
+                        <div class="lineTest revealo">
+                            <div class="lineTestInner"></div>
+                            <div class="lineTestInner2"></div>
+                        </div>
+                        <div class="cardImage cardImage-2 reveal">
+
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h4>Ein wundervolles Ambiente</h4>
+                        <div class="textLine"></div>
+                        <div class="smDa">In unserem Restaurant finden Sie ein außergewöhnliches Ambiente. Ein Ort
+                            zum wohlfühlen mitten im schönen Rockenhausen.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImageBox">
+                        <div class="lineTest2"></div>
+                        <div class="lineTest revealo">
+                            <div class="lineTestInner"></div>
+                            <div class="lineTestInner2"></div>
+
+
+                        </div>
+                        <div class="cardImage cardImage-3 reveal">
+
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h4>Ein wundervolles Ambiente</h4>
+                        <div class="textLine"></div>
+                        <div class="smDa">In unserem Restaurant finden Sie ein außergewöhnliches Ambiente. Ein Ort
+                            zum wohlfühlen mitten im schönen Rockenhausen.</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="belowHeader">
+            <div class="bh-element ambiente fromDark">Ambiente</div>
+            <div class="bh-element menu">Menü</div>
+            <div class="bh-element drinks">Getränke</div>
+            <div class="bh-element kontakt">und viel mehr</div>
+        </div>
+
+        <div class="backgroundText reveal">thức ăn</div>
+        <div id="content-1">
+            <div class="content-1-sub">
+                <div class="content-1-text">
+                    <h2>Putai in Rockenhausen</h2>
+                    <h6>Vietnamese Cuisine</h6>
+                    <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="content-1-image moveUpReveal">
+                    <div class="content-1-image-first"></div>
+                    <div class="content-1-image-second"></div>
+                </div>
+            </div>
+        </div>
+        <div id="content-2" class="opacityReveal">
+            <div class="content-2-menu">
+                <div class="content-2-left">
+                    <div class="content-2-left-head">
+                        <h6>Aus unserer</h6>
+                        <h5>Speisekarte</h5>
+                        <div class="content-2-subtext">
+                            Im Folgenden finden Sie einen kleinen Auszug mit den Lieblingsgerichten unserer Gäste.
+                        </div>
+                    </div>
+                    <div class="clickBox">zur Speisekarte</div>
+                </div>
+
+
+                <div class="content-2-right">
+                    <div class="content-2-cardWrapper">
+                        <div class="content-2-cards">
+                            <div class="content-2-cardsInner">
+                                <div class="number">02</div>
+                                <div class="content-2-menuName">Summer Rolls</div>
+                                <div class="price">5,50€</div>
+                            </div>
+                            <div class="content-2-menuLine"></div>
+                            <div class="content-2-menuText">Gefüllte Reispapierrollen mit Erdnuss-Hoisin Soße</div>
+                        </div>
+                        <div class="content-2-cards">
+                            <div class="content-2-cardsInner">
+                                <div class="number">21</div>
+                                <div class="content-2-menuName">Dao's Garten</div>
+                                <div class="price">12,90€</div>
+                            </div>
+                            <div class="content-2-menuLine"></div>
+                            <div class="content-2-menuText">Großer gemischter Salat mit Roastbeef Streifen & Garnelen</div>
+                        </div>
+                        <div class="content-2-cards">
+                            <div class="content-2-cardsInner">
+                                <div class="number">24</div>
+                                <div class="content-2-menuName">Putai in Bowl</div>
+                                <div class="price">10,90€</div>
+                            </div>
+                            <div class="content-2-menuLine"></div>
+                            <div class="content-2-menuText">Mungobohnen-Sprossen im Wok geschwenkt mit Jasminreis und knusprigem Hühnchen.</div>
+                        </div>
+                        <div class="content-2-cards">
+                            <div class="content-2-cardsInner">
+                                <div class="number">34</div>
+                                <div class="content-2-menuName">Drachenfeuer</div>
+                                <div class="price">14,00€</div>
+                            </div>
+                            <div class="content-2-menuLine"></div>
+                            <div class="content-2-menuText">Gebratene Hühnerstreifen, Rinderstreifen & Garnelen mit Gemüse in Chili-Tomaten Reduktion. Dazu Jasminreis.</div>
+                        </div>
+                        <div class="content-2-cards">
+                            <div class="content-2-cardsInner">
+                                <div class="number">34</div>
+                                <div class="content-2-menuName">Drachenfeuer</div>
+                                <div class="price">14,00€</div>
+                            </div>
+                            <div class="content-2-menuLine"></div>
+                            <div class="content-2-menuText">Gebratene Hühnerstreifen, Rinderstreifen & Garnelen mit Gemüse in Chili-Tomaten Reduktion. Dazu Jasminreis.</div>
+                        </div>
+                        <div class="content-2-cards">
+                            <div class="content-2-cardsInner">
+                                <div class="number">34</div>
+                                <div class="content-2-menuName">Drachenfeuer</div>
+                                <div class="price">14,00€</div>
+                            </div>
+                            <div class="content-2-menuLine"></div>
+                            <div class="content-2-menuText">Gebratene Hühnerstreifen, Rinderstreifen & Garnelen mit Gemüse in Chili-Tomaten Reduktion. Dazu Jasminreis.</div>
+                        </div>
+                        <div class="content-2-cards">
+                            <div class="content-2-cardsInner">
+                                <div class="number">34</div>
+                                <div class="content-2-menuName">Drachenfeuer</div>
+                                <div class="price">14,00€</div>
+                            </div>
+                            <div class="content-2-menuLine"></div>
+                            <div class="content-2-menuText">Gebratene Hühnerstreifen, Rinderstreifen & Garnelen mit Gemüse in Chili-Tomaten Reduktion. Dazu Jasminreis.</div>
+                        </div>
+                        <div class="content-2-cards">
+                            <div class="content-2-cardsInner">
+                                <div class="number">34</div>
+                                <div class="content-2-menuName">Drachenfeuer</div>
+                                <div class="price">14,00€</div>
+                            </div>
+                            <div class="content-2-menuLine"></div>
+                            <div class="content-2-menuText">Gebratene Hühnerstreifen, Rinderstreifen & Garnelen mit Gemüse in Chili-Tomaten Reduktion. Dazu Jasminreis.</div>
+                        </div>
+                        <div class="content-2-cards">
+                            <div class="content-2-cardsInner">
+                                <div class="number">34</div>
+                                <div class="content-2-menuName">Drachenfeuer</div>
+                                <div class="price">14,00€</div>
+                            </div>
+                            <div class="content-2-menuLine"></div>
+                            <div class="content-2-menuText">Gebratene Hühnerstreifen, Rinderstreifen & Garnelen mit Gemüse in Chili-Tomaten Reduktion. Dazu Jasminreis.</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-3" class="opacityReveal">
+            <div id="content-3-text">
+                <h3>Lust auf was Neues?</h3>
+                <div class="line"></div>
+            </div>
+            <div id="content-3-image">
+                <div class="image1"></div>
+                <div class="image2"></div>
+            </div>
+            <div id="content-3-image-box">
+                <div class="content-3-image-1"></div>
+                <div class="content-3-image-2"></div>
+                <div class="content-3-image-3"></div>
+                <div class="content-3-image-4"></div>
+            </div>
+        </div>
     </div>
-
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        #header {
-            background-color: black;
-            height: 100vh;
-            /* Fallback for browsers that do not support Custom Properties */
-            height: calc(var(--vh, 1vh) * 100);
-        }
-
-        #content {
-            height: 1400px;
-            background-color: yellow;
-        }
-
-    </style>
-    <script>
-        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-        let vh = window.innerHeight * 0.01;
-        // Then we set the value in the --vh custom property to the root of the document
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-        // We listen to the resize event
-
-    </script>
+    <div id="footer">
+        <div class="footerBody">
+            <div class="footerColumn">
+                <div class="footerContent">
+                    <div class="footerHeadline">Pu-Tai Rockenhausen</div>
+                    <div class="footerInformation">Rognac-Allee 6</div>
+                    <div class="footerInformation">67806 Rockenhausen</div>
+                    <div class="footerInformation">Tel. 06361 9299144</div>
+                </div>
+            </div>
+            <div class="footerColumn">
+                <div class="footerContent">
+                    <div class="footerHeadline">Öffnungszeiten</div>
+                    <div class="footerInformation">Montags Ruhetag</div>
+                    <div class="openContainer">
+                        <div class="start">Dienstag</div>
+                        <div class="to">-</div>
+                        <div class="end">Sonntag</div>
+                    </div>
+                    <div class="openContainer">
+                        <div class="start">11:30 Uhr</div>
+                        <div class="to">-</div>
+                        <div class="end">14:30 Uhr</div>
+                    </div>
+                    <div class="openContainer">
+                        <div class="start">17:00 Uhr</div>
+                        <div class="to">-</div>
+                        <div class="end">22:30 Uhr</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerColumn">
+                <div class=" footerContent">
+                    <div class="footerHeadline">Links</div>
+                    <div class="footerInformation"><a href="">Willkommen</a></div>
+                    <div class="footerInformation"><a href="">Speisekarte</a></div>
+                    <div class="footerInformation"><a href="">Kontakt</a></div>
+                    <div class="footerInformation"></div>
+                    <div class="socialLinkWrapper">
+                        <div class="socialLink"><a href="https://www.facebook.com/PuTaiRockenhausen"><i class="fab fa-facebook-square"></i></a></div>
+                        <div class="socialLink"><a href="https://www.instagram.com/pu.tai_rockenhausen/"><i class="fab fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            © 2023 PuTai Restaurant
+        </div>
+    </div>
+    <div class="backToTop"><i class="fa-solid fa-angle-up"></i></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
