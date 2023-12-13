@@ -158,6 +158,8 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: var(--app-height);
 }
 
 .navigationBar {
@@ -686,6 +688,7 @@ li a {
     background-color: rgba(0, 0, 0, 0.44);
     cursor: pointer;
     margin: 0 auto;
+    color: red;
 }
 
 .content-2-cardWrapper {
