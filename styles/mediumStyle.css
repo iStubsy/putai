@@ -26,10 +26,11 @@
         max-width: var(--contentWidth);
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 120px;
-        margin: 2rem auto;
+        //gap: 120px;
+        margin: 5rem auto;
+        padding: 0;
     }
 
 
@@ -38,6 +39,7 @@
         font-weight: 300;
         font-size: 1.3rem;
         line-height: 1.8rem;
+        max-width: 500px;
     }
 
     .content-1-text h2 {
@@ -139,8 +141,6 @@
 
     .content-2-menu {
         margin: 0 auto;
-        //max-width: var(--contentWidth);
-        max-width: 1500px;
         color: white;
         display: flex;
         flex-direction: row;
@@ -186,6 +186,9 @@
 
     .content-2-right {
         width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 50px;
     }
 
     .content-2-rightInner {
