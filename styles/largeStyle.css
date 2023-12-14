@@ -23,7 +23,7 @@
         background-repeat: no-repeat;
         background-image: url("../innenTest.png");
         background-color: #000000;
-        background-image: url("../innenPaintTest.png"), url("https://www.transparenttextures.com/patterns/gplay.png");
+        //background-image: url("../innenPaintTest.png"), url("https://www.transparenttextures.com/patterns/gplay.png");
         /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
         background-size: 800px, auto;
