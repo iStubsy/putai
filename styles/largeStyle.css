@@ -35,7 +35,7 @@
         //background-size: 50%;
         background-position: inherit;
 
-        background-attachment: local;
+        background-attachment: fixed;
         height: 100vh;
         max-height: 1000px;
 

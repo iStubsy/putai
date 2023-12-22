@@ -5,7 +5,7 @@
     --second-font: 'Caveat', cursive;
     --akzente: #e0a800;
     --moveIt: 1.2s;
-    --contentWidth: 1150px;
+    --contentWidth: 1100px;
 }
 
 * {
@@ -141,10 +141,8 @@ h6 {
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
-    /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
-    min-height: 600px;
+    height: 100svh;
+    //height: calc(var(--vh, 1vh) * 100);
 }
 
 .navigationBar {
@@ -382,7 +380,7 @@ li a {
     height: 100%;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 35px;
     flex-direction: column;
     padding: 160px 0 100px 0;
     background-size: 50px;
@@ -717,7 +715,7 @@ li a {
     padding: 0 2px;
     display: inline-block;
     color: var(--akzente);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 0.001;
 }
 
