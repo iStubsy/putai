@@ -509,12 +509,13 @@ li a {
 }
 
 .content-1-imageSide {
-    width: 130%;
+    width: 115%;
 }
 
 .content-1-image-align {
     position: relative;
     height: 250px;
+    max-width: 400px;
 }
 
 .content-1-image-align > div {
@@ -522,7 +523,7 @@ li a {
 }
 
 .content-1-image-first {
-    width: 340px;
+    width: 320px;
     height: 200px;
     margin: auto;
     position: absolute;
@@ -535,7 +536,7 @@ li a {
 }
 
 .content-1-image-second {
-    width: 270px;
+    width: 250px;
     height: 150px;
     margin: auto;
     position: absolute;
