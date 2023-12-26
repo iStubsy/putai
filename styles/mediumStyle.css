@@ -47,6 +47,7 @@
 
     .content-1-sub:nth-child(2) {
         padding-bottom: 8rem;
+        flex-direction: row;
     }
 
 
@@ -97,7 +98,7 @@
     .content-1-image-align {
         display: flex;
         position: relative;
-        min-width: 480px;
+        width: 480px;
         height: 380px;
     }
 
