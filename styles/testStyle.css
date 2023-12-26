@@ -1,6 +1,6 @@
 .belowHeader {
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     column-gap: 3px;
     padding: 3px 0 3px 0;
@@ -11,6 +11,7 @@
 
     background-color: black;
     opacity: 1;
+
     display: none;
 }
 
@@ -72,4 +73,11 @@
 
 .fromDark.active {
     opacity: .6;
+}
+
+.content-divider {
+    width: 60%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
 }

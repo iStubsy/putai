@@ -16,21 +16,54 @@
         flex-direction: row;
     }
 
-    #content-1,
     #content-2,
     #content-3 {
-        padding: 3rem 0;
+        padding: 4rem 0;
+    }
+
+    #content-1 {
+        display: flex;
+        flex-direction: column;
     }
 
     .content-1-sub {
-        max-width: var(--contentWidth);
+        //max-width: var(--contentWidth);
+        width: 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        //gap: 120px;
-        margin: 5rem auto;
-        padding: 0;
+
+        gap: 120px;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.0) 10%, rgba(0, 0, 0, 0.04) 70%);
+        padding: 8rem 0 4rem 0;
+    }
+
+    .content-1-sub:nth-child(1) {
+        background-color: rgba(255, 255, 255, 0);
+        background-image: none;
+    }
+
+    .content-1-sub:nth-child(2) {
+        padding-bottom: 8rem;
+    }
+
+
+    .content-1-sub:nth-child(1) h6,
+    .content-1-sub:nth-child(1) h2,
+    .content-1-sub:nth-child(1) .content-1-text {
+        text-align: right;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .content-1-sub:nth-child(2) .content-1-imageSide {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
 
@@ -39,7 +72,12 @@
         font-weight: 300;
         font-size: 1.3rem;
         line-height: 1.8rem;
-        max-width: 500px;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .content-1-text > div {
+        max-width: 400px;
     }
 
     .content-1-text h2 {
@@ -47,18 +85,23 @@
         text-align: left;
         padding: 0;
         font-size: 1.4rem;
+        line-height: 1.4rem;
         text-shadow: none;
-        line-height: 4rem;
     }
 
-    .content-1-image {
+    .content-1-imageSide {
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .content-1-image-align {
         display: flex;
         position: relative;
         min-width: 480px;
         height: 380px;
     }
 
-    .content-1-image > div {
+    .content-1-image-align > div {
         border: solid 1px rgba(0, 0, 0, 0.46);
     }
 

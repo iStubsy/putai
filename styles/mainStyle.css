@@ -141,7 +141,8 @@ h6 {
     justify-content: center;
     align-items: center;
 
-    height: 600px;
+    height: 100%;
+    overflow: hidden;
     //height: calc(var(--vh, 1vh) * 100);
 }
 
@@ -460,12 +461,18 @@ li a {
     transition: 1s;
 }
 
+#content-1 {
+    background-image: url("../french-stucco.png");
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
 #content-1,
 #content-2,
 #content-3 {
     padding: 2.5rem 0 3.5rem 0;
     position: relative;
-    background-image: url("../french-stucco.png");
 }
 
 .content-1-sub {
@@ -476,9 +483,9 @@ li a {
     margin: 0 auto;
     padding: 0px 35px 1rem 35px;
     gap: 50px;
-    max-width: 600
+    max-width: 600px;
+    overflow: hidden;
 }
-
 
 .content-1-text {
     font-family: var(--main-font);
@@ -501,20 +508,22 @@ li a {
     margin: 15px 0 15px 0;
 }
 
-.content-1-image {
-    position: relative;
-    height: 250px;
-    width: 100%;
-    max-width: 350px;
+.content-1-imageSide {
+    width: 130%;
 }
 
-.content-1-image > div {
+.content-1-image-align {
+    position: relative;
+    height: 250px;
+}
+
+.content-1-image-align > div {
     border: solid 1px rgba(0, 0, 0, 0.46);
 }
 
 .content-1-image-first {
-    width: 280px;
-    height: 180px;
+    width: 340px;
+    height: 200px;
     margin: auto;
     position: absolute;
     top: 0;
@@ -526,8 +535,8 @@ li a {
 }
 
 .content-1-image-second {
-    width: 200px;
-    height: 140px;
+    width: 270px;
+    height: 150px;
     margin: auto;
     position: absolute;
     bottom: 0;
@@ -536,6 +545,10 @@ li a {
     background-image: url("../198152487_443294453586788_4063078726020976003_n.jpeg");
     background-size: cover;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.44);
+}
+
+.content-1-sub:nth-child(2) {
+    flex-direction: column-reverse;
 }
 
 .line {
