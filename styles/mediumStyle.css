@@ -24,7 +24,8 @@
     #content-1 {
         display: flex;
         flex-direction: column;
-        padding: 0;
+        padding: 10rem 0;
+        gap: 10rem;
     }
 
     .content-1-sub {
@@ -35,26 +36,27 @@
         justify-content: center;
         align-items: center;
 
-        gap: 100px;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.0) 10%, rgba(0, 0, 0, 0.04) 70%);
-        padding: 8rem 0 2rem 0;
+        gap: 130px;
         margin: 0;
     }
 
-    .content-1-sub:nth-child(1) {
+    .content-1-sub:nth-child(1),
+    .content-1-sub:nth-child(3) {
         background-color: rgba(255, 255, 255, 0);
         background-image: none;
     }
 
     .content-1-sub:nth-child(2) {
-        padding: 2rem 0 8rem 0;
         flex-direction: row;
     }
 
 
     .content-1-sub:nth-child(1) h6,
+    .content-1-sub:nth-child(3) h6,
     .content-1-sub:nth-child(1) h2,
-    .content-1-sub:nth-child(1) .content-1-text {
+    .content-1-sub:nth-child(3) h2,
+    .content-1-sub:nth-child(1) .content-1-text,
+    .content-1-sub:nth-child(3) .content-1-text {
         text-align: right;
 
         display: flex;
@@ -131,8 +133,6 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        background-image: url("../puTaiLogo.jpg");
-        background-image: url("../198152487_443294453586788_4063078726020976003_n.jpeg");
         background-size: cover;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.44);
     }
