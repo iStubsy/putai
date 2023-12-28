@@ -126,7 +126,7 @@
          }
          var windowHeight = window.innerHeight;
          var elementTop = moveUpReveals[i].getBoundingClientRect().top;
-         var elementVisible = 80;
+         var elementVisible = 300;
          if (elementTop < windowHeight - elementVisible) {
              for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
                  //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
@@ -199,7 +199,7 @@
      for (var i = 0; i < reveals.length; i++) {
          var windowHeight = window.innerHeight;
          var elementTop = reveals[i].getBoundingClientRect().top;
-         var elementVisible = 150;
+         var elementVisible = 350;
          if (elementTop < windowHeight - elementVisible) {
              reveals[i].classList.add("active");
          } else {
