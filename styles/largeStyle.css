@@ -1,4 +1,4 @@
-@media (min-width: 1100px) {
+@media (min-width: 1300px) {
     /***** NAVIGATION BAR *****/
 
     .empty {
@@ -41,56 +41,50 @@
 
     }
 
-    @keyframes headerZoom {
-        from {
-            //background-size: 50%;
-            //background-position: 0, 0;
-        }
+    #content-1 {}
 
-        to {
-            //background-size: 50%;
-            //background-position: 0, 0;
-        }
-    }
+    .content-1-sub {
 
-    .headerInformation {
-        height: 100%;
-    }
-
-    .card {
-        margin: 0;
-    }
-
-    .cardBox {
+        width: var(--contentWidth);
+        min-width: 1300px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
         margin: 0 auto;
-        width: 75%;
-        max-width: var(--contentWidth);
     }
 
-    .cardImage {
-        width: 255px;
-        height: 255px;
+    .content-1-image-align {
+        max-width: 100%;
+
     }
 
-    .lineTest {
-        width: 240px;
-        height: 240px;
-    }
-
-    /*
-    .content-2-menu {
-        display: flex;
+    .content-1-sub:nth-child(2) {
         flex-direction: row;
     }
 
-    .content-2-right {
+
+    .content-1-sub:nth-child(1) h6,
+    .content-1-sub:nth-child(3) h6,
+    .content-1-sub:nth-child(1) h2,
+    .content-1-sub:nth-child(3) h2,
+    .content-1-sub:nth-child(1) .content-1-text,
+    .content-1-sub:nth-child(3) .content-1-text {
+        text-align: right;
+
         display: flex;
-        justify-content: flex-end;
-        margin: 0;
+        flex-direction: column;
+        align-items: flex-end;
     }
-    */
+
+    .content-1-sub:nth-child(2) .content-1-imageSide {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+
 
     .footerBody {
         display: flex;

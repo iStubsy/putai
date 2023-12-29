@@ -1,4 +1,4 @@
-@media (min-width: 811px) {
+@media (min-width: 801px) {
 
     h5 {
         font-size: 4.2rem;
@@ -25,49 +25,7 @@
         display: flex;
         flex-direction: column;
         padding: 10rem 0;
-        gap: 10rem;
-    }
-
-    .content-1-sub {
-        //max-width: var(--contentWidth);
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        gap: 130px;
-        margin: 0;
-    }
-
-    .content-1-sub:nth-child(1),
-    .content-1-sub:nth-child(3) {
-        background-color: rgba(255, 255, 255, 0);
-        background-image: none;
-    }
-
-    .content-1-sub:nth-child(2) {
-        flex-direction: row;
-    }
-
-
-    .content-1-sub:nth-child(1) h6,
-    .content-1-sub:nth-child(3) h6,
-    .content-1-sub:nth-child(1) h2,
-    .content-1-sub:nth-child(3) h2,
-    .content-1-sub:nth-child(1) .content-1-text,
-    .content-1-sub:nth-child(3) .content-1-text {
-        text-align: right;
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .content-1-sub:nth-child(2) .content-1-imageSide {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        gap: 8rem;
     }
 
 
@@ -76,16 +34,12 @@
         font-weight: 300;
         font-size: 1.3rem;
         line-height: 1.8rem;
-        width: 50%;
-        max-width: 50%;
+        max-width: 600px;
     }
 
-    .content-1-text > div {
-        max-width: 60%;
-    }
+    .content-1-text > div {}
 
     .content-1-text h2 {
-        color: rgba(0, 0, 0, 0.4);
         text-align: left;
         padding: 0;
         font-size: 1.4rem;
@@ -94,7 +48,6 @@
     }
 
     .content-1-imageSide {
-        width: 50%;
         max-width: 100%;
     }
 
@@ -103,10 +56,10 @@
         position: relative;
         justify-content: flex-end;
         align-items: center;
-        width: 480px;
-        max-width: 60%;
         height: 380px;
-        margin: 0;
+        margin: 0 auto;
+        width: 100%;
+        max-width: var(--contentWidth);
     }
 
     .content-1-image-align > div {
@@ -128,7 +81,7 @@
 
     .content-1-image-second {
         width: 70%;
-        height: 190px;
+        height: 230px;
         margin: auto;
         position: absolute;
         bottom: 0;
