@@ -145,6 +145,8 @@ h6 {
     min-height: 400px;
     /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
+
+    border: solid 5px black;
 }
 
 .navigationBar {
@@ -468,7 +470,7 @@ li a {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    padding: 40px 0;
+    padding: 3rem 0;
 }
 
 #content-1 .clickBox {
