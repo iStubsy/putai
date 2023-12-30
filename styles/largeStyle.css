@@ -38,10 +38,12 @@
         background-attachment: fixed;
         height: 100vh;
         max-height: 1000px;
-
     }
 
-    #content-1 {}
+    #content-1 {
+        padding: 8rem 0;
+        gap: 6rem;
+    }
 
     .content-1-sub {
 
@@ -51,13 +53,17 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 100px;
         margin: 0 auto;
+        padding: 3rem 0;
+        gap: 8rem;
+    }
+
+    .content-1-imageSide {
+        width: 500px;
     }
 
     .content-1-image-align {
         max-width: 100%;
-
     }
 
     .content-1-sub:nth-child(2) {
