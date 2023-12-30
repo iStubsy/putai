@@ -84,6 +84,7 @@
  }
 
  document.querySelector(".backToTop").onclick = function () {
+     document.querySelector("html").style.scrollBehavior = "smooth";
      document.body.scrollTop = 0; // For Safari
      document.documentElement.scrollTop = 0;
  }
@@ -240,6 +241,9 @@
  window.addEventListener("scroll", moveUpRevealFun);
  window.addEventListener("scroll", opacityReveal);
  window.addEventListener("scroll", fromDark);
+ window.addEventListener("scroll", function () {
+     document.querySelector("html").style.scrollBehavior = "auto";
+ });
 
  // To check the scroll position on page load
  reveal();

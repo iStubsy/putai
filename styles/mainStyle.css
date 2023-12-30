@@ -6,7 +6,6 @@
     --akzente: #e0a800;
     --moveIt: 1.2s;
     --contentWidth: 1100px;
-    --contentWidth: 65%;
 }
 
 * {
@@ -514,6 +513,11 @@ li a {
     overflow: visible;
 }
 
+
+.content-1-sub:nth-child(2) {
+    flex-direction: column-reverse;
+}
+
 .contentSubLine {
     width: 40%;
     margin: 0 auto;
@@ -590,10 +594,6 @@ li a {
     background-image: url("../innen.jpeg");
     background-size: cover;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.44);
-}
-
-.content-1-sub:nth-child(2) {
-    flex-direction: column-reverse;
 }
 
 .content-1-text {

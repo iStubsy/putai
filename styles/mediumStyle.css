@@ -108,9 +108,9 @@
     }
 
     .navigationBarInner {
-        width: 90%;
-        max-width: var(--contentWidth);
+        width: 100%;
         padding: 0;
+        max-width: var(--contentWidth);
     }
 
     .hamburgerMenu {
@@ -120,6 +120,10 @@
     #brand {
         justify-content: flex-start;
         width: 50%;
+    }
+
+    .empty {
+        display: none;
     }
 
     #navigationMenu {
