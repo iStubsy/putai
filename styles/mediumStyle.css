@@ -16,8 +16,7 @@
         flex-direction: row;
     }
 
-    #content-2,
-    #content-3 {
+    #content-2 {
         padding: 4rem 0;
     }
 
@@ -56,9 +55,9 @@
         position: relative;
         justify-content: flex-end;
         align-items: center;
-        height: 380px;
+        height: 400px;
         margin: 0 auto;
-        width: 500px;
+        width: 480px;
     }
 
     .content-1-image-align > div {
@@ -67,8 +66,11 @@
 
     .content-1-image-first {
         width: 90%;
-        max-width: 440px;
+        //max-width: 440px;
+        max-width: 100%;
+
         height: 300px;
+        height: 80%;
         margin: auto;
         position: absolute;
         top: 0;
@@ -81,7 +83,10 @@
 
     .content-1-image-second {
         width: 300px;
+        width: 70%;
+        max-width: 100%;
         height: 180px;
+        height: 50%;
         margin: auto;
         position: absolute;
         bottom: 0;
@@ -228,5 +233,83 @@
     #header {
         background-position: 0px -300px;
         background-attachment: fixed;
+    }
+
+    #content-3 {
+        background-image: url("../french-stucco.png");
+    }
+
+    .content-3-sub {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        width: 100%;
+        margin: 0 auto;
+        //box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+
+        position: relative;
+        gap: 25px;
+        padding: 10px;
+        max-width: var(--contentWidth);
+    }
+
+    .content-3-left {
+        //background-color: black;
+        width: 60%;
+        //background-image: url("../innenOpacity.png");
+        background-position: center;
+        background-size: cover;
+        color: rgba(255, 255, 255, 0.5);
+        color: black;
+        //padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .content-3-left h6 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .content-3-left h2 {
+        text-align: center;
+        color: #656565;
+        text-shadow: none;
+    }
+
+    .content-3-left > div {
+        max-width: 100%;
+        text-align: center;
+        font-family: var(--main-font);
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    .content-3-right {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        background-image: url("https://deih43ym53wif.cloudfront.net/bun-cha-vietnam-food-shutterstock_769738648_a1baaf2235.jpeg");
+        background-size: cover;
+    }
+
+    .content-3-rightBG {
+        font-family: var(--main-font);
+        font-size: 3rem;
+        text-align: center;
+        background-color: #d8d8d8;
+    }
+
+    .content-3-rightUp {
+        height: 50%;
+        background-size: contain;
+    }
+
+    .content-3-rightDown {
+        height: 50%;
     }
 }
