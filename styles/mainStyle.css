@@ -382,7 +382,7 @@ li a {
     height: 100%;
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 30px;
     flex-direction: column;
     padding: 160px 0 100px 0;
     background-size: 50px;
@@ -548,7 +548,7 @@ li a {
 }
 
 .content-1-text h6 {
-    //margin: 15px 0 15px 0;
+    margin: 8px 0 8px 0;
 }
 
 .content-1-imageSide {
@@ -662,7 +662,7 @@ li a {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: 30px;
 }
 
 .content-2-left-head {
@@ -735,7 +735,7 @@ li a {
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.44);
     cursor: pointer;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 
 .content-2-cardWrapper {
@@ -789,7 +789,7 @@ li a {
     right: 0;
 }
 
-.headerInformation .clickBox {
+. .clickBox {
     font-size: 1rem;
     width: 160px;
     margin: 0 auto;
