@@ -612,7 +612,7 @@ li a {
 #content-2 {
     background-color: var(--main-background);
     background-image: url("../innenPaintTest.png");
-    background-image: url("../innenOpacity.png");
+    //background-image: url("../innenOpacity.png");
 
 
     //background-position: 150px;
