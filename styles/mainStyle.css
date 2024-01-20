@@ -5,7 +5,7 @@
     --second-font: 'Caveat', cursive;
     --akzente: #e0a800;
     --moveIt: 1.2s;
-    --contentWidth: 1100px;
+    --contentWidth: 1200px;
 }
 
 * {
@@ -468,7 +468,7 @@ li a {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    padding: 3rem 0 6rem 0;
+    padding: 3rem 0 3rem 0;
 }
 
 #content-1 .clickBox {
@@ -619,8 +619,6 @@ li a {
     background-size: cover;
     background-repeat: no-repeat;
 
-    //background-image: none;
-    //background-attachment: fixed;
 
     padding-left: 30px;
     padding-right: 30px;
@@ -982,7 +980,7 @@ li a {
     //display: flex;
     //justify-content: center;
     //padding: 80px 0;
-    padding: 40px 0 100px 0;
+    padding: 40px 0 40px 0;
     background-color: var(--beta-background);
 }
 

@@ -127,7 +127,7 @@
          }
          var windowHeight = window.innerHeight;
          var elementTop = moveUpReveals[i].getBoundingClientRect().top;
-         var elementVisible = 300;
+         var elementVisible = 0;
          if (elementTop < windowHeight - elementVisible) {
              for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
                  //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
