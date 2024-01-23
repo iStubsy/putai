@@ -999,6 +999,82 @@ li a {
     max-width: 500px;
 }
 
+.content-3-sub {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content-3-right {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    background-image: url("https://deih43ym53wif.cloudfront.net/bun-cha-vietnam-food-shutterstock_769738648_a1baaf2235.jpeg");
+    background-size: cover;
+
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.49);
+    height: 100%;
+    min-height: 300px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-3-left {
+    padding: 10px;
+}
+
+.content-3-left h2 {
+    text-align: center;
+    color: #656565;
+    text-shadow: none;
+    text-align: left;
+}
+
+.content-3-left h6 {
+    font-size: 2rem;
+}
+
+.content-3-left > div {
+    max-width: 100%;
+    font-family: var(--main-font);
+    font-weight: 300;
+    line-height: 25px;
+    text-align: left;
+}
+
+.content-3-rightDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.imgText-block {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.49);
+    background-color: rgba(0, 0, 0, 0.80);
+    padding: 5px;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    font-family: var(--main-font);
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.5rem;
+    height: fit-content;
+    margin-bottom: 15px;
+}
+
+.imgText {
+    background-color: rgba(0, 0, 0, 0.80);
+    font-size: 2rem;
+    padding: 5px 20px;
+    color: white;
+    width: fit-content;
+    margin: 10px auto;
+}
+
 .image1 {
     width: 70%;
     height: 100px;

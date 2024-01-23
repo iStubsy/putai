@@ -42,7 +42,7 @@
 
     #content-1 {
         padding: 10rem 0;
-        gap: 7rem;
+        gap: 5rem;
     }
 
     .content-1-sub {
@@ -109,7 +109,9 @@
         align-items: flex-end;
     }
 
-
+    #content-3 {
+        padding: 100px;
+    }
 
     .footerBody {
         display: flex;
