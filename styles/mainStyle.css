@@ -261,7 +261,7 @@ li a {
 
 
 .hmlTransform1 {
-    //transform: rotate(45deg);
+    transform: rotate(45deg);
     position: absolute;
     height: 2px;
     width: 38px;
@@ -272,7 +272,7 @@ li a {
 }
 
 .hmlTransform2 {
-    //transform: rotate(-45deg);
+    transform: rotate(-45deg);
     position: absolute;
     height: 2px;
     width: 38px;
@@ -369,15 +369,12 @@ li a {
 .overlayFooterMore {
     display: flex;
     justify-content: center;
-    flex-direction: column;
 }
 
-.overlayFooterMore span {
-    margin: 5px auto;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
+.overlayFooterMoreElement {
+    margin: 4px 2px;
 }
+
 
 .headerInformation {
     color: white;
