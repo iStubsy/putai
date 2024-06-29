@@ -34,6 +34,7 @@
 
         //background-size: 50%;
         background-position: inherit;
+        background-position: left;
 
         background-attachment: fixed;
         height: 100vh;
@@ -54,7 +55,7 @@
         justify-content: center;
         align-self: auto;
         margin: 0 auto;
-        gap: 5rem;
+        gap: 3rem;
         width: 100%;
     }
 
@@ -109,9 +110,7 @@
         align-items: flex-end;
     }
 
-    #content-3 {
-        padding: 100px;
-    }
+    #content-3 {}
 
     .footerBody {
         display: flex;
@@ -123,5 +122,10 @@
 
     .footerColumn {
         width: 33.33%;
+    }
+
+    .mealBox {
+        flex: 33.33%;
+        max-width: 33.33%;
     }
 }

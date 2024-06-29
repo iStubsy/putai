@@ -238,6 +238,8 @@
 
     #content-3 {
         background-image: url("../french-stucco.png");
+        padding: 0;
+
     }
 
     .content-3-sub {
@@ -245,24 +247,18 @@
         justify-content: center;
         flex-direction: row;
         height: 400px;
-        width: 100%;
         margin: 0 auto;
         //box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 
         position: relative;
-        gap: 25px;
+        gap: 10px;
         padding: 10px;
-        max-width: var(--contentWidth);
-        width: 90%;
-    }
-
-    .content-3-right {
-        background-color: red;
+        margin: 5px;
     }
 
     .content-3-left {
-        width: 60%;
-        //background-image: url("../innenOpacity.png");
+        width: 65%;
+        background-image: url("../innenOpacity.png");
         //background-image: url("../198152487_443294453586788_4063078726020976003_n.jpeg");
         background-position: center;
         background-size: cover;
@@ -273,22 +269,25 @@
         justify-content: center;
         gap: 15px;
         color: black;
+
+        background-color: black;
     }
 
     .content-3-left h6 {
         max-width: 100%;
         text-align: center;
         font-size: 3rem;
-        text-align: left;
     }
 
     .content-3-left > div {
         width: 80%;
+        margin: 0 auto;
+        text-align: center;
     }
 
 
     .content-3-right {
-        width: 40%;
+        width: 35%;
     }
 
     .content-3-rightBG {
@@ -306,4 +305,15 @@
     .content-3-rightDown {
         height: 50%;
     }
+
+    h7 {
+        font-size: 3rem;
+    }
+
+    .mealBox {
+        flex: 50%;
+        padding: 18px;
+        max-width: 50%;
+    }
+
 }
