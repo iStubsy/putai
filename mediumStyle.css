@@ -1,0 +1,343 @@
+@media (min-width: 801px) {
+
+    h5 {
+        font-size: 4.2rem;
+    }
+
+    h6 {
+        text-align: left;
+        max-width: 450px;
+        width: 100%;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .cardBox {
+        flex-direction: row;
+    }
+
+    #content-2 {
+        padding: 4rem 0;
+    }
+
+    #content-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0;
+        //gap: 8rem;
+    }
+
+
+    .content-1-text {
+        font-family: var(--main-font);
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+    .content-1-text > div {}
+
+    .content-1-text h2 {
+        text-align: left;
+        padding: 0;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        text-shadow: none;
+    }
+
+    .content-1-imageSide {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .content-1-image-align {
+        display: flex;
+        position: relative;
+        align-items: center;
+        height: 350px;
+        margin: 0 auto;
+
+    }
+
+    .content-1-image-align > div {
+        border: solid 1px rgba(0, 0, 0, 0.46);
+    }
+
+    .content-1-image-first {
+        width: 90%;
+        //max-width: 440px;
+        max-width: 100%;
+
+        height: 300px;
+        height: 80%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../lamp.jpeg");
+        background-size: cover;
+
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.44);
+    }
+
+    .content-1-image-second {
+        width: 300px;
+        width: 70%;
+        max-width: 100%;
+        height: 180px;
+        height: 50%;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-size: cover;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.44);
+    }
+
+
+    .line {
+        height: 2px;
+        width: 50px;
+        background-color: black;
+        margin: 20px auto 60px auto;
+    }
+
+    .navigationBar {
+        height: 100px;
+        padding: 5px;
+        position: absolute;
+    }
+
+    .navigationBarScrolled {
+        position: absolute;
+    }
+
+    .navigationBarInner {
+        width: 100%;
+        padding: 0;
+        max-width: var(--contentWidth);
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    #brand {
+        justify-content: flex-start;
+        width: 50%;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    #navigationMenu {
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+    ul {
+        display: flex;
+    }
+
+
+    #content-2 {
+        //background-position: 100%;
+        background-size: 50%;
+        background-attachment: fixed;
+
+        //background-image: url("../innenPaintTest.png");
+    }
+
+    .content-2-menu {
+        margin: 0 auto;
+        color: white;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-2-cardWrapper {
+        padding: 0;
+        width: 90%;
+    }
+
+    .content-2-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        position: relative;
+    }
+
+    .content-2-left .clickBox {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+    }
+
+    .content-2-subtext {
+        margin: 20px auto;
+        text-align: center;
+        width: 350px;
+    }
+
+    .content-2-left-head {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .content-2-left-head h6 {
+        text-align: center;
+    }
+
+    .content-2-right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+
+    .content-2-rightInner {
+        width: 400px;
+        height: 400px;
+    }
+
+    .content-2-leftOne,
+    .content-2-leftTwo {
+        width: 280px;
+        height: 320px;
+    }
+
+    .imageBox {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        border: solid 2px white;
+        width: 250px;
+    }
+
+    .imageBox1 {
+        position: absolute;
+        bottom: -40px;
+        left: 30%;
+        border: solid 2px white;
+        width: 250px;
+        cursor: pointer;
+    }
+
+    #header {
+        background-position: 0px -300px;
+        background-attachment: fixed;
+    }
+
+    #content-3 {
+        background-image: url("../french-stucco.png");
+        padding: 0;
+
+    }
+
+    .content-3-sub {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 400px;
+        margin: 0 auto;
+        //box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+
+        position: relative;
+        gap: 5px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .content-3-left {
+        width: 65%;
+        background-image: url("../innenOpacity.png");
+        //background-image: url("../198152487_443294453586788_4063078726020976003_n.jpeg");
+        background-position: center;
+        background-size: cover;
+        color: rgba(255, 255, 255, 0.5);
+        //padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        color: black;
+
+        background-color: black;
+    }
+
+    .content-3-left h6 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .content-3-left > div {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .content-3-right {
+        width: 35%;
+    }
+
+    .content-3-rightBG {
+        font-family: var(--main-font);
+        font-size: 3rem;
+        text-align: center;
+        background-color: #d8d8d8;
+    }
+
+    .content-3-rightUp {
+        height: 50%;
+        background-size: contain;
+    }
+
+    .content-3-rightDown {
+        height: 50%;
+    }
+
+    h7 {
+        font-size: 3rem;
+    }
+
+    .mealBox {
+        flex: 50%;
+        padding: 18px;
+        max-width: 50%;
+    }
+
+    #whereSub {
+        margin: 4rem auto;
+    }
+
+    #whereSubContentBox {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .whereSubContent {
+        width: 50%;
+
+        font-size: 1.2rem;
+        font-family: var(--main-font);
+    }
+
+    #whereSub h6 {
+        width: fit-content;
+        margin: 3rem auto;
+        max-width: none;
+        font-size: 3.5rem;
+    }
+
+}

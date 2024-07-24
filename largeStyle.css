@@ -1,0 +1,131 @@
+@media (min-width: 1300px) {
+    /***** NAVIGATION BAR *****/
+
+    .empty {
+        display: none;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin: 0 auto;
+        width: 900px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    #header {
+        background-color: black;
+        background-repeat: no-repeat;
+        background-image: url("../innenTest.png");
+        background-color: #000000;
+        //background-image: url("../innenPaintTest.png"), url("https://www.transparenttextures.com/patterns/gplay.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+        background-size: 800px, auto;
+        background-position: 0px -300px, 0 0;
+        background-repeat: no-repeat, repeat;
+
+
+
+        //background-size: 50%;
+        background-position: inherit;
+        background-position: left;
+
+        background-attachment: fixed;
+        height: 100vh;
+        max-height: 1000px;
+    }
+
+    #content-1 {
+        padding: 10rem 0;
+        gap: 5rem;
+    }
+
+    .content-1-sub {
+
+        width: var(--contentWidth);
+        min-width: 1300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: auto;
+        margin: 0 auto;
+        gap: 3rem;
+        width: 100%;
+    }
+
+    .content-1-imageSide {
+        width: 50%;
+        //padding: 5rem;
+
+    }
+
+    .content-1-textSide {
+        width: 50%;
+        max-width: 50%;
+        padding: 5rem;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .content-1-textSide:nth-child(2) {
+        justify-content: flex-start;
+    }
+
+    .content-1-text {}
+
+    .content-1-image-align {
+        max-width: 80%;
+        width: 500px;
+        margin: 0;
+    }
+
+    .content-1-sub:nth-child(2) {
+        flex-direction: row;
+    }
+
+
+    .content-1-sub:nth-child(1) h6,
+    .content-1-sub:nth-child(3) h6,
+    .content-1-sub:nth-child(1) h2,
+    .content-1-sub:nth-child(3) h2,
+    .content-1-sub:nth-child(1) .content-1-text,
+    .content-1-sub:nth-child(3) .content-1-text {
+        text-align: right;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .content-1-sub:nth-child(2) .content-1-imageSide {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #content-3 {}
+
+    .footerBody {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        width: 100%;
+    }
+
+    .footerColumn {
+        width: 33.33%;
+    }
+
+    .mealBox {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+}
