@@ -82,8 +82,8 @@ h2 {
 h3 {
     font-family: var(--main-font);
     font-weight: 400;
-    text-align: center;
-    font-size: 2rem;
+    text-align: left;
+
     //width: 280px;
     //margin: 20px auto;
     color: black;
@@ -559,12 +559,19 @@ li a {
 
 .content-1-image-align {
     position: relative;
-    height: 250px;
+    //height: 250px;
 
     margin: 0 auto;
     max-width: 500px;
-    min-width: 300px;
-    height: 240px;
+    //min-width: 300px;
+    width: 100%;
+    //height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-1-image-align img {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.43);
 }
 
 .content-1-image-align > div {
@@ -982,7 +989,7 @@ li a {
     //display: flex;
     //justify-content: center;
     //padding: 80px 0;
-    padding: 5px 0;
+    padding: 0;
     background-color: var(--beta-background);
 }
 
@@ -1002,12 +1009,12 @@ li a {
 }
 
 .content-3-sub {
-    padding: 10px 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 5px;
     background-color: black;
-    margin: 0 5px;
 }
 
 .content-3-right {
@@ -1101,6 +1108,113 @@ li a {
     background-size: cover;
     background-position: center;
     box-shadow: 2px 2px 5px #b5b5b5;
+}
+
+#where {
+    padding: 4rem 0 6rem 0;
+    padding: 2rem 1rem;
+}
+
+#whereSub {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#whereSub h6 {
+    width: fit-content;
+    //margin: 2rem auto;
+    max-width: none;
+    font-size: 2rem;
+}
+
+#whereSubContentBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.whereSubContent {
+    width: 100%;
+
+
+    font-family: var(--main-font);
+    font-weight: 300;
+}
+
+.whereSubContentText {
+    max-width: 650px;
+
+    line-height: 1.5rem;
+}
+
+#whereInformationBoxBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 2rem 0;
+}
+
+.whereInformationBox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.whereInformationIcon i {
+    color: black;
+    font-size: 1.6rem;
+}
+
+.whereInformationHeadline {
+    font-weight: bold;
+
+    min-width: 80px;
+}
+
+.whereInformationText {}
+
+.openingHours {
+    background-color: rgba(128, 128, 128, 0.05);
+    padding: 20px;
+    width: 100%;
+}
+
+#ohb {
+    margin-top: 20px;
+}
+
+.openingHoursInformationBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.openingHoursInformation {
+    line-height: 1.5rem;
+    width: 200px;
+}
+
+.openingHoursInformationSum {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.starting {
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ending {
+    min-width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.til {
+    width: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 /***** FOOTER *****/
