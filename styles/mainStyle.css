@@ -1113,12 +1113,12 @@ li a {
 }
 
 #where {
-    padding: 4rem 0 6rem 0;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
 }
 
 #whereSub {
     width: 80%;
+    min-width: 340px;
     max-width: 1400px;
     margin: 0 auto;
 }
