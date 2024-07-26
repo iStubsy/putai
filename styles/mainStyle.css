@@ -464,7 +464,6 @@ li a {
 
 .content {
     background-image: url("../french-stucco.png");
-    background-color: grey;
 }
 
 #content-1 {
@@ -991,7 +990,6 @@ li a {
     //justify-content: center;
     //padding: 80px 0;
     padding: 0;
-    background-color: var(--beta-background);
 }
 
 #content-3-text {
