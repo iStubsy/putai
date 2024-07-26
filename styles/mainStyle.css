@@ -1012,7 +1012,7 @@ li a {
     padding: 5px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     margin: 5px;
     background-color: black;
 }
@@ -1034,11 +1034,12 @@ li a {
 }
 
 .content-3-left {
-    padding: 10px;
+    padding: 40px;
+    background-image: url("../innenOpacity.png");
 }
 
 .content-3-left h2 {
-    text-align: center;
+    text-align: left;
     color: var(--akzente);
     text-shadow: none;
 
@@ -1047,7 +1048,8 @@ li a {
 .content-3-left h6 {
     font-size: 2rem;
     color: white;
-    text-align: center;
+    text-align: left;
+    margin: .5rem 0;
 }
 
 .content-3-left > div {
@@ -1072,7 +1074,7 @@ li a {
     width: 90%;
     margin: 0 auto;
     font-family: var(--main-font);
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
     line-height: 1.5rem;
     height: fit-content;
@@ -1116,6 +1118,7 @@ li a {
 }
 
 #whereSub {
+    width: 80%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -1125,6 +1128,7 @@ li a {
     //margin: 2rem auto;
     max-width: none;
     font-size: 2rem;
+    margin: 0;
 }
 
 #whereSubContentBox {
@@ -1135,7 +1139,6 @@ li a {
 }
 
 .whereSubContent {
-    width: 100%;
 
 
     font-family: var(--main-font);
@@ -1144,7 +1147,7 @@ li a {
 
 .whereSubContentText {
     max-width: 650px;
-
+    margin-bottom: 2rem;
     line-height: 1.5rem;
 }
 
@@ -1152,7 +1155,7 @@ li a {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .whereInformationBox {
@@ -1431,8 +1434,8 @@ li a {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 90%;
-    max-width: 1100px;
+    width: 80%;
+    max-width: 1300px;
     min-width: 320px;
     margin: 0 auto;
     padding: 3% 0;
