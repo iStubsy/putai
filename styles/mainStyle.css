@@ -464,6 +464,7 @@ li a {
 
 .content {
     background-image: url("../french-stucco.png");
+    background-color: grey;
 }
 
 #content-1 {
