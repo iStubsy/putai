@@ -1,7 +1,13 @@
 @media (min-width: 801px) {
 
+    h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        width: 600px;
+    }
+
     h5 {
-        font-size: 4.2rem;
+        font-size: 3.5rem;
     }
 
     h6 {
@@ -9,7 +15,8 @@
         max-width: 450px;
         width: 100%;
         font-size: 4rem;
-        line-height: 4rem;
+
+        font-size: 3.5rem;
     }
 
     .cardBox {
@@ -17,14 +24,14 @@
     }
 
     #content-2 {
-        padding: 4rem 0;
+        padding: 0;
     }
 
     #content-1 {
         display: flex;
         flex-direction: column;
         padding: 5rem 0;
-        //gap: 8rem;
+        gap: 8rem;
     }
 
 
@@ -93,7 +100,6 @@
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.44);
     }
 
-
     .line {
         height: 2px;
         width: 50px;
@@ -112,8 +118,13 @@
     }
 
     .navigationBarInner {
-        width: 100%;
+        width: 90%;
         padding: 0;
+        max-width: var(--contentWidth);
+    }
+
+    .headerBottomContent {
+        width: 90%;
         max-width: var(--contentWidth);
     }
 
@@ -146,6 +157,7 @@
         background-attachment: fixed;
 
         //background-image: url("../innenPaintTest.png");
+        background-image: none;
     }
 
     .content-2-menu {
@@ -157,7 +169,6 @@
 
     .content-2-cardWrapper {
         padding: 0;
-        width: 90%;
     }
 
     .content-2-left {
@@ -167,11 +178,17 @@
         justify-content: space-between;
 
         position: relative;
+        background-image: url("../innenOpacity.png");
+        background-attachment: fixed;
+        //background-size: cover;
+
+        padding: 3rem 0;
+
     }
 
     .content-2-left .clickBox {
         position: absolute;
-        bottom: -20px;
+        bottom: 3rem;
         left: 0;
         right: 0;
     }
@@ -185,10 +202,12 @@
     .content-2-left-head {
         position: -webkit-sticky;
         position: sticky;
-        top: 40px;
+        top: 3rem;
         font-size: 20px;
         text-align: center;
+        margin-bottom: 100px;
     }
+
 
     .content-2-left-head h6 {
         text-align: center;
@@ -198,7 +217,7 @@
         width: 50%;
         display: flex;
         justify-content: flex-start;
-        padding-left: 50px;
+        padding: 2rem;
     }
 
     .content-2-rightInner {
@@ -230,8 +249,9 @@
     }
 
     #header {
-        background-position: 0px -300px;
+        //background-position: 0px -300px;
         background-attachment: fixed;
+        max-height: 800px;
     }
 
     #content-3 {
@@ -258,8 +278,6 @@
         width: 65%;
         background-image: url("../innenOpacity.png");
         //background-image: url("../198152487_443294453586788_4063078726020976003_n.jpeg");
-        background-position: center;
-        background-size: cover;
         color: rgba(255, 255, 255, 0.5);
         //padding: 40px;
         display: flex;
@@ -319,8 +337,13 @@
         max-width: 50%;
     }
 
+    #where {}
+
     #whereSub {
         margin: 4rem auto;
+        padding: 0 2rem;
+        width: 100%;
+        max-width: 1300px;
     }
 
     #whereSubContentBox {
