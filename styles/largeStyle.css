@@ -119,12 +119,23 @@
         align-items: flex-end;
     }
 
+    #content-2 {
+        background-size: 50%;
+        background-attachment: fixed;
+
+        background-image: url("../innenOpacity.png");
+    }
+
     .content-2-right {
         padding: 3rem;
     }
 
     .content-2-cardWrapper {
         max-width: 500px;
+    }
+
+    .content-2-left {
+        background-image: none;
     }
 
 

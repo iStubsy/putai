@@ -25,6 +25,7 @@
 
     #content-2 {
         padding: 0;
+        background-image: none;
     }
 
     #content-1 {
@@ -150,15 +151,6 @@
         display: flex;
     }
 
-
-    #content-2 {
-        //background-position: 100%;
-        background-size: 50%;
-        background-attachment: fixed;
-
-        background-image: url("../innenOpacity.png");
-    }
-
     .content-2-menu {
         margin: 0 auto;
         color: white;
@@ -177,7 +169,7 @@
         justify-content: space-between;
 
         position: relative;
-        //background-image: url("../innenOpacity.png");
+        background-image: url("../innenOpacity.png");
         background-attachment: fixed;
 
         padding: 3rem 0;
