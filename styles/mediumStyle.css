@@ -177,7 +177,7 @@
         justify-content: space-between;
 
         position: relative;
-        background-image: url("../innenOpacity.png");
+        //background-image: url("../innenOpacity.png");
         background-attachment: fixed;
 
         padding: 3rem 0;
