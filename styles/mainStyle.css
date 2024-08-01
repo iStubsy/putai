@@ -472,6 +472,7 @@ li a {
     flex-direction: column;
     gap: 60px;
     padding: 3rem 0 3rem 0;
+    overflow: hidden;
 }
 
 #content-1 .clickBox {

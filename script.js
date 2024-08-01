@@ -164,7 +164,7 @@
      for (var i = 0; i < moveLefts.length; i++) {
          var windowHeight = window.innerHeight;
          var elementTop = moveLefts[i].getBoundingClientRect().top;
-         var elementVisible = 780;
+         var elementVisible = 280;
          if (elementTop < windowHeight - elementVisible) {
              moveLefts[i].classList.add("active");
          } else {
