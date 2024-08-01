@@ -1,10 +1,12 @@
 .moveLeftAnimation {
     transform: translateX(200px);
     opacity: 0;
-    transition: ease-out .6s;
 }
 
 .moveLeftAnimation.active {
     opacity: 1;
     transform: translateX(0px);
+
+
+    transition: transform ease .8s, opacity 2s;
 }
