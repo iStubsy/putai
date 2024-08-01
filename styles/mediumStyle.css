@@ -17,6 +17,7 @@
         font-size: 4rem;
 
         font-size: 3.5rem;
+        line-height: 4rem;
     }
 
     .cardBox {
@@ -240,8 +241,9 @@
 
     #header {
         //background-position: 0px -300px;
-        background-attachment: fixed;
+        //background-attachment: fixed;
         max-height: 800px;
+        background-position: center;
     }
 
     #content-3 {
@@ -277,6 +279,8 @@
         color: black;
 
         background-color: black;
+        background-size: cover;
+        background-position: center;
     }
 
     .content-3-left h2 {
@@ -333,7 +337,7 @@
         margin: 4rem auto;
         padding: 0 2rem;
         width: 100%;
-        max-width: 1300px;
+        max-width: 1200px;
     }
 
     #whereSubContentBox {
