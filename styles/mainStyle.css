@@ -145,6 +145,7 @@ h6 {
     overflow: hidden;
     min-height: 400px;
     /* Fallback for browsers that do not support Custom Properties */
+    max-height: 900px;
     height: calc(var(--vh, 1vh) * 100);
 }
 
@@ -635,7 +636,7 @@ li a {
 
 .opacityReveal {
     opacity: 0;
-    transition: 1s;
+    transition: opacity 1s;
 }
 
 .opacityReveal.active {
