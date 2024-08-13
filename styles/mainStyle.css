@@ -105,12 +105,12 @@ h5 {
 }
 
 h6 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 3rem;
     //margin: 10px auto 10px auto;
     text-align: left;
     font-family: var(--main-font);
-    margin-bottom: .6rem;
+    margin-bottom: .4rem;
 }
 
 .smDa {
@@ -123,6 +123,15 @@ h6 {
     margin: 5px 0;
     width: 110%;
     transform: translateX(-5%);
+}
+
+.smallText {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+
+    max-width: 100%;
+    font-family: var(--main-font);
+    font-weight: 300;
 }
 
 
