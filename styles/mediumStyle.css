@@ -321,10 +321,6 @@
         height: 50%;
     }
 
-    h7 {
-        font-size: 3rem;
-    }
-
     .mealBox {
         flex: 50%;
         padding: 18px;
@@ -337,7 +333,6 @@
         margin: 4rem auto;
         padding: 0 2rem;
         width: 100%;
-        max-width: 1200px;
     }
 
     #whereSubContentBox {
@@ -354,10 +349,41 @@
         font-family: var(--main-font);
     }
 
-    #whereSub h6 {
-        width: fit-content;
-        max-width: none;
-        font-size: 2.5rem;
+    .newMenuOfTheDay {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+
+        justify-content: center;
+        padding: 6rem 0;
+    }
+
+    .newMenuOfTheDay > * {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+
+    .newMenuOfTheDayTop h6 {
+        text-align: right;
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+
+    .newMenuOfTheDayTop div {
+        text-align: right;
+    }
+
+    .middleImage {
+        height: 280px;
+        width: 320px;
+    }
+
+    .absoluteBackground {
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        height: 100%;
+        width: 55%;
     }
 
 }

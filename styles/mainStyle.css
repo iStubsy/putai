@@ -92,11 +92,8 @@ h3 {
 
 h4 {
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-family: var(--main-font);
-    font-weight: 500;
-    margin: 5px 0;
-    text-align: center;
 }
 
 h5 {
@@ -113,6 +110,7 @@ h6 {
     //margin: 10px auto 10px auto;
     text-align: left;
     font-family: var(--main-font);
+    margin-bottom: .6rem;
 }
 
 .smDa {
@@ -189,7 +187,7 @@ h6 {
 }
 
 .navigationBarInnerScrolled {
-    transition: 1s;
+    //transition: 1s;
     //background-color: rgba(0, 0, 0, 0.80);
     //box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
@@ -1117,14 +1115,6 @@ li a {
     min-width: 340px;
     max-width: 1400px;
     margin: 0 auto;
-}
-
-#whereSub h6 {
-    width: fit-content;
-    //margin: 2rem auto;
-    max-width: none;
-    font-size: 2rem;
-    margin: 0;
 }
 
 #whereSubContentBox {

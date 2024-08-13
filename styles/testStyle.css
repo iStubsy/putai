@@ -78,3 +78,77 @@
     background-color: rgba(0, 0, 0, 0.2);
     margin: 0 auto;
 }
+
+
+
+#newMenuOfTheDayWrapper {
+    position: relative;
+    background-color: rgba(232, 232, 232, 0.35);
+    padding: 20px;
+}
+
+.newMenuOfTheDay {
+    position: relative;
+    padding: 35px 25px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    font-family: var(--main-font);
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.newMenuOfTheDayTop {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.newMenuOfTheDayTop > div {
+    max-width: 100%;
+    font-family: var(--main-font);
+    font-weight: 300;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.newMenuOfTheDayTop h6 {}
+
+.middleImage {
+    border: solid 3px var(--akzente);
+    height: 250px;
+    margin: 0 auto;
+    background-image: url("../food.jpeg");
+    background-size: cover;
+
+    position: relative;
+    z-index: 1;
+
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.newMenuOfTheDayBottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dateHolder {
+    font-weight: 500;
+    color: #989898;
+}
+
+.absoluteBackground {
+    background-image: url("../innenOpacity.png");
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-size: cover;
+}
