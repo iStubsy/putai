@@ -105,8 +105,8 @@ h5 {
 }
 
 h6 {
-    font-size: 3rem;
-    line-height: 3.2rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     //margin: 10px auto 10px auto;
     text-align: left;
     font-family: var(--main-font);

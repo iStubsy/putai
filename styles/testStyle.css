@@ -84,12 +84,12 @@
 #newMenuOfTheDayWrapper {
     position: relative;
     background-color: rgba(232, 232, 232, 0.35);
-    padding: 20px;
+    padding: 10px;
 }
 
 .newMenuOfTheDay {
     position: relative;
-    padding: 35px 25px;
+    padding: 25px;
 
     display: flex;
     justify-content: center;
