@@ -91,7 +91,6 @@ h3 {
 }
 
 h4 {
-    color: black;
     font-size: 1.8rem;
     font-family: var(--main-font);
 }
@@ -105,7 +104,7 @@ h5 {
 }
 
 h6 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     line-height: 3rem;
     //margin: 10px auto 10px auto;
     text-align: left;
@@ -491,25 +490,6 @@ li a {
 #content-3 {
     padding: 2.5rem 0 3.5rem 0;
     position: relative;
-}
-
-.testPaths {
-    display: flex;
-    justify-content: center;
-}
-
-.testPath {
-    clip-path: polygon(0 0, 100% 0, 99% 100%, 0% 100%);
-    background-color: black;
-    width: 50%;
-    height: 500px;
-}
-
-.testPath1 {
-    clip-path: polygon(1% 0, 100% 0, 100% 100%, 0% 100%);
-    background-color: yellow;
-    width: 50%;
-    height: 500px;
 }
 
 .content-1-sub {
@@ -1122,7 +1102,7 @@ li a {
 #whereSub {
     width: 80%;
     min-width: 340px;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -1348,6 +1328,8 @@ li a {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+
+    display: none;
 }
 
 .backToTopScrolled {
@@ -1487,10 +1469,6 @@ h7 {
     max-width: 100%;
     padding-bottom: 30px;
     transition: 0.5s ease-out;
-}
-
-.mealBox:hover {
-    transform: translateY(-10px);
 }
 
 .meal {
