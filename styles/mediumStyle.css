@@ -23,6 +23,10 @@
         line-height: 4rem;
     }
 
+    h7 {
+        font-size: 1.1rem;
+    }
+
     .cardBox {
         flex-direction: row;
     }
@@ -401,8 +405,6 @@
 
     .anotherTry {
         background-color: black;
-        background-image: url("../ScreenshotMenuAffinity.png");
-        background-image: url("../AffinityEdit.png");
         background-size: cover;
         background-attachment: fixed;
 
@@ -436,7 +438,7 @@
     .anotherTry_leftSideBottom {
         display: flex;
         flex-direction: column;
-        gap: .3rem;
+        gap: .8rem;
     }
 
     .anotherTry_rightSide {
