@@ -86,7 +86,7 @@ h3 {
 
     //width: 280px;
     //margin: 20px auto;
-    color: white;
+
     font-size: 2rem;
 }
 
@@ -110,6 +110,14 @@ h6 {
     text-align: left;
     font-family: var(--main-font);
     margin-bottom: .4rem;
+}
+
+h7 {
+    font-family: var(--main-font);
+    color: var(--akzente);
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
 }
 
 .smDa {
@@ -532,13 +540,13 @@ li a {
     color: rgba(0, 0, 0, 0.5);
     text-align: left;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-shadow: none;
     line-height: 2rem;
 }
 
 .content-1-text h6 {
-    margin: 8px 0 8px 0;
+    margin: 5px 0;
 }
 
 .content-1-imageSide {
@@ -1098,9 +1106,13 @@ li a {
 
 #anotherTryWrapper {
     width: 100%;
-    padding: 5px;
+    padding: 15px;
     max-width: 1500px;
     margin: 0 auto;
+}
+
+.anotherTryMobile {
+    padding: 15px;
 }
 
 .anotherTry {
@@ -1115,6 +1127,10 @@ li a {
     border: solid 2px black;
 }
 
+.anotherTry .smallText {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .anotherTryContent {
     display: flex;
     justify-content: center;
@@ -1122,21 +1138,24 @@ li a {
     margin: 0 auto;
     //width: 90%;
     padding: 25px;
-    gap: 40px;
+    gap: 20px;
 }
 
 .anotherTry_leftSide {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 40px;
+    gap: 3rem;
 }
 
-.anotherTry_leftSideTop,
+.anotherTry_leftSideTop {
+    display: none;
+}
+
 .anotherTry_leftSideBottom {
     display: flex;
     flex-direction: column;
-    gap: .3rem;
+    gap: .7rem;
 }
 
 .anotherTry_rightSide {
@@ -1173,6 +1192,10 @@ li a {
 
 #where {
     padding: 2rem 0rem;
+}
+
+#where h6 {
+    font-size: 2rem;
 }
 
 #whereSub {
@@ -1243,7 +1266,7 @@ li a {
     background-color: black;
     color: white;
 
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.58);
+    //box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.58);
 
     border: solid 3px black;
 }
@@ -1512,17 +1535,6 @@ li a {
 #section_3 {
     position: relative;
     width: 100%;
-}
-
-h7 {
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-    margin: 30px auto 0 auto;
-    padding: 0px 20px;
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: -2px;
 }
 
 .headlineUnderline {
