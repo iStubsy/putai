@@ -87,7 +87,7 @@ h3 {
     //width: 280px;
     //margin: 20px auto;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 h4 {
@@ -1095,6 +1095,82 @@ li a {
     box-shadow: 2px 2px 5px #b5b5b5;
 }
 
+
+#anotherTryWrapper {
+    width: 100%;
+    padding: 5px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.anotherTry {
+    background-color: black;
+    background-image: url("../ScreenshotMenuAffinity.png");
+    background-image: url("../AffinityEdit.png");
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: white;
+    position: relative;
+    border: solid 2px black;
+}
+
+.anotherTryContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    //width: 90%;
+    padding: 25px;
+    gap: 40px;
+}
+
+.anotherTry_leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.anotherTry_leftSideTop,
+.anotherTry_leftSideBottom {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.anotherTry_rightSide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.anotherTryImage {
+    border: solid 4px white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.54);
+    width: 500px;
+    z-index: 1;
+}
+
+.anotherTryImage img {
+    display: block;
+}
+
+.anotherTry_rightAbsoluteImage {
+    background-image: url("../lamp.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    border-left: solid 2px black;
+    display: none;
+}
+
+
 #where {
     padding: 2rem 0rem;
 }
@@ -1123,7 +1199,6 @@ li a {
 .whereSubContentText {
     max-width: 650px;
     margin-bottom: 2rem;
-    line-height: 1.5rem;
 }
 
 #whereInformationBoxBox {
@@ -1309,6 +1384,7 @@ li a {
     padding: 30px 5px 10px 5px;
 }
 
+
 .backToTop {
     color: white;
     position: fixed;
@@ -1328,8 +1404,6 @@ li a {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-
-    display: none;
 }
 
 .backToTopScrolled {
