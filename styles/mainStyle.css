@@ -1112,7 +1112,10 @@ li a {
 }
 
 .anotherTryMobile {
-    padding: 15px;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .anotherTry {
@@ -1125,7 +1128,7 @@ li a {
 
     color: white;
     position: relative;
-    border: solid 2px black;
+    border: solid 2px red;
 }
 
 .anotherTry .smallText {
