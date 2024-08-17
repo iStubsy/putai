@@ -1124,11 +1124,12 @@ li a {
     background-image: url("../AffinityEdit.png");
     background-image: url("../NextToEachother.png");
     background-size: cover;
+    background-size: 1000px;
     background-attachment: fixed;
 
     color: white;
     position: relative;
-    border: solid 2px red;
+    border: solid 2px black;
 }
 
 .anotherTry .smallText {
