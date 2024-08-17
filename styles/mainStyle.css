@@ -1125,7 +1125,8 @@ li a {
     background-image: url("../NextToEachother.png");
     background-size: cover;
     background-size: 1000px;
-    background-attachment: fixed;
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
 
     color: white;
     position: relative;
