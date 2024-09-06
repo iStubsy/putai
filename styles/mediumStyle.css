@@ -27,6 +27,11 @@
         font-size: 1.1rem;
     }
 
+    h10 {
+        font-size: 3.2rem;
+        font-weight: 800;
+    }
+
     .cardBox {
         flex-direction: row;
     }
@@ -399,7 +404,6 @@
         width: 100%;
         padding: 3rem;
         padding-bottom: 0;
-        max-width: 1500px;
         margin: 0 auto;
     }
 
@@ -439,6 +443,10 @@
         display: flex;
         flex-direction: column;
         gap: .8rem;
+    }
+
+    .anotherTry_leftSideBottom .smallText {
+        max-width: 80%;
     }
 
     .anotherTry_rightSide {
