@@ -148,3 +148,24 @@
     background-color: black;
     background-size: cover;
 }
+
+#sideScroller {
+    overflow: scroll;
+    margin-bottom: 3rem;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.sideScrollerRow {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    gap: 5rem;
+}
+
+.sideScrollerCard {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 20px auto;
+    border-radius: 50%;
+}

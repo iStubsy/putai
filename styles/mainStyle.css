@@ -1142,10 +1142,6 @@ li a {
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
 }
 
-.anotherTry .smallText {
-    color: rgba(255, 255, 255, 0.7);
-}
-
 .anotherTry {
     padding: 10px;
 }
@@ -1156,7 +1152,7 @@ li a {
     flex-direction: column;
     margin: 0 auto;
     //width: 90%;
-    padding: 25px;
+    padding: 15px;
     gap: 10px;
     max-width: 1400px;
 
