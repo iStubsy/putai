@@ -51,7 +51,7 @@
 
     .content-1-text {
         font-family: var(--main-font);
-        font-weight: 300;
+        font-weight: 320;
         font-size: 1.3rem;
         line-height: 1.8rem;
     }
@@ -344,7 +344,7 @@
     }
 
     #whereSub {
-        margin: 4rem auto;
+        margin: 6rem auto;
         width: 100%;
     }
 
@@ -352,11 +352,19 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        gap: 60px;
+        gap: 3rem;
+        margin: 1rem 0;
     }
 
-    .whereSubContent {
-        width: 50%;
+    .whereSubContentLeft {
+        width: 45%;
+
+        font-size: 1.2rem;
+        font-family: var(--main-font);
+    }
+
+    .whereSubContentRight {
+        width: 55%;
 
         font-size: 1.2rem;
         font-family: var(--main-font);

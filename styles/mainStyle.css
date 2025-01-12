@@ -504,7 +504,7 @@ li a {
 
 #content-2,
 #content-3 {
-    padding: 2.5rem 0 3.5rem 0;
+    padding: 2.5rem 0 4.5rem 0;
     position: relative;
 }
 
@@ -673,7 +673,7 @@ li a {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 30px;
+    bottom: 50px;
 }
 
 .content-2-left-head {
@@ -1189,8 +1189,8 @@ li a {
 .anotherTryImage {
     //border: solid 4px white;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.54);
-    width: 500px;
     z-index: 1;
+    padding: 15px;
 }
 
 .anotherTryImage img {
@@ -1234,9 +1234,8 @@ li a {
     gap: 30px;
 }
 
-.whereSubContent {
-
-
+.whereSubContentLeft,
+.whereSubContentRight {
     font-family: var(--main-font);
     font-weight: 300;
 }

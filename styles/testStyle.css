@@ -151,8 +151,7 @@
 
 #sideScroller {
     overflow: scroll;
-    margin-bottom: 3rem;
-    background-color: rgba(0, 0, 0, 0.06);
+    margin: 6rem 0;
 }
 
 .sideScrollerRow {
@@ -160,6 +159,7 @@
     justify-content: center;
     width: fit-content;
     gap: 5rem;
+    margin: 0 auto;
 }
 
 .sideScrollerCard {
@@ -168,4 +168,156 @@
     background-color: black;
     margin: 20px auto;
     border-radius: 50%;
+}
+
+
+.motdAbsoluteBG {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 55%;
+    height: 100%;
+    clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 0;
+}
+
+#motdSection {
+    margin: 5rem auto 2rem auto;
+}
+
+.motdWrapper {
+    color: white;
+    width: 80%;
+
+    background-image: url("../NextToEachotherHell.png");
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin: 0 auto;
+    transition: .8s;
+
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.53);
+}
+
+.motdWrapper100 {
+    width: 100%;
+}
+
+.motd {
+    //background-image: url("../NextToEachother.png");
+    //background-size: cover;
+    //background-attachment: fixed;
+    //border: solid 2px var(--akzente);
+    display: flex;
+    gap: 8rem;
+
+    font-family: var(--main-font);
+    padding: 3rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+
+    //background-color: black;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+
+    overflow: hidden;
+}
+
+.motdText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    gap: .4rem;
+}
+
+.motdText h3 {
+    text-align: center;
+    font-size: 3.5rem;
+    text-align: left;
+    width: 300px;
+}
+
+.motdText .smallText {
+    text-align: left;
+    max-width: 500px;
+}
+
+.motdMealSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    width: 50%;
+}
+
+.motdMeal {
+    width: 550px;
+}
+
+.motdTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.motdDate {
+    color: var(--akzente);
+    text-align: center;
+}
+
+.motdHeadline {
+    width: 100%;
+    text-align: center;
+}
+
+.motdHeadline h4 {
+    font-size: 2.8rem;
+}
+
+.motdImage {
+    border: solid 2px white;
+    width: 80%;
+    height: 250px;
+
+    background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+
+    margin: 15px auto 20px auto;
+}
+
+.motdBottom {
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.redBox {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 10000;
 }
