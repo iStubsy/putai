@@ -187,6 +187,21 @@
      }
  }
 
+
+ function widthiFunc() {
+     var widthi = document.querySelectorAll(".motdWrapper");
+     for (var i = 0; i < widthi.length; i++) {
+         var windowHeight = window.innerHeight;
+         var elementTop = widthi[i].getBoundingClientRect().top;
+         var elementVisible = 320;
+         if (elementTop < windowHeight - elementVisible) {
+             widthi[i].classList.add("motdWrapper100");
+         } else {
+             //widthi[i].classList.remove("motdWrapper100");
+         }
+     }
+ }
+
  /*
   function revealo() {
       var reveals = document.querySelectorAll(".lineTestAnimation");
@@ -268,6 +283,7 @@
 
  //window.addEventListener("scroll", reveal);
  //window.addEventListener("scroll", revealo);
+ window.addEventListener("scroll", widthiFunc);
  window.addEventListener("scroll", moveUpRevealFun);
  window.addEventListener("scroll", opacityReveal);
  window.addEventListener("scroll", moveLeftAnimationFunc);
