@@ -110,6 +110,7 @@ h6 {
     text-align: left;
     font-family: var(--main-font);
     margin-bottom: .4rem;
+    color: black;
 }
 
 h7 {
@@ -146,7 +147,9 @@ h10 {
     line-height: 1.6rem;
 
     font-family: var(--main-font);
-    font-weight: 300;
+    font-weight: 340;
+
+    color: #414141;
 }
 
 
@@ -353,7 +356,7 @@ li a {
 }
 
 .overlayNavigation a {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin: 25px;
     cursor: pointer;
 
@@ -513,10 +516,11 @@ li a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     padding: 0px 35px 0rem 35px;
     gap: 50px;
     overflow: visible;
+
 }
 
 
@@ -555,6 +559,10 @@ li a {
 
 .content-1-text h6 {
     margin: 5px 0;
+}
+
+#content-2 h6 {
+    color: white;
 }
 
 .content-1-imageSide {
@@ -1131,6 +1139,7 @@ li a {
     background-image: url("../ScreenshotMenuAffinity.png");
     background-image: url("../AffinityEdit.png");
     background-image: url("../NextToEachother.png");
+    background-image: url("../nextToEachOtherLoWQ.png");
     background-size: cover;
     background-size: 1000px;
     //background-attachment: fixed;
