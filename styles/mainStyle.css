@@ -121,6 +121,15 @@ h7 {
     text-align: left;
 }
 
+h8 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 9rem;
+    font-weight: 100;
+
+    color: var(--akzente);
+    color: rgba(224, 168, 0, 0.75);
+}
+
 h10 {
     text-align: center;
     color: black;
@@ -149,7 +158,7 @@ h10 {
     font-family: var(--main-font);
     font-weight: 340;
 
-    color: #414141;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -250,7 +259,7 @@ h10 {
 }
 
 .hamburgerMenu:active {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: none;
 }
 
 .hamburgerMenuScrolled {
@@ -583,7 +592,9 @@ li a {
 }
 
 .content-1-image-align img {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.43);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    border: solid 2px var(--akzente);
+    border: solid 2px white;
 }
 
 .content-1-image-align > div {
@@ -1124,7 +1135,9 @@ li a {
     width: 100%;
     padding: 15px;
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1300px;
+
+    padding-bottom: 200px;
 }
 
 .anotherTryMobile {
@@ -1140,6 +1153,7 @@ li a {
     background-image: url("../AffinityEdit.png");
     background-image: url("../NextToEachother.png");
     background-image: url("../nextToEachOtherLoWQ.png");
+    background-image: url("../menuOfTheDay.jpg");
     background-size: cover;
     background-size: 1000px;
     //background-attachment: fixed;
@@ -1149,6 +1163,16 @@ li a {
     position: relative;
     border: solid 2px black;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.anotherTry .smallText {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.anotherTry h6 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0;
 }
 
 .anotherTry {
@@ -1199,7 +1223,6 @@ li a {
     //border: solid 4px white;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.54);
     z-index: 1;
-    padding: 15px;
 }
 
 .anotherTryImage img {

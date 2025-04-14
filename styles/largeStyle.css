@@ -76,7 +76,7 @@
     .content-1-textSide {
         width: 50%;
         max-width: 50%;
-        padding: 5rem;
+        padding: 5rem 3rem;
         display: flex;
         justify-content: flex-end;
 
@@ -126,7 +126,7 @@
     }
 
     .content-2-right {
-        padding: 3rem;
+        padding: 3rem 2rem;
     }
 
     .content-2-cardWrapper {
