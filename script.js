@@ -2,11 +2,11 @@
      $(".loader-wrapper").fadeOut("slow");
      document.getElementsByTagName("HTML")[0].style.overflow = "auto";
 
-     for (var y = 0; y < document.querySelectorAll(".overlayAnimation").length; y++) {
+     /**for (var y = 0; y < document.querySelectorAll(".overlayAnimation").length; y++) {
          for (var x = 0; x < document.querySelectorAll(".overlayAnimation")[y].children.length; x++) {
              document.querySelectorAll(".overlayAnimation")[y].children[x].classList.add("troi");
          }
-     }
+     } **/
  });
 
  document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
@@ -89,34 +89,31 @@
      document.documentElement.scrollTop = 0;
  }
 
- /*
- $(document).ready(function () {
-     $(document).scroll(function (evt) {
-         var v2 = Math.abs($('.cardImage-1').position().top - $(window).height() / 2 + 100);
-         var v1 = $(this).scrollTop();
-         if (v1 > v2) {
-             $('.card').css("opacity", "1");
-             $('.cardImage-1').addClass("cardImageFinal");
-             $('.cardImage-2').addClass("cardImageFinal");
-             $('.cardImage-3').addClass("cardImageFinal");
-         }
-     });
- });
- */
 
- function reveal() {
-     var reveals = document.querySelectorAll(".reveal");
-     for (var i = 0; i < reveals.length; i++) {
-         var windowHeight = window.innerHeight;
-         var elementTop = reveals[i].getBoundingClientRect().top;
-         var elementVisible = 80;
-         if (elementTop < windowHeight - elementVisible) {
-             reveals[i].classList.add("active");
-         } else {
-             //reveals[i].classList.remove("active");
+ /******* ANIMATION ON THE FRONTPAGE FOR THE CARD ********/
+
+ function cardAnimation() {
+     var cardAnimation = document.querySelector(".content-2-cardWrapper");
+
+
+
+
+     var windowHeight = window.innerHeight;
+     var elementTop = cardAnimation.getBoundingClientRect().top;
+     var elementVisible = 400;
+     if (elementTop < windowHeight - elementVisible) {
+
+         for (var i = 0; i < cardAnimation.children.length; i++) {
+             //cardAnimation.children[i].style.opacity = "1";
+             //cardAnimation.children[i].style.transform = "translateX(0px)";
+             cardAnimation.children[i].style.transitionDelay = i / 3 + "s";
+             cardAnimation.children[i].classList.add("show");
          }
      }
  }
+
+
+
 
  function moveUpRevealFun() {
      var moveUpReveals = document.querySelectorAll(".moveUpReveal");
@@ -157,7 +154,6 @@
          }
      }
  }
-
 
  function moveLeftAnimationFunc() {
      var moveLefts = document.querySelectorAll(".moveLeftAnimation");
@@ -201,26 +197,6 @@
          }
      }
  }
-
- /*
-  function revealo() {
-      var reveals = document.querySelectorAll(".lineTestAnimation");
-      for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 100;
-          if (elementTop < windowHeight - elementVisible) {
-              for (var x = 0; x < document.querySelectorAll(".lineTestAnimation").length; x++) {
-                  document.querySelectorAll(".lineTestInner")[x].classList.add("lineTestInnerAni");
-                  document.querySelectorAll(".lineTestInner2")[x].classList.add("lineTestInnerAni2");
-                  document.querySelectorAll(".lineTest2")[x].classList.add("lineTestAni");
-              }
-          } else {
-           
-          }
-      }
-  }
- */
 
  function revealo() {
      var reveals = document.querySelectorAll(".revealo");
@@ -283,7 +259,9 @@
 
  //window.addEventListener("scroll", reveal);
  //window.addEventListener("scroll", revealo);
+
  window.addEventListener("scroll", widthiFunc);
+ window.addEventListener("scroll", cardAnimation);
  window.addEventListener("scroll", moveUpRevealFun);
  window.addEventListener("scroll", opacityReveal);
  window.addEventListener("scroll", moveLeftAnimationFunc);
@@ -298,3 +276,4 @@
  moveUpRevealFun();
  opacityReveal();
  fromDark();
+ cardAnimation();

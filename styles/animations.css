@@ -23,3 +23,8 @@
 
     transition: transform ease .8s, opacity 2s;
 }
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
