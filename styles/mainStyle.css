@@ -70,6 +70,8 @@ h1 {
     line-height: 2.6rem;
     margin: 0 auto;
     width: 350px;
+
+    color: var(--akzente);
 }
 
 h2 {
@@ -771,6 +773,7 @@ li a {
     flex-direction: column;
     gap: 32px;
     padding-bottom: 60px;
+    overflow: hidden;
 }
 
 .content-2-cards {
