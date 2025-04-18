@@ -657,6 +657,8 @@ li a {
 
     padding-left: 30px;
     padding-right: 30px;
+
+    overflow: hidden;
 }
 
 .opacityReveal {
@@ -708,8 +710,6 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    overflow: hidden;
 }
 
 .content-2-rightInner {
