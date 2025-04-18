@@ -100,13 +100,13 @@
 
      var windowHeight = window.innerHeight;
      var elementTop = cardAnimation.getBoundingClientRect().top;
-     var elementVisible = 400;
+     var elementVisible = 100;
      if (elementTop < windowHeight - elementVisible) {
 
          for (var i = 0; i < cardAnimation.children.length; i++) {
              //cardAnimation.children[i].style.opacity = "1";
              //cardAnimation.children[i].style.transform = "translateX(0px)";
-             cardAnimation.children[i].style.transitionDelay = i / 3 + "s";
+             cardAnimation.children[i].style.transitionDelay = i / 4 + "s";
              cardAnimation.children[i].classList.add("show");
          }
      }

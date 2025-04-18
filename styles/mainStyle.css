@@ -781,7 +781,7 @@ li a {
     font-family: var(--main-font);
     font-weight: 300;
 
-    transition: .6s ease-out;
+    transition: .5s ease-out;
     transform: translateX(100px);
     opacity: 0;
 }
@@ -1336,6 +1336,7 @@ li a {
 .openingHoursInformationBox {
     display: flex;
     justify-content: space-between;
+    margin-bottom: .6rem;
 }
 
 .openingHoursInformation {
@@ -1593,6 +1594,7 @@ li a {
 #section_3 {
     position: relative;
     width: 100%;
+    margin-bottom: 3rem;
 }
 
 .headlineUnderline {

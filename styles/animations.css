@@ -1,5 +1,5 @@
 .moveLeftAnimation {
-    transform: translateX(200px);
+    transform: translateX(100px);
     opacity: 0;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .moveRightAnimation {
-    transform: translateX(-200px);
+    transform: translateX(-100px);
     opacity: 0;
 }
 
