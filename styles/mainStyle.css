@@ -70,8 +70,6 @@ h1 {
     line-height: 2.6rem;
     margin: 0 auto;
     width: 350px;
-
-    color: var(--akzente);
 }
 
 h2 {
@@ -182,7 +180,7 @@ h10 {
     overflow: hidden;
     min-height: 400px;
     /* Fallback for browsers that do not support Custom Properties */
-    max-height: 900px;
+    max-height: 800px;
     height: calc(var(--vh, 1vh) * 100);
 }
 
@@ -683,6 +681,7 @@ li a {
     font-weight: 300;
     font-size: 1.1rem;
     line-height: 1.5rem;
+    color: #d3d3d3;
     //width: 90%;
 }
 
