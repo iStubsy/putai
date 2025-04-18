@@ -708,10 +708,9 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
-
-
-.content-2-right {}
 
 .content-2-rightInner {
     position: relative;
@@ -773,7 +772,6 @@ li a {
     flex-direction: column;
     gap: 32px;
     padding-bottom: 60px;
-    overflow: hidden;
 }
 
 .content-2-cards {
