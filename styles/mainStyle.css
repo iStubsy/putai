@@ -678,10 +678,10 @@ li a {
 .content-2-menuText,
 .content-2-subtext {
     font-family: var(--main-font);
-    font-weight: 300;
+    font-weight: 320;
     font-size: 1.1rem;
     line-height: 1.5rem;
-    color: #d3d3d3;
+    color: #dddddd;
     //width: 90%;
 }
 
@@ -797,9 +797,9 @@ li a {
 }
 
 .content-2-menuLine {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.5);
     height: 1px;
-    margin: 4px 0 8px 0;
+    margin: 8px 0 8px 0;
     width: 100%;
 }
 
