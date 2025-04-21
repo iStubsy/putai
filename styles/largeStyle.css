@@ -125,14 +125,6 @@
         background-image: url("../innenOpacity.png");
     }
 
-    .content-2-right {
-        padding: 3rem 2.5rem;
-    }
-
-    .content-2-cardWrapper {
-        max-width: 500px;
-    }
-
     .content-2-left {
         background-image: none;
     }

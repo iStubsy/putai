@@ -110,6 +110,7 @@ h6 {
     //margin: 10px auto 10px auto;
     text-align: left;
     font-family: var(--main-font);
+    font-weight: 600;
     margin-bottom: .4rem;
     color: black;
 }
@@ -655,8 +656,6 @@ li a {
 
     padding-left: 30px;
     padding-right: 30px;
-
-    overflow: hidden;
 }
 
 .opacityReveal {
@@ -771,6 +770,8 @@ li a {
     flex-direction: column;
     gap: 32px;
     padding-bottom: 60px;
+
+    width: 100%;
 }
 
 .content-2-cards {
@@ -780,6 +781,8 @@ li a {
     //width: 50%;
     font-family: var(--main-font);
     font-weight: 300;
+
+    max-width: 500px;
 
     transition: .5s ease-out;
     transform: translateX(100px);
@@ -1274,7 +1277,7 @@ li a {
 .whereSubContentLeft,
 .whereSubContentRight {
     font-family: var(--main-font);
-    font-weight: 300;
+    font-weight: 360;
 }
 
 .whereSubContentText {
