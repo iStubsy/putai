@@ -652,10 +652,6 @@ li a {
     //background-position: 150px;
     background-size: cover;
     background-repeat: no-repeat;
-
-
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .opacityReveal {
@@ -672,6 +668,10 @@ li a {
     flex-direction: column;
     justify-content: center;
     color: white;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
 }
 
 .content-2-menuText,
