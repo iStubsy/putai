@@ -8,7 +8,7 @@
     transform: translateX(0px);
 
 
-    transition: transform ease 1.5s, opacity 2s;
+    transition: transform ease 1s, opacity 2s;
 }
 
 .moveRightAnimation {
@@ -21,7 +21,7 @@
     transform: translateX(0px);
 
 
-    transition: transform ease 1.5s, opacity 2s;
+    transition: transform ease 1s, opacity 2s;
 }
 
 .show {
